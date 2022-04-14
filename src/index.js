@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Course from './Course';
-//import reportWebVitals from './reportWebVitals';
 import localcoursedata from './assets/coursedata.json';
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
@@ -30,26 +29,21 @@ dbRef.child("courses").get().then((snapshot) => {
         coursedata = snapshot.val();
         Initialize();
     } else {
-        //coursedata = localcoursedata;
-        //Initialize();
+        coursedata = localcoursedata;
+        Initialize();
     }
 }).catch((error) => {
-    //coursedata = localcoursedata;
-    //Initialize();
+    coursedata = localcoursedata;
+    Initialize();
 });
 
 function Initialize() {
     const courseArr = Object.keys(coursedata);
 
-    var courseItems = courseArr.map((name) => <Course course={coursedata[name]}/>
+    var courseItems = courseArr.map((name) => <Course course={coursedata[name]} />
     );
 
-    ReactDOM.render(
-        <React.StrictMode>
-            <App classitems={<div class="parent">{courseItems}</div>}></App>
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
+    renderDOM(courseItems);
 
     const search = document.getElementById('searchbar');
     search.addEventListener('input', filterCourses);
@@ -118,7 +112,7 @@ function Initialize() {
                     for (let i = 0; i < truetags.length; i++) {
                         const tag = truetags[i];
                         try {
-                            if (coursedata[name].tags[0] == dict[tag]) {
+                            if (coursedata[name].tags[0] === dict[tag]) {
                                 isPresent = true;
                             }
                         } catch (e) {
@@ -136,18 +130,26 @@ function Initialize() {
             var key = search.value.toLowerCase();
             key = key.replaceAll(' ', '-');
             courseItems = courseItems.filter(name => (name.search(key) !== -1)).map((name) => {
-                return <Course course={coursedata[name]}/>;
+                return <Course course={coursedata[name]} />;
             });
 
-            ReactDOM.render(
-                <React.StrictMode>
-                    <App classitems={<div class="parent">{courseItems}</div>}></App>
-                </React.StrictMode>,
-                document.getElementById('root')
-            );
+            renderDOM(courseItems);
         }, 20);
     }
+
+    function renderDOM(courseItems) {
+        ReactDOM.render(
+            <React.StrictMode>
+                <App classitems={<div class="parent">{courseItems}</div>}></App>
+            </React.StrictMode>,
+            document.getElementById('root')
+        );
+    }
+
 }
+
+
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
