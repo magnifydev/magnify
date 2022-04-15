@@ -6,15 +6,37 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media only screen and (min-width: 400px) { /* if the viewport is narrower than 400px */
+    :root {
+        --nav-width: 0px;
+    }
+}
+
+@media only screen and (min-width: 800px) { /* if the viewport is narrower than 800px */
+    :root {
+        --nav-width: 80px;
+    }
+}
+
+@media only screen and (min-width: 1200px) { /* if the viewport is narrower than 1200px */
+    :root {
+        --nav-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1600px) { /* if the viewport is narrower than 1600px */
+    :root {
+        --nav-width: 250px;
+    }
+}
+
 :root {
-    /* --blue: #ac0219;
-    --white: #000000; */
-    --blue: #ac0219;
+    /*--blue: #ac0219;*/
+    --blue: #0077ff;
     --white: #ffffff;
     --grey: #f5f5f5;
     --black1: #222;
     --black2: #999;
-    --nav-width: 250px;
     /* color: rgb(255, 255, 255); */
 }
 
@@ -278,7 +300,7 @@ div .Course {
     align-items: left;
     padding: 10px 0;
     margin: 10px;
-    overflow: visible;
+    overflow: scroll;
 }
 
 .tag {

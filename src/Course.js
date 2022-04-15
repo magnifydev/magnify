@@ -21,7 +21,6 @@ function Course(props) {
             <ion-icon class="edit" name="pencil-outline"></ion-icon>
         </div>
     );
-   return null;
 }
 
 export default Course;

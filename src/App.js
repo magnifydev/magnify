@@ -1,6 +1,5 @@
 import userdefault from './assets/user.png';
 import './App.css';
-import coursedata from './assets/coursedata.json'
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
@@ -49,14 +48,14 @@ function App(props) {
                 //Update pfp in the topbar to match
                 let img = document.getElementById("user-img");
                 user ? img.src = user._delegate.photoURL : img.src = userdefault;
-        
+
                 let button = document.getElementById("signer");
                 user ? button.textContent = "Sign Out" : button.textContent = "Login";
-              }).catch((error) => {
+            }).catch((error) => {
                 // An error happened.
-              });
+            });
         }
-        
+
     }
 
     var user;
@@ -74,7 +73,7 @@ function App(props) {
             }
             // The signed-in user info.
             user = result.user;
-            
+
             //Update pfp in the topbar to match
             let img = document.getElementById("user-img");
             img.src = user._delegate.photoURL;
@@ -92,9 +91,9 @@ function App(props) {
             // ...
         });
 
-        function toggleNav() {
-            document.documentElement.style.setProperty('--nav-width', 80);
-        }
+    function toggleNav() {
+        document.documentElement.style.setProperty('--nav-width', 80);
+    }
 
 
     return (
@@ -212,5 +211,3 @@ function App(props) {
 }
 
 export default App;
-
-//                    <button id="foreign" class="tag tag-true" onClick={() => tagToggle("foreign")}><ion-icon name="checkmark-outline"></ion-icon>Foreign Languange</button>
