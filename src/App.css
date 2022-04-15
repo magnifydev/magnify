@@ -183,6 +183,12 @@ body {
     box-shadow: 2px 2px 8px #888888;
 }
 
+@media only screen and (max-width: 400px) { /* if the viewport is narrower than 400px, set the topbar width directly so the side menu popout works */
+    .topbar {
+        width: 100vw;
+    }
+}
+
 .toggle {
     position: relative;
     width: 60px;

@@ -92,7 +92,13 @@ function App(props) {
         });
 
     function toggleNav() {
-        document.documentElement.style.setProperty('--nav-width', 80);
+
+        if (document.documentElement.style.getPropertyValue("--nav-width") !== "250px") {
+            document.documentElement.style.setProperty("--nav-width", "250px");
+        } else {
+            document.documentElement.style.removeProperty("--nav-width");
+        }
+        
     }
 
 
@@ -178,7 +184,7 @@ function App(props) {
             </div>
             <div class="main">
                 <div class="topbar">
-                    <div class="toggle" /*onClick={() => toggleNav()}*/>
+                    <div class="toggle" onClick={() => toggleNav()}>
                         <ion-icon name="menu-outline"></ion-icon>
                     </div>
                     <div class="search">
