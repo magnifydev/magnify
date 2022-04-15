@@ -1,3 +1,9 @@
+# Course Inspector
+
+This repo is meant as a single source of truth for the 2022 LMHS Course Inspector project. Active members are [Ascent817](https://github.com/Ascent817) and [GoogleGenius](https://github.com/GoogleGenius). If you are here to help improve this project, locate the [Contributing Guidelines](CONTRIBUTING.md).
+
+___
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
