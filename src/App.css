@@ -38,6 +38,13 @@
     --black1: #222;
     --black2: #999;
     /* color: rgb(255, 255, 255); */
+    /*animation: hueshift 10s linear 5s infinite alternate;*/
+}
+
+@keyframes hueshift {
+    0% {--blue: #0077ff;}
+    50% {--blue: #0004ff;}
+    100% {--blue: #0077ff;}
 }
 
 body {
