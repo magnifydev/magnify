@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sync": "git pull --tags origin extracting-auth-to-index.js-scope && git push public-repo extracting-auth-to-index.js-scope"
   },
   "eslintConfig": {
     "extends": [
