@@ -1,3 +1,4 @@
+import React from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
 import firebase from "firebase/compat/app";
