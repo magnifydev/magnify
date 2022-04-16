@@ -184,7 +184,7 @@ body {
 }
 
 @media only screen and (max-width: 400px) { /* if the viewport is narrower than 400px, set the topbar width directly so the side menu popout works */
-    .topbar {
+    .topbar, .parent {
         width: 100vw;
     }
 }
