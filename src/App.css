@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 400px) { /* if the viewport is narrower than 400px */
     :root {
-        --nav-width: 0;
+        --nav-width: 0px;
     }
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 @media only screen and (max-width: 400px) { /* if the viewport is narrower than 400px, set the topbar width directly so the side menu popout works */
-    .topbar, .parent {
+    .topbar {
         width: 100vw;
     }
 }
@@ -260,7 +260,7 @@ div .Course {
     align-content: center;
     text-align: left;
     border-radius: 10px;
-    box-shadow: 0px 2px 6px 2px #00000026;
+    box-shadow: 0px 2px 4px #888888;
     margin: 20px;
     position: relative;
     font-size: smaller;
