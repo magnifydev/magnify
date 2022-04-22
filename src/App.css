@@ -12,7 +12,7 @@
     }
 }
 
-@media only screen and (min-width: 800px) { /* if the viewport is narrower than 800px */
+@media only screen and (min-width: 700px) { /* if the viewport is narrower than 700px */
     :root {
         --nav-width: 80px;
     }
@@ -284,25 +284,25 @@ div .Course {
     row-gap: 0px;
 }
 
-@media only screen and (min-width: 400px) { /* if the viewport is narrower than 400px */
+@media only screen and (min-width: 300px) { /* if the viewport is narrower than 400px */
     .parent {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media only screen and (min-width: 800px) { /* if the viewport is narrower than 400px */
+@media only screen and (min-width: 600px) { /* if the viewport is narrower than 800px */
     .parent {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media only screen and (min-width: 1200px) { /* if the viewport is narrower than 400px */
+@media only screen and (min-width: 1200px) { /* if the viewport is narrower than 1200px */
     .parent {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media only screen and (min-width: 1600px) { /* if the viewport is narrower than 400px */
+@media only screen and (min-width: 1600px) { /* if the viewport is narrower than 1600px */
     .parent {
         grid-template-columns: repeat(4, 1fr);
     }
