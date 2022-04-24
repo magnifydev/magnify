@@ -6,12 +6,8 @@ import Course from './Course';
 import localcoursedata from './assets/coursedata.json';
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
-import "firebase/compat/auth";
 
 var coursedata;
-var user;
-var authdata;
-var authlevel = 0;
 
 const firebaseConfig = {
     apiKey: "AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE",
@@ -26,18 +22,11 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-
-// Initialize Firebase Authentication and get a reference to the service
-const auth = firebase.auth();
-// Add Google as an authentication provider
-var provider = new firebase.auth.GoogleAuthProvider();
-
 // Get data from realtime database
 const dbRef = firebase.database().ref();
-dbRef.get().then((snapshot) => {
+dbRef.child("courses").get().then((snapshot) => {
     if (snapshot.exists()) {
-        authdata = snapshot.val().users;
-        coursedata = snapshot.val().courses;
+        coursedata = snapshot.val();
         Initialize();
     } else {
         coursedata = localcoursedata;
@@ -49,11 +38,10 @@ dbRef.get().then((snapshot) => {
 });
 
 function Initialize() {
-
-    //#region Set Up
     const courseArr = Object.keys(coursedata);
 
-    var courseItems = courseArr.map((name) => <Course course={coursedata[name]} />);
+    var courseItems = courseArr.map((name) => <Course course={coursedata[name]} />
+    );
 
     renderDOM(courseItems);
 
@@ -62,14 +50,25 @@ function Initialize() {
 
     const buttons = document.getElementsByClassName("tag");
 
-    const signInButton = document.getElementById("signer");
-    signInButton.addEventListener('click', signInWithRedirect);
-
     for (let i = 0; i < buttons.length; i++) {
         const btn = buttons[i];
         btn.addEventListener("click", filterCourses);
     }
-    //#endregion
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
 
     // This is for the search bar to reload results on enter instead of every time a new input is detected.
     /* Uncomment this for the above behavior, and comment out the other event listener
@@ -138,64 +137,39 @@ function Initialize() {
         }, 20);
     }
 
-    
-    
-}
+    function renderDOM(courseItems) {
 
-/**
-     * 
-     * @param {object} courseItems 
-     * @param {firebase.User} user 
-     */
-    function renderDOM(courseItems, userdata = user) {
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
         ReactDOM.render(
             <React.StrictMode>
-                <App user={userdata} classitems={<div class="parent">{courseItems}</div>}></App>
+                <App classitems={<div class="parent">{courseItems}</div>}></App>
             </React.StrictMode>,
             document.getElementById('root')
         );
     }
 
-firebase.auth()
-    .getRedirectResult()
-    .then((result) => {
-        if (result.credential) {
-            /** @type {firebase.auth.OAuthCredential} */
-            var credential = result.credential;
-
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            var token = credential.accessToken;
-            // ...
-        }
-        // The signed-in user info.
-        user = result.user;
-        console.log(authdata);
-        try {
-            Object.keys(authdata).forEach(key => {
-                if (user._delegate.email == key.email) {
-                    authlevel = key.level;
-                    console.log(authlevel);
-                }
-            });
-        } catch (error) {
-            console.log(error);
-        }
-    }).catch((error) => {
-        // Handle Errors here.
-    });
-
-function signInWithRedirect() {
-    let button = document.getElementById("signer");
-    if (button.textContent === "Login") {
-        firebase.auth().signInWithRedirect(provider);
-    } else {
-        firebase.auth().signOut().then(() => {
-            user = null;
-            window.location.reload();
-            // Sign-out successful.
-        }).catch((error) => {
-            // An error happened.
-            console.log(error);
-        });
-    }
 }
+
+function InitializeAuth() {
+    
+}
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+//reportWebVitals();

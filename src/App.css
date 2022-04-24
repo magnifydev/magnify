@@ -37,14 +37,7 @@
     --grey: #f5f5f5;
     --black1: #222;
     --black2: #999;
-    /* color: rgb(255, 255, 255); */
-    /*animation: hueshift 10s linear 5s infinite alternate;*/
-}
-
-@keyframes hueshift {
-    0% {--blue: #0077ff;}
-    50% {--blue: #0004ff;}
-    100% {--blue: #0077ff;}
+    overflow: overlay
 }
 
 body {
@@ -396,6 +389,8 @@ button ion-icon{
     display: flex;
     justify-content: left;
     align-items: center;
+    color:#0077ff;
+    text-decoration-line: underline;
 }
   
 .content-collapsible { 

@@ -1,29 +1,10 @@
 import React from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-
-const firebaseConfig = {
-    apiKey: "AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE",
-    authDomain: "courseinspector.firebaseapp.com",
-    databaseURL: "https://courseinspector-default-rtdb.firebaseio.com",
-    projectId: "courseinspector",
-    storageBucket: "courseinspector.appspot.com",
-    messagingSenderId: "714692191382",
-    appId: "1:714692191382:web:3d52f73c4d534ee5f6ceb7",
-    measurementId: "G-NJ5MX0KYYK"
-};
-
-// Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-
-// Initialize Firebase Authentication and get a reference to the service
-const auth = firebase.auth();
-// Add Google as an authentication provider
-var provider = new firebase.auth.GoogleAuthProvider();
 
 function App(props) {
+
+    var user = props.user;
 
     function tagToggle(id) {
         var tag = document.getElementById(id);
@@ -38,60 +19,6 @@ function App(props) {
         }
     }
 
-    function signInWithRedirect() {
-        let button = document.getElementById("signer");
-        if (button.textContent === "Login") {
-            firebase.auth().signInWithRedirect(provider);
-        } else {
-            console.log("Trying to sign out...");
-            firebase.auth().signOut().then(() => {
-                // Sign-out successful.
-                //Update pfp in the topbar to match
-                let img = document.getElementById("user-img");
-                user ? img.src = user._delegate.photoURL : img.src = userdefault;
-
-                let button = document.getElementById("signer");
-                user ? button.textContent = "Sign Out" : button.textContent = "Login";
-            }).catch((error) => {
-                // An error happened.
-            });
-        }
-
-    }
-
-    var user;
-
-    firebase.auth()
-        .getRedirectResult()
-        .then((result) => {
-            if (result.credential) {
-                /** @type {firebase.auth.OAuthCredential} */
-                var credential = result.credential;
-
-                // This gives you a Google Access Token. You can use it to access the Google API.
-                var token = credential.accessToken;
-                // ...
-            }
-            // The signed-in user info.
-            user = result.user;
-
-            //Update pfp in the topbar to match
-            let img = document.getElementById("user-img");
-            img.src = user._delegate.photoURL;
-
-            let button = document.getElementById("signer");
-            user ? button.textContent = "Sign Out" : button.textContent = "Login";
-        }).catch((error) => {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // The email of the user's account used.
-            var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
-            // ...
-        });
-
     function toggleNav() {
 
         if (document.documentElement.style.getPropertyValue("--nav-width") !== "250px") {
@@ -105,111 +32,111 @@ function App(props) {
 
     return (
         <div className="App">
-            <div class="container">
-                <div class="navigation">
+            <div className="container">
+                <div className="navigation">
                     <ul>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="school-outline"></ion-icon>
                                 </span>
-                                <span class="title">Course Inspector</span>
+                                <span className="title">Course Inspector</span>
                             </a>
                         </li>
-                        <li class="hovered">
+                        <li className="hovered">
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="search-outline"></ion-icon>
                                 </span>
-                                <span class="title">Search All</span>
+                                <span className="title">Search All</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="people-outline"></ion-icon>
                                 </span>
-                                <span class="title">Manage</span>
+                                <span className="title">Manage</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="earth-outline"></ion-icon>
                                 </span>
-                                <span class="title">History</span>
+                                <span className="title">History</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="brush-outline"></ion-icon>
                                 </span>
-                                <span class="title">Art</span>
+                                <span className="title">Art</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="flask"></ion-icon>
                                 </span>
-                                <span class="title">Science</span>
+                                <span className="title">Science</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="musical-notes-outline"></ion-icon>
                                 </span>
-                                <span class="title">Music</span>
+                                <span className="title">Music</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="business-outline"></ion-icon>
                                 </span>
-                                <span class="title">Business</span>
+                                <span className="title">Business</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon">
+                                <span className="icon">
                                     <ion-icon name="construct-outline"></ion-icon>
                                 </span>
-                                <span class="title">Trade</span>
+                                <span className="title">Trade</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="main">
-                <div class="topbar">
-                    <div class="toggle" onClick={() => toggleNav()}>
+            <div className="main">
+                <div className="topbar">
+                    <div className="toggle" onClick={() => toggleNav()}>
                         <ion-icon name="menu-outline"></ion-icon>
                     </div>
-                    <div class="search">
+                    <div className="search">
                         <label>
                             <input id="searchbar" type="text" name="search" placeholder="Search for classes..."></input>
                             <ion-icon name="search-outline"></ion-icon>
                         </label>
                     </div>
 
-                    <button id="signer" class="login" onClick={() => signInWithRedirect()}>Login</button>
+                    <button id="signer" className="login">{user ? "Sign Out" : "Login"}</button>
 
-                    <div class="user">
+                    <div className="user">
                         <img id="user-img" src={user ? user._delegate.photoURL : userdefault}></img>
                     </div>
                 </div>
-                <div class="tag-container">
-                    <button id="MAT" class="tag" onClick={() => tagToggle("MAT")}><ion-icon class="hide" name="checkmark-outline"></ion-icon><p>Math</p></button>
-                    <button id="ENG" class="tag" onClick={() => tagToggle("ENG")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>English</button>
-                    <button id="SOC" class="tag" onClick={() => tagToggle("SOC")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>History</button>
-                    <button id="SCI" class="tag" onClick={() => tagToggle("SCI")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Science</button>
-                    <button id="BUS" class="tag" onClick={() => tagToggle("BUS")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Business</button>
-                    <button id="ART" class="tag" onClick={() => tagToggle("ART")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Art</button>
-                    <button id="IND" class="tag" onClick={() => tagToggle("IND")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Trade</button>
-                    <button id="MUS" class="tag" onClick={() => tagToggle("MUS")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Music</button>
+                <div className="tag-container">
+                    <button id="MAT" className="tag" onClick={() => tagToggle("MAT")}><ion-icon className="hide" name="checkmark-outline"></ion-icon><p>Math</p></button>
+                    <button id="ENG" className="tag" onClick={() => tagToggle("ENG")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>English</button>
+                    <button id="SOC" className="tag" onClick={() => tagToggle("SOC")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>History</button>
+                    <button id="SCI" className="tag" onClick={() => tagToggle("SCI")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Science</button>
+                    <button id="BUS" className="tag" onClick={() => tagToggle("BUS")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Business</button>
+                    <button id="ART" className="tag" onClick={() => tagToggle("ART")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Art</button>
+                    <button id="IND" className="tag" onClick={() => tagToggle("IND")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Trade</button>
+                    <button id="MUS" className="tag" onClick={() => tagToggle("MUS")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Music</button>
                 </div>
                 <div id="course-container">{props.classitems}</div>
             </div>
