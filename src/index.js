@@ -36,8 +36,8 @@ var provider = new firebase.auth.GoogleAuthProvider();
 const dbRef = firebase.database().ref();
 dbRef.get().then((snapshot) => {
     if (snapshot.exists()) {
-        authdata = snapshot.val().users;
         coursedata = snapshot.val().courses;
+
         Initialize();
     } else {
         coursedata = localcoursedata;
@@ -53,7 +53,7 @@ function Initialize() {
     //#region Set Up
     const courseArr = Object.keys(coursedata);
 
-    var courseItems = courseArr.map((name) => <Course course={coursedata[name]} />);
+    var courseItems = courseArr.map((name) => <Course authlevel={authlevel} course={coursedata[name]} />);
 
     renderDOM(courseItems);
 
@@ -64,6 +64,19 @@ function Initialize() {
 
     const signInButton = document.getElementById("signer");
     signInButton.addEventListener('click', signInWithRedirect);
+
+    //Add jump to top button
+    const topButton = document.getElementById("to-top");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    }
 
     for (let i = 0; i < buttons.length; i++) {
         const btn = buttons[i];
@@ -79,67 +92,67 @@ function Initialize() {
       }
     });
     */
-    function filterCourses(e) {
-        setTimeout(() => {
 
-            const dict = {
-                MAT: "Math",
-                BUS: "Business",
-                SOC: "History",
-                ENG: "English",
-                IND: "Trade",
-                FAM: "Life Skills",
-                AGR: "Agriculture",
-                SCI: "Science",
-                HPE: "Health/PE",
-                ART: "Art",
-                FOR: "Foreign Language",
-                MUS: "Music"
-            };
+}
 
-            courseItems = courseArr;
-            var tags = document.getElementsByClassName("tag");
-            var truetags = [];
+function filterCourses(e) {
+    setTimeout(() => {
 
-            for (let i = 0; i < tags.length; i++) {
-                if (tags[i].classList.contains("tag-true")) {
-                    truetags.push(tags[i].id);
-                }
+        const dict = {
+            MAT: "Math",
+            BUS: "Business",
+            SOC: "History",
+            ENG: "English",
+            IND: "Trade",
+            FAM: "Life Skills",
+            AGR: "Agriculture",
+            SCI: "Science",
+            HPE: "Health/PE",
+            ART: "Art",
+            FOR: "Foreign Language",
+            MUS: "Music"
+        };
+
+        var search = document.getElementById('searchbar');
+        var renderedItems = Object.keys(coursedata);
+        var tags = document.getElementsByClassName("tag");
+        var truetags = [];
+
+        for (let i = 0; i < tags.length; i++) {
+            if (tags[i].classList.contains("tag-true")) {
+                truetags.push(tags[i].id);
             }
+        }
 
-            if (!(0 === truetags.length)) { /* If this is not true, all the tags are not true and no filtering action needs to be done */
-                courseItems = courseItems.filter((name) => {
-                    var isPresent = false;
-                    for (let i = 0; i < truetags.length; i++) {
-                        const tag = truetags[i];
-                        try {
-                            if (coursedata[name].tags[0] === dict[tag]) {
-                                isPresent = true;
-                            }
-                        } catch (e) {
+        if (!(0 === truetags.length)) { /* If this is not true, all the tags are not true and no filtering action needs to be done */
+            renderedItems = renderedItems.filter((name) => {
+                var isPresent = false;
+                for (let i = 0; i < truetags.length; i++) {
+                    const tag = truetags[i];
+                    try {
+                        if (coursedata[name].tags[0] === dict[tag]) {
+                            isPresent = true;
                         }
+                    } catch (e) {
                     }
+                }
 
-                    if (isPresent) {
-                        return (true);
-                    } else {
-                        return (false);
-                    }
-                });
-            }
-
-            var key = search.value.toLowerCase();
-            key = key.replaceAll(' ', '-');
-            courseItems = courseItems.filter(name => (name.search(key) !== -1)).map((name) => {
-                return <Course course={coursedata[name]} />;
+                if (isPresent) {
+                    return (true);
+                } else {
+                    return (false);
+                }
             });
+        }
 
-            renderDOM(courseItems);
-        }, 20);
-    }
+        var key = search.value.toLowerCase();
+        key = key.replaceAll(' ', '-');
+        renderedItems = renderedItems.filter(name => (name.search(key) !== -1)).map((name) => {
+            return <Course authlevel={authlevel} course={coursedata[name]} />;
+        });
 
-    
-    
+        renderDOM(renderedItems);
+    }, 20);
 }
 
 /**
@@ -147,41 +160,45 @@ function Initialize() {
      * @param {object} courseItems 
      * @param {firebase.User} user 
      */
-    function renderDOM(courseItems, userdata = user) {
-        ReactDOM.render(
-            <React.StrictMode>
-                <App user={userdata} classitems={<div class="parent">{courseItems}</div>}></App>
-            </React.StrictMode>,
-            document.getElementById('root')
-        );
-    }
+function renderDOM(courseItems, userdata = user) {
+    ReactDOM.render(
+        <React.StrictMode>
+            <App user={userdata} authlevel={authlevel} classitems={<div class="parent">{courseItems}</div>}></App>
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+}
 
 firebase.auth()
     .getRedirectResult()
     .then((result) => {
-        if (result.credential) {
-            /** @type {firebase.auth.OAuthCredential} */
-            var credential = result.credential;
-
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            var token = credential.accessToken;
-            // ...
-        }
         // The signed-in user info.
         user = result.user;
-        console.log(authdata);
-        try {
-            Object.keys(authdata).forEach(key => {
-                if (user._delegate.email == key.email) {
-                    authlevel = key.level;
-                    console.log(authlevel);
+
+        dbRef.get().then((snapshot) => {
+            if (snapshot.exists()) {
+                authdata = snapshot.val().users;
+
+                // Authorize the user if the user has been logged in
+                if (user != null) {
+                    try {
+                        Object.keys(authdata).forEach(key => {
+                            if (user._delegate.email == authdata[key].email) {
+                                authlevel = authdata[key].level;
+                                console.log(`You are currently authorized with a level of ${authlevel}`);
+                            }
+                        });
+                        filterCourses();
+                    } catch (error) {
+                        console.log(error);
+                    }
                 }
-            });
-        } catch (error) {
-            console.log(error);
-        }
+            }
+        }).catch((error) => {
+        });
+
     }).catch((error) => {
-        // Handle Errors here.
+        console.error(error);
     });
 
 function signInWithRedirect() {
@@ -191,7 +208,8 @@ function signInWithRedirect() {
     } else {
         firebase.auth().signOut().then(() => {
             user = null;
-            window.location.reload();
+            authlevel = 0;
+            filterCourses(); // Reload the DOM to update sign-in status
             // Sign-out successful.
         }).catch((error) => {
             // An error happened.

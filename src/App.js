@@ -5,18 +5,33 @@ import './App.css';
 function App(props) {
 
     var user = props.user;
+    var authlevel = 0;
+    if (props.authlevel) {
+        authlevel = props.authlevel;
+        
+    }
 
     function tagToggle(id) {
         var tag = document.getElementById(id);
         if (tag.classList.contains("tag-true")) {
             tag.classList.remove("tag-true");
+            /*
             let firstChild = tag.firstChild;
             firstChild.classList.add("hide");
+            */
         } else {
             tag.classList.add("tag-true");
+            /*
             let firstChild = tag.firstChild;
             firstChild.classList.remove("hide");
+            */
         }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     function toggleNav() {
@@ -26,9 +41,10 @@ function App(props) {
         } else {
             document.documentElement.style.removeProperty("--nav-width");
         }
-        
+
     }
 
+    // <button id="dev=only" onClick={() => {console.log(user)}}>Dev-Only</button>
 
     return (
         <div className="App">
@@ -129,16 +145,19 @@ function App(props) {
                     </div>
                 </div>
                 <div className="tag-container">
-                    <button id="MAT" className="tag" onClick={() => tagToggle("MAT")}><ion-icon className="hide" name="checkmark-outline"></ion-icon><p>Math</p></button>
-                    <button id="ENG" className="tag" onClick={() => tagToggle("ENG")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>English</button>
-                    <button id="SOC" className="tag" onClick={() => tagToggle("SOC")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>History</button>
-                    <button id="SCI" className="tag" onClick={() => tagToggle("SCI")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Science</button>
-                    <button id="BUS" className="tag" onClick={() => tagToggle("BUS")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Business</button>
-                    <button id="ART" className="tag" onClick={() => tagToggle("ART")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Art</button>
-                    <button id="IND" className="tag" onClick={() => tagToggle("IND")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Trade</button>
-                    <button id="MUS" className="tag" onClick={() => tagToggle("MUS")}><ion-icon className="hide" name="checkmark-outline"></ion-icon>Music</button>
+                    <button id="MAT" className="tag" onClick={() => tagToggle("MAT")}><ion-icon class="hide" name="checkmark-outline"></ion-icon><p>Math</p></button>
+                    <button id="ENG" className="tag" onClick={() => tagToggle("ENG")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>English</button>
+                    <button id="SOC" className="tag" onClick={() => tagToggle("SOC")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>History</button>
+                    <button id="SCI" className="tag" onClick={() => tagToggle("SCI")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Science</button>
+                    <button id="BUS" className="tag" onClick={() => tagToggle("BUS")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Business</button>
+                    <button id="ART" className="tag" onClick={() => tagToggle("ART")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Art</button>
+                    <button id="IND" className="tag" onClick={() => tagToggle("IND")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Trade</button>
+                    <button id="MUS" className="tag" onClick={() => tagToggle("MUS")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Music</button>
                 </div>
                 <div id="course-container">{props.classitems}</div>
+            </div>
+            <div onClick={() => topFunction()} id="to-top" className="jump-to-top">
+                <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
             </div>
         </div>
     );
