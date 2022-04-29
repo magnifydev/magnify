@@ -439,13 +439,13 @@ button ion-icon{
     transition: all 0.2s ease-in-out 0s;
     vertical-align: middle;
     display: flex;
-    align-items: left;
+    align-items: center;
     flex: 1;
+    margin-top: 10px;
 }
 
 .button:hover {
-    background-color: var(--blue) !important;
-    color: var(--white) !important;
+    box-shadow: rgb(60 64 67 / 30%) 2px 4px 18px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
 }
 
 .button-primary {
@@ -460,14 +460,14 @@ button ion-icon{
     transition: all 0.2s ease-in-out 0s;
     vertical-align: middle;
     display: flex;
-    align-items: left;
+    align-items: center;
     color: var(--white);
     flex: 1;
+    margin-top: 10px;
 }
 
 .button-primary:hover {
-    background-color: var(--white);
-    color: var(--blue);
+    box-shadow: rgb(60 64 67 / 30%) 2px 4px 18px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
 }
 
 .flex-container {

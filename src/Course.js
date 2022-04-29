@@ -25,18 +25,20 @@ function Course(props) {
     const authlevel = props.authlevel ? props.authlevel : 0;
     const [isEditing, setIsEditing] = useState(false);
 
-    const credits = useRef(null);
-    const length = useRef(null);
-    const format = useRef(null);
-    const courseid = useRef(null);
-    const gradelevels = useRef(null);
-    const prerequisites = useRef(null);
-    const fees = useRef(null);
-    const corequisites = useRef(null);
-    const subsequent = useRef(null);
-    const studentrecommendations = useRef(null);
-    const considerations = useRef(null);
-    const description = useRef(null);
+    var refs = {
+        credits: useRef(null),
+        length: useRef(null),
+        format: useRef(null),
+        courseid: useRef(null),
+        gradelevels: useRef(null),
+        prerequisites: useRef(null),
+        fees: useRef(null),
+        corequisite: useRef(null),
+        subsequent: useRef(null),
+        studentrecommendations: useRef(null),
+        considerations: useRef(null),
+        description: useRef(null)
+    };
 
     // Add collapse
     function ToggleCollapse(btn) {
@@ -63,50 +65,51 @@ function Course(props) {
 
     function Submit() {
 
-        firebase.database().ref(`courses/${course.coursename.toLowerCase().replaceAll(' ', '-')}`).update({
-            credits: parseInt(credits.current.childNodes[1].wholeText.trim()),
-            length: parseInt(length.current.childNodes[1].wholeText.trim()),
-            format: parseInt(format.current.childNodes[1].wholeText.trim()),
-            courseid: parseInt(courseid.current.childNodes[1].wholeText.trim()),
-            gradelevels: parseInt(gradelevels.current.childNodes[1].wholeText.trim()),
-            prerequisites: parseInt(prerequisites.current.childNodes[1].wholeText.trim()),
-            fees: parseInt(fees.current.childNodes[1].wholeText.trim()),
-            corequisites: parseInt(corequisites.current.childNodes[1].wholeText.trim()),
-            subsequent: parseInt(subsequent.current.childNodes[1].wholeText.trim()),
-            considerations: parseInt(considerations.current.childNodes[1].wholeText.trim()),
-            description: parseInt(description.current.childNodes[1].wholeText.trim()),
+        var newCourse = {};
+
+        const loopName = course.coursename.toLowerCase().replaceAll(' ', '-');
+        newCourse[loopName] = {};
+
+        Object.keys(course).forEach(key => {
+            try {
+                if (key === "description") {
+                    // console.log(refs[key].current.childNodes[0].textContent);
+                    newCourse[loopName][key] = refs[key].current.childNodes[0].textContent;
+                } else {
+                    // console.log(`${refs[key].current.childNodes[1].wholeText.trim()}`);
+                    newCourse[loopName][key] = refs[key].current.childNodes[1].wholeText.trim();
+                }
+            } catch (error) {
+                newCourse[loopName][key] = course[key];
+            }
         });
+        
+        firebase.database().ref(`courses`).update({
+            [loopName]: newCourse[loopName]
+        });
+        
 
         // Note: introduce student comments with this: studentrecommendations: parseInt(studentrecommendations.current.childNodes[1].wholeText.trim()),
-
         // Exit the edit menu
         setIsEditing(false);
     }
 
-    function Validate(value) {
-        if (value) {
-            return value;
-        } else {
-            return -1;
-        }
-    }
-
     return (
-        <div contentEditable={isEditing} suppressContentEditableWarning={true} className='Course'>
+        <div suppressContentEditableWarning={true} className='Course'>
             <h1 className="coursetitle">{course.coursename}</h1><br></br>
-            <p ref={credits} className="coursedescription"><b>Credits:</b> {course.credits}</p>
-            <p ref={length} className="coursedescription"><b>Length:</b> {course.length}</p>
-            <p ref={format} className="coursedescription"><b>Format:</b> {course.format}</p>
-            <p ref={courseid} className="coursedescription"><b>Course ID:</b> <code>{course.courseid}</code></p>
-            <p ref={gradelevels} className="coursedescription"><b>Grade Levels:</b> {course.gradelevels}</p><br></br>
-            <p ref={prerequisites} className="coursedescription"><b>Prerequisites:</b> {course.prerequisites}</p><br></br>
-            {course.fees != null && <p ref={fees} className="coursedescription"><b>Fees:</b> {course.fees}</p>}
-            {course.corequisite != null && <div><p ref={corequisites} className="coursedescription"><b>Corequisites:</b> {course.corequisite}</p><br></br></div>}
-            {course.subsequent != null && <div><p ref={subsequent} className="coursedescription"><b>Subsequent:</b> {course.subsequent}</p><br></br></div>}
-            {course.studentrecommendations != null && <div><p ref={studentrecommendations} className="coursedescription"><b>Recommendation:</b> {course.studentrecommendations}</p><br></br></div>}
-            <p ref={considerations} className="coursedescription"><b>Considerations:</b> {course.considerations}</p><br></br>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.credits} className="coursedescription"><b contentEditable='false'>Credits:</b> {course.credits}</p>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.length} className="coursedescription"><b contentEditable='false'>Length:</b> {course.length}</p>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.format} className="coursedescription"><b contentEditable='false'>Format:</b> {course.format}</p>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.courseid} className="coursedescription"><b contentEditable='false'>Course ID:</b> {course.courseid}</p>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.gradelevels} className="coursedescription"><b contentEditable='false'>Grade Levels:</b> {course.gradelevels}</p><br></br>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.prerequisites} className="coursedescription"><b contentEditable='false'>Prerequisites:</b> {course.prerequisites}</p><br></br>
+            {course.fees != null && <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.fees} className="coursedescription"><b contentEditable='false'>Fees:</b> {course.fees}</p>}
+            {course.corequisite != null && <div><p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.corequisite} className="coursedescription"><b contentEditable='false'>Corequisites:</b> {course.corequisite}</p><br></br></div>}
+            {course.subsequent != null && <div><p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.subsequent} className="coursedescription"><b contentEditable='false'>Subsequent:</b> {course.subsequent}</p><br></br></div>}
+            {course.studentrecommendations != null && <div><p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.studentrecommendations} className="coursedescription"><b contentEditable='false'>Recommendation:</b> {course.studentrecommendations}</p><br></br></div>}
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.considerations} className="coursedescription"><b contentEditable='false'>Considerations:</b> {course.considerations}</p><br></br>
             <button className="collapsible" onClick={({ target }) => ToggleCollapse(target)}>See more</button>
-            <p ref={description} className="coursedescription content-collapsible">{course.description}</p><br></br>
+            <p suppressContentEditableWarning={true} contentEditable={isEditing} ref={refs.description} className="coursedescription content-collapsible">{course.description}</p>
             <div className="flex-container">
                 {isEditing && <button onClick={() => Cancel()} className="button">Cancel</button>}
                 {isEditing && <button onClick={() => Submit()} className="button-primary">Submit</button>}
