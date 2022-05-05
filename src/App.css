@@ -6,6 +6,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+:root {
+    --pull-width: 0px;
+}
+
 @media only screen and (min-width: 400px) { /* if the viewport is narrower than 400px */
     :root {
         --nav-width: 0px;
@@ -53,7 +57,7 @@ body {
 
 .navigation {
     position: fixed;
-    width: var(--nav-width);
+    width: calc(var(--nav-width) + var(--pull-width));
     height: 100%;
     background: var(--blue);
     border-left: 10px solid var(--blue);
@@ -159,7 +163,7 @@ body {
 .main {
     position: absolute;
     width: calc(100% - var(--nav-width));
-    left: var(--nav-width);
+    left: calc(var(--nav-width) + var(--pull-width));
     min-height: 100vh;
     background: var(--white2);
     transition: 0.5s;

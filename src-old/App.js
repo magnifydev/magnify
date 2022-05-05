@@ -1,37 +1,32 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
-import localcoursedata from './assets/coursedata.json';
-import firebase from "firebase/compat/app";
-import "firebase/compat/database";
-import "firebase/compat/auth";
 
 function App(props) {
 
-    //#region firebase
-    var user = null;
+    var user = props.user;
     var authlevel = 0;
-    var authdata;
+    if (props.authlevel) {
+        authlevel = props.authlevel;
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE",
-        authDomain: "courseinspector.firebaseapp.com",
-        databaseURL: "https://courseinspector-default-rtdb.firebaseio.com",
-        projectId: "courseinspector",
-        storageBucket: "courseinspector.appspot.com",
-        messagingSenderId: "714692191382",
-        appId: "1:714692191382:web:3d52f73c4d534ee5f6ceb7",
-        measurementId: "G-NJ5MX0KYYK"
-    };
+    }
 
-    const app = firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    var provider = new firebase.auth.GoogleAuthProvider();
-    const dbRef = firebase.database().ref();
-
-    //#endregion
-
-    const [isLoggedIn, setLoggedIn] = useState(false);
+    function tagToggle(id) {
+        var tag = document.getElementById(id);
+        if (tag.classList.contains("tag-true")) {
+            tag.classList.remove("tag-true");
+            /*
+            let firstChild = tag.firstChild;
+            firstChild.classList.add("hide");
+            */
+        } else {
+            tag.classList.add("tag-true");
+            /*
+            let firstChild = tag.firstChild;
+            firstChild.classList.remove("hide");
+            */
+        }
+    }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
@@ -46,55 +41,6 @@ function App(props) {
             } else {
                 document.documentElement.style.setProperty("--pull-width", `${250 - getComputedStyle(document.documentElement).getPropertyValue('--nav-width').trim().substring(0, getComputedStyle(document.documentElement).getPropertyValue('--nav-width').trim().length - 2)}px`);
             }
-        }
-    }
-
-    firebase.auth()
-        .getRedirectResult()
-        .then((result) => {
-            // The signed-in user info.
-            user = result.user;
-
-            dbRef.get().then((snapshot) => {
-                if (snapshot.exists()) {
-                    authdata = snapshot.val().users;
-
-                    // Authorize the user if the user has been logged in
-                    if (user != null) {
-                        try {
-                            Object.keys(authdata).forEach(key => {
-                                if (user._delegate.email == authdata[key].email) {
-                                    authlevel = authdata[key].level;
-                                    console.log(authlevel);
-                                    setLoggedIn(true);
-                                    console.log(isLoggedIn);
-                                }
-                            });
-                        } catch (error) {
-                            console.log(error);
-                        }
-                    }
-                }
-            }).catch((error) => {
-            });
-
-        }).catch((error) => {
-            console.error(error);
-        });
-
-    function signInWithRedirect() {
-        let button = document.getElementById("signer");
-        if (button.textContent === "Login") {
-            firebase.auth().signInWithRedirect(provider);
-        } else {
-            firebase.auth().signOut().then(() => {
-                user = null;
-                authlevel = 0;
-                // Sign-out successful.
-            }).catch((error) => {
-                // An error happened.
-                console.log(error);
-            });
         }
     }
 
@@ -190,13 +136,23 @@ function App(props) {
                         </label>
                     </div>
 
-                    <button id="signer" onClick={() => signInWithRedirect()} className="login">{isLoggedIn ? "Sign Out" : "Login"}</button>
+                    <button id="signer" className="login">{user ? "Sign Out" : "Login"}</button>
 
                     <div className="user">
-                        <img id="user-img" src={userdefault}></img>
+                        <img id="user-img" src={user ? user._delegate.photoURL : userdefault}></img>
                     </div>
                 </div>
-                <div className="routeFrame"></div>
+                <div className="tag-container">
+                    <button id="MAT" className="tag" onClick={() => tagToggle("MAT")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Math</button>
+                    <button id="ENG" className="tag" onClick={() => tagToggle("ENG")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>English</button>
+                    <button id="SOC" className="tag" onClick={() => tagToggle("SOC")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>History</button>
+                    <button id="SCI" className="tag" onClick={() => tagToggle("SCI")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Science</button>
+                    <button id="BUS" className="tag" onClick={() => tagToggle("BUS")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Business</button>
+                    <button id="ART" className="tag" onClick={() => tagToggle("ART")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Art</button>
+                    <button id="IND" className="tag" onClick={() => tagToggle("IND")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Trade</button>
+                    <button id="MUS" className="tag" onClick={() => tagToggle("MUS")}><ion-icon class="hide" name="checkmark-outline"></ion-icon>Music</button>
+                </div>
+                <div id="course-container">{props.classitems}</div>
             </div>
             <div onClick={() => topFunction()} id="to-top" className="jump-to-top">
                 <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
