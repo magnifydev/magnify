@@ -1,15 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
-import localcoursedata from './assets/coursedata.json';
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 import "firebase/compat/auth";
 
 function App(props) {
-
     //#region firebase
-    var user = null;
     var authlevel = 0;
     var authdata;
 
@@ -31,7 +28,7 @@ function App(props) {
 
     //#endregion
 
-    const [isLoggedIn, setLoggedIn] = useState(false);
+    const [user, setUser] = useState(null);
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
@@ -53,7 +50,10 @@ function App(props) {
         .getRedirectResult()
         .then((result) => {
             // The signed-in user info.
-            user = result.user;
+            if (result.user != null) {
+                console.log(result.user);
+                setUser(result.user);
+            }
 
             dbRef.get().then((snapshot) => {
                 if (snapshot.exists()) {
@@ -61,13 +61,11 @@ function App(props) {
 
                     // Authorize the user if the user has been logged in
                     if (user != null) {
+
                         try {
                             Object.keys(authdata).forEach(key => {
                                 if (user._delegate.email == authdata[key].email) {
                                     authlevel = authdata[key].level;
-                                    console.log(authlevel);
-                                    setLoggedIn(true);
-                                    console.log(isLoggedIn);
                                 }
                             });
                         } catch (error) {
@@ -76,6 +74,7 @@ function App(props) {
                     }
                 }
             }).catch((error) => {
+                console.error(error);
             });
 
         }).catch((error) => {
@@ -88,7 +87,7 @@ function App(props) {
             firebase.auth().signInWithRedirect(provider);
         } else {
             firebase.auth().signOut().then(() => {
-                user = null;
+                setUser(null);
                 authlevel = 0;
                 // Sign-out successful.
             }).catch((error) => {
@@ -190,11 +189,15 @@ function App(props) {
                         </label>
                     </div>
 
-                    <button id="signer" onClick={() => signInWithRedirect()} className="login">{isLoggedIn ? "Sign Out" : "Login"}</button>
+                    <button id="signer" onClick={() => signInWithRedirect()} className="login">
+                        {user ? "Sign Out" : "Login"}
+                    </button>
 
                     <div className="user">
-                        <img id="user-img" src={userdefault}></img>
+                        <img id="user-img" src={user ? user._delegate.photoURL : userdefault}></img>
                     </div>
+
+                    <button onClick={() => console.log(user)}>Bleh</button>
                 </div>
                 <div className="routeFrame"></div>
             </div>
