@@ -70,14 +70,6 @@ function Initialize() {
         });
     }
 
-    // This is for the search bar to reload results on enter instead of every time a new input is detected.
-    /* Uncomment this for the above behavior, and comment out the other event listener
-      search.addEventListener('keydown', function (e) {
-      if (e.code === "Enter") {
-        filterArr(e);
-      }
-    });
-    */
     function filterCourses(e) {
         setTimeout(() => {
 
