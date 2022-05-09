@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (min-width: 400px) { /* if the viewport is narrower than 400px */
+    :root {
+        --nav-width: 0;
+    }
+}
+
+@media only screen and (min-width: 800px) { /* if the viewport is narrower than 800px */
+    :root {
+        --nav-width: 80px;
+    }
+}
+
+@media only screen and (min-width: 1200px) { /* if the viewport is narrower than 1200px */
+    :root {
+        --nav-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1600px) { /* if the viewport is narrower than 1600px */
+    :root {
+        --nav-width: 250px;
+    }
+}
+
+:root {
+    /*--blue: #ac0219;*/
+    --blue: #0077ff;
+    --white: #ffffff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+    /* color: rgb(255, 255, 255); */
+    /*animation: hueshift 10s linear 5s infinite alternate;*/
+}
+
+@keyframes hueshift {
+    0% {--blue: #0077ff;}
+    50% {--blue: #0004ff;}
+    100% {--blue: #0077ff;}
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    width: var(--nav-width);
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/*.navigation ul li:hover,*/
+.navigation ul li.hovered {
+    background: var(--white);
+}
+
+.navigation ul li:nth-child(1) {
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation ul li.hovered a {
+    color: var(--blue);
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+/* curve outside */
+
+/*.navigation ul li:hover a::before,*/
+.navigation ul li.hovered a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+/*.navigation ul li:hover a::after,*/
+.navigation ul li.hovered a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+
+/* main */
+
+.main {
+    position: absolute;
+    width: calc(100% - var(--nav-width));
+    left: var(--nav-width);
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+.topbar {
+    width:100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /*position: fixed;*/
+    background-color: var(--white) !important;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+@media only screen and (max-width: 400px) { /* if the viewport is narrower than 400px, set the topbar width directly so the side menu popout works */
+    .topbar, .parent {
+        width: 100vw;
+    }
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid var(--black2);
+}
+
+.search label ion-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+}
+
+.user {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+#course-container {
+    position: relative;
+    top: 50px;
+}
+*/
+
+div .Course {
+    padding: 20px;
+    align-content: center;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 2px #00000026;
+    margin: 20px;
+    position: relative;
+    font-size: smaller;
+}
+
+.Course ion-icon.edit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    visibility: initial;
+    margin: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.parent {
+    display: grid;
+    grid-template-rows: repeat(60, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+}
+
+@media only screen and (min-width: 400px) { /* if the viewport is narrower than 400px */
+    .parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 800px) { /* if the viewport is narrower than 400px */
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) { /* if the viewport is narrower than 400px */
+    .parent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1600px) { /* if the viewport is narrower than 400px */
+    .parent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.tag-container {
+    display: flex; /* Change this to flex to reintroduce tags */
+    align-items: left;
+    padding: 10px 0;
+    margin: 10px;
+    overflow: scroll;
+}
+
+.tag {
+    text-decoration: none;
+    background: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out 0s;
+    vertical-align: middle;
+    display: flex;
+    align-items: left;
+    flex: 1;
+}
+
+.tag p{
+    display: inline;
+}
+
+.tag:hover {
+    position: relative;
+    transition: all 0.5s ease-in-out 0s;
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+}
+
+.tag-true {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    transform: rotateX(180deg) scaleY(-1);
+    flex: 1;
+}
+    
+button ion-icon{
+    margin-right: 5px;
+    font-size: larger;
+}
+
+.hide{
+    display: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #b8b8b8 #ffffff;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    background: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+.content-collapsible { 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.login {
+    text-decoration: none;
+    background: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    vertical-align: middle;
+    display: flex;
+    align-items: left;
+}
+
+.login:hover {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+}
