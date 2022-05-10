@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
 import firebase from "firebase/compat/app";
@@ -30,6 +30,7 @@ function App(props) {
     //#endregion
 
     const [user, setUser] = useState(null);
+    const signInButton = useRef(null);
 
 
     // When the user clicks on the button, scroll to the top of the document
@@ -45,59 +46,6 @@ function App(props) {
             } else {
                 document.documentElement.style.setProperty("--pull-width", `${250 - getComputedStyle(document.documentElement).getPropertyValue('--nav-width').trim().substring(0, getComputedStyle(document.documentElement).getPropertyValue('--nav-width').trim().length - 2)}px`);
             }
-        }
-    }
-
-    firebase.auth()
-        .getRedirectResult()
-        .then((result) => {
-            // The signed-in user info.
-            if (result.user != null) {
-                console.log(`Setting user to ${dummy}`);
-                setUser(dummy)
-            }
-
-            console.log(`User is ${user}`);
-
-            dbRef.get().then((snapshot) => {
-                if (snapshot.exists()) {
-                    authdata = snapshot.val().users;
-
-                    // Authorize the user if the user has been logged in
-                    if (user != null) {
-
-                        try {
-                            Object.keys(authdata).forEach(key => {
-                                if (user.email == authdata[key].email) {
-                                    authlevel = authdata[key].level;
-                                }
-                            });
-                        } catch (error) {
-                            console.log(error);
-                        }
-                    }
-                }
-            }).catch((error) => {
-                console.error(error);
-            });
-
-        }).catch((error) => {
-            console.error(error);
-        });
-
-    function signInWithRedirect() {
-        let button = document.getElementById("signer");
-        if (button.textContent === "Login") {
-            firebase.auth().signInWithRedirect(provider);
-        } else {
-            firebase.auth().signOut().then(() => {
-                setUser(null);
-                authlevel = 0;
-                // Sign-out successful.
-            }).catch((error) => {
-                // An error happened.
-                console.log(error);
-            });
         }
     }
 
