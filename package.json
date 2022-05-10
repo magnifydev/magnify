@@ -1,6 +1,6 @@
 {
     "name": "courseinspector",
-    "version": "0.1.0",
+    "version": "2023.0.0a",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.2",
