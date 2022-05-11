@@ -40,7 +40,7 @@ firebase.auth()
             if (snapshot.exists()) {
                 authdata = snapshot.val().users;
                 // Authorize the user if the user has been logged in
-                if (user != null) {
+                if (user !== null) {
                     try {
                         Object.keys(authdata).forEach(key => {
                             if (user._delegate.email == authdata[key].email) {
@@ -70,7 +70,7 @@ function RenderDom() {
 }
 
 function signInWithRedirect(ref) {
-    if (user == null) {
+    if (user === null) {
         firebase.auth().signInWithRedirect(provider);
     } else {
         firebase.auth().signOut().then(() => {
