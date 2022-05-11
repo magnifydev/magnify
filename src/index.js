@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
-import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 import 'firebase/compat/database'
+import App from './App'
+import firebase from 'firebase/compat/app'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 let user = null
 let authdata

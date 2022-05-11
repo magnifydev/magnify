@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react'
 import './App.css'
-import firebase from 'firebase/compat/app'
 import 'firebase/compat/database'
+import firebase from 'firebase/compat/app'
+import React, { useRef, useState } from 'react'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE',
