@@ -136,11 +136,7 @@ function filterCourses(e) {
                     }
                 }
 
-                if (isPresent) {
-                    return (true);
-                } else {
-                    return (false);
-                }
+                return isPresent ? (true) : (false);
             });
         }
 
