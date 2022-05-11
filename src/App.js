@@ -3,7 +3,6 @@ import React, { useRef, useState } from 'react'
 import userdefault from './assets/user.png'
 
 function App (props) {
-  const signInButton = useRef(null)
   const { signInWithRedirect, user, authlevel } = props
 
   // When the user clicks on the button, scroll to the top of the document
@@ -114,7 +113,7 @@ function App (props) {
             </label>
           </div>
 
-          <button ref={signInButton} id='signer' onClick={() => signInWithRedirect(signInButton)} className='login'>
+          <button id='signer' onClick={() => signInWithRedirect()} className='login'>
             {user ? 'Sign Out' : 'Login'}
           </button>
 

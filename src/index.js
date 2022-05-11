@@ -68,7 +68,7 @@ function RenderDom () {
   )
 }
 
-function signInWithRedirect (ref) {
+function signInWithRedirect () {
   if (user === null) {
     firebase.auth().signInWithRedirect(provider)
   } else {
