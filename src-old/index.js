@@ -132,7 +132,6 @@ function filterCourses (e) {
           } catch (e) {
           }
         }
-
         return !!isPresent
       })
     }
@@ -172,7 +171,7 @@ firebase.auth()
         authdata = snapshot.val().users
 
         // Authorize the user if the user has been logged in
-        if (user != null) {
+        if (user !== null) {
           try {
             Object.keys(authdata).forEach(key => {
               if (user._delegate.email == authdata[key].email) {
