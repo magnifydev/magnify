@@ -1,36 +1,10 @@
 import React, { useRef, useState } from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
-import firebase from "firebase/compat/app";
-import "firebase/compat/database";
-import "firebase/compat/auth";
-import dummy from "sample.json";
 
 function App(props) {
-    //#region firebase
-    var authlevel = 0;
-    var authdata;
-
-    const firebaseConfig = {
-        apiKey: "AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE",
-        authDomain: "courseinspector.firebaseapp.com",
-        databaseURL: "https://courseinspector-default-rtdb.firebaseio.com",
-        projectId: "courseinspector",
-        storageBucket: "courseinspector.appspot.com",
-        messagingSenderId: "714692191382",
-        appId: "1:714692191382:web:3d52f73c4d534ee5f6ceb7",
-        measurementId: "G-NJ5MX0KYYK"
-    };
-
-    const app = firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    var provider = new firebase.auth.GoogleAuthProvider();
-    const dbRef = firebase.database().ref();
-
-    //#endregion
-
-    const [user, setUser] = useState(null);
     const signInButton = useRef(null);
+    const {signInWithRedirect, user, authlevel} = props;
 
 
     // When the user clicks on the button, scroll to the top of the document
@@ -141,16 +115,13 @@ function App(props) {
                         </label>
                     </div>
 
-                    <button id="signer" onClick={() => signInWithRedirect()} className="login">
+                    <button ref={signInButton} id="signer" onClick={() => signInWithRedirect(signInButton)} className="login">
                         {user ? "Sign Out" : "Login"}
                     </button>
 
                     <div className="user">
                         <img id="user-img" src={user ? user.photoURL : userdefault}></img>
                     </div>
-
-                    <button onClick={() => console.log(user)}>Bleh</button>
-                    <button onClick={() => setUser(dummy)}>Bleb</button>
                 </div>
                 <div className="routeFrame"></div>
             </div>
