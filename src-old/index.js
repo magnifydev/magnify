@@ -119,7 +119,6 @@ function filterCourses (e) {
         truetags.push(tags[i].id)
       }
     }
-
     if (!(truetags.length === 0)) { /* If this is not true, all the tags are not true and no filtering action needs to be done */
       renderedItems = renderedItems.filter((name) => {
         let isPresent = false
@@ -154,7 +153,7 @@ function filterCourses (e) {
 function renderDOM (courseItems, userdata = user) {
   ReactDOM.render(
     <React.StrictMode>
-      <App user={userdata} authlevel={authlevel} classitems={<div class='parent'>{courseItems}</div>} />
+      <App user={userdata} authlevel={authlevel} classitems={<div className='parent'>{courseItems}</div>} />
     </React.StrictMode>,
     document.getElementById('root')
   )
