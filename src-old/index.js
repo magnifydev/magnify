@@ -123,7 +123,7 @@ function filterCourses(e) {
             }
         }
 
-        if (!(0 === truetags.length)) { /* If this is not true, all the tags are not true and no filtering action needs to be done */
+        if (!(truetags.length === 0)) { /* If this is not true, all the tags are not true and no filtering action needs to be done */
             renderedItems = renderedItems.filter((name) => {
                 var isPresent = false;
                 for (let i = 0; i < truetags.length; i++) {
