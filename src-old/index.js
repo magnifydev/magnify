@@ -162,7 +162,7 @@ function filterCourses(e) {
 function renderDOM(courseItems, userdata = user) {
     ReactDOM.render(
         <React.StrictMode>
-            <App user={userdata} authlevel={authlevel} classitems={<div class="parent">{courseItems}</div>}></App>
+            <App user={userdata} authlevel={authlevel} classitems={<div className="parent">{courseItems}</div>}></App>
         </React.StrictMode>,
         document.getElementById('root')
     );
