@@ -132,12 +132,7 @@ function filterCourses (e) {
           } catch (e) {
           }
         }
-
-        if (isPresent) {
-          return (true)
-        } else {
-          return (false)
-        }
+        return !!isPresent
       })
     }
 
