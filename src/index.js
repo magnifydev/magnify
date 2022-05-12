@@ -59,7 +59,7 @@ firebase.auth()
     console.error(error)
   })
 
-function RenderDom() {
+function RenderDom () {
   ReactDOM.render(
     <React.StrictMode>
       <App user={user} authlevel={authlevel} signInWithRedirect={signInWithRedirect} />
@@ -68,7 +68,7 @@ function RenderDom() {
   )
 }
 
-function signInWithRedirect() {
+function signInWithRedirect () {
   if (user === null) {
     firebase.auth().signInWithRedirect(provider)
   } else {
