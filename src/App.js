@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import userdefault from './assets/user.png';
 import './App.css';
@@ -8,7 +9,6 @@ function App(props) {
     var authlevel = 0;
     if (props.authlevel) {
         authlevel = props.authlevel;
-
     }
 
     function tagToggle(id) {
@@ -50,7 +50,7 @@ function App(props) {
                 <div className="navigation">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="school-outline"></ion-icon>
                                 </span>
@@ -58,7 +58,7 @@ function App(props) {
                             </a>
                         </li>
                         <li className="hovered">
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="search-outline"></ion-icon>
                                 </span>
@@ -74,7 +74,7 @@ function App(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="earth-outline"></ion-icon>
                                 </span>
@@ -82,7 +82,7 @@ function App(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="brush-outline"></ion-icon>
                                 </span>
@@ -90,7 +90,7 @@ function App(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="flask"></ion-icon>
                                 </span>
@@ -98,7 +98,7 @@ function App(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="musical-notes-outline"></ion-icon>
                                 </span>
@@ -106,7 +106,7 @@ function App(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="business-outline"></ion-icon>
                                 </span>
@@ -114,7 +114,7 @@ function App(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="index.html">
                                 <span className="icon">
                                     <ion-icon name="construct-outline"></ion-icon>
                                 </span>
@@ -139,7 +139,7 @@ function App(props) {
                     <button id="signer" className="login">{user ? "Sign Out" : "Login"}</button>
 
                     <div className="user">
-                        <img id="user-img" src={user ? user._delegate.photoURL : userdefault}></img>
+                        <img id="user-img" alt="user" src={user ? user._delegate.photoURL : userdefault}></img>
                     </div>
                 </div>
                 <div className="tag-container">

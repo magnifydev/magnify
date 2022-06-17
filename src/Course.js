@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from 'react';
 import './App.css';
 import firebase from "firebase/compat/app";
