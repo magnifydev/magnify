@@ -207,10 +207,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             <ion-icon name="information-circle-outline"></ion-icon>
             <span>About</span>
           </a>
-          <button
-            onClick={topFunction}
-            className="mobile-bottom-nav-button"
-          >
+          <button onClick={topFunction} className="mobile-bottom-nav-button">
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
           </button>

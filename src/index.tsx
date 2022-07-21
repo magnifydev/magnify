@@ -4,12 +4,12 @@ import firebaseConfig from './config/firebase';
 import localCourseData from './data/coursedata.json';
 import './index.css';
 import CourseDataType from './types/courseDataType';
+import getWidth from './utils/getWidth';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/database';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import getWidth from './utils/getWidth';
 
 let courseData: CourseDataType;
 let user: firebase.User | null;
