@@ -1,4 +1,5 @@
 import './App.css';
+import links from './data/links';
 import firebase from 'firebase/compat/app';
 import { FC } from 'react';
 
@@ -8,7 +9,7 @@ interface AppProps {
 }
 
 const App: FC<AppProps> = ({ user, classItems }) => {
-  const tagToggle = (id: string): void => {
+  const toggleTag = (id: string): void => {
     const tag = document.getElementById(id);
     if (tag?.classList.contains('tag-true')) {
       tag.classList.remove('tag-true');
@@ -17,10 +18,9 @@ const App: FC<AppProps> = ({ user, classItems }) => {
     }
   };
 
-  // When the user clicks on the button, scroll to the top of the document
-  const topFunction = (): void => {
+  const scrollToTop = (): void => {
     document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   };
 
   // const toggleNav = (): void => {
@@ -96,7 +96,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             </li>
             <li>
               <a
-                href="https://cdn.linnmar.k12.ia.us/wp-content/uploads/2016/11/2022-2023-LMHS-Program-of-Studies-FINAL2-1.pdf"
+                href={links.programOfStudiesPDF}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="PDF"
@@ -115,7 +115,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             </li>
             <li>
               <a
-                href="https://github.com/magnifydev/magnify"
+                href={links.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="About"
@@ -137,6 +137,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
       </div>
       <div className="main">
         <div className="topbar">
+          {/* Uncomment for navigation button */}
           {/* <div className="toggle" onClick={() => toggleNav()}>
             <ion-icon name="menu-outline" />
           </div> */}
@@ -158,42 +159,42 @@ const App: FC<AppProps> = ({ user, classItems }) => {
           {userElement}
         </div>
         <div className="tag-container">
-          <button id="MAT" className="tag" onClick={() => tagToggle('MAT')}>
+          <button id="MAT" className="tag" onClick={() => toggleTag('MAT')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Math
           </button>
-          <button id="ENG" className="tag" onClick={() => tagToggle('ENG')}>
+          <button id="ENG" className="tag" onClick={() => toggleTag('ENG')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             English
           </button>
-          <button id="SOC" className="tag" onClick={() => tagToggle('SOC')}>
+          <button id="SOC" className="tag" onClick={() => toggleTag('SOC')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             History
           </button>
-          <button id="SCI" className="tag" onClick={() => tagToggle('SCI')}>
+          <button id="SCI" className="tag" onClick={() => toggleTag('SCI')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Science
           </button>
-          <button id="BUS" className="tag" onClick={() => tagToggle('BUS')}>
+          <button id="BUS" className="tag" onClick={() => toggleTag('BUS')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Business
           </button>
-          <button id="ART" className="tag" onClick={() => tagToggle('ART')}>
+          <button id="ART" className="tag" onClick={() => toggleTag('ART')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Art
           </button>
-          <button id="IND" className="tag" onClick={() => tagToggle('IND')}>
+          <button id="IND" className="tag" onClick={() => toggleTag('IND')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Trade
           </button>
-          <button id="MUS" className="tag" onClick={() => tagToggle('MUS')}>
+          <button id="MUS" className="tag" onClick={() => toggleTag('MUS')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Music
@@ -201,14 +202,14 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         </div>
         <div id="course-container">{classItems}</div>
       </div>
-      <div onClick={topFunction} id="to-top" className="jump-to-top">
+      <div onClick={scrollToTop} id="to-top" className="jump-to-top">
         {/* @ts-expect-error ts(2339) */}
         <ion-icon name="chevron-up-outline" size="larger" />
       </div>
       <div className="mobile-bottom-nav">
         <div className="mobile-bottom-nav-container">
           <a
-            href="https://cdn.linnmar.k12.ia.us/wp-content/uploads/2016/11/2022-2023-LMHS-Program-of-Studies-FINAL2-1.pdf"
+            href={links.programOfStudiesPDF}
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-bottom-nav-button"
@@ -218,7 +219,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             <span>PDF</span>
           </a>
           <a
-            href="https://github.com/magnifydev/magnify"
+            href={links.github}
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-bottom-nav-button"
@@ -227,7 +228,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             <ion-icon name="information-circle-outline" />
             <span>About</span>
           </a>
-          <button onClick={topFunction} className="mobile-bottom-nav-button">
+          <button onClick={scrollToTop} className="mobile-bottom-nav-button">
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="chevron-up-outline" size="larger" />
           </button>

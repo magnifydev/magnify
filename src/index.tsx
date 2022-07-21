@@ -16,13 +16,9 @@ let user: firebase.User | null;
 let authData: { [key: string]: { email: string; level: number } };
 let authLevel = 0;
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-// Initialize Firebase Authentication and get a reference to the service
 firebase.auth();
-// Add Google as an authentication provider
 const provider = new firebase.auth.GoogleAuthProvider();
-// Get data from realtime database
 const dbRef = firebase.database().ref();
 
 dbRef
@@ -42,7 +38,6 @@ dbRef
   });
 
 const initializeCourseViewer = () => {
-  // #region Set Up
   const courseArray = Object.keys(courseData);
   const courseItems = courseArray.map((name, index) => (
     <Course key={index} authLevel={authLevel} course={courseData[name]} />
@@ -62,11 +57,11 @@ const initializeCourseViewer = () => {
 
   let prevScrollpos = window.scrollY;
   window.onscroll = () => {
-    scrollFunction();
-    hideMobileNav();
+    displayDesktopScrollToTop();
+    handleMobileNavOnScroll();
   };
 
-  const scrollFunction = () => {
+  const displayDesktopScrollToTop = () => {
     if (!topButton) throw Error('top button nonexistent');
 
     if (
@@ -80,7 +75,7 @@ const initializeCourseViewer = () => {
     }
   };
 
-  const hideMobileNav = () => {
+  const handleMobileNavOnScroll = () => {
     if (getWidth() >= 500) return;
 
     const nav = document.querySelector('.mobile-bottom-nav');
@@ -99,8 +94,8 @@ const initializeCourseViewer = () => {
     const btn = buttons[i];
     btn.addEventListener('click', filterCourses);
   }
-  // #endregion
-  // This is for the search bar to reload results on enter instead of every time a new input is detected.
+
+  // This is for the search bar to reload results on enter instead of every time a new input is detected
   // Uncomment this for the above behavior, and comment out the other event listener
   // search?.addEventListener('keydown', function (e) {
   //   if (e.code === 'Enter') {
@@ -182,11 +177,11 @@ const filterCourses = () => {
   }, 20);
 };
 
-const renderDOM = (courseItems: JSX.Element[], userdata = user) => {
+const renderDOM = (courseItems: JSX.Element[], userData = user) => {
   ReactDOM.render(
     <React.StrictMode>
       <App
-        user={userdata}
+        user={userData}
         classItems={<div className="parent">{courseItems}</div>}
       />
     </React.StrictMode>,
@@ -207,7 +202,7 @@ firebase
         if (snapshot.exists()) {
           authData = snapshot.val().users;
 
-          // Authorize the user if the user has been logged in
+          // Authorize the user if the user has been logged-in
           if (user !== null) {
             try {
               Object.keys(authData).forEach((key) => {

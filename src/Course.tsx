@@ -5,9 +5,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 import { FC, useRef, useState } from 'react';
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-// Set data to realtime database
 firebase.database().ref();
 
 interface CourseProps {
