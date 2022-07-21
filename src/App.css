@@ -253,8 +253,8 @@ body {
   background-color: var(--white);
   border-radius: 10px;
   font-size: smaller;
-  margin: 20px;
-  padding: 20px;
+  margin: clamp(10px, 2.5vw, 20px);
+  padding: clamp(15px, 2.5vw, 20px);
   position: relative;
   text-align: left;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
