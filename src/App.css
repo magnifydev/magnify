@@ -57,6 +57,10 @@ body {
   overflow-x: hidden;
 }
 
+ion-icon {
+  pointer-events: none;
+}
+
 .container {
   position: relative;
   width: 100%;

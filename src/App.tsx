@@ -76,22 +76,22 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         <div className="navigation">
           <ul>
             <li>
-              <a href="/">
+              <a href="/" aria-label="Magnify" title="Magnify">
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="school-outline"></ion-icon>
+                  <ion-icon name="school-outline" />
                 </span>
                 <span className="title">Magnify</span>
               </a>
             </li>
             <li className="hovered">
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a href="#">
+              <a href="#" aria-label="Search" title="Search">
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="search-outline"></ion-icon>
+                  <ion-icon name="search-outline" />
                 </span>
-                <span className="title">Search All</span>
+                <span className="title">Search</span>
               </a>
             </li>
             <li>
@@ -99,10 +99,16 @@ const App: FC<AppProps> = ({ user, classItems }) => {
                 href="https://cdn.linnmar.k12.ia.us/wp-content/uploads/2016/11/2022-2023-LMHS-Program-of-Studies-FINAL2-1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PDF"
+                title="PDF"
               >
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="document-text-outline"></ion-icon>
+                  <ion-icon
+                    name="document-text-outline"
+                    aria-label="PDF"
+                    title="PDF"
+                  />
                 </span>
                 <span className="title">PDF</span>
               </a>
@@ -112,10 +118,16 @@ const App: FC<AppProps> = ({ user, classItems }) => {
                 href="https://github.com/magnifydev/magnify"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="About"
+                title="About"
               >
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="information-circle-outline"></ion-icon>
+                  <ion-icon
+                    name="information-circle-outline"
+                    aria-label="About"
+                    title="About"
+                  />
                 </span>
                 <span className="title">About</span>
               </a>
@@ -126,7 +138,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
       <div className="main">
         <div className="topbar">
           {/* <div className="toggle" onClick={() => toggleNav()}>
-            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="menu-outline" />
           </div> */}
           <div className="search">
             <i>
@@ -148,42 +160,50 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         <div className="tag-container">
           <button id="MAT" className="tag" onClick={() => tagToggle('MAT')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>Math
+            <ion-icon class="hide" name="checkmark-outline" />
+            Math
           </button>
           <button id="ENG" className="tag" onClick={() => tagToggle('ENG')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>English
+            <ion-icon class="hide" name="checkmark-outline" />
+            English
           </button>
           <button id="SOC" className="tag" onClick={() => tagToggle('SOC')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>History
+            <ion-icon class="hide" name="checkmark-outline" />
+            History
           </button>
           <button id="SCI" className="tag" onClick={() => tagToggle('SCI')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>Science
+            <ion-icon class="hide" name="checkmark-outline" />
+            Science
           </button>
           <button id="BUS" className="tag" onClick={() => tagToggle('BUS')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>Business
+            <ion-icon class="hide" name="checkmark-outline" />
+            Business
           </button>
           <button id="ART" className="tag" onClick={() => tagToggle('ART')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>Art
+            <ion-icon class="hide" name="checkmark-outline" />
+            Art
           </button>
           <button id="IND" className="tag" onClick={() => tagToggle('IND')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>Trade
+            <ion-icon class="hide" name="checkmark-outline" />
+            Trade
           </button>
           <button id="MUS" className="tag" onClick={() => tagToggle('MUS')}>
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline"></ion-icon>Music
+            <ion-icon class="hide" name="checkmark-outline" />
+            Music
           </button>
         </div>
         <div id="course-container">{classItems}</div>
       </div>
       <div onClick={topFunction} id="to-top" className="jump-to-top">
         {/* @ts-expect-error ts(2339) */}
-        <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
+        <ion-icon name="chevron-up-outline" size="larger" />
       </div>
       <div className="mobile-bottom-nav">
         <div className="mobile-bottom-nav-container">
@@ -194,7 +214,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             className="mobile-bottom-nav-button"
           >
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon name="document-text-outline"></ion-icon>
+            <ion-icon name="document-text-outline" />
             <span>PDF</span>
           </a>
           <a
@@ -204,12 +224,12 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             className="mobile-bottom-nav-button"
           >
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon name="information-circle-outline"></ion-icon>
+            <ion-icon name="information-circle-outline" />
             <span>About</span>
           </a>
           <button onClick={topFunction} className="mobile-bottom-nav-button">
             {/* @ts-expect-error ts(2339) */}
-            <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
+            <ion-icon name="chevron-up-outline" size="larger" />
           </button>
         </div>
       </div>

@@ -253,12 +253,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       </div>
       {authLevel === 5 && !isEditing && (
         /* @ts-expect-error ts(2339) */
-        <ion-icon
-          onClick={edit}
-          class="edit"
-          name="pencil-outline"
-          /* @ts-expect-error ts(2339) */
-        ></ion-icon>
+        <ion-icon onClick={edit} class="edit" name="pencil-outline" />
       )}
     </div>
   );
