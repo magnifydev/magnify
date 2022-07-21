@@ -1,5 +1,4 @@
 import './App.css';
-import userDefault from './assets/user.png';
 import firebase from 'firebase/compat/app';
 import { FC } from 'react';
 
@@ -24,41 +23,52 @@ const App: FC<AppProps> = ({ user, classItems }) => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
-  const toggleNav = (): void => {
-    if (
-      getComputedStyle(document.documentElement)
-        .getPropertyValue('--nav-width')
-        .trim() === '250px'
-    ) {
-      return;
-    }
+  // const toggleNav = (): void => {
+  //   // if (
+  //   //   getComputedStyle(document.documentElement)
+  //   //     .getPropertyValue('--nav-width')
+  //   //     .trim() === '250px'
+  //   // ) {
+  //   //   return;
+  //   // }
 
-    if (
-      getComputedStyle(document.documentElement)
-        .getPropertyValue('--pull-width')
-        .trim() !== '0px'
-    ) {
-      document.documentElement.style.removeProperty('--pull-width');
-    } else {
-      document.documentElement.style.setProperty(
-        '--pull-width',
-        `${
-          250 -
-          Number(
-            getComputedStyle(document.documentElement)
-              .getPropertyValue('--nav-width')
-              .trim()
-              .substring(
-                0,
-                getComputedStyle(document.documentElement)
-                  .getPropertyValue('--nav-width')
-                  .trim().length - 2
-              )
-          )
-        }px`
-      );
-    }
-  };
+  //   if (
+  //     getComputedStyle(document.documentElement)
+  //       .getPropertyValue('--pull-width')
+  //       .trim() !== '0px'
+  //   ) {
+  //     document.documentElement.style.removeProperty('--pull-width');
+  //   } else {
+  //     document.documentElement.style.setProperty(
+  //       '--pull-width',
+  //       `${
+  //         250 -
+  //         Number(
+  //           getComputedStyle(document.documentElement)
+  //             .getPropertyValue('--nav-width')
+  //             .trim()
+  //             .substring(
+  //               0,
+  //               getComputedStyle(document.documentElement)
+  //                 .getPropertyValue('--nav-width')
+  //                 .trim().length - 2
+  //             )
+  //         )
+  //       }px`
+  //     );
+  //   }
+  // };
+
+  let userElement: JSX.Element;
+  if (user && user.photoURL) {
+    userElement = (
+      <div className="user">
+        <img id="user-img" src={user.photoURL} alt="User profile" />
+      </div>
+    );
+  } else {
+    userElement = <div className="hide"></div>;
+  }
 
   return (
     <div className="App">
@@ -75,7 +85,8 @@ const App: FC<AppProps> = ({ user, classItems }) => {
               </a>
             </li>
             <li className="hovered">
-              <a href="/">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="#">
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
                   <ion-icon name="search-outline"></ion-icon>
@@ -84,7 +95,11 @@ const App: FC<AppProps> = ({ user, classItems }) => {
               </a>
             </li>
             <li>
-              <a href="https://cdn.linnmar.k12.ia.us/wp-content/uploads/2016/11/2022-2023-LMHS-Program-of-Studies-FINAL2-1.pdf">
+              <a
+                href="https://cdn.linnmar.k12.ia.us/wp-content/uploads/2016/11/2022-2023-LMHS-Program-of-Studies-FINAL2-1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
                   <ion-icon name="document-text-outline"></ion-icon>
@@ -93,57 +108,16 @@ const App: FC<AppProps> = ({ user, classItems }) => {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a
+                href="https://github.com/magnifydev/magnify"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="earth-outline"></ion-icon>
+                  <ion-icon name="information-circle-outline"></ion-icon>
                 </span>
-                <span className="title">History</span>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <span className="icon">
-                  {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="brush-outline"></ion-icon>
-                </span>
-                <span className="title">Art</span>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <span className="icon">
-                  {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="flask"></ion-icon>
-                </span>
-                <span className="title">Science</span>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <span className="icon">
-                  {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="musical-notes-outline"></ion-icon>
-                </span>
-                <span className="title">Music</span>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <span className="icon">
-                  {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="business-outline"></ion-icon>
-                </span>
-                <span className="title">Business</span>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <span className="icon">
-                  {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="construct-outline"></ion-icon>
-                </span>
-                <span className="title">Trade</span>
+                <span className="title">About</span>
               </a>
             </li>
           </ul>
@@ -151,10 +125,9 @@ const App: FC<AppProps> = ({ user, classItems }) => {
       </div>
       <div className="main">
         <div className="topbar">
-          <div className="toggle" onClick={() => toggleNav()}>
-            {/* @ts-expect-error ts(2339) */}
+          {/* <div className="toggle" onClick={() => toggleNav()}>
             <ion-icon name="menu-outline"></ion-icon>
-          </div>
+          </div> */}
           <div className="search">
             <label htmlFor="searchbar">
               {/* @ts-expect-error ts(2339) */}
@@ -170,14 +143,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
           <button id="signer" className="login">
             {user ? 'Sign Out' : 'Login'}
           </button>
-
-          <div className="user">
-            <img
-              id="user-img"
-              src={user && user.photoURL ? user.photoURL : userDefault}
-              alt="User profile"
-            ></img>
-          </div>
+          {userElement}
         </div>
         <div className="tag-container">
           <button id="MAT" className="tag" onClick={() => tagToggle('MAT')}>
@@ -216,8 +182,32 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         <div id="course-container">{classItems}</div>
       </div>
       <div onClick={topFunction} id="to-top" className="jump-to-top">
-        {/* @ts-expect-error ts(2339) */}
-        <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
+        <div>
+          {/* @ts-expect-error ts(2339) */}
+          <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
+        </div>
+      </div>
+      <div className="mobile-bottom-nav">
+        <a href="/" className="mobile-bottom-nav-button">
+          <span>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon name="document-text-outline"></ion-icon>
+          </span>
+          <span>PDF</span>
+        </a>
+        <a href="/" className="mobile-bottom-nav-button">
+          <span>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </span>
+          <span>About</span>
+        </a>
+        <button onClick={topFunction} className="mobile-bottom-nav-button">
+          <span>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
+          </span>
+        </button>
       </div>
     </div>
   );

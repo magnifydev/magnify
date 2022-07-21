@@ -1,9 +1,9 @@
 import './App.css';
+import firebaseConfig from './config/firebase';
 import CourseType from './types/courseType';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 import { FC, useRef, useState } from 'react';
-import firebaseConfig from './config/firebase';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -125,7 +125,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.credits}
         className="coursedescription"
       >
-        <b contentEditable="false">Credits:</b> {course.credits}
+        <b contentEditable={false}>Credits:</b> {course.credits}
       </p>
       <p
         suppressContentEditableWarning={true}
@@ -133,7 +133,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.length}
         className="coursedescription"
       >
-        <b contentEditable="false">Length:</b> {course.length}
+        <b contentEditable={false}>Length:</b> {course.length}
       </p>
       <p
         suppressContentEditableWarning={true}
@@ -141,7 +141,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.format}
         className="coursedescription"
       >
-        <b contentEditable="false">Format:</b> {course.format}
+        <b contentEditable={false}>Format:</b> {course.format}
       </p>
       <p
         suppressContentEditableWarning={true}
@@ -149,7 +149,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.courseid}
         className="coursedescription"
       >
-        <b contentEditable="false">Course ID:</b> {course.courseid}
+        <b contentEditable={false}>Course ID:</b> {course.courseid}
       </p>
       <p
         suppressContentEditableWarning={true}
@@ -157,7 +157,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.gradelevels}
         className="coursedescription"
       >
-        <b contentEditable="false">Grade Levels:</b> {course.gradelevels}
+        <b contentEditable={false}>Grade Levels:</b> {course.gradelevels}
       </p>
       <br></br>
       <p
@@ -166,7 +166,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.prerequisites}
         className="coursedescription"
       >
-        <b contentEditable="false">Prerequisites:</b> {course.prerequisites}
+        <b contentEditable={false}>Prerequisites:</b> {course.prerequisites}
       </p>
       <br></br>
       {course.fees && (
@@ -176,7 +176,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           ref={refs.fees}
           className="coursedescription"
         >
-          <b contentEditable="false">Fees:</b> {course.fees}
+          <b contentEditable={false}>Fees:</b> {course.fees}
         </p>
       )}
       {course.corequisite && (
@@ -187,7 +187,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             ref={refs.corequisite}
             className="coursedescription"
           >
-            <b contentEditable="false">Corequisites:</b> {course.corequisite}
+            <b contentEditable={false}>Corequisites:</b> {course.corequisite}
           </p>
           <br></br>
         </div>
@@ -200,7 +200,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             ref={refs.subsequent}
             className="coursedescription"
           >
-            <b contentEditable="false">Subsequent:</b> {course.subsequent}
+            <b contentEditable={false}>Subsequent:</b> {course.subsequent}
           </p>
           <br></br>
         </div>
@@ -213,7 +213,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             ref={refs.studentrecommendations}
             className="coursedescription"
           >
-            <b contentEditable="false">Recommendation:</b>{' '}
+            <b contentEditable={false}>Recommendation:</b>{' '}
             {course.studentrecommendations}
           </p>
           <br></br>
@@ -225,7 +225,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.considerations}
         className="coursedescription"
       >
-        <b contentEditable="false">Considerations:</b> {course.considerations}
+        <b contentEditable={false}>Considerations:</b> {course.considerations}
       </p>
       <br></br>
       <button className="collapsible" onClick={toggleCollapse}>

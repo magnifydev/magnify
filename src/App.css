@@ -21,21 +21,16 @@ code {
 
 :root {
   --pull-width: 0px;
+  --nav-width: 0px;
 }
 
-@media only screen and (min-width: 400px) {
-  :root {
-    --nav-width: 0px;
-  }
-}
-
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 500px) {
   :root {
     --nav-width: 80px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   :root {
     --nav-width: 250px;
   }
@@ -45,7 +40,7 @@ code {
   :root {
     --nav-width: 250px;
   }
-}
+} */
 
 :root {
   --blue: #07f;
@@ -68,15 +63,13 @@ body {
 }
 
 .navigation {
-  background: #07f;
   background: var(--blue);
-  border-left: 10px solid #07f;
   border-left: 10px solid var(--blue);
   height: 100%;
   overflow: hidden;
   position: fixed;
   transition: 0.5s;
-  width: calc(var(--nav-width));
+  /* width: calc(var(--nav-width)); */
   width: calc(var(--nav-width) + var(--pull-width));
 }
 
@@ -96,7 +89,6 @@ body {
 }
 
 .navigation ul li.hovered {
-  background: #f6f7f9;
   background: var(--white2);
 }
 
@@ -106,7 +98,6 @@ body {
 }
 
 .navigation ul li a {
-  color: #fff;
   color: var(--white);
   display: block;
   display: flex;
@@ -116,7 +107,6 @@ body {
 }
 
 .navigation ul li.hovered a {
-  color: #07f;
   color: var(--blue);
 }
 
@@ -144,7 +134,6 @@ body {
 }
 
 .navigation ul li.hovered a:before {
-  box-shadow: 35px 35px 0 10px #f6f7f9;
   box-shadow: 35px 35px 0 10px var(--white2);
   top: -50px;
 }
@@ -163,14 +152,12 @@ body {
 
 .navigation ul li.hovered a:after {
   bottom: -50px;
-  box-shadow: 35px -35px 0 10px #f6f7f9;
   box-shadow: 35px -35px 0 10px var(--white2);
 }
 
 .main {
-  background: #f6f7f9;
   background: var(--white2);
-  left: calc(var(--nav-width));
+  /* left: calc(var(--nav-width)); */
   left: calc(var(--nav-width) + var(--pull-width));
   min-height: 100vh;
   position: absolute;
@@ -180,9 +167,10 @@ body {
 
 .topbar {
   align-items: center;
-  background-color: #fff !important;
   background-color: var(--white) !important;
-  box-shadow: 2px 2px 8px #888;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -194,13 +182,12 @@ body {
 
 @media only screen and (max-width: 400px) {
   .topbar {
-    width: 100vw;
+    width: 100%;
   }
 }
 
 .toggle {
   align-items: center;
-  background: #fff;
   background: var(--white);
   cursor: pointer;
   display: flex;
@@ -227,9 +214,8 @@ body {
 }
 
 .search input {
-  border: 1px solid #999;
   border: 1px solid var(--black2);
-  border-radius: 40px;
+  border-radius: 999px;
   height: 40px;
   outline: none;
   padding: 5px 20px 5px 35px;
@@ -250,6 +236,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 40px;
+  margin-right: 10px;
 }
 
 .user img {
@@ -261,18 +248,24 @@ body {
   width: 100%;
 }
 
-div .Course {
+.Course {
   align-content: center;
-  background-color: #fff;
   background-color: var(--white);
   border-radius: 10px;
-  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: smaller;
   margin: 20px;
   padding: 20px;
   position: relative;
   text-align: left;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.Course:hover {
+  transform: scale(1.025);
 }
 
 .Course ion-icon.edit {
@@ -288,50 +281,25 @@ div .Course {
 }
 
 .parent {
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-  -webkit-column-gap: 0;
-  column-gap: 0;
   display: grid;
-  grid-template-rows: repeat(60, auto);
-  row-gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 400px) {
   .parent {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .parent {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .parent {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .parent {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
 .tag-container {
   display: flex;
   margin: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 77px 0 0;
 }
 
 .tag {
-  background: #f5f5f5;
-  background: var(--grey);
-  border: 2px solid #07f;
+  background: var(--white);
   border: 2px solid var(--blue);
   border-radius: 10px;
   cursor: pointer;
@@ -356,9 +324,7 @@ div .Course {
 
 .tag-true,
 .tag:hover {
-  background-color: #07f !important;
   background-color: var(--blue) !important;
-  color: #fff !important;
   color: var(--white) !important;
 }
 
@@ -379,37 +345,100 @@ button ion-icon {
 }
 
 .jump-to-top {
-  background-color: #fff;
   background-color: var(--white);
-  border-radius: 50px;
-  bottom: 30px;
+  border-radius: 10px;
+  bottom: 35px;
   box-shadow: 2px 4px 18px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
-  color: #222;
   color: var(--black1);
   cursor: pointer;
   padding: 10px;
   position: fixed;
   right: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-* {
-  scrollbar-color: #b8b8b8 #fff;
-  scrollbar-width: thin;
+.mobile-bottom-nav {
+  background-color: var(--white);
+  border-radius: 10px;
+  bottom: 0;
+  box-shadow: 2px 4px 18px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  color: var(--black1);
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
+.mobile-bottom-nav-button {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 2px 4px 18px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  color: var(--black1);
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--black1);
+}
+
+.mobile-bottom-nav-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.mobile-bottom-nav-button {
+  border: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .mobile-bottom-nav {
+    display: none;
+  }
+
+  .jump-to-top {
+    display: flex;
+  }
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b8b8b8;
-  border-radius: 10px;
+  background-color: #68686888;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7b7b7b;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #a1a1a1;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 .collapsible {
@@ -435,9 +464,7 @@ button ion-icon {
 
 .login {
   align-items: left;
-  background: #fff;
   background: var(--white);
-  border: 2px solid #07f;
   border: 2px solid var(--blue);
   border-radius: 10px;
   cursor: pointer;
@@ -451,17 +478,13 @@ button ion-icon {
 }
 
 .login:hover {
-  background-color: #07f !important;
   background-color: var(--blue) !important;
-  color: #fff !important;
   color: var(--white) !important;
 }
 
 .button {
   align-items: center;
-  background: #fff;
   background: var(--white);
-  border: 2px solid #07f;
   border: 2px solid var(--blue);
   border-radius: 10px;
   cursor: pointer;
@@ -482,12 +505,9 @@ button ion-icon {
 
 .button-primary {
   align-items: center;
-  background: #07f;
   background: var(--blue);
-  border: 2px solid #07f;
   border: 2px solid var(--blue);
   border-radius: 10px;
-  color: #fff;
   color: var(--white);
   cursor: pointer;
   display: flex;
@@ -508,6 +528,3 @@ button ion-icon {
 .flex-container {
   display: flex;
 }
-
-/*# sourceMappingURL=main.d80f8805.css.map*/
-

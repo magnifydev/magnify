@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="The LMHS Digital Program of Studies" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Magnify 2023</title>
   </head>
@@ -36,7 +36,8 @@
         measurementId: 'G-5X5FRMHDHE',
       };
 
-      (app = initializeApp(firebaseConfig)), (analytics = getAnalytics(app));
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
     </script>
   </body>
 </html>

@@ -62,12 +62,23 @@ const initializeCourseViewer = () => {
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = () => scrollFunction();
 
+  const getWidth = () => {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  };
+
   const scrollFunction = () => {
     if (topButton === null) throw Error('top button nonexistent');
 
     if (
-      document.body.scrollTop > 70 ||
-      document.documentElement.scrollTop > 70
+      (document.body.scrollTop > 70 ||
+        document.documentElement.scrollTop > 70) &&
+      getWidth() >= 500
     ) {
       topButton.style.display = 'block';
     } else {
