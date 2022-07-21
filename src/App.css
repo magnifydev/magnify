@@ -226,7 +226,7 @@ body {
   width: 100%;
 }
 
-.search label input {
+.search input {
   border: 1px solid #999;
   border: 1px solid var(--black2);
   border-radius: 40px;

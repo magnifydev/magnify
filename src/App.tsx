@@ -156,18 +156,17 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             <ion-icon name="menu-outline"></ion-icon>
           </div>
           <div className="search">
-            <label>
-              <input
-                id="searchbar"
-                type="text"
-                name="search"
-                placeholder="Search for classes..."
-              ></input>
+            <label htmlFor="searchbar">
               {/* @ts-expect-error ts(2339) */}
-              <ion-icon name="search-outline"></ion-icon>
+              <ion-icon name="search-outline" />
             </label>
+            <input
+              id="searchbar"
+              type="text"
+              name="search"
+              placeholder="Search for classes..."
+            />
           </div>
-
           <button id="signer" className="login">
             {user ? 'Sign Out' : 'Login'}
           </button>
