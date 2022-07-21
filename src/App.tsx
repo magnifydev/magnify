@@ -129,10 +129,10 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             <ion-icon name="menu-outline"></ion-icon>
           </div> */}
           <div className="search">
-            <label htmlFor="searchbar">
+            <i>
               {/* @ts-expect-error ts(2339) */}
               <ion-icon name="search-outline" />
-            </label>
+            </i>
             <input
               id="searchbar"
               type="text"
@@ -182,32 +182,39 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         <div id="course-container">{classItems}</div>
       </div>
       <div onClick={topFunction} id="to-top" className="jump-to-top">
-        <div>
-          {/* @ts-expect-error ts(2339) */}
-          <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
-        </div>
+        {/* @ts-expect-error ts(2339) */}
+        <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
       </div>
       <div className="mobile-bottom-nav">
-        <a href="/" className="mobile-bottom-nav-button">
-          <span>
+        <div className="mobile-bottom-nav-container">
+          <a
+            href="https://cdn.linnmar.k12.ia.us/wp-content/uploads/2016/11/2022-2023-LMHS-Program-of-Studies-FINAL2-1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-bottom-nav-button"
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="document-text-outline"></ion-icon>
-          </span>
-          <span>PDF</span>
-        </a>
-        <a href="/" className="mobile-bottom-nav-button">
-          <span>
+            <span>PDF</span>
+          </a>
+          <a
+            href="https://github.com/magnifydev/magnify"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-bottom-nav-button"
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="information-circle-outline"></ion-icon>
-          </span>
-          <span>About</span>
-        </a>
-        <button onClick={topFunction} className="mobile-bottom-nav-button">
-          <span>
+            <span>About</span>
+          </a>
+          <button
+            onClick={topFunction}
+            className="mobile-bottom-nav-button"
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="chevron-up-outline" size="larger"></ion-icon>
-          </span>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -68,7 +68,7 @@ body {
   height: 100%;
   overflow: hidden;
   position: fixed;
-  transition: 0.5s;
+  transition: all 0.5s ease;
   /* width: calc(var(--nav-width)); */
   width: calc(var(--nav-width) + var(--pull-width));
 }
@@ -111,12 +111,14 @@ body {
 }
 
 .navigation ul li a .icon {
-  display: block;
+  display: flex;
   height: 60px;
   line-height: 70px;
   min-width: 60px;
   position: relative;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation ul li a .icon ion-icon {
@@ -161,7 +163,7 @@ body {
   left: calc(var(--nav-width) + var(--pull-width));
   min-height: 100vh;
   position: absolute;
-  transition: 0.5s;
+  transition: all 0.5s ease;
   width: calc(100% - var(--nav-width));
 }
 
@@ -208,9 +210,9 @@ body {
   width: 400px;
 }
 
-.search label {
-  position: relative;
-  width: 100%;
+.search i {
+  position: absolute;
+  /* width: 100%; */
 }
 
 .search input {
@@ -222,11 +224,9 @@ body {
   width: 100%;
 }
 
-.search label ion-icon {
+.search i ion-icon {
   font-size: 1.2em;
-  left: 10px;
-  position: absolute;
-  top: 0;
+  padding: 10px;
 }
 
 .user {
@@ -253,8 +253,8 @@ body {
   background-color: var(--white);
   border-radius: 10px;
   font-size: smaller;
-  margin: clamp(10px, 2.5vw, 20px);
-  padding: clamp(15px, 2.5vw, 20px);
+  margin: clamp(15px, 5vw, 20px);
+  padding: clamp(15px, 5vw, 20px);
   position: relative;
   text-align: left;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -360,20 +360,15 @@ button ion-icon {
 
 .mobile-bottom-nav {
   background-color: var(--white);
-  border-radius: 10px;
   bottom: 0;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
     0 1px 5px 0 rgb(0 0 0 / 20%);
   color: var(--black1);
-  cursor: pointer;
   padding: 10px;
   position: fixed;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   width: 100%;
+  transition: all 0.5s ease;
 }
 
 .mobile-bottom-nav-button {
@@ -384,31 +379,35 @@ button ion-icon {
   color: var(--black1);
   cursor: pointer;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   text-decoration: none;
   color: var(--black1);
 }
 
-.mobile-bottom-nav-button a {
+.mobile-bottom-nav-container {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+a.mobile-bottom-nav-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 button.mobile-bottom-nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
 }
 
 @media only screen and (min-width: 500px) {
   .mobile-bottom-nav {
     display: none;
-  }
-
-  .jump-to-top {
-    display: flex;
   }
 }
 

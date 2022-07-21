@@ -118,7 +118,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   return (
     <div suppressContentEditableWarning={true} className="Course">
       <h1 className="coursetitle">{course.coursename}</h1>
-      <br></br>
+      <br />
       <p
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
@@ -159,7 +159,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       >
         <b contentEditable={false}>Grade Levels:</b> {course.gradelevels}
       </p>
-      <br></br>
+      <br />
       <p
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
@@ -168,7 +168,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       >
         <b contentEditable={false}>Prerequisites:</b> {course.prerequisites}
       </p>
-      <br></br>
+      <br />
       {course.fees && (
         <p
           suppressContentEditableWarning={true}
@@ -189,7 +189,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           >
             <b contentEditable={false}>Corequisites:</b> {course.corequisite}
           </p>
-          <br></br>
+          <br />
         </div>
       )}
       {course.subsequent && (
@@ -202,7 +202,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           >
             <b contentEditable={false}>Subsequent:</b> {course.subsequent}
           </p>
-          <br></br>
+          <br />
         </div>
       )}
       {/* {course.studentrecommendations && (
@@ -216,7 +216,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             <b contentEditable={false}>Recommendation:</b>{' '}
             {course.studentrecommendations}
           </p>
-          <br></br>
+          <br />
         </div>
       )} */}
       <p
@@ -227,7 +227,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       >
         <b contentEditable={false}>Considerations:</b> {course.considerations}
       </p>
-      <br></br>
+      <br />
       <button className="collapsible" onClick={toggleCollapse}>
         See more
       </button>

@@ -9,6 +9,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/database';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import getWidth from './utils/getWidth';
 
 let courseData: CourseDataType;
 let user: firebase.User | null;
@@ -42,8 +43,8 @@ dbRef
 
 const initializeCourseViewer = () => {
   // #region Set Up
-  const courseArr = Object.keys(courseData);
-  const courseItems = courseArr.map((name, index) => (
+  const courseArray = Object.keys(courseData);
+  const courseItems = courseArray.map((name, index) => (
     <Course key={index} authLevel={authLevel} course={courseData[name]} />
   ));
 
@@ -57,33 +58,41 @@ const initializeCourseViewer = () => {
   const signInButton = document.getElementById('signer');
   signInButton?.addEventListener('click', signInWithRedirect);
 
-  // Add jump to top button
   const topButton = document.getElementById('to-top');
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = () => scrollFunction();
 
-  const getWidth = () => {
-    return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
-    );
+  let prevScrollpos = window.scrollY;
+  window.onscroll = () => {
+    scrollFunction();
+    hideMobileNav();
   };
 
   const scrollFunction = () => {
-    if (topButton === null) throw Error('top button nonexistent');
+    if (!topButton) throw Error('top button nonexistent');
 
     if (
       (document.body.scrollTop > 70 ||
         document.documentElement.scrollTop > 70) &&
       getWidth() >= 500
     ) {
-      topButton.style.display = 'block';
+      topButton.style.display = 'flex';
     } else {
       topButton.style.display = 'none';
     }
+  };
+
+  const hideMobileNav = () => {
+    if (getWidth() >= 500) return;
+
+    const nav = document.querySelector('.mobile-bottom-nav');
+    if (!(nav instanceof HTMLElement)) throw Error('mobile nav nonexistent');
+
+    const currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      nav.style.bottom = '0';
+    } else {
+      nav.style.bottom = `-${nav.offsetHeight}px`;
+    }
+    prevScrollpos = currentScrollPos;
   };
 
   for (let i = 0; i < buttons.length; i++) {
@@ -173,11 +182,6 @@ const filterCourses = () => {
   }, 20);
 };
 
-/**
- *
- * @param {object} courseItems
- * @param {firebase.User} user
- */
 const renderDOM = (courseItems: JSX.Element[], userdata = user) => {
   ReactDOM.render(
     <React.StrictMode>
