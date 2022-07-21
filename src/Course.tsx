@@ -169,7 +169,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         <b contentEditable="false">Prerequisites:</b> {course.prerequisites}
       </p>
       <br></br>
-      {course.fees !== null && (
+      {course.fees && (
         <p
           suppressContentEditableWarning={true}
           contentEditable={isEditing}
@@ -179,7 +179,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           <b contentEditable="false">Fees:</b> {course.fees}
         </p>
       )}
-      {course.corequisite !== null && (
+      {course.corequisite && (
         <div>
           <p
             suppressContentEditableWarning={true}
@@ -192,7 +192,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           <br></br>
         </div>
       )}
-      {course.subsequent !== null && (
+      {course.subsequent && (
         <div>
           <p
             suppressContentEditableWarning={true}
@@ -205,7 +205,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           <br></br>
         </div>
       )}
-      {/* {course.studentrecommendations !== null && (
+      {/* {course.studentrecommendations && (
         <div>
           <p
             suppressContentEditableWarning={true}
