@@ -1,29 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="The LMHS Digital Program of Studies" />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Course Inspector 2023</title>
-    <script defer="defer" src="/static/js/main.5143453f.js"></script>
-    <link href="/static/css/main.135811c5.css" rel="stylesheet">
-</head>
-
-<body>
+  </head>
+  <body>
     <noscript>Course Inspector requires JavaScript to run.</noscript>
     <div id="root"></div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script
-        type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
-        const firebaseConfig = { apiKey: "AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE", authDomain: "courseinspector.firebaseapp.com", projectId: "courseinspector", storageBucket: "courseinspector.appspot.com", messagingSenderId: "714692191382", appId: "1:714692191382:web:3d52f73c4d534ee5f6ceb7", measurementId: "G-NJ5MX0KYYK" }, app = initializeApp(firebaseConfig), analytics = getAnalytics(app)</script>
-</body>
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module">
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js';
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js';
 
+      const firebaseConfig = {
+          apiKey: 'AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE',
+          authDomain: 'courseinspector.firebaseapp.com',
+          projectId: 'courseinspector',
+          storageBucket: 'courseinspector.appspot.com',
+          messagingSenderId: '714692191382',
+          appId: '1:714692191382:web:3d52f73c4d534ee5f6ceb7',
+          measurementId: 'G-NJ5MX0KYYK',
+        },
+        app = initializeApp(firebaseConfig),
+        analytics = getAnalytics(app);
+    </script>
+  </body>
 </html>
+

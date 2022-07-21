@@ -1,6 +1,6 @@
 {
-  "short_name": "Course Inspector",
-  "name": "LMHS Course Inspector",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
