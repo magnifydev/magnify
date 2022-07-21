@@ -1,12 +1,12 @@
 const firebaseConfig = {
-  apiKey: 'AIzaSyB7xPx53G2Q39jxMghxSN2P1vaf0YjukwE',
-  authDomain: 'courseinspector.firebaseapp.com',
-  databaseURL: 'https://courseinspector-default-rtdb.firebaseio.com',
-  projectId: 'courseinspector',
-  storageBucket: 'courseinspector.appspot.com',
-  messagingSenderId: '714692191382',
-  appId: '1:714692191382:web:3d52f73c4d534ee5f6ceb7',
-  measurementId: 'G-NJ5MX0KYYK',
+  apiKey: "AIzaSyDL5M-oQos8ZS499eWgEWElT9YctSeWWiU",
+  authDomain: "magnifyyyyy.firebaseapp.com",
+  databaseURL: "https://magnifyyyyy-default-rtdb.firebaseio.com",
+  projectId: "magnifyyyyy",
+  storageBucket: "magnifyyyyy.appspot.com",
+  messagingSenderId: "798318460321",
+  appId: "1:798318460321:web:4290be6078dddfe8221fe0",
+  measurementId: "G-5X5FRMHDHE"
 };
 
 export default firebaseConfig;
