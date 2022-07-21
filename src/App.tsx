@@ -71,7 +71,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
                   {/* @ts-expect-error ts(2339) */}
                   <ion-icon name="school-outline"></ion-icon>
                 </span>
-                <span className="title">Course Inspector</span>
+                <span className="title">Magnify</span>
               </a>
             </li>
             <li className="hovered">
