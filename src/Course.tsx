@@ -3,7 +3,7 @@ import firebaseConfig from './config/firebase';
 import CourseType from './types/courseType';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
-import { FC, useRef, useState } from 'react';
+import { FC, useCallback, useRef, useState, useMemo } from 'react';
 
 firebase.initializeApp(firebaseConfig);
 firebase.database().ref();
@@ -30,43 +30,74 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     description: string;
   }
 
-  const refs = {
-    credits: useRef<HTMLParagraphElement>(null),
-    length: useRef<HTMLParagraphElement>(null),
-    format: useRef<HTMLParagraphElement>(null),
-    courseid: useRef<HTMLParagraphElement>(null),
-    gradelevels: useRef<HTMLParagraphElement>(null),
-    prerequisites: useRef<HTMLParagraphElement>(null),
-    fees: useRef<HTMLParagraphElement>(null),
-    corequisite: useRef<HTMLParagraphElement>(null),
-    subsequent: useRef<HTMLParagraphElement>(null),
-    studentrecommendations: useRef<HTMLParagraphElement>(null),
-    considerations: useRef<HTMLParagraphElement>(null),
-    description: useRef<HTMLParagraphElement>(null),
-  };
+  const credits = useRef<HTMLParagraphElement>(null);
+  const length = useRef<HTMLParagraphElement>(null);
+  const format = useRef<HTMLParagraphElement>(null);
+  const courseid = useRef<HTMLParagraphElement>(null);
+  const gradelevels = useRef<HTMLParagraphElement>(null);
+  const prerequisites = useRef<HTMLParagraphElement>(null);
+  const fees = useRef<HTMLParagraphElement>(null);
+  const corequisite = useRef<HTMLParagraphElement>(null);
+  const subsequent = useRef<HTMLParagraphElement>(null);
+  // const studentrecommendations = useRef<HTMLParagraphElement>(null);
+  const considerations = useRef<HTMLParagraphElement>(null);
+  const description = useRef<HTMLParagraphElement>(null);
 
-  const toggleCollapse = (
-    btn: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ): void => {
-    btn.currentTarget.classList.toggle('active');
-    const content = btn.currentTarget.nextElementSibling as HTMLElement;
-    if (content.style.maxHeight) {
-      btn.currentTarget.innerHTML = 'See more';
-      content.style.removeProperty('max-height');
-    } else {
-      btn.currentTarget.innerHTML = 'See less';
-      content.style.maxHeight = `${content.scrollHeight}px`;
-    }
-  };
+  const refs = useMemo(
+    () => ({
+      credits,
+      length,
+      format,
+      courseid,
+      gradelevels,
+      prerequisites,
+      fees,
+      corequisite,
+      subsequent,
+      considerations,
+      description,
+    }),
+    [
+      credits,
+      length,
+      format,
+      courseid,
+      gradelevels,
+      prerequisites,
+      fees,
+      corequisite,
+      subsequent,
+      considerations,
+      description,
+    ]
+  );
 
-  const edit = (btn: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
-    btn.currentTarget.classList.toggle('hide');
-    setIsEditing(true);
-  };
+  const toggleCollapse = useCallback(
+    (btn: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      btn.currentTarget.classList.toggle('active');
+      const content = btn.currentTarget.nextElementSibling as HTMLElement;
+      if (content.style.maxHeight) {
+        btn.currentTarget.innerHTML = 'See more';
+        content.style.removeProperty('max-height');
+      } else {
+        btn.currentTarget.innerHTML = 'See less';
+        content.style.maxHeight = `${content.scrollHeight}px`;
+      }
+    },
+    []
+  );
 
-  const cancel = () => setIsEditing(false);
+  const edit = useCallback(
+    (btn: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+      btn.currentTarget.classList.toggle('hide');
+      setIsEditing(true);
+    },
+    []
+  );
 
-  const submit = () => {
+  const cancel = useCallback(() => setIsEditing(false), []);
+
+  const submit = useCallback(() => {
     const newCourse: { [key: string]: ReferenceTypes } = {};
     const loopName = course.coursename.toLowerCase().replaceAll(' ', '-');
 
@@ -108,7 +139,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
 
     // Exit the edit menu
     setIsEditing(false);
-  };
+  }, [course, refs]);
 
   return (
     <div suppressContentEditableWarning className="Course">

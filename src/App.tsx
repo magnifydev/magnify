@@ -1,5 +1,6 @@
 import './App.css';
 import links from './data/links';
+import scrollToTop from './utils/scrollToTop';
 import firebase from 'firebase/compat/app';
 import { FC } from 'react';
 
@@ -16,11 +17,6 @@ const App: FC<AppProps> = ({ user, classItems }) => {
     } else {
       tag?.classList.add('tag-true');
     }
-  };
-
-  const scrollToTop = (): void => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   };
 
   // const toggleNav = (): void => {
@@ -288,7 +284,12 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         </div>
         <div id="course-container">{classItems}</div>
       </div>
-      <button type="button" onClick={scrollToTop} id="to-top" className="jump-to-top">
+      <button
+        type="button"
+        onClick={scrollToTop}
+        id="to-top"
+        className="jump-to-top"
+      >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon name="chevron-up-outline" size="larger" />
       </button>
