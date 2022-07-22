@@ -615,7 +615,8 @@
     "description": "Independent study options are limited to AP MACROECONOMICS and AP ENGLISH LANGUAGE AND COMPOSITION. Courses are offered through the Iowa Online AP Academy. You need at least one skinny in your schedule. Limited enrollment.",
     "gradelevels": "10-12",
     "length": "1-2 Semesters",
-    "prerequisites": "Instructor Approval"
+    "prerequisites": "Instructor Approval",
+    "tags": ["Talented and Gifted"]
   },
   "ap-microeconomics": {
     "considerations": "Students should be comfortable working with charts, tables, numbers, and equations. Students may take the AP Microeconomics exam in May.",
@@ -1671,7 +1672,8 @@
     "description": "This course is designed for students with demonstrated research skills who have a commitment to independent learning. Working with mentors from the community, students will plan and complete independent in-depth projects.",
     "gradelevels": "10-12",
     "length": "1 Semester",
-    "prerequisites": "Instructor Approval"
+    "prerequisites": "Instructor Approval",
+    "tags": ["Talented and Gifted"]
   },
   "interior-design": {
     "considerations": "None",
@@ -2061,7 +2063,8 @@
     "format": "Skinny",
     "gradelevels": "9",
     "length": "1 Quarter",
-    "prerequisites": "Instructor Approval"
+    "prerequisites": "Instructor Approval",
+    "tags": ["Talented and Gifted"]
   },
   "lux": {
     "considerations": "10-12 grades Sopranos and Altos must audition to be placed in this choir. 9th grade Soprano and Alto voices are automatically placed in this choir.",
