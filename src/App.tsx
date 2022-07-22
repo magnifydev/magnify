@@ -77,10 +77,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
           <ul>
             <li>
               <a href="/" aria-label="Magnify" title="Magnify">
-                <span className="icon">
-                  {/* @ts-expect-error ts(2339) */}
-                  <ion-icon name="school-outline" />
-                </span>
+                <span className="icon logo">M</span>
                 <span className="title">Magnify</span>
               </a>
             </li>
@@ -159,45 +156,65 @@ const App: FC<AppProps> = ({ user, classItems }) => {
           {userElement}
         </div>
         <div className="tag-container">
-          <button id="MAT" className="tag" onClick={() => toggleTag('MAT')}>
-            {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline" />
-            Math
-          </button>
           <button id="ENG" className="tag" onClick={() => toggleTag('ENG')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             English
           </button>
-          <button id="SOC" className="tag" onClick={() => toggleTag('SOC')}>
+          <button id="FOR" className="tag" onClick={() => toggleTag('FOR')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
-            History
+            Foreign Language
+          </button>
+          <button id="MAT" className="tag" onClick={() => toggleTag('MAT')}>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            Math
           </button>
           <button id="SCI" className="tag" onClick={() => toggleTag('SCI')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Science
           </button>
+          <button id="SOC" className="tag" onClick={() => toggleTag('SOC')}>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            History
+          </button>
+          <button id="HPE" className="tag" onClick={() => toggleTag('HPE')}>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            Health/PE
+          </button>
           <button id="BUS" className="tag" onClick={() => toggleTag('BUS')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Business
-          </button>
-          <button id="ART" className="tag" onClick={() => toggleTag('ART')}>
-            {/* @ts-expect-error ts(2339) */}
-            <ion-icon class="hide" name="checkmark-outline" />
-            Art
           </button>
           <button id="IND" className="tag" onClick={() => toggleTag('IND')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Trade
           </button>
+          <button id="ART" className="tag" onClick={() => toggleTag('ART')}>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            Art
+          </button>
           <button id="MUS" className="tag" onClick={() => toggleTag('MUS')}>
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Music
+          </button>
+          <button id="AGR" className="tag" onClick={() => toggleTag('AGR')}>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            Agriculture
+          </button>
+          <button id="FAM" className="tag" onClick={() => toggleTag('FAM')}>
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            Life Skills
           </button>
         </div>
         <div id="course-container">{classItems}</div>
