@@ -111,11 +111,11 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   };
 
   return (
-    <div suppressContentEditableWarning={true} className="Course">
+    <div suppressContentEditableWarning className="Course">
       <h1 className="course-title">{course.coursename}</h1>
       <br />
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.credits}
         className="course-description"
@@ -123,7 +123,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         <b contentEditable={false}>Credits:</b> {course.credits}
       </p>
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.length}
         className="course-description"
@@ -131,7 +131,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         <b contentEditable={false}>Length:</b> {course.length}
       </p>
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.format}
         className="course-description"
@@ -139,7 +139,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         <b contentEditable={false}>Format:</b> {course.format}
       </p>
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.courseid}
         className="course-description"
@@ -147,7 +147,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         <b contentEditable={false}>Course ID:</b> {course.courseid}
       </p>
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.gradelevels}
         className="course-description"
@@ -156,7 +156,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       </p>
       <br />
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.prerequisites}
         className="course-description"
@@ -166,7 +166,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       <br />
       {course.fees && (
         <p
-          suppressContentEditableWarning={true}
+          suppressContentEditableWarning
           contentEditable={isEditing}
           ref={refs.fees}
           className="course-description"
@@ -177,7 +177,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       {course.corequisite && (
         <div>
           <p
-            suppressContentEditableWarning={true}
+            suppressContentEditableWarning
             contentEditable={isEditing}
             ref={refs.corequisite}
             className="course-description"
@@ -190,7 +190,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       {course.subsequent && (
         <div>
           <p
-            suppressContentEditableWarning={true}
+            suppressContentEditableWarning
             contentEditable={isEditing}
             ref={refs.subsequent}
             className="course-description"
@@ -215,7 +215,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         </div>
       )} */}
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.considerations}
         className="course-description"
@@ -227,7 +227,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         See more
       </button>
       <p
-        suppressContentEditableWarning={true}
+        suppressContentEditableWarning
         contentEditable={isEditing}
         ref={refs.description}
         className="course-description content-collapsible"
