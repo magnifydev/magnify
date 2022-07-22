@@ -209,9 +209,7 @@ firebase
               Object.keys(authData).forEach((key) => {
                 if (user?.email === authData[key].email) {
                   authLevel = authData[key].level;
-                  console.log(
-                    `You are currently authorized with a level of ${authLevel}`
-                  );
+                  
                 }
               });
               filterCourses();
@@ -221,9 +219,9 @@ firebase
           }
         }
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {});
   })
-  .catch((error) => console.error(error));
+  .catch((error) => {});
 
 const signInWithRedirect = () => {
   const button = document.getElementById('signer');
@@ -239,6 +237,6 @@ const signInWithRedirect = () => {
         filterCourses(); // Reload the DOM to update sign-in status
         // Sign-out successful.
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {});
   }
 };
