@@ -136,7 +136,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         </div>
       </div>
       <div className="main">
-        <div className="topbar">
+        <div className="top-bar">
           {/* Uncomment for navigation button */}
           {/* <div className="toggle" onClick={() => toggleNav()}>
             <ion-icon name="menu-outline" />
@@ -148,7 +148,7 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             </i>
             <input
               id="searchbar"
-              type="text"
+              type="search"
               name="search"
               placeholder="Search for classes..."
             />
@@ -206,13 +206,13 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         {/* @ts-expect-error ts(2339) */}
         <ion-icon name="chevron-up-outline" size="larger" />
       </div>
-      <div className="mobile-bottom-nav">
-        <div className="mobile-bottom-nav-container">
+      <div id="mobile-nav" className="mobile-navigation">
+        <div className="mobile-navigation-container">
           <a
             href={links.programOfStudiesPDF}
             target="_blank"
             rel="noopener noreferrer"
-            className="mobile-bottom-nav-button"
+            className="mobile-navigation-button"
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="document-text-outline" />
@@ -222,13 +222,13 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             href={links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="mobile-bottom-nav-button"
+            className="mobile-navigation-button"
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="information-circle-outline" />
             <span>About</span>
           </a>
-          <button onClick={scrollToTop} className="mobile-bottom-nav-button">
+          <button onClick={scrollToTop} className="mobile-navigation-button">
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="chevron-up-outline" size="larger" />
           </button>

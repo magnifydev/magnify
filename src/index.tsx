@@ -48,7 +48,7 @@ const initializeCourseViewer = () => {
   const search = document.getElementById('searchbar');
   search?.addEventListener('input', filterCourses);
 
-  const buttons = document.getElementsByClassName('tag');
+  const tagButtons = document.getElementsByClassName('tag');
 
   const signInButton = document.getElementById('signer');
   signInButton?.addEventListener('click', signInWithRedirect);
@@ -62,7 +62,8 @@ const initializeCourseViewer = () => {
   };
 
   const displayDesktopScrollToTop = () => {
-    if (!topButton) throw Error('top button nonexistent');
+    if (!topButton)
+      throw new Error('Supposed element with id to-top nonexistent');
 
     if (
       (document.body.scrollTop > 70 ||
@@ -78,8 +79,7 @@ const initializeCourseViewer = () => {
   const handleMobileNavOnScroll = () => {
     if (getWidth() >= 500) return;
 
-    const nav = document.querySelector('.mobile-bottom-nav');
-    if (!(nav instanceof HTMLElement)) throw Error('mobile nav nonexistent');
+    const nav = document.getElementById('mobile-nav')!;
 
     const currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
@@ -90,8 +90,8 @@ const initializeCourseViewer = () => {
     prevScrollpos = currentScrollPos;
   };
 
-  for (let i = 0; i < buttons.length; i++) {
-    const btn = buttons[i];
+  for (let i = 0; i < tagButtons.length; i++) {
+    const btn = tagButtons[i];
     btn.addEventListener('click', filterCourses);
   }
 
@@ -106,7 +106,7 @@ const initializeCourseViewer = () => {
 
 const filterCourses = () => {
   setTimeout(() => {
-    const tagMap = {
+    const tagCodes = {
       MAT: 'Math',
       BUS: 'Business',
       SOC: 'History',
@@ -132,22 +132,22 @@ const filterCourses = () => {
       }
     }
 
-    const isValidTagKey = (key: string): key is keyof typeof tagMap => {
-      return key in tagMap;
+    const isValidKey = (key: string): key is keyof typeof tagCodes => {
+      return key in tagCodes;
     };
 
     // If this is not true, all the tags are not true and no filtering action needs to be done
-    if (trueTags.length !== 0) {
+    if (trueTags.length) {
       renderedItems = renderedItems.filter((name) => {
         let isPresent = false;
 
         for (let i = 0; i < trueTags.length; i++) {
           const tag = trueTags[i];
           try {
-            if (!isValidTagKey(tag))
-              throw Error(`${tag} is an invalid index for tagMap`);
+            if (!isValidKey(tag))
+              throw new Error(`${tag} is an invalid index for tagCodes`);
 
-            if (courseData[name].tags?.[0] === tagMap[tag]) {
+            if (courseData[name].tags?.[0] === tagCodes[tag]) {
               isPresent = true;
             }
           } catch (error) {

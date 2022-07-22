@@ -19,14 +19,14 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   interface ReferenceTypes extends Omit<CourseType, 'coursename' | 'tags'> {
     credits: string;
     length: string;
-    format: string;
+    format?: string;
     courseid: string;
     gradelevels: string;
-    prerequisites: string;
-    fees: string;
-    corequisite: string;
-    subsequent: string;
-    considerations: string;
+    prerequisites?: string;
+    fees?: string;
+    corequisite?: string;
+    subsequent?: string;
+    considerations?: string;
     description: string;
   }
 
@@ -45,7 +45,6 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     description: useRef<HTMLParagraphElement>(null),
   };
 
-  // Add collapse
   const toggleCollapse = (
     btn: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ): void => {
@@ -71,7 +70,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     const newCourse: { [key: string]: ReferenceTypes } = {};
     const loopName = course.coursename.toLowerCase().replaceAll(' ', '-');
 
-    const isValidTagKey = (
+    const isValidKey = (
       keys: string
     ): keys is keyof typeof newCourse[typeof loopName] => {
       return keys in newCourse[loopName];
@@ -80,20 +79,18 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     Object.keys(course).forEach((key) => {
       try {
         if (key === 'description') {
-          // console.log(refs[key].current.childNodes[0].textContent);
           const textContent = refs[key].current?.childNodes[0].textContent;
           if (!textContent) throw new Error('No text content');
           newCourse[loopName][key] = textContent;
         } else {
-          // console.log(`${refs[key].current.childNodes[1].wholeText.trim()}`);
-          if (!isValidTagKey(key)) throw new Error('Invalid tag key');
+          if (!isValidKey(key)) throw new Error('Invalid key');
           const childNode =
             refs[key].current?.childNodes[1].textContent?.trim();
-          if (!childNode) throw new Error('No first child node');
+          if (!childNode) throw new Error('No child node at index [1]');
           newCourse[loopName][key] = childNode;
         }
       } catch {
-        if (!isValidTagKey(key)) throw new Error('Invalid tag key');
+        if (!isValidKey(key)) throw new Error('Invalid key');
         const courseKey = course[key];
         if (!courseKey) throw new Error('No course key');
         newCourse[loopName][key] = courseKey;
@@ -115,13 +112,13 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
 
   return (
     <div suppressContentEditableWarning={true} className="Course">
-      <h1 className="coursetitle">{course.coursename}</h1>
+      <h1 className="course-title">{course.coursename}</h1>
       <br />
       <p
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.credits}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Credits:</b> {course.credits}
       </p>
@@ -129,7 +126,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.length}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Length:</b> {course.length}
       </p>
@@ -137,7 +134,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.format}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Format:</b> {course.format}
       </p>
@@ -145,7 +142,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.courseid}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Course ID:</b> {course.courseid}
       </p>
@@ -153,7 +150,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.gradelevels}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Grade Levels:</b> {course.gradelevels}
       </p>
@@ -162,7 +159,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.prerequisites}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Prerequisites:</b> {course.prerequisites}
       </p>
@@ -172,7 +169,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           suppressContentEditableWarning={true}
           contentEditable={isEditing}
           ref={refs.fees}
-          className="coursedescription"
+          className="course-description"
         >
           <b contentEditable={false}>Fees:</b> {course.fees}
         </p>
@@ -183,7 +180,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             suppressContentEditableWarning={true}
             contentEditable={isEditing}
             ref={refs.corequisite}
-            className="coursedescription"
+            className="course-description"
           >
             <b contentEditable={false}>Corequisites:</b> {course.corequisite}
           </p>
@@ -196,7 +193,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             suppressContentEditableWarning={true}
             contentEditable={isEditing}
             ref={refs.subsequent}
-            className="coursedescription"
+            className="course-description"
           >
             <b contentEditable={false}>Subsequent:</b> {course.subsequent}
           </p>
@@ -209,7 +206,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             suppressContentEditableWarning={true}
             contentEditable={isEditing}
             ref={refs.studentrecommendations}
-            className="coursedescription"
+            className="course-description"
           >
             <b contentEditable={false}>Recommendation:</b>{' '}
             {course.studentrecommendations}
@@ -221,7 +218,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.considerations}
-        className="coursedescription"
+        className="course-description"
       >
         <b contentEditable={false}>Considerations:</b> {course.considerations}
       </p>
@@ -233,7 +230,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         suppressContentEditableWarning={true}
         contentEditable={isEditing}
         ref={refs.description}
-        className="coursedescription content-collapsible"
+        className="course-description content-collapsible"
       >
         {course.description}
       </p>
