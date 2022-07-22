@@ -145,78 +145,142 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             </i>
             <input
               id="searchbar"
-              type="search"
               name="search"
               placeholder="Search for classes..."
             />
           </div>
-          <button id="signer" className="login">
+          <button type="button" id="signer" className="login">
             {user ? 'Sign Out' : 'Login'}
           </button>
           {userElement}
         </div>
         <div className="tag-container">
-          <button id="ENG" className="tag" onClick={() => toggleTag('ENG')}>
+          <button
+            type="button"
+            id="ENG"
+            className="tag"
+            onClick={() => toggleTag('ENG')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             English
           </button>
-          <button id="FOR" className="tag" onClick={() => toggleTag('FOR')}>
+          <button
+            type="button"
+            id="FOR"
+            className="tag"
+            onClick={() => toggleTag('FOR')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Foreign Language
           </button>
-          <button id="MAT" className="tag" onClick={() => toggleTag('MAT')}>
+          <button
+            type="button"
+            id="MAT"
+            className="tag"
+            onClick={() => toggleTag('MAT')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Math
           </button>
-          <button id="SCI" className="tag" onClick={() => toggleTag('SCI')}>
+          <button
+            type="button"
+            id="SCI"
+            className="tag"
+            onClick={() => toggleTag('SCI')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Science
           </button>
-          <button id="SOC" className="tag" onClick={() => toggleTag('SOC')}>
+          <button
+            type="button"
+            id="SOC"
+            className="tag"
+            onClick={() => toggleTag('SOC')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             History
           </button>
-          <button id="HPE" className="tag" onClick={() => toggleTag('HPE')}>
+          <button
+            type="button"
+            id="HPE"
+            className="tag"
+            onClick={() => toggleTag('HPE')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Health/PE
           </button>
-          <button id="BUS" className="tag" onClick={() => toggleTag('BUS')}>
+          <button
+            type="button"
+            id="BUS"
+            className="tag"
+            onClick={() => toggleTag('BUS')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Business
           </button>
-          <button id="IND" className="tag" onClick={() => toggleTag('IND')}>
+          <button
+            type="button"
+            id="IND"
+            className="tag"
+            onClick={() => toggleTag('IND')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Trade
           </button>
-          <button id="ART" className="tag" onClick={() => toggleTag('ART')}>
+          <button
+            type="button"
+            id="ART"
+            className="tag"
+            onClick={() => toggleTag('ART')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Art
           </button>
-          <button id="MUS" className="tag" onClick={() => toggleTag('MUS')}>
+          <button
+            type="button"
+            id="MUS"
+            className="tag"
+            onClick={() => toggleTag('MUS')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Music
           </button>
-          <button id="AGR" className="tag" onClick={() => toggleTag('AGR')}>
+          <button
+            type="button"
+            id="AGR"
+            className="tag"
+            onClick={() => toggleTag('AGR')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Agriculture
           </button>
-          <button id="FAM" className="tag" onClick={() => toggleTag('FAM')}>
+          <button
+            type="button"
+            id="FAM"
+            className="tag"
+            onClick={() => toggleTag('FAM')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             Life Skills
           </button>
-          <button id="LMHS_TAG" className="tag" onClick={() => toggleTag('LMHS_TAG')}>
+          <button
+            type="button"
+            id="LMHS_TAG"
+            className="tag"
+            onClick={() => toggleTag('LMHS_TAG')}
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
             TAG
@@ -224,10 +288,10 @@ const App: FC<AppProps> = ({ user, classItems }) => {
         </div>
         <div id="course-container">{classItems}</div>
       </div>
-      <div onClick={scrollToTop} id="to-top" className="jump-to-top">
+      <button type="button" onClick={scrollToTop} id="to-top" className="jump-to-top">
         {/* @ts-expect-error ts(2339) */}
         <ion-icon name="chevron-up-outline" size="larger" />
-      </div>
+      </button>
       <div id="mobile-nav" className="mobile-navigation">
         <div className="mobile-navigation-container">
           <a
@@ -250,7 +314,11 @@ const App: FC<AppProps> = ({ user, classItems }) => {
             <ion-icon name="information-circle-outline" />
             <span>About</span>
           </a>
-          <button onClick={scrollToTop} className="mobile-navigation-button">
+          <button
+            type="button"
+            onClick={scrollToTop}
+            className="mobile-navigation-button"
+          >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon name="chevron-up-outline" size="larger" />
           </button>

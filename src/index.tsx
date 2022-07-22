@@ -39,8 +39,8 @@ dbRef
 
 const initializeCourseViewer = () => {
   const courseArray = Object.keys(courseData);
-  const courseItems = courseArray.map((name, index) => (
-    <Course key={index} authLevel={authLevel} course={courseData[name]} />
+  const courseItems = courseArray.map((name) => (
+    <Course key={name} authLevel={authLevel} course={courseData[name]} />
   ));
 
   renderDOM(courseItems);
@@ -144,15 +144,11 @@ const filterCourses = () => {
 
         for (let i = 0; i < trueTags.length; i++) {
           const tag = trueTags[i];
-          try {
-            if (!isValidKey(tag))
-              throw new Error(`${tag} is an invalid index for tagCodes`);
+          if (!isValidKey(tag))
+            throw new Error(`${tag} is an invalid index for tagCodes`);
 
-            if (courseData[name].tags?.[0] === tagCodes[tag]) {
-              isPresent = true;
-            }
-          } catch (error) {
-            console.error(error);
+          if (courseData[name].tags?.[0] === tagCodes[tag]) {
+            isPresent = true;
           }
         }
 
@@ -168,9 +164,9 @@ const filterCourses = () => {
     key = key.replaceAll(' ', '-');
     const renderedElements = renderedItems
       .filter((name) => name.search(key) !== -1)
-      .map((name, index) => {
+      .map((name) => {
         return (
-          <Course key={index} authLevel={authLevel} course={courseData[name]} />
+          <Course key={name} authLevel={authLevel} course={courseData[name]} />
         );
       });
 
@@ -197,33 +193,25 @@ firebase
     // The signed-in user info.
     user = result.user;
 
-    dbRef
-      .get()
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          authData = snapshot.val().users;
+    dbRef.get().then((snapshot) => {
+      if (snapshot.exists()) {
+        authData = snapshot.val().users;
 
-          // Authorize the user if the user has been logged-in
-          if (user !== null) {
-            try {
-              Object.keys(authData).forEach((key) => {
-                if (user?.email === authData[key].email) {
-                  authLevel = authData[key].level;
-                  console.log(
-                    `You are currently authorized with a level of ${authLevel}`
-                  );
-                }
-              });
-              filterCourses();
-            } catch (error) {
-              console.error(error);
+        // Authorize the user if the user has been logged-in
+        if (user !== null) {
+          Object.keys(authData).forEach((key) => {
+            if (user?.email === authData[key].email) {
+              authLevel = authData[key].level;
+              console.log(
+                `You are currently authorized with a level of ${authLevel}`
+              );
             }
-          }
+          });
+          filterCourses();
         }
-      })
-      .catch((error) => console.error(error));
-  })
-  .catch((error) => console.error(error));
+      }
+    });
+  });
 
 const signInWithRedirect = () => {
   const button = document.getElementById('signer');
@@ -238,7 +226,6 @@ const signInWithRedirect = () => {
         authLevel = 0;
         filterCourses(); // Reload the DOM to update sign-in status
         // Sign-out successful.
-      })
-      .catch((error) => console.log(error));
+      });
   }
 };

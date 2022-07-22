@@ -55,7 +55,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       content.style.removeProperty('max-height');
     } else {
       btn.currentTarget.innerHTML = 'See less';
-      content.style.maxHeight = content.scrollHeight + 'px';
+      content.style.maxHeight = `${content.scrollHeight}px`;
     }
   };
 
@@ -223,7 +223,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         <b contentEditable={false}>Considerations:</b> {course.considerations}
       </p>
       <br />
-      <button className="collapsible" onClick={toggleCollapse}>
+      <button type="button" className="collapsible" onClick={toggleCollapse}>
         See more
       </button>
       <p
@@ -236,12 +236,12 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       </p>
       <div className="flex-container">
         {isEditing && (
-          <button onClick={cancel} className="button">
+          <button type="button" onClick={cancel} className="button">
             Cancel
           </button>
         )}
         {isEditing && (
-          <button onClick={submit} className="button-primary">
+          <button type="button" onClick={submit} className="button-primary">
             Submit
           </button>
         )}
