@@ -119,7 +119,7 @@ const filterCourses = () => {
       ART: 'Art',
       FOR: 'Foreign Language',
       MUS: 'Music',
-      LMHS_TAG: 'Talented and Gifted',
+      TAG: 'Talented and Gifted',
     };
 
     const search = document.getElementById('searchbar') as HTMLInputElement;

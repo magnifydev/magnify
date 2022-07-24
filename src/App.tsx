@@ -292,9 +292,9 @@ const App: FC<AppProps> = ({ user, classItems }) => {
           </button>
           <button
             type="button"
-            id="LMHS_TAG"
+            id="TAG"
             className="tag"
-            onClick={() => toggleTag('LMHS_TAG')}
+            onClick={() => toggleTag('TAG')}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
