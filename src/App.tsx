@@ -2,7 +2,7 @@ import './App.css';
 import links from './data/links';
 import scrollToTop from './utils/scrollToTop';
 import firebase from 'firebase/compat/app';
-import { FC } from 'react';
+import { FC, useCallback } from 'react';
 
 interface AppProps {
   user: firebase.User | null;
@@ -54,6 +54,15 @@ const App: FC<AppProps> = ({ user, classItems }) => {
   //     );
   //   }
   // };
+
+  const removeTrueTags = useCallback(() => {
+    const tags = document.getElementsByClassName('tag');
+    for (let i = 0; i < tags.length; i++) {
+      if (tags[i].classList.contains('tag-true')) {
+        tags[i].classList.remove('tag-true');
+      }
+    }
+  }, []);
 
   let userElement: JSX.Element;
   if (user && user.photoURL) {
@@ -151,6 +160,16 @@ const App: FC<AppProps> = ({ user, classItems }) => {
           {userElement}
         </div>
         <div className="tag-container">
+          <button
+            type="button"
+            id="ALL"
+            className="tag tag-all"
+            onClick={removeTrueTags}
+          >
+            {/* @ts-expect-error ts(2339) */}
+            <ion-icon class="hide" name="checkmark-outline" />
+            All
+          </button>
           <button
             type="button"
             id="ENG"

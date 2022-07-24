@@ -125,11 +125,13 @@ const filterCourses = () => {
     const search = document.getElementById('searchbar') as HTMLInputElement;
     let renderedItems = Object.keys(courseData);
     const tags = document.getElementsByClassName('tag');
+    const tagAll = document.getElementById('ALL');
     const trueTags: string[] = [];
 
     for (let i = 0; i < tags.length; i++) {
       if (tags[i].classList.contains('tag-true')) {
         trueTags.push(tags[i].id);
+        tagAll?.classList.remove('tag-all');
       }
     }
 
@@ -158,6 +160,8 @@ const filterCourses = () => {
           return false;
         }
       });
+    } else {
+      tagAll?.classList.add('tag-all');
     }
 
     let key = search?.value.toLowerCase();
