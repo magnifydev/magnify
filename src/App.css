@@ -422,12 +422,22 @@ button ion-icon {
 }
 
 .mobile-navigation-button {
-  background-color: var(--white);
+  background-color: var(--blue);
+  border: 2px solid var(--white);
   border-radius: 10px;
-  color: var(--blue);
+  color: var(--white);
   cursor: pointer;
   padding: 10px;
   text-decoration: none;
+}
+
+.mobile-navigation-button:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.mobile-navigation-button ion-icon {
+  font-size: larger;
 }
 
 a.mobile-navigation-button {
@@ -440,7 +450,6 @@ a.mobile-navigation-button {
 
 button.mobile-navigation-button {
   align-items: center;
-  border: none;
   display: flex;
   justify-content: center;
 }
