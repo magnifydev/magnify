@@ -242,13 +242,13 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
           </button>
           <button
             type="button"
-            id="IND"
+            id="EGR"
             className="tag"
-            onClick={() => toggleTag('IND')}
+            onClick={() => toggleTag('EGR')}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
-            Trade
+            Engineering
           </button>
           <button
             type="button"

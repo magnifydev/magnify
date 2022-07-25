@@ -113,7 +113,7 @@ const filterCourses = (): void => {
       BUS: 'Business',
       SOC: 'History',
       ENG: 'English',
-      IND: 'Trade',
+      EGR: 'Engineering',
       FAM: 'Life Skills',
       AGR: 'Agriculture',
       SCI: 'Science',

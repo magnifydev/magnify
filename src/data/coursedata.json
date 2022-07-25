@@ -225,7 +225,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "advanced-placement-environmental-science-1-&-2": {
     "considerations": "Advanced Placement Environmental Science 1 & 2 is a NGSS course based on the completion of NGSS Earth Science Standards and successful completion will meet the earth science requirement for graduation. Students MUST sign up for both sections listed above. Students taking this course must have completed General Biology and Algebra. Students MUST sign up for both sections listed above. Students may take the AP exam in May.",
@@ -370,7 +370,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Introduction to Engineering Design or Principles of Engineering",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "afnr-workplace-experience": {
     "considerations": "Instructor approval required. SAE (supervised agricultural experience) and FFA opportunities will be provided in a Blended format.",
@@ -760,7 +760,7 @@
     "gradelevels": "12",
     "length": "2 Semesters",
     "prerequisites": "None",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "business-consumer-law": {
     "considerations": "None",
@@ -785,7 +785,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Woods, Materials and Processes",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "cantemus": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
@@ -833,7 +833,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "classics": {
     "considerations": "See prerequisites.",
@@ -940,7 +940,7 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "computer-integrated-manufacturing-(cim)": {
     "considerations": "This course articulates credit with Kirkwood Community College.",
@@ -952,7 +952,7 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "computer-science-essentials-(cse)": {
     "considerations": "Students with no prior computer science experience can take this as a first computer science course. Academically confident/motivated students or students with a bit of prior programming experience may skip CSE and sign up for Computer Science Principles (CSP).",
@@ -964,7 +964,7 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "computer-science-principles-(csp)": {
     "considerations": "Students who want a beginner level computer science experience should take Computer Science Essentials (CSE) as their first course. Academically motivated / confident students or students with a bit of prior programming experience may choose to skip CSE and register for CSP.",
@@ -976,7 +976,7 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "concert-band": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -1111,7 +1111,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "digital-photography": {
     "considerations": "Design Art Basics is strongly recommended before taking this class.",
@@ -1207,7 +1207,7 @@
     "gradelevels": "12",
     "length": "2 Quarters",
     "prerequisites": "Any two PLTW Engineering courses.",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "english-10": {
     "considerations": "English 10 or English II is required for graduation",
@@ -1721,7 +1721,7 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "introduction-to-agriculture,-food,-and-natural-resources": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -2135,7 +2135,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "meteorology": {
     "considerations": "Meteorology is a science elective course. Students taking this course must have completed Geometry and ACP (Applied Chemistry and Physics) or Chemistry I.",
@@ -2341,7 +2341,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "prostart-internship": {
     "considerations": "Kirkwood credits earned upon completion of ProStart program",
@@ -2413,7 +2413,7 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "residential-construction-ii": {
     "considerations": "None",
@@ -2425,7 +2425,7 @@
     "gradelevels": "11-12 or approval",
     "length": "1 Quarter",
     "prerequisites": "Residential Const I",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "rhetoric": {
     "considerations": "May be used to fulfill the graduation requirement for Speech/Acting through Venture Academics. Not offered as a standalone class.",
@@ -2597,7 +2597,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Trade"]
+    "tags": ["Engineering"]
   },
   "work-experience---yearbook": {
     "considerations": "The class is a blended class meeting 2 days a week before school. During blended days students will be covering school events or working on yearbook work assignments on their own time. Though taught through the English Department, credits earned through yearbook are elective only and do not count toward English graduation requirements.",
