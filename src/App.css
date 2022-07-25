@@ -127,7 +127,6 @@ ion-icon {
 
 .navigation ul li a {
   color: var(--white);
-  display: block;
   display: flex;
   position: relative;
   text-decoration: none;
@@ -307,7 +306,6 @@ ion-icon {
   position: absolute;
   right: 0;
   visibility: visible;
-  visibility: initial;
 }
 
 .parent {
