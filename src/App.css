@@ -294,7 +294,7 @@ ion-icon {
   padding: clamp(15px, 5vw, 20px);
   position: relative;
   text-align: left;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
 }
 
 .Course button.edit {
@@ -477,18 +477,19 @@ button.mobile-navigation-button {
   margin-right: 10px;
   padding: 10px;
   text-decoration: none;
-  transition: all 0.2s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
   vertical-align: middle;
 }
 
 .login:hover {
   background-color: var(--blue) !important;
   color: var(--white) !important;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .button {
   align-items: center;
-  background: var(--white);
+  background-color: var(--white);
   border: 2px solid var(--blue);
   border-radius: 10px;
   cursor: pointer;
@@ -498,18 +499,19 @@ button.mobile-navigation-button {
   margin-top: 10px;
   padding: 10px;
   text-decoration: none;
-  transition: all 0.2s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
   vertical-align: middle;
 }
 
 .button:hover {
-  box-shadow: 2px 4px 18px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .button-primary {
   align-items: center;
-  background: var(--blue);
+  background-color: var(--blue);
   border: 2px solid var(--blue);
   border-radius: 10px;
   color: var(--white);
@@ -520,13 +522,14 @@ button.mobile-navigation-button {
   margin-top: 10px;
   padding: 10px;
   text-decoration: none;
-  transition: all 0.2s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
   vertical-align: middle;
 }
 
 .button-primary:hover {
-  box-shadow: 2px 4px 18px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  background-color: var(--white);
+  color: var(--blackish);
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .flex-container {
