@@ -1,6 +1,6 @@
 {
-  "name": "magnify.ts",
-  "version": "2023.0.0",
+  "name": "magnify",
+  "version": "2023.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
