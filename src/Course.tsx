@@ -16,20 +16,6 @@ interface CourseProps {
 const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   const [isEditing, setIsEditing] = useState(false);
 
-  interface ReferenceTypes extends Omit<CourseType, 'coursename' | 'tags'> {
-    credits: string;
-    length: string;
-    format?: string;
-    courseid: string;
-    gradelevels: string;
-    prerequisites?: string;
-    fees?: string;
-    corequisite?: string;
-    subsequent?: string;
-    considerations?: string;
-    description: string;
-  }
-
   const credits = useRef<HTMLParagraphElement>(null);
   const length = useRef<HTMLParagraphElement>(null);
   const format = useRef<HTMLParagraphElement>(null);
@@ -39,9 +25,11 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   const fees = useRef<HTMLParagraphElement>(null);
   const corequisite = useRef<HTMLParagraphElement>(null);
   const subsequent = useRef<HTMLParagraphElement>(null);
-  // const studentrecommendations = useRef<HTMLParagraphElement>(null);
   const considerations = useRef<HTMLParagraphElement>(null);
   const description = useRef<HTMLParagraphElement>(null);
+
+  // Uncomment for student recommendations
+  // const studentrecommendations = useRef<HTMLParagraphElement>(null);
 
   const refs = useMemo(
     () => ({
@@ -98,41 +86,32 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   const cancel = useCallback(() => setIsEditing(false), []);
 
   const submit = useCallback(() => {
-    const newCourse: { [key: string]: ReferenceTypes } = {};
     const loopName = course.coursename.toLowerCase().replaceAll(' ', '-');
 
-    const isValidKey = (
-      keys: string
-    ): keys is keyof typeof newCourse[typeof loopName] => {
-      return keys in newCourse[loopName];
+    const isValidKey = (key: string): key is keyof typeof refs => {
+      return key in refs;
     };
 
-    Object.keys(course).forEach((key) => {
-      try {
-        if (key === 'description') {
-          const textContent = refs[key].current?.childNodes[0].textContent;
-          if (!textContent) throw new Error('No text content');
-          newCourse[loopName][key] = textContent;
-        } else {
-          if (!isValidKey(key)) throw new Error('Invalid key');
-          const childNode =
-            refs[key].current?.childNodes[1].textContent?.trim();
-          if (!childNode) throw new Error('No child node at index [1]');
-          newCourse[loopName][key] = childNode;
-        }
-      } catch {
-        if (!isValidKey(key)) throw new Error('Invalid key');
-        const courseKey = course[key];
-        if (!courseKey) throw new Error('No course key');
-        newCourse[loopName][key] = courseKey;
-      }
-    });
+    const overwriteCourse = Object.fromEntries(
+      Object.keys(course)
+        .filter(isValidKey)
+        .map((key) => {
+          if (key === 'description') {
+            const textContent = refs[key].current?.childNodes[0].textContent;
+            return [key, textContent ? textContent : course[key]];
+          } else {
+            const textContent =
+              refs[key].current?.childNodes[1].textContent?.trim();
+            return [key, textContent ? textContent : course[key]];
+          }
+        })
+    );
 
     firebase
       .database()
-      .ref(`courses`)
+      .ref('courses')
       .update({
-        [loopName]: newCourse[loopName],
+        [loopName]: { ...course, ...overwriteCourse },
       });
 
     // Note: introduce student comments with this: studentrecommendations: parseInt(studentrecommendations.current.childNodes[1].wholeText.trim()),
