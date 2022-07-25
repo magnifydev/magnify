@@ -16,7 +16,7 @@
   --whiteish: #f6f7f9;
   --gray: #f5f5f5;
   --blackish: #252525;
-  --grayer: #999;
+  --grayer: #888;
 }
 
 @media only screen and (min-width: 500px) {
@@ -259,7 +259,12 @@ ion-icon {
   width: 100%;
 }
 
+.search input::placeholder {
+  color: var(--grayer);
+}
+
 .search i ion-icon {
+  color: var(--grayer);
   font-size: 1.2rem;
   padding: 10px;
 }
