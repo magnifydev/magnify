@@ -1,4 +1,4 @@
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: 'AIzaSyDL5M-oQos8ZS499eWgEWElT9YctSeWWiU',
   authDomain: 'magnifyyyyy.firebaseapp.com',
   databaseURL: 'https://magnifyyyyy-default-rtdb.firebaseio.com',
@@ -8,5 +8,3 @@ const firebaseConfig = {
   appId: '1:798318460321:web:4290be6078dddfe8221fe0',
   measurementId: 'G-5X5FRMHDHE',
 };
-
-export default firebaseConfig;

@@ -1,6 +1,6 @@
 import './App.css';
-import links from './data/links';
-import scrollToTop from './utils/scrollToTop';
+import { links } from './data';
+import { scrollToTop } from './utils';
 import firebase from 'firebase/compat/app';
 import { FC, useCallback } from 'react';
 
@@ -9,7 +9,7 @@ interface AppProps {
   classItems: JSX.Element;
 }
 
-const App: FC<AppProps> = ({ user, classItems }) => {
+const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
   const toggleTag = (id: string): void => {
     const tag = document.getElementById(id);
     if (tag?.classList.contains('tag-true')) {

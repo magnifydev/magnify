@@ -1,4 +1,4 @@
-interface CourseType {
+export interface CourseType {
   courseid: string;
   coursename: string;
   credits: string;
@@ -13,17 +13,3 @@ interface CourseType {
   fees?: string;
   tags?: string[];
 }
-
-// credits: string;
-//     length: string;
-//     format: string;
-//     courseid: string;
-//     gradelevels: string;
-//     prerequisites: string;
-//     fees: string;
-//     corequisite: string;
-//     subsequent: string;
-//     considerations: string;
-//     description: string;
-
-export default CourseType;

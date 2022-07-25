@@ -1,4 +1,4 @@
-const getWidth = () => {
+export const getWidth = (): number => {
   return Math.max(
     document.body.scrollWidth,
     document.documentElement.scrollWidth,
@@ -7,5 +7,3 @@ const getWidth = () => {
     document.documentElement.clientWidth
   );
 };
-
-export default getWidth;

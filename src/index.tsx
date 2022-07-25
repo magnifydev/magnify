@@ -1,10 +1,10 @@
 import App from './App';
 import Course from './Course';
-import firebaseConfig from './config/firebase';
+import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
-import CourseDataType from './types/courseDataType';
-import getWidth from './utils/getWidth';
+import { CourseDataType } from './types';
+import { getWidth } from './utils';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/database';
@@ -37,7 +37,7 @@ dbRef
     initializeCourseViewer();
   });
 
-const initializeCourseViewer = () => {
+const initializeCourseViewer = (): void => {
   const courseArray = Object.keys(courseData);
   const courseItems = courseArray.map((name) => (
     <Course key={name} authLevel={authLevel} course={courseData[name]} />
@@ -61,7 +61,7 @@ const initializeCourseViewer = () => {
     handleMobileNavOnScroll();
   };
 
-  const displayDesktopScrollToTop = () => {
+  const displayDesktopScrollToTop = (): void => {
     if (!topButton)
       throw new Error('Supposed element with id to-top nonexistent');
 
@@ -76,10 +76,12 @@ const initializeCourseViewer = () => {
     }
   };
 
-  const handleMobileNavOnScroll = () => {
+  const handleMobileNavOnScroll = (): void => {
     if (getWidth() >= 500) return;
 
-    const nav = document.getElementById('mobile-nav')!;
+    const nav = document.getElementById('mobile-nav');
+    if (!nav)
+      throw new Error('Supposed element with id mobile-nav nonexistent');
 
     const currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
@@ -104,7 +106,7 @@ const initializeCourseViewer = () => {
   // });
 };
 
-const filterCourses = () => {
+const filterCourses = (): void => {
   setTimeout(() => {
     const tagCodes = {
       MAT: 'Math',
@@ -178,7 +180,7 @@ const filterCourses = () => {
   }, 20);
 };
 
-const renderDOM = (courseItems: JSX.Element[], userData = user) => {
+const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
   ReactDOM.render(
     <React.StrictMode>
       <App
@@ -206,9 +208,6 @@ firebase
           Object.keys(authData).forEach((key) => {
             if (user?.email === authData[key].email) {
               authLevel = authData[key].level;
-              console.log(
-                `You are currently authorized with a level of ${authLevel}`
-              );
             }
           });
           filterCourses();
@@ -217,7 +216,7 @@ firebase
     });
   });
 
-const signInWithRedirect = () => {
+const signInWithRedirect = (): void => {
   const button = document.getElementById('signer');
   if (button?.textContent === 'Login') {
     firebase.auth().signInWithRedirect(provider);

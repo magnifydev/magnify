@@ -1,7 +1,5 @@
-import CourseType from './courseType';
+import { CourseType } from './courseType';
 
-interface CourseDataType {
+export interface CourseDataType {
   [key: string]: CourseType;
 }
-
-export default CourseDataType;

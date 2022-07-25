@@ -1,6 +1,6 @@
 import './App.css';
-import firebaseConfig from './config/firebase';
-import CourseType from './types/courseType';
+import { firebaseConfig } from './config';
+import { CourseType } from './types';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 import { FC, useCallback, useRef, useState, useMemo } from 'react';
