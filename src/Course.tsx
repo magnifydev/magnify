@@ -88,7 +88,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   );
 
   const edit = useCallback(
-    (btn: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    (btn: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       btn.currentTarget.classList.toggle('hide');
       setIsEditing(true);
     },
@@ -151,7 +151,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.credits}
         className="course-description"
       >
-        <b contentEditable={false}>Credits:</b> {course.credits}
+        <b contentEditable={false}>Credits: </b>
+        {course.credits}
       </p>
       <p
         suppressContentEditableWarning
@@ -159,7 +160,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.length}
         className="course-description"
       >
-        <b contentEditable={false}>Length:</b> {course.length}
+        <b contentEditable={false}>Length: </b>
+        {course.length}
       </p>
       <p
         suppressContentEditableWarning
@@ -167,7 +169,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.format}
         className="course-description"
       >
-        <b contentEditable={false}>Format:</b> {course.format}
+        <b contentEditable={false}>Format: </b>
+        {course.format}
       </p>
       <p
         suppressContentEditableWarning
@@ -175,7 +178,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.courseid}
         className="course-description"
       >
-        <b contentEditable={false}>Course ID:</b> {course.courseid}
+        <b contentEditable={false}>Course ID: </b>
+        {course.courseid}
       </p>
       <p
         suppressContentEditableWarning
@@ -183,7 +187,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.gradelevels}
         className="course-description"
       >
-        <b contentEditable={false}>Grade Levels:</b> {course.gradelevels}
+        <b contentEditable={false}>Grade Levels: </b>
+        {course.gradelevels}
       </p>
       <br />
       <p
@@ -192,7 +197,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.prerequisites}
         className="course-description"
       >
-        <b contentEditable={false}>Prerequisites:</b> {course.prerequisites}
+        <b contentEditable={false}>Prerequisites: </b>
+        {course.prerequisites}
       </p>
       <br />
       {course.fees && (
@@ -202,7 +208,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           ref={refs.fees}
           className="course-description"
         >
-          <b contentEditable={false}>Fees:</b> {course.fees}
+          <b contentEditable={false}>Fees: </b>
+          {course.fees}
         </p>
       )}
       {course.corequisite && (
@@ -213,7 +220,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             ref={refs.corequisite}
             className="course-description"
           >
-            <b contentEditable={false}>Corequisites:</b> {course.corequisite}
+            <b contentEditable={false}>Corequisites: </b>
+            {course.corequisite}
           </p>
           <br />
         </div>
@@ -226,11 +234,13 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             ref={refs.subsequent}
             className="course-description"
           >
-            <b contentEditable={false}>Subsequent:</b> {course.subsequent}
+            <b contentEditable={false}>Subsequent: </b>
+            {course.subsequent}
           </p>
           <br />
         </div>
       )}
+      {/* Uncomment for student recommendations */}
       {/* {course.studentrecommendations && (
         <div>
           <p
@@ -251,7 +261,8 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         ref={refs.considerations}
         className="course-description"
       >
-        <b contentEditable={false}>Considerations:</b> {course.considerations}
+        <b contentEditable={false}>Considerations: </b>
+        {course.considerations}
       </p>
       <br />
       <button type="button" className="collapsible" onClick={toggleCollapse}>
@@ -278,8 +289,10 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         )}
       </div>
       {authLevel === 5 && !isEditing && (
-        /* @ts-expect-error ts(2339) */
-        <ion-icon onClick={edit} class="edit" name="pencil-outline" />
+        <button onClick={edit} className="edit">
+          {/* @ts-expect-error ts(2339) */}
+          <ion-icon name="create-outline" />
+        </button>
       )}
     </div>
   );
