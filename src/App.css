@@ -207,7 +207,7 @@ ion-icon {
 .top-bar {
   align-items: center;
   background-color: var(--white) !important;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   display: flex;
   gap: clamp(15px, 5vw, 20px);
   height: 65.5px;
@@ -256,8 +256,7 @@ ion-icon {
   border: 2px solid var(--grite);
   border: none;
   border-radius: 999px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   height: 100%;
   outline: none;
   padding: 5px 20px 5px 35px;
@@ -276,7 +275,7 @@ ion-icon {
 
 .user {
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   height: 45.5px;
   overflow: hidden;
   position: relative;
@@ -296,8 +295,7 @@ ion-icon {
   align-content: center;
   background-color: var(--white);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   font-size: smaller;
   /* margin: clamp(15px, 5vw, 20px); */
   padding: clamp(15px, 5vw, 20px);
@@ -353,7 +351,7 @@ ion-icon {
   background-color: var(--blueish);
   border: none;
   border-radius: 999px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   color: var(--bluer);
   cursor: pointer;
   display: flex;
@@ -408,10 +406,11 @@ button ion-icon {
   border: none;
   border-radius: 999px;
   bottom: 30px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   color: var(--bluer);
   cursor: pointer;
   display: flex;
+  font-size: smaller;
   justify-content: center;
   opacity: 0;
   padding: 10px;
@@ -431,7 +430,7 @@ button ion-icon {
   align-items: center;
   background-color: var(--white) !important;
   bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px -6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px -6px 24px 0px;
   display: flex;
   font-size: smaller;
   gap: clamp(15px, 5vw, 20px);
@@ -450,7 +449,7 @@ button ion-icon {
   background-color: var(--blueish);
   border: none;
   border-radius: 999px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   color: var(--bluer);
   cursor: pointer;
   height: 100%;
@@ -525,7 +524,7 @@ button.mobile-navigation-button {
   background: var(--blue);
   border: none;
   border-radius: 999px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 24px 0px;
   color: var(--white);
   cursor: pointer;
   display: flex;
