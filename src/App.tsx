@@ -103,10 +103,6 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
       </div>
       <div className="main">
         <div className="top-bar">
-          {/* Uncomment for navigation button */}
-          {/* <div className="toggle" onClick={() => toggleNav()}>
-            <ion-icon name="menu-outline" />
-          </div> */}
           <div className="search">
             <i>
               {/* @ts-expect-error ts(2339) */}

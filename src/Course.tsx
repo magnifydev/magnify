@@ -110,7 +110,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       .update({
         [loopName]: { ...course, ...overwriteCourse },
       });
-      
+
     // Exit the edit menu
     setIsEditing(false);
   }, [course, refs]);
@@ -214,21 +214,6 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           <br />
         </div>
       )}
-      {/* Uncomment for student recommendations */}
-      {/* {course.studentrecommendations && (
-        <div>
-          <p
-            suppressContentEditableWarning={true}
-            contentEditable={isEditing}
-            ref={refs.studentrecommendations}
-            className="course-description"
-          >
-            <b contentEditable={false}>Recommendation:</b>{' '}
-            {course.studentrecommendations}
-          </p>
-          <br />
-        </div>
-      )} */}
       <p
         suppressContentEditableWarning
         contentEditable={isEditing}

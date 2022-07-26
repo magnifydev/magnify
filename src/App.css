@@ -197,19 +197,7 @@ ion-icon {
   }
 }
 
-.toggle {
-  align-items: center;
-  background: var(--white);
-  cursor: pointer;
-  display: flex;
-  font-size: 2.5rem;
-  height: 65.5px;
-  justify-content: center;
-  width: 60px;
-}
-
-.search,
-.toggle {
+.search {
   position: relative;
 }
 
