@@ -65,10 +65,10 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       btn.currentTarget.classList.toggle('active');
       const content = btn.currentTarget.nextElementSibling as HTMLElement;
       if (content.style.maxHeight) {
-        btn.currentTarget.innerHTML = 'See more';
+        btn.currentTarget.innerHTML = 'See More';
         content.style.removeProperty('max-height');
       } else {
-        btn.currentTarget.innerHTML = 'See less';
+        btn.currentTarget.innerHTML = 'See Less';
         content.style.maxHeight = `${content.scrollHeight}px`;
       }
     },
@@ -245,7 +245,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       </p>
       <br />
       <button type="button" className="collapsible" onClick={toggleCollapse}>
-        See more
+        See More
       </button>
       <p
         suppressContentEditableWarning
