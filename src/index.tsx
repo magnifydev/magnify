@@ -65,14 +65,12 @@ const initializeCourseViewer = (): void => {
     if (!topButton)
       throw new Error('Supposed element with id to-top nonexistent');
 
-    if (
-      (document.body.scrollTop > 70 ||
-        document.documentElement.scrollTop > 70) &&
-      getWidth() >= 500
-    ) {
-      topButton.style.display = 'flex';
+    if (window.scrollY >= 80 && getWidth() >= 500) {
+      topButton.style.visibility = 'visible';
+      topButton.style.opacity = '1';
     } else {
-      topButton.style.display = 'none';
+      topButton.style.visibility = 'hidden';
+      topButton.style.opacity = '0';
     }
   };
 
