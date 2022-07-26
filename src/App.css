@@ -276,6 +276,7 @@ ion-icon {
 
 .user {
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   height: 45.5px;
   overflow: hidden;
   position: relative;
