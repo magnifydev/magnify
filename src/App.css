@@ -21,7 +21,7 @@
   --gray: #888;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 525px) {
   :root {
     --nav-width: 80px;
   }
@@ -339,7 +339,7 @@ ion-icon {
   padding-top: calc(65.5px + clamp(15px, 5vw, 20px));
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 525px) {
   .tag-container {
     padding-bottom: 34.5px;
     padding-top: 100px;
@@ -487,7 +487,7 @@ button.mobile-navigation-button {
   justify-content: center;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 525px) {
   .mobile-navigation {
     display: none;
   }
