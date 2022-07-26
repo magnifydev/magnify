@@ -313,36 +313,30 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
         <ion-icon name="chevron-up-outline" size="larger" />
       </button>
       <div id="mobile-nav" className="mobile-navigation">
-        <div className="mobile-navigation-container">
-          <a
-            href={links.programOfStudiesPDF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-navigation-button"
-          >
-            {/* @ts-expect-error ts(2339) */}
-            <ion-icon name="document-text-outline" />
-            <span>PDF</span>
-          </a>
-          <a
-            href={links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-navigation-button"
-          >
-            {/* @ts-expect-error ts(2339) */}
-            <ion-icon name="information-circle-outline" />
-            <span>About</span>
-          </a>
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="mobile-navigation-button"
-          >
-            {/* @ts-expect-error ts(2339) */}
-            <ion-icon name="chevron-up-outline" size="larger" />
-          </button>
-        </div>
+        <a
+          href={links.programOfStudiesPDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mobile-navigation-button"
+        >
+          PDF
+        </a>
+        <a
+          href={links.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mobile-navigation-button"
+        >
+          About
+        </a>
+        <button
+          type="button"
+          onClick={scrollToTop}
+          className="mobile-navigation-button"
+        >
+          {/* @ts-expect-error ts(2339) */}
+          <ion-icon name="chevron-up-outline" size="larger" />
+        </button>
       </div>
     </div>
   );

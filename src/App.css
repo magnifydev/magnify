@@ -209,10 +209,10 @@ ion-icon {
   background-color: var(--white) !important;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   display: flex;
-  gap: 20px;
+  gap: clamp(15px, 5vw, 20px);
   height: 65.5px;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px clamp(15px, 5vw, 20px);
   position: fixed;
   width: calc(100vw - var(--nav-width));
   z-index: 9;
@@ -391,6 +391,9 @@ ion-icon {
 
 button ion-icon {
   font-size: larger;
+}
+
+.tag ion-icon {
   margin-right: 5px;
 }
 
@@ -422,33 +425,35 @@ button ion-icon {
 }
 
 .mobile-navigation {
-  background-color: var(--white);
+  align-items: center;
+  background-color: var(--white) !important;
   bottom: 0;
   box-shadow: rgba(0, 0, 0, 0.05) 0px -6px 24px 0px;
-  color: var(--blue);
+  display: flex;
+  font-size: smaller;
+  gap: clamp(15px, 5vw, 20px);
   height: 65.5px;
+  justify-content: space-between;
   left: 0;
-  padding: 10px;
+  padding: 10px clamp(15px, 5vw, 20px);
   position: fixed;
   transition: all 0.5s ease 0s;
+  /* width: calc(100vw - var(--nav-width)); */
   width: 100%;
-}
-
-.mobile-navigation-container {
-  display: flex;
-  gap: 10px;
-  height: 100%;
-  width: 100%;
+  z-index: 9;
 }
 
 .mobile-navigation-button {
   background-color: var(--blueish);
-  border: 2px solid var(--white);
+  border: none;
   border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   color: var(--bluer);
   cursor: pointer;
-  padding: 10px;
+  height: 100%;
+  padding: 15px;
   text-decoration: none;
+  width: 100%;
 }
 
 .mobile-navigation-button:hover {
@@ -467,7 +472,6 @@ a.mobile-navigation-button {
   display: flex;
   gap: 10px;
   justify-content: center;
-  width: 100%;
 }
 
 a.mobile-navigation-button:hover {
