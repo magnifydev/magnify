@@ -11,17 +11,23 @@
 :root {
   --pull-width: 0px;
   --nav-width: 0px;
+  --blueish: #e8f0fe;
   --blue: #07f;
+  --bluer: #1553aa;
   --white: #fff;
   --whiteish: #f6f7f9;
-  --gray: #f5f5f5;
   --blackish: #252525;
-  --grayer: #888;
+  --grite: #ececec;
+  --gray: #888;
 }
 
 @media only screen and (min-width: 500px) {
   :root {
     --nav-width: 80px;
+  }
+
+  .navigation {
+    border-left: 10px solid var(--blue);
   }
 }
 
@@ -92,13 +98,13 @@ ion-icon {
 
 .navigation {
   background: var(--blue);
-  border-left: 10px solid var(--blue);
   height: 100%;
   overflow: hidden;
   position: fixed;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease 0s;
   /* width: calc(var(--nav-width)); */
   width: calc(var(--nav-width) + var(--pull-width));
+  z-index: 999;
 }
 
 .navigation ul {
@@ -109,19 +115,19 @@ ion-icon {
 }
 
 .navigation ul li {
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 30px;
+  border-bottom-left-radius: 32.75px;
+  border-top-left-radius: 32.75px;
   list-style: none;
   position: relative;
   width: 100%;
 }
 
 .navigation ul li.hovered {
-  background: var(--whiteish);
+  background: var(--white);
 }
 
 .navigation ul li:first-child {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   /* pointer-events: none; */
 }
 
@@ -140,7 +146,7 @@ ion-icon {
 .navigation ul li a .icon {
   align-items: center;
   display: flex;
-  height: 60px;
+  height: 65.5px;
   justify-content: center;
   line-height: 70px;
   min-width: 60px;
@@ -164,7 +170,7 @@ ion-icon {
 } */
 
 .navigation ul li.hovered a:before {
-  box-shadow: 35px 35px 0 10px var(--whiteish);
+  box-shadow: 35px 35px 0 10px var(--white);
   top: -50px;
 }
 
@@ -182,36 +188,35 @@ ion-icon {
 
 .navigation ul li.hovered a:after {
   bottom: -50px;
-  box-shadow: 35px -35px 0 10px var(--whiteish);
+  box-shadow: 35px -35px 0 10px var(--white);
 }
 
 .logo {
-  border-bottom: 1.5px solid var(--whiteish);
+  border-bottom: 1.5px solid var(--white);
   font-family: 'Montserrat', sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
 }
 
 .main {
-  background: var(--whiteish);
+  background: var(--white);
   /* left: calc(var(--nav-width)); */
   left: calc(var(--nav-width) + var(--pull-width));
   min-height: 100vh;
   position: absolute;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease 0s;
   width: calc(100% - var(--nav-width));
 }
 
 .top-bar {
   align-items: center;
   background-color: var(--white) !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   display: flex;
-  height: 60px;
+  height: 65.5px;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 10px;
   position: fixed;
   width: calc(100vw - var(--nav-width));
   z-index: 9;
@@ -229,7 +234,7 @@ ion-icon {
   cursor: pointer;
   display: flex;
   font-size: 2.5rem;
-  height: 60px;
+  height: 65.5px;
   justify-content: center;
   width: 60px;
 }
@@ -241,8 +246,9 @@ ion-icon {
 
 .search {
   flex: 1 1;
+  height: 100%;
   margin: 0 10px;
-  width: 400px;
+  width: 100%;
 }
 
 .search i {
@@ -251,22 +257,25 @@ ion-icon {
 }
 
 .search input {
-  border: 1px solid var(--grayer);
+  border: 2px solid var(--grite);
+  border: none;
   border-radius: 999px;
-  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+  height: 100%;
   outline: none;
   padding: 5px 20px 5px 35px;
   width: 100%;
 }
 
 .search input::placeholder {
-  color: var(--grayer);
+  color: var(--blackish);
 }
 
 .search i ion-icon {
-  color: var(--grayer);
+  color: var(--blackish);
   font-size: 1.2rem;
-  padding: 10px;
+  padding: 13.5px;
 }
 
 .user {
@@ -291,9 +300,9 @@ ion-icon {
 .Course {
   align-content: center;
   background-color: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   font-size: smaller;
   margin: clamp(15px, 5vw, 20px);
   padding: clamp(15px, 5vw, 20px);
@@ -335,18 +344,19 @@ ion-icon {
 
 .tag {
   align-items: center;
-  background: var(--white);
-  border: 2px solid var(--blue);
-  border-radius: 10px;
+  background-color: var(--blueish);
+  border: none;
+  border-radius: 999px;
+  color: var(--bluer);
   cursor: pointer;
   display: flex;
   flex: 1 1;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
   text-decoration: none;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -357,7 +367,7 @@ ion-icon {
 
 .tag:hover {
   position: relative;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .tag-true,
@@ -388,10 +398,10 @@ button ion-icon {
   align-items: center;
   background-color: var(--white);
   border: none;
-  border-radius: 10px;
+  border-radius: 999px;
   bottom: 35px;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
-    0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   color: var(--blackish);
   cursor: pointer;
   display: none;
@@ -402,15 +412,16 @@ button ion-icon {
 }
 
 .mobile-navigation {
-  background-color: var(--blue);
+  background-color: var(--white);
   bottom: 0;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
-    0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   color: var(--blue);
+  height: 65.5px;
   left: 0;
   padding: 10px;
   position: fixed;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease 0s;
   width: 100%;
 }
 
@@ -422,18 +433,18 @@ button ion-icon {
 }
 
 .mobile-navigation-button {
-  background-color: var(--blue);
+  background-color: var(--blueish);
   border: 2px solid var(--white);
-  border-radius: 10px;
-  color: var(--white);
+  border-radius: 999px;
+  color: var(--bluer);
   cursor: pointer;
   padding: 10px;
   text-decoration: none;
 }
 
 .mobile-navigation-button:hover {
-  background-color: var(--white);
-  color: var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .mobile-navigation-button ion-icon {
@@ -442,10 +453,17 @@ button ion-icon {
 
 a.mobile-navigation-button {
   align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
   display: flex;
   gap: 10px;
   justify-content: center;
   width: 100%;
+}
+
+a.mobile-navigation-button:hover {
+  background-color: var(--bluer);
+  color: var(--white);
 }
 
 button.mobile-navigation-button {
@@ -472,6 +490,12 @@ button.mobile-navigation-button {
   text-align: left;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
+  transition: all 0.5s ease 0s;
+}
+
+.collapsible:hover {
+  color: var(--bluer);
+  transition: all 0.5s ease 0s;
 }
 
 .content-collapsible {
@@ -481,31 +505,33 @@ button.mobile-navigation-button {
 }
 
 .login {
-  align-items: left;
-  background: var(--white);
-  border: 2px solid var(--blue);
-  border-radius: 10px;
+  align-items: center;
+  background: var(--blue);
+  border: none;
+  border-radius: 999px;
+  color: var(--white);
   cursor: pointer;
   display: flex;
+  height: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
+  padding: 15px;
   text-decoration: none;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
   vertical-align: middle;
 }
 
 .login:hover {
-  background-color: var(--blue) !important;
+  background-color: var(--bluer) !important;
   color: var(--white) !important;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .button {
   align-items: center;
   background-color: var(--white);
   border: 2px solid var(--blue);
-  border-radius: 10px;
+  border-radius: 999px;
   cursor: pointer;
   display: flex;
   flex: 1 1;
@@ -513,21 +539,21 @@ button.mobile-navigation-button {
   margin-top: 10px;
   padding: 10px;
   text-decoration: none;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
   vertical-align: middle;
 }
 
 .button:hover {
   background-color: var(--blue);
   color: var(--white);
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .button-primary {
   align-items: center;
   background-color: var(--blue);
   border: 2px solid var(--blue);
-  border-radius: 10px;
+  border-radius: 999px;
   color: var(--white);
   cursor: pointer;
   display: flex;
@@ -536,14 +562,14 @@ button.mobile-navigation-button {
   margin-top: 10px;
   padding: 10px;
   text-decoration: none;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
   vertical-align: middle;
 }
 
 .button-primary:hover {
   background-color: var(--white);
   color: var(--blackish);
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .flex-container {
