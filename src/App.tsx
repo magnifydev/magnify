@@ -242,9 +242,9 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
           </button>
           <button
             type="button"
-            id="EGR"
+            id="IND"
             className="tag"
-            onClick={useCallback(() => toggleTag('EGR'), [])}
+            onClick={useCallback(() => toggleTag('IND'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -288,7 +288,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
-            Life Skills
+            FCS
           </button>
           <button
             type="button"
