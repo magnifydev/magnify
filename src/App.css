@@ -25,10 +25,6 @@
   :root {
     --nav-width: 80px;
   }
-
-  .navigation {
-    border-left: 10px solid var(--blue);
-  }
 }
 
 .title {
@@ -98,13 +94,13 @@ ion-icon {
 
 .navigation {
   background: var(--blue);
+  border-left: 10px solid var(--blue);
   height: 100%;
   overflow: hidden;
   position: fixed;
   transition: all 0.5s ease 0s;
   /* width: calc(var(--nav-width)); */
   width: calc(var(--nav-width) + var(--pull-width));
-  z-index: 999;
 }
 
 .navigation ul {
@@ -211,8 +207,7 @@ ion-icon {
 .top-bar {
   align-items: center;
   background-color: var(--white) !important;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   display: flex;
   height: 65.5px;
   justify-content: space-between;
@@ -304,7 +299,7 @@ ion-icon {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   font-size: smaller;
-  margin: clamp(15px, 5vw, 20px);
+  /* margin: clamp(15px, 5vw, 20px); */
   padding: clamp(15px, 5vw, 20px);
   position: relative;
   text-align: left;
@@ -326,7 +321,9 @@ ion-icon {
 
 .parent {
   display: grid;
+  gap: clamp(15px, 5vw, 20px);
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  padding: 0 clamp(15px, 5vw, 20px) clamp(15px, 5vw, 20px);
 }
 
 @media only screen and (max-width: 400px) {
@@ -337,9 +334,18 @@ ion-icon {
 
 .tag-container {
   display: flex;
-  margin: 10px;
-  overflow-x: auto;
-  padding: 77px 0 0;
+  gap: clamp(15px, 5vw, 20px);
+  margin: 0 clamp(15px, 5vw, 20px);
+  overflow: overlay;
+  padding-bottom: clamp(15px, 5vw, 20px);
+  padding-top: calc(65.5px + clamp(15px, 5vw, 20px));
+}
+
+@media only screen and (min-width: 500px) {
+  .tag-container {
+    padding-bottom: 34.5px;
+    padding-top: 100px;
+  }
 }
 
 .tag {
@@ -347,12 +353,11 @@ ion-icon {
   background-color: var(--blueish);
   border: none;
   border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   color: var(--bluer);
   cursor: pointer;
   display: flex;
   flex: 1 1;
-  margin-left: 10px;
-  margin-right: 10px;
   padding: 15px;
   text-align: left;
   text-decoration: none;
@@ -396,26 +401,31 @@ button ion-icon {
 
 .jump-to-top {
   align-items: center;
-  background-color: var(--white);
+  background-color: var(--blueish);
   border: none;
   border-radius: 999px;
   bottom: 35px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
-  color: var(--blackish);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  color: var(--bluer);
   cursor: pointer;
   display: none;
   justify-content: center;
   padding: 10px;
   position: fixed;
   right: 30px;
+  transition: all 0.5s ease 0s;
+}
+
+.jump-to-top:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all 0.5s ease 0s;
 }
 
 .mobile-navigation {
   background-color: var(--white);
   bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px -6px 24px 0px;
   color: var(--blue);
   height: 65.5px;
   left: 0;
@@ -509,6 +519,7 @@ button.mobile-navigation-button {
   background: var(--blue);
   border: none;
   border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   color: var(--white);
   cursor: pointer;
   display: flex;
@@ -529,15 +540,16 @@ button.mobile-navigation-button {
 
 .button {
   align-items: center;
-  background-color: var(--white);
-  border: 2px solid var(--blue);
+  background-color: var(--blueish);
+  border: none;
   border-radius: 999px;
+  color: var(--bluer);
   cursor: pointer;
   display: flex;
   flex: 1 1;
   margin-right: 10px;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 1rem;
+  padding: 15px;
   text-decoration: none;
   transition: all 0.5s ease 0s;
   vertical-align: middle;
@@ -552,23 +564,23 @@ button.mobile-navigation-button {
 .button-primary {
   align-items: center;
   background-color: var(--blue);
-  border: 2px solid var(--blue);
+  border: none;
   border-radius: 999px;
   color: var(--white);
   cursor: pointer;
   display: flex;
   flex: 1 1;
   margin-left: 10px;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 1rem;
+  padding: 15px;
   text-decoration: none;
   transition: all 0.5s ease 0s;
   vertical-align: middle;
 }
 
 .button-primary:hover {
-  background-color: var(--white);
-  color: var(--blackish);
+  background-color: var(--bluer);
+  color: var(--white);
   transition: all 0.5s ease 0s;
 }
 
