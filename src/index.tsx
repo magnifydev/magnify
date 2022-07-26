@@ -65,7 +65,7 @@ const initializeCourseViewer = (): void => {
     if (!topButton)
       throw new Error('Supposed element with id to-top nonexistent');
 
-    if (window.scrollY >= 80 && getWidth() >= 500) {
+    if (window.scrollY >= 80 && getWidth() >= 525) {
       topButton.style.visibility = 'visible';
       topButton.style.opacity = '1';
     } else {
@@ -75,7 +75,7 @@ const initializeCourseViewer = (): void => {
   };
 
   const handleMobileNavOnScroll = (): void => {
-    if (getWidth() >= 500) return;
+    if (getWidth() >= 525) return;
 
     const nav = document.getElementById('mobile-nav');
     if (!nav)
