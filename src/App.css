@@ -31,19 +31,6 @@
   display: none;
 }
 
-/* Uncomment for fullsize navigation */
-/* @media only screen and (min-width: 1200px) {
-  :root {
-    --nav-width: 250px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  :root {
-    --nav-width: 250px;
-  }
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -154,17 +141,6 @@ ion-icon {
   font-size: 1.75rem;
 }
 
-/* Uncomment to reenable full navigation */
-/* .navigation ul li a .title {
-  display: block;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 10px;
-  position: relative;
-  text-align: start;
-  white-space: nowrap;
-} */
-
 .navigation ul li.hovered a:before {
   box-shadow: 35px 35px 0 10px var(--white);
   top: -50px;
@@ -249,7 +225,6 @@ ion-icon {
 
 .search i {
   position: absolute;
-  /* width: 100%; */
 }
 
 .search input {
@@ -299,11 +274,9 @@ ion-icon {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   font-size: smaller;
-  /* margin: clamp(15px, 5vw, 20px); */
   padding: clamp(15px, 5vw, 20px);
   position: relative;
   text-align: left;
-  /* transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
 }
 
 .Course button.edit {
@@ -441,7 +414,6 @@ button ion-icon {
   padding: 10px clamp(15px, 5vw, 20px);
   position: fixed;
   transition: all 0.5s ease 0s;
-  /* width: calc(100vw - var(--nav-width)); */
   width: 100%;
   z-index: 9;
 }
