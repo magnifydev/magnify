@@ -28,9 +28,6 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   const considerations = useRef<HTMLParagraphElement>(null);
   const description = useRef<HTMLParagraphElement>(null);
 
-  // Uncomment for student recommendations
-  // const studentrecommendations = useRef<HTMLParagraphElement>(null);
-
   const refs = useMemo(
     () => ({
       credits,
@@ -113,9 +110,7 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       .update({
         [loopName]: { ...course, ...overwriteCourse },
       });
-
-    // Note: introduce student comments with this: studentrecommendations: parseInt(studentrecommendations.current.childNodes[1].wholeText.trim()),
-
+      
     // Exit the edit menu
     setIsEditing(false);
   }, [course, refs]);
