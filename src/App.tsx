@@ -19,42 +19,6 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
     }
   };
 
-  // const toggleNav = (): void => {
-  //   // if (
-  //   //   getComputedStyle(document.documentElement)
-  //   //     .getPropertyValue('--nav-width')
-  //   //     .trim() === '250px'
-  //   // ) {
-  //   //   return;
-  //   // }
-
-  //   if (
-  //     getComputedStyle(document.documentElement)
-  //       .getPropertyValue('--pull-width')
-  //       .trim() !== '0px'
-  //   ) {
-  //     document.documentElement.style.removeProperty('--pull-width');
-  //   } else {
-  //     document.documentElement.style.setProperty(
-  //       '--pull-width',
-  //       `${
-  //         250 -
-  //         Number(
-  //           getComputedStyle(document.documentElement)
-  //             .getPropertyValue('--nav-width')
-  //             .trim()
-  //             .substring(
-  //               0,
-  //               getComputedStyle(document.documentElement)
-  //                 .getPropertyValue('--nav-width')
-  //                 .trim().length - 2
-  //             )
-  //         )
-  //       }px`
-  //     );
-  //   }
-  // };
-
   const removeTrueTags = useCallback(() => {
     const tags = document.getElementsByClassName('tag');
     for (let i = 0; i < tags.length; i++) {
