@@ -86,7 +86,6 @@ ion-icon {
   overflow: hidden;
   position: fixed;
   transition: all 0.5s ease 0s;
-  /* width: calc(var(--nav-width)); */
   width: calc(var(--nav-width) + var(--pull-width));
 }
 
@@ -111,7 +110,6 @@ ion-icon {
 
 .navigation ul li:first-child {
   margin-bottom: 25px;
-  /* pointer-events: none; */
 }
 
 .navigation ul li a {
@@ -172,7 +170,6 @@ ion-icon {
 
 .main {
   background: var(--white);
-  /* left: calc(var(--nav-width)); */
   left: calc(var(--nav-width) + var(--pull-width));
   min-height: 100vh;
   position: absolute;
