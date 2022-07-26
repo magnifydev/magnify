@@ -209,9 +209,10 @@ ion-icon {
   background-color: var(--white) !important;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   display: flex;
+  gap: 20px;
   height: 65.5px;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
   position: fixed;
   width: calc(100vw - var(--nav-width));
   z-index: 9;
@@ -242,7 +243,7 @@ ion-icon {
 .search {
   flex: 1 1;
   height: 100%;
-  margin: 0 10px;
+  margin: 0;
   width: 100%;
 }
 
@@ -275,12 +276,10 @@ ion-icon {
 
 .user {
   border-radius: 50%;
-  cursor: pointer;
-  height: 40px;
-  margin-right: 10px;
+  height: 45.5px;
   overflow: hidden;
   position: relative;
-  width: 40px;
+  width: 45.5px;
 }
 
 .user img {
@@ -524,8 +523,6 @@ button.mobile-navigation-button {
   cursor: pointer;
   display: flex;
   height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
   padding: 15px;
   text-decoration: none;
   transition: all 0.5s ease 0s;
