@@ -84,18 +84,18 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
                 href={links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="About"
-                title="About"
+                aria-label="Magnify Github"
+                title="Magnify Github"
               >
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
                   <ion-icon
                     name="logo-github"
-                    aria-label="About"
-                    title="About"
+                    aria-label="Magnify Github"
+                    title="Magnify Github"
                   />
                 </span>
-                <span className="title">About</span>
+                <span className="title">Github</span>
               </a>
             </li>
           </ul>
