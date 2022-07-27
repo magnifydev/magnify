@@ -90,7 +90,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
                   <ion-icon
-                    name="information-circle-outline"
+                    name="logo-github"
                     aria-label="About"
                     title="About"
                   />
