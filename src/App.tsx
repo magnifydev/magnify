@@ -287,7 +287,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
           rel="noopener noreferrer"
           className="mobile-navigation-button"
         >
-          About
+          GitHub
         </a>
         <button
           type="button"
