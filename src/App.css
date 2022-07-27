@@ -213,7 +213,6 @@ ion-icon {
 }
 
 .search input {
-  border: 2px solid var(--grite);
   border: none;
   border-radius: 999px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -316,8 +315,9 @@ ion-icon {
   cursor: pointer;
   display: flex;
   flex: 1 1;
+  justify-content: center;
   padding: 15px;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: all 0.5s ease 0s;
   vertical-align: middle;
