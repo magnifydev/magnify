@@ -198,17 +198,19 @@ ion-icon {
 }
 
 .search {
-  position: relative;
-}
-
-.search {
+  align-items: center;
+  display: flex;
   flex: 1 1;
   height: 100%;
   margin: 0;
+  position: relative;
   width: 100%;
 }
 
 .search i {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   position: absolute;
 }
 
@@ -219,7 +221,7 @@ ion-icon {
     rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   height: 100%;
   outline: none;
-  padding: 5px 20px 5px 35px;
+  padding: 5px 20px 5px 40px;
   width: 100%;
 }
 
@@ -230,7 +232,7 @@ ion-icon {
 .search i ion-icon {
   color: var(--blackish);
   font-size: 1.2rem;
-  padding: 13.5px;
+  padding: 10px;
 }
 
 .user {
