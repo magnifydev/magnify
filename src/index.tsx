@@ -38,6 +38,32 @@ dbRef
   });
 
 const initializeCourseViewer = (): void => {
+
+  // Read the cookie and check whether the given user is authorized
+  if (getCookieValue('user')) {
+    // There shouldn't be an error here, but to prevent unnecessary crashes or security issues a try catch here is useful
+    try {
+      user = JSON.parse(getCookieValue('user'));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  if (user) {
+    dbRef.get().then((snapshot) => {
+      if (snapshot.exists()) {
+        authData = snapshot.val().users;
+
+        Object.keys(authData).forEach((key) => {
+          if (user?.email === authData[key].email) {
+            authLevel = authData[key].level;
+          }
+        });
+        filterCourses();
+      }
+    });
+  }
+
   const courseArray = Object.keys(courseData);
   const courseItems = courseArray.map((name) => (
     <Course key={name} authLevel={authLevel} course={courseData[name]} />
@@ -197,6 +223,10 @@ firebase
     // The signed-in user info.
     user = result.user;
 
+    if (user) {
+      document.cookie = `user=${JSON.stringify(user)}`;
+    }
+
     dbRef.get().then((snapshot) => {
       if (snapshot.exists()) {
         authData = snapshot.val().users;
@@ -230,3 +260,7 @@ const signInWithRedirect = (): void => {
       });
   }
 };
+
+const getCookieValue = (name: string): string => (
+  document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || ''
+);
