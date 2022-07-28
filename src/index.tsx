@@ -40,8 +40,8 @@ dbRef
 const initializeCourseViewer = (): void => {
 
   // Read the cookie and check whether the given user is authorized
-  if (getCookieValue('user') !== '') {
-    //There shouldn't be an error here, but to prevent unnecesary crashes or security issues a try catch here is useful
+  if (getCookieValue('user')) {
+    //There shouldn't be an error here, but to prevent unnecessary crashes or security issues a try catch here is useful
     try {
       user = JSON.parse(getCookieValue('user'));
     } catch (error) {
@@ -261,6 +261,6 @@ const signInWithRedirect = (): void => {
   }
 };
 
-const getCookieValue = (name: string) => (
+const getCookieValue = (name: string) : string => (
   document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || ''
 );
