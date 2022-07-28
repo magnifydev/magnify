@@ -1,5 +1,5 @@
 import App from './App';
-import Course from './Course';
+import { Course } from './components';
 import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
