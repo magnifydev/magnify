@@ -1,6 +1,6 @@
-import './App.css';
-import { firebaseConfig } from './config';
-import { CourseType } from './types';
+import '../App.css';
+import { firebaseConfig } from '../config';
+import { CourseType } from '../types';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 import { FC, useCallback, useRef, useState, useMemo } from 'react';
@@ -13,7 +13,7 @@ interface CourseProps {
   authLevel: number;
 }
 
-const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
+export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   const [isEditing, setIsEditing] = useState(false);
 
   const credits = useRef<HTMLParagraphElement>(null);
@@ -256,5 +256,3 @@ const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     </div>
   );
 };
-
-export default Course;

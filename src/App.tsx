@@ -1,4 +1,5 @@
 import './App.css';
+import { Contact } from './components';
 import { links } from './data';
 import { scrollToTop } from './utils';
 import firebase from 'firebase/compat/app';
@@ -28,6 +29,14 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
     }
   }, []);
 
+  const openContact = useCallback(() => {
+    const contactModal = document.getElementById(
+      'contact-modal'
+    ) as HTMLDialogElement;
+    contactModal?.parentElement?.classList.remove('hide');
+    contactModal?.showModal();
+  }, []);
+
   let userElement: JSX.Element;
   if (user && user.photoURL) {
     userElement = (
@@ -41,6 +50,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
 
   return (
     <div className="App">
+      <Contact />
       <div className="container">
         <div className="navigation">
           <ul>
@@ -84,15 +94,15 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
                 href={links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Magnify GitHub"
-                title="Magnify GitHub"
+                aria-label="GitHub"
+                title="GitHub"
               >
                 <span className="icon">
                   {/* @ts-expect-error ts(2339) */}
                   <ion-icon
                     name="logo-github"
-                    aria-label="Magnify GitHub"
-                    title="Magnify GitHub"
+                    aria-label="GitHub"
+                    title="GitHub"
                   />
                 </span>
                 <span className="title">GitHub</span>
@@ -263,15 +273,26 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
         </div>
         <div id="course-container">{classItems}</div>
       </div>
-      <button
-        type="button"
-        onClick={scrollToTop}
-        id="to-top"
-        className="jump-to-top"
-      >
-        {/* @ts-expect-error ts(2339) */}
-        <ion-icon name="chevron-up-outline" size="larger" />
-      </button>
+      <div className="floating-button-container">
+        <button
+          type="button"
+          onClick={scrollToTop}
+          id="to-top"
+          className="jump-to-top"
+        >
+          {/* @ts-expect-error ts(2339) */}
+          <ion-icon name="chevron-up-outline" size="larger" />
+        </button>
+        <button
+          type="button"
+          onClick={openContact}
+          id="contact-modal-open"
+          className="contact-modal-button"
+        >
+          {/* @ts-expect-error ts(2339) */}
+          <ion-icon name="mail-outline" size="larger" />
+        </button>
+      </div>
       <div id="mobile-nav" className="mobile-navigation">
         <a
           href={links.programOfStudiesPDF}
@@ -289,6 +310,13 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
         >
           GitHub
         </a>
+        <button
+          type="button"
+          onClick={openContact}
+          className="mobile-navigation-button mobile-contact-modal-button"
+        >
+          Contact
+        </button>
         <button
           type="button"
           onClick={scrollToTop}
