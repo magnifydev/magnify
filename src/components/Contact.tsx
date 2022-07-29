@@ -29,12 +29,16 @@ export const Contact: FC = (): JSX.Element => {
             alert('An error occurred while sending the form!');
             throw new Error(data.message);
           }
-          const modal = document.getElementById(
+          const contactModal = document.getElementById(
             'contact-modal'
           ) as HTMLDialogElement;
-          modal.close();
+          // In case Chrome Android does not support the close event
+          contactModal?.parentElement?.classList.add('hide');
+          contactModal.close();
+
           setEmail('');
           setMessage('');
+
           setTimeout(() => {
             alert('The contact form was sent successfully!');
           }, 20);
@@ -44,13 +48,21 @@ export const Contact: FC = (): JSX.Element => {
   );
 
   const cancel = useCallback(() => {
-    const modal = document.getElementById('contact-modal') as HTMLDialogElement;
-    modal.close();
+    const contactModal = document.getElementById(
+      'contact-modal'
+    ) as HTMLDialogElement;
+    // In case Chrome Android does not support the close event
+    contactModal?.parentElement?.classList.add('hide');
+    contactModal.close();
+  }, []);
+
+  const onModalClose = useCallback((event: React.SyntheticEvent) => {
+    event.currentTarget.parentElement?.classList.add('hide');
   }, []);
 
   return (
     <div className="Contact hide">
-      <dialog id="contact-modal" className="modal">
+      <dialog id="contact-modal" className="modal" onClose={onModalClose}>
         <h1>Contact</h1>
         <form className="modal-form" onSubmit={handleSubmit}>
           <input
