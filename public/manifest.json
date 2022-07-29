@@ -1,11 +1,16 @@
 {
   "short_name": "Magnify",
-  "name": "Magnify PoS",
+  "name": "Magnify 2023",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "8640x8640"
     }
   ],
   "start_url": ".",
