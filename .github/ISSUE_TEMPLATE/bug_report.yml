@@ -32,17 +32,18 @@ body:
       4. See error
   validations:
     required: true
-- type: textarea
+- type: input
   attributes:
-    label: Environment
-    description: |
-      examples:
-        - **OS**: Ubuntu 20.04
-        - **Browser**: Chrome 103.0.5060.134
-    value: |
-        - OS:
-        - Browser:
-    render: markdown
+    label: Operating System
+    description: The OS of which this issue occurred.
+    placeholder: Ex. macOS Monterey 12.4
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Web Browser
+    description: The browser of which this issue occurred.
+    placeholder: Ex. Chrome 103.0.5060.134
   validations:
     required: true
 - type: textarea
