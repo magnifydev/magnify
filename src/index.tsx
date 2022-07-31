@@ -82,11 +82,11 @@ const initializeCourseViewer = (): void => {
 
   let prevScrollpos = window.scrollY;
   window.onscroll = () => {
-    displayDesktopScrollToTop();
-    handleMobileNavOnScroll();
+    handleDesktopScrollToTopDisplay();
+    handleMobileNavigationOnScroll();
   };
 
-  const displayDesktopScrollToTop = (): void => {
+  const handleDesktopScrollToTopDisplay = (): void => {
     if (!topButton)
       throw new Error('Supposed element with id to-top nonexistent');
 
@@ -99,7 +99,7 @@ const initializeCourseViewer = (): void => {
     }
   };
 
-  const handleMobileNavOnScroll = (): void => {
+  const handleMobileNavigationOnScroll = (): void => {
     if (getWidth() >= 525) return;
 
     const nav = document.getElementById('mobile-nav');
@@ -227,18 +227,17 @@ firebase
     }
 
     dbRef.get().then((snapshot) => {
-      if (snapshot.exists()) {
-        authData = snapshot.val().users;
+      if (!snapshot.exists()) return;
+      authData = snapshot.val().users;
 
-        // Authorize the user if the user has been logged-in
-        if (user !== null) {
-          Object.keys(authData).forEach((key) => {
-            if (user?.email === authData[key].email) {
-              authLevel = authData[key].level;
-            }
-          });
-          filterCourses();
-        }
+      // Authorize the user if the user has been logged-in
+      if (user !== null) {
+        Object.keys(authData).forEach((key) => {
+          if (user?.email === authData[key].email) {
+            authLevel = authData[key].level;
+          }
+        });
+        filterCourses();
       }
     });
   });

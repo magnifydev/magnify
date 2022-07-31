@@ -57,7 +57,7 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     ]
   );
 
-  const toggleCollapse = useCallback(
+  const handleDescriptionCollapse = useCallback(
     (btn: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       btn.currentTarget.classList.toggle('active');
       const content = btn.currentTarget.nextElementSibling as HTMLElement;
@@ -72,7 +72,7 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     []
   );
 
-  const edit = useCallback(
+  const handleCourseEditToggle = useCallback(
     (btn: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       btn.currentTarget.classList.toggle('hide');
       setIsEditing(true);
@@ -80,9 +80,9 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     []
   );
 
-  const cancel = useCallback(() => setIsEditing(false), []);
+  const handleCourseEditCancel = useCallback(() => setIsEditing(false), []);
 
-  const submit = useCallback(() => {
+  const handleCourseEditSubmit = useCallback(() => {
     const loopName = course.coursename.toLowerCase().replaceAll(' ', '-');
 
     const isValidKey = (key: string): key is keyof typeof refs => {
@@ -224,7 +224,11 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         {course.considerations}
       </p>
       <br />
-      <button type="button" className="collapsible" onClick={toggleCollapse}>
+      <button
+        type="button"
+        className="collapsible"
+        onClick={handleDescriptionCollapse}
+      >
         See More
       </button>
       <p
@@ -237,18 +241,26 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
       </p>
       <div className="flex-container">
         {isEditing && (
-          <button type="button" onClick={cancel} className="button">
+          <button
+            type="button"
+            onClick={handleCourseEditCancel}
+            className="button"
+          >
             Cancel
           </button>
         )}
         {isEditing && (
-          <button type="button" onClick={submit} className="button-primary">
+          <button
+            type="button"
+            onClick={handleCourseEditSubmit}
+            className="button-primary"
+          >
             Submit
           </button>
         )}
       </div>
       {authLevel === 5 && !isEditing && (
-        <button onClick={edit} className="edit">
+        <button onClick={handleCourseEditToggle} className="edit">
           {/* @ts-expect-error ts(2339) */}
           <ion-icon name="create-outline" />
         </button>
