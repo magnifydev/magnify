@@ -87,8 +87,9 @@ const initializeCourseViewer = (): void => {
   };
 
   const handleDesktopScrollToTopDisplay = (): void => {
-    if (!topButton)
+    if (!topButton) {
       throw new Error('Supposed element with id to-top nonexistent');
+    }
 
     if (window.scrollY >= 80 && getWidth() >= 525) {
       topButton.style.visibility = 'visible';
@@ -103,8 +104,9 @@ const initializeCourseViewer = (): void => {
     if (getWidth() >= 525) return;
 
     const nav = document.getElementById('mobile-nav');
-    if (!nav)
+    if (!nav) {
       throw new Error('Supposed element with id mobile-nav nonexistent');
+    }
 
     const currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
@@ -171,8 +173,9 @@ const filterCourses = (): void => {
 
         for (let i = 0; i < trueTags.length; i++) {
           const tag = trueTags[i];
-          if (!isValidKey(tag))
+          if (!isValidKey(tag)) {
             throw new Error(`${tag} is an invalid index for tagCodes`);
+          }
 
           if (courseData[name].tags?.[0] === tagCodes[tag]) {
             isPresent = true;
