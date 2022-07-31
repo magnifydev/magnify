@@ -11,7 +11,7 @@ interface AppProps {
 }
 
 const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
-  const toggleTag = (id: string): void => {
+  const handleTagToggle = (id: string): void => {
     const tag = document.getElementById(id);
     if (tag?.classList.contains('tag-true')) {
       tag.classList.remove('tag-true');
@@ -20,7 +20,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
     }
   };
 
-  const removeTrueTags = useCallback(() => {
+  const handleTagTrueRemove = useCallback(() => {
     const tags = document.getElementsByClassName('tag');
     for (let i = 0; i < tags.length; i++) {
       if (tags[i].classList.contains('tag-true')) {
@@ -29,7 +29,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
     }
   }, []);
 
-  const openContact = useCallback(() => {
+  const handleContactModalOpen = useCallback(() => {
     const contactModal = document.getElementById(
       'contact-modal'
     ) as HTMLDialogElement;
@@ -134,7 +134,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="ALL"
             className="tag tag-all"
-            onClick={removeTrueTags}
+            onClick={handleTagTrueRemove}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -144,7 +144,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="ENG"
             className="tag"
-            onClick={useCallback(() => toggleTag('ENG'), [])}
+            onClick={useCallback(() => handleTagToggle('ENG'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -154,7 +154,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="FOR"
             className="tag"
-            onClick={useCallback(() => toggleTag('FOR'), [])}
+            onClick={useCallback(() => handleTagToggle('FOR'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -164,7 +164,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="MAT"
             className="tag"
-            onClick={useCallback(() => toggleTag('MAT'), [])}
+            onClick={useCallback(() => handleTagToggle('MAT'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -174,7 +174,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="SCI"
             className="tag"
-            onClick={useCallback(() => toggleTag('SCI'), [])}
+            onClick={useCallback(() => handleTagToggle('SCI'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -184,7 +184,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="SOC"
             className="tag"
-            onClick={useCallback(() => toggleTag('SOC'), [])}
+            onClick={useCallback(() => handleTagToggle('SOC'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -194,7 +194,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="HPE"
             className="tag"
-            onClick={useCallback(() => toggleTag('HPE'), [])}
+            onClick={useCallback(() => handleTagToggle('HPE'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -204,7 +204,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="BUS"
             className="tag"
-            onClick={useCallback(() => toggleTag('BUS'), [])}
+            onClick={useCallback(() => handleTagToggle('BUS'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -214,7 +214,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="IND"
             className="tag"
-            onClick={useCallback(() => toggleTag('IND'), [])}
+            onClick={useCallback(() => handleTagToggle('IND'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -224,7 +224,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="ART"
             className="tag"
-            onClick={useCallback(() => toggleTag('ART'), [])}
+            onClick={useCallback(() => handleTagToggle('ART'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -234,7 +234,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="MUS"
             className="tag"
-            onClick={useCallback(() => toggleTag('MUS'), [])}
+            onClick={useCallback(() => handleTagToggle('MUS'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -244,7 +244,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="AGR"
             className="tag"
-            onClick={useCallback(() => toggleTag('AGR'), [])}
+            onClick={useCallback(() => handleTagToggle('AGR'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -254,7 +254,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="FAM"
             className="tag"
-            onClick={useCallback(() => toggleTag('FAM'), [])}
+            onClick={useCallback(() => handleTagToggle('FAM'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -264,7 +264,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
             type="button"
             id="TAG"
             className="tag"
-            onClick={useCallback(() => toggleTag('TAG'), [])}
+            onClick={useCallback(() => handleTagToggle('TAG'), [])}
           >
             {/* @ts-expect-error ts(2339) */}
             <ion-icon class="hide" name="checkmark-outline" />
@@ -285,7 +285,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
         </button>
         <button
           type="button"
-          onClick={openContact}
+          onClick={handleContactModalOpen}
           id="contact-modal-open"
           className="contact-modal-button"
         >
@@ -312,7 +312,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
         </a>
         <button
           type="button"
-          onClick={openContact}
+          onClick={handleContactModalOpen}
           className="mobile-navigation-button mobile-contact-modal-button"
         >
           Contact
