@@ -7,7 +7,7 @@ export const Contact: FC = (): JSX.Element => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = useCallback(
+  const handleFormSubmit = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
       if (email === '' || message === '') return;
       event.preventDefault();
@@ -47,7 +47,7 @@ export const Contact: FC = (): JSX.Element => {
     [name, email, message]
   );
 
-  const cancel = useCallback(() => {
+  const handleFormCancel = useCallback(() => {
     const contactModal = document.getElementById(
       'contact-modal'
     ) as HTMLDialogElement;
@@ -56,15 +56,15 @@ export const Contact: FC = (): JSX.Element => {
     contactModal.close();
   }, []);
 
-  const onModalClose = useCallback((event: React.SyntheticEvent) => {
+  const handleModalClose = useCallback((event: React.SyntheticEvent) => {
     event.currentTarget.parentElement?.classList.add('hide');
   }, []);
 
   return (
     <div className="Contact hide">
-      <dialog id="contact-modal" className="modal" onClose={onModalClose}>
+      <dialog id="contact-modal" className="modal" onClose={handleModalClose}>
         <h1>Contact</h1>
-        <form className="modal-form" onSubmit={handleSubmit}>
+        <form className="modal-form" onSubmit={handleFormSubmit}>
           <input
             type="text"
             name="name"
@@ -107,7 +107,11 @@ export const Contact: FC = (): JSX.Element => {
             required
           />
           <div className="flex-container modal-button-container">
-            <button type="button" onClick={cancel} className="modal-cancel">
+            <button
+              type="button"
+              onClick={handleFormCancel}
+              className="modal-cancel"
+            >
               Cancel
             </button>
             <button type="submit" className="modal-send">
