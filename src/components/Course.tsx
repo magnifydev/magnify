@@ -187,7 +187,7 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
         </p>
       )}
       {course.corequisite && (
-        <div>
+        <>
           <p
             suppressContentEditableWarning
             contentEditable={isEditing}
@@ -198,10 +198,10 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             {course.corequisite}
           </p>
           <br />
-        </div>
+        </>
       )}
       {course.subsequent && (
-        <div>
+        <>
           <p
             suppressContentEditableWarning
             contentEditable={isEditing}
@@ -212,7 +212,7 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
             {course.subsequent}
           </p>
           <br />
-        </div>
+        </>
       )}
       <p
         suppressContentEditableWarning
