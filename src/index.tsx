@@ -71,14 +71,12 @@ const initializeCourseViewer = (): void => {
   renderDOM(courseItems);
 
   const search = document.getElementById('searchbar');
-  search?.addEventListener('input', filterCourses);
-
   const tagButtons = document.getElementsByClassName('tag');
-
   const signInButton = document.getElementById('signer');
-  signInButton?.addEventListener('click', signInWithRedirect);
-
   const topButton = document.getElementById('to-top');
+
+  search?.addEventListener('input', filterCourses);
+  signInButton?.addEventListener('click', signInWithRedirect);
 
   let prevScrollpos = window.scrollY;
   window.onscroll = () => {
