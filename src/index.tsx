@@ -64,21 +64,19 @@ const initializeCourseViewer = (): void => {
   }
 
   const courseArray = Object.keys(courseData);
-  const courseItems = courseArray.map((name) => (
-    <Course key={name} authLevel={authLevel} course={courseData[name]} />
+  const courseItems = courseArray.map((name, index) => (
+    <Course key={index} authLevel={authLevel} course={courseData[name]} />
   ));
 
   renderDOM(courseItems);
 
   const search = document.getElementById('searchbar');
-  search?.addEventListener('input', filterCourses);
-
   const tagButtons = document.getElementsByClassName('tag');
-
   const signInButton = document.getElementById('signer');
-  signInButton?.addEventListener('click', signInWithRedirect);
-
   const topButton = document.getElementById('to-top');
+  
+  search?.addEventListener('input', filterCourses);
+  signInButton?.addEventListener('click', signInWithRedirect);
 
   let prevScrollpos = window.scrollY;
   window.onscroll = () => {
@@ -260,5 +258,6 @@ const signInWithRedirect = (): void => {
   }
 };
 
-const getCookieValue = (name: string): string =>
-  document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+const getCookieValue = (name: string): string => {
+  return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+};
