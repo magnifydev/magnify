@@ -74,7 +74,7 @@ const initializeCourseViewer = (): void => {
   const tagButtons = document.getElementsByClassName('tag');
   const signInButton = document.getElementById('signer');
   const topButton = document.getElementById('to-top');
-  
+
   search?.addEventListener('input', filterCourses);
   signInButton?.addEventListener('click', signInWithRedirect);
 
@@ -259,5 +259,7 @@ const signInWithRedirect = (): void => {
 };
 
 const getCookieValue = (name: string): string => {
-  return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+  return (
+    document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || ''
+  );
 };
