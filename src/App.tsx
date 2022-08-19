@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  Contact,
+  ContactForm,
   FloatingActionable,
   MobileNavigation,
   Navigation,
@@ -37,7 +37,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
 
   return (
     <div className="App">
-      <Contact />
+      <ContactForm />
       <div className="container">
         <Navigation />
       </div>

@@ -2,20 +2,26 @@ import '../App.css';
 import { formSubmit } from '../config';
 import { FC, useCallback, useState } from 'react';
 
-export const Contact: FC = (): JSX.Element => {
+export const ContactForm: FC = (): JSX.Element => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleFormSubmit = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
-      if (email === '' || message === '') return;
+      if (name === '' || email === '' || message === '') return;
+
+      const submitButton = document.getElementById(
+        'contact-submit'
+      ) as HTMLButtonElement;
+      submitButton.textContent = 'Sending...';
+
       event.preventDefault();
       fetch(formSubmit.link, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           name: name,
@@ -25,23 +31,29 @@ export const Contact: FC = (): JSX.Element => {
       })
         .then((response) => response.json())
         .then((data: { message: string; success: string }) => {
-          if (data.success !== 'true') {
-            alert('An error occurred while sending the form!');
-            throw new Error(data.message);
-          }
+          if (data.success !== 'true') throw new Error(data.message);
           const contactModal = document.getElementById(
             'contact-modal'
           ) as HTMLDialogElement;
           // In case Chrome Android does not support the close event
+          submitButton.textContent = 'Sent!';
           contactModal?.parentElement?.classList.add('hide');
           contactModal.close();
 
+          setName('');
           setEmail('');
           setMessage('');
 
           setTimeout(() => {
             alert('The contact form was sent successfully!');
           }, 20);
+        })
+        .catch((error) => {
+          submitButton.textContent = 'Send';
+          setTimeout(() => {
+            alert('An error occurred while sending the form!');
+          }, 20);
+          throw error;
         });
     },
     [name, email, message]
@@ -114,7 +126,7 @@ export const Contact: FC = (): JSX.Element => {
             >
               Cancel
             </button>
-            <button type="submit" className="modal-send">
+            <button type="submit" className="modal-send" id="contact-submit">
               Send
             </button>
           </div>
