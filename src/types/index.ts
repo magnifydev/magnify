@@ -1,2 +1,2 @@
-export * from './courseDataType';
-export * from './courseType';
+export type { CourseDataType } from './courseDataType';
+export type { CourseType } from './courseType';
