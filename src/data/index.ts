@@ -1,1 +1,1 @@
-export * from './links';
+export { links } from './links';
