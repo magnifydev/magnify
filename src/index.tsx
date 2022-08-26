@@ -65,7 +65,12 @@ const initializeCourseViewer = (): void => {
 
   const courseArray = Object.keys(courseData);
   const courseItems = courseArray.map((name) => (
-    <Course key={name} authLevel={authLevel} course={courseData[name]} />
+    <Course
+      key={name}
+      authLevel={authLevel}
+      course={courseData[name]}
+      jumpId={name}
+    />
   ));
 
   renderDOM(courseItems);
@@ -196,7 +201,12 @@ const filterCourses = (): void => {
       .filter((name) => name.search(key) !== -1)
       .map((name) => {
         return (
-          <Course key={name} authLevel={authLevel} course={courseData[name]} />
+          <Course
+            key={name}
+            authLevel={authLevel}
+            course={courseData[name]}
+            jumpId={name}
+          />
         );
       });
 

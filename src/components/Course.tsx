@@ -11,9 +11,14 @@ firebase.database().ref();
 interface CourseProps {
   course: CourseType;
   authLevel: number;
+  jumpId: string;
 }
 
-export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
+export const Course: FC<CourseProps> = ({
+  course,
+  authLevel,
+  jumpId,
+}): JSX.Element => {
   const [isEditing, setIsEditing] = useState(false);
 
   const credits = useRef<HTMLParagraphElement>(null);
@@ -116,7 +121,7 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
   }, [course, refs]);
 
   return (
-    <div suppressContentEditableWarning className="Course">
+    <div suppressContentEditableWarning className="Course" id={jumpId}>
       <h1 className="course-title">{course.coursename}</h1>
       <br />
       <p
