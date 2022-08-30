@@ -14,6 +14,11 @@ export const ContactForm: FC = (): JSX.Element => {
       const submitButton = document.getElementById(
         'contact-submit'
       ) as HTMLButtonElement;
+      const cancelButton = document.getElementById(
+        'contact-cancel'
+      ) as HTMLButtonElement;
+      submitButton.disabled = true;
+      cancelButton.disabled = true;
       submitButton.textContent = 'Sending...';
 
       event.preventDefault();
@@ -43,6 +48,8 @@ export const ContactForm: FC = (): JSX.Element => {
           setName('');
           setEmail('');
           setMessage('');
+          submitButton.disabled = false;
+          cancelButton.disabled = false;
 
           setTimeout(() => {
             alert('The contact form was sent successfully!');
@@ -50,6 +57,8 @@ export const ContactForm: FC = (): JSX.Element => {
         })
         .catch((error) => {
           submitButton.textContent = 'Send';
+          submitButton.disabled = false;
+          cancelButton.disabled = false;
           setTimeout(() => {
             alert('An error occurred while sending the form!');
           }, 20);
@@ -123,6 +132,7 @@ export const ContactForm: FC = (): JSX.Element => {
               type="button"
               onClick={handleFormCancel}
               className="modal-cancel"
+              id="contact-cancel"
             >
               Cancel
             </button>
