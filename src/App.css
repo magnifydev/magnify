@@ -443,6 +443,13 @@ button ion-icon {
   transition: all 0.5s ease 0s;
 }
 
+.modal-send:disabled {
+  background-color: var(--gray);
+  color: var(--grite);
+  cursor: not-allowed;
+  transition: all 0.5s ease 0s;
+}
+
 .modal-cancel {
   align-items: center;
   background-color: var(--blueish);
@@ -461,6 +468,13 @@ button ion-icon {
 .modal-cancel:hover {
   background-color: var(--blue);
   color: var(--white);
+  transition: all 0.5s ease 0s;
+}
+
+.modal-cancel:disabled {
+  background-color: var(--gray);
+  color: var(--grite);
+  cursor: not-allowed;
   transition: all 0.5s ease 0s;
 }
 
