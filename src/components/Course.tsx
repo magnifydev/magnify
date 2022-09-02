@@ -11,9 +11,14 @@ firebase.database().ref();
 interface CourseProps {
   course: CourseType;
   authLevel: number;
+  jumpId: string;
 }
 
-export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
+export const Course: FC<CourseProps> = ({
+  course,
+  authLevel,
+  jumpId,
+}): JSX.Element => {
   const [isEditing, setIsEditing] = useState(false);
 
   const credits = useRef<HTMLParagraphElement>(null);
@@ -115,8 +120,13 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
     setIsEditing(false);
   }, [course, refs]);
 
+  const handleJumpIdButton = useCallback(() => {
+    window.location.hash = jumpId;
+    navigator.clipboard.writeText(window.location.href);
+  }, [jumpId]);
+
   return (
-    <div suppressContentEditableWarning className="Course">
+    <div suppressContentEditableWarning className="Course" id={jumpId}>
       <h1 className="course-title">{course.coursename}</h1>
       <br />
       <p
@@ -265,6 +275,10 @@ export const Course: FC<CourseProps> = ({ course, authLevel }): JSX.Element => {
           <ion-icon name="create-outline" />
         </button>
       )}
+      <button onClick={handleJumpIdButton} className="jump-id-button">
+        {/* @ts-expect-error ts(2339) */}
+        <ion-icon name="link-outline" />
+      </button>
     </div>
   );
 };

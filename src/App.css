@@ -278,6 +278,25 @@ ion-icon {
   visibility: visible;
 }
 
+.Course button.jump-id-button {
+  background-color: transparent;
+  border: none;
+  color: var(--blue);
+  cursor: pointer;
+  font-size: large;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  visibility: visible;
+}
+
+.Course button.jump-id-button:hover {
+  color: var(--bluer);
+  transition: all 0.5s ease 0s;
+}
+
 .parent {
   display: grid;
   gap: clamp(15px, 5vw, 20px);
