@@ -281,15 +281,15 @@ ion-icon {
 .Course button.jump-id-button {
   background-color: transparent;
   border: none;
-  top: 0;
   color: var(--blue);
   cursor: pointer;
   font-size: large;
   margin: 10px;
   position: absolute;
   right: 0;
-  visibility: visible;
+  top: 0;
   transition: all 0.5s ease 0s;
+  visibility: visible;
 }
 
 .Course button.jump-id-button:hover {
