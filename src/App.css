@@ -560,6 +560,7 @@ button ion-icon {
   box-shadow: rgba(0, 0, 0, 0.05) 0px -6px 24px 0px;
   display: flex;
   font-size: smaller;
+  font-size: smaller;
   gap: clamp(15px, 5vw, 20px);
   height: 65.5px;
   justify-content: space-between;
@@ -580,6 +581,7 @@ button ion-icon {
   color: var(--bluer);
   cursor: pointer;
   display: flex;
+  font-size: smaller;
   height: 100%;
   justify-content: center;
   padding: 15px;
