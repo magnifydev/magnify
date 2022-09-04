@@ -8,7 +8,7 @@ import {
   TopBar,
 } from './components';
 import firebase from 'firebase/compat/app';
-import { FC, useCallback } from 'react';
+import { FC, useCallback, useEffect } from 'react';
 
 interface AppProps {
   user: firebase.User | null;
@@ -16,6 +16,13 @@ interface AppProps {
 }
 
 const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
+  // Hacky workaround because something with React probably interferes with the default browser behavior
+  useEffect(() => {
+    document
+      .getElementById(window.location.hash.replace('#', ''))
+      ?.scrollIntoView();
+  }, []);
+
   const handleContactModalOpen = useCallback(() => {
     const contactModal = document.getElementById(
       'contact-modal'
