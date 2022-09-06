@@ -426,10 +426,6 @@ button ion-icon {
   padding: 15px;
 }
 
-.modal-input:disabled {
-  cursor: not-allowed;
-}
-
 .modal-message {
   border: none;
   border-radius: 25px;
@@ -441,7 +437,7 @@ button ion-icon {
   resize: none;
 }
 
-.modal-message:disabled {
+.modal-field-disable:disabled {
   cursor: not-allowed;
 }
 

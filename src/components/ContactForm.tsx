@@ -7,6 +7,10 @@ export const ContactForm: FC = (): JSX.Element => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const contactModal = document.getElementById(
+    'contact-modal'
+  ) as HTMLDialogElement;
+
   const handleFormSubmit = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
       if (name === '' || email === '' || message === '') return;
@@ -17,20 +21,12 @@ export const ContactForm: FC = (): JSX.Element => {
       const cancelButton = document.getElementById(
         'contact-cancel'
       ) as HTMLButtonElement;
-      const contactName = document.getElementById(
-        'contact-name'
-      ) as HTMLButtonElement;
-      const contactEmail = document.getElementById(
-        'contact-email'
-      ) as HTMLButtonElement;
-      const contactMessage = document.getElementById(
-        'contact-message'
-      ) as HTMLButtonElement;
+      const modalFieldDisable = document.querySelector(
+        'modal-field-disable'
+      ) as HTMLInputElement | HTMLTextAreaElement;
       submitButton.disabled = true;
       cancelButton.disabled = true;
-      contactName.disabled = true;
-      contactEmail.disabled = true;
-      contactMessage.disabled = true;
+      modalFieldDisable.disabled = true;
       submitButton.textContent = 'Sending...';
 
       event.preventDefault();
@@ -49,9 +45,6 @@ export const ContactForm: FC = (): JSX.Element => {
         .then((response) => response.json())
         .then((data: { message: string; success: string }) => {
           if (data.success !== 'true') throw new Error(data.message);
-          const contactModal = document.getElementById(
-            'contact-modal'
-          ) as HTMLDialogElement;
           // In case Chrome Android does not support the close event
           submitButton.textContent = 'Sent!';
           contactModal?.parentElement?.classList.add('hide');
@@ -63,9 +56,7 @@ export const ContactForm: FC = (): JSX.Element => {
           setMessage('');
           submitButton.disabled = false;
           cancelButton.disabled = false;
-          contactName.disabled = false;
-          contactEmail.disabled = false;
-          contactMessage.disabled = false;
+          modalFieldDisable.disabled = false;
 
           setTimeout(() => {
             alert('The contact form was sent successfully!');
@@ -75,26 +66,22 @@ export const ContactForm: FC = (): JSX.Element => {
           submitButton.textContent = 'Send';
           submitButton.disabled = false;
           cancelButton.disabled = false;
-          contactName.disabled = false;
-          contactEmail.disabled = false;
-          contactMessage.disabled = false;
+          modalFieldDisable.disabled = false;
+
           setTimeout(() => {
             alert('An error occurred while sending the form!');
           }, 20);
           throw error;
         });
     },
-    [name, email, message]
+    [name, email, message, contactModal]
   );
 
   const handleFormCancel = useCallback(() => {
-    const contactModal = document.getElementById(
-      'contact-modal'
-    ) as HTMLDialogElement;
     // In case Chrome Android does not support the close event
     contactModal?.parentElement?.classList.add('hide');
     contactModal.close();
-  }, []);
+  }, [contactModal]);
 
   const handleModalClose = useCallback((event: React.SyntheticEvent) => {
     event.currentTarget.parentElement?.classList.add('hide');
@@ -109,7 +96,7 @@ export const ContactForm: FC = (): JSX.Element => {
             type="text"
             name="name"
             placeholder="Name"
-            className="modal-input"
+            className="modal-input modal-field-disable"
             id="contact-name"
             onChange={useCallback(
               (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -124,7 +111,7 @@ export const ContactForm: FC = (): JSX.Element => {
             type="email"
             name="email"
             placeholder="Email"
-            className="modal-input"
+            className="modal-input modal-field-disable"
             id="contact-email"
             onChange={useCallback(
               (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -138,7 +125,7 @@ export const ContactForm: FC = (): JSX.Element => {
           <textarea
             name="message"
             placeholder="Message"
-            className="modal-message"
+            className="modal-message modal-field-disable"
             id="contact-message"
             onChange={useCallback(
               (event: React.ChangeEvent<HTMLTextAreaElement>) => {
