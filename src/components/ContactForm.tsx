@@ -7,26 +7,39 @@ export const ContactForm: FC = (): JSX.Element => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const submitButton = document.getElementById(
+    'contact-submit'
+  ) as HTMLButtonElement;
+  const cancelButton = document.getElementById(
+    'contact-cancel'
+  ) as HTMLButtonElement;
+  const modalFieldDisable = document.getElementsByClassName(
+    'modal-field-disable'
+  ) as HTMLCollectionOf<HTMLInputElement | HTMLTextAreaElement>;
   const contactModal = document.getElementById(
     'contact-modal'
   ) as HTMLDialogElement;
 
+  const disableFormInput = useCallback(() => {
+    submitButton.disabled = true;
+    cancelButton.disabled = true;
+    Array.from(modalFieldDisable).forEach((element) => {
+      element.disabled = true;
+    });
+  }, [cancelButton, modalFieldDisable, submitButton]);
+
+  const enableFormInput = useCallback(() => {
+    submitButton.disabled = false;
+    cancelButton.disabled = false;
+    Array.from(modalFieldDisable).forEach((element) => {
+      element.disabled = false;
+    });
+  }, [cancelButton, modalFieldDisable, submitButton]);
+
   const handleFormSubmit = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
       if (name === '' || email === '' || message === '') return;
-
-      const submitButton = document.getElementById(
-        'contact-submit'
-      ) as HTMLButtonElement;
-      const cancelButton = document.getElementById(
-        'contact-cancel'
-      ) as HTMLButtonElement;
-      const modalFieldDisable = document.querySelector(
-        'modal-field-disable'
-      ) as HTMLInputElement | HTMLTextAreaElement;
-      submitButton.disabled = true;
-      cancelButton.disabled = true;
-      modalFieldDisable.disabled = true;
+      disableFormInput();
       submitButton.textContent = 'Sending...';
 
       event.preventDefault();
@@ -54,9 +67,7 @@ export const ContactForm: FC = (): JSX.Element => {
           setName('');
           setEmail('');
           setMessage('');
-          submitButton.disabled = false;
-          cancelButton.disabled = false;
-          modalFieldDisable.disabled = false;
+          enableFormInput();
 
           setTimeout(() => {
             alert('The contact form was sent successfully!');
@@ -64,9 +75,7 @@ export const ContactForm: FC = (): JSX.Element => {
         })
         .catch((error) => {
           submitButton.textContent = 'Send';
-          submitButton.disabled = false;
-          cancelButton.disabled = false;
-          modalFieldDisable.disabled = false;
+          enableFormInput();
 
           setTimeout(() => {
             alert('An error occurred while sending the form!');
@@ -74,7 +83,15 @@ export const ContactForm: FC = (): JSX.Element => {
           throw error;
         });
     },
-    [name, email, message, contactModal]
+    [
+      name,
+      email,
+      message,
+      disableFormInput,
+      enableFormInput,
+      submitButton,
+      contactModal,
+    ]
   );
 
   const handleFormCancel = useCallback(() => {
