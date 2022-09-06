@@ -17,8 +17,20 @@ export const ContactForm: FC = (): JSX.Element => {
       const cancelButton = document.getElementById(
         'contact-cancel'
       ) as HTMLButtonElement;
+      const contactName = document.getElementById(
+        'contact-name'
+      ) as HTMLButtonElement;
+      const contactEmail = document.getElementById(
+        'contact-email'
+      ) as HTMLButtonElement;
+      const contactMessage = document.getElementById(
+        'contact-message'
+      ) as HTMLButtonElement;
       submitButton.disabled = true;
       cancelButton.disabled = true;
+      contactName.disabled = true;
+      contactEmail.disabled = true;
+      contactMessage.disabled = true;
       submitButton.textContent = 'Sending...';
 
       event.preventDefault();
@@ -44,12 +56,16 @@ export const ContactForm: FC = (): JSX.Element => {
           submitButton.textContent = 'Sent!';
           contactModal?.parentElement?.classList.add('hide');
           contactModal.close();
+          submitButton.textContent = 'Send';
 
           setName('');
           setEmail('');
           setMessage('');
           submitButton.disabled = false;
           cancelButton.disabled = false;
+          contactName.disabled = false;
+          contactEmail.disabled = false;
+          contactMessage.disabled = false;
 
           setTimeout(() => {
             alert('The contact form was sent successfully!');
@@ -59,6 +75,9 @@ export const ContactForm: FC = (): JSX.Element => {
           submitButton.textContent = 'Send';
           submitButton.disabled = false;
           cancelButton.disabled = false;
+          contactName.disabled = false;
+          contactEmail.disabled = false;
+          contactMessage.disabled = false;
           setTimeout(() => {
             alert('An error occurred while sending the form!');
           }, 20);
@@ -91,6 +110,7 @@ export const ContactForm: FC = (): JSX.Element => {
             name="name"
             placeholder="Name"
             className="modal-input"
+            id="contact-name"
             onChange={useCallback(
               (event: React.ChangeEvent<HTMLInputElement>) => {
                 setName(event.target.value);
@@ -105,6 +125,7 @@ export const ContactForm: FC = (): JSX.Element => {
             name="email"
             placeholder="Email"
             className="modal-input"
+            id="contact-email"
             onChange={useCallback(
               (event: React.ChangeEvent<HTMLInputElement>) => {
                 setEmail(event.target.value);
@@ -118,6 +139,7 @@ export const ContactForm: FC = (): JSX.Element => {
             name="message"
             placeholder="Message"
             className="modal-message"
+            id="contact-message"
             onChange={useCallback(
               (event: React.ChangeEvent<HTMLTextAreaElement>) => {
                 setMessage(event.target.value);
