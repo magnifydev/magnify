@@ -16,9 +16,6 @@ export const ContactForm: FC = (): JSX.Element => {
   const modalFieldDisable = document.getElementsByClassName(
     'modal-field-disable'
   ) as HTMLCollectionOf<HTMLInputElement | HTMLTextAreaElement>;
-  const contactModal = document.getElementById(
-    'contact-modal'
-  ) as HTMLDialogElement;
 
   const disableFormInput = useCallback(() => {
     submitButton.disabled = true;
@@ -35,6 +32,23 @@ export const ContactForm: FC = (): JSX.Element => {
       element.disabled = false;
     });
   }, [cancelButton, modalFieldDisable, submitButton]);
+
+  const handleModalClose = useCallback((event: React.SyntheticEvent) => {
+    event.currentTarget.parentElement?.classList.add('hide');
+  }, []);
+
+  const handleFormCancel = useCallback(() => {
+    // In case Chrome Android does not support the close event.
+    // Also no idea why this could not be placed at the top earlier.
+    // It appears the JS was executing before the element loaded,
+    // ergo, the contactModal element was null. This did not happen
+    // with the other components defined above. Unsure why...
+    const contactModal = document.getElementById(
+      'contact-modal'
+    ) as HTMLDialogElement;
+    contactModal?.parentElement?.classList.add('hide');
+    contactModal.close();
+  }, []);
 
   const handleFormSubmit = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
@@ -58,10 +72,10 @@ export const ContactForm: FC = (): JSX.Element => {
         .then((response) => response.json())
         .then((data: { message: string; success: string }) => {
           if (data.success !== 'true') throw new Error(data.message);
-          // In case Chrome Android does not support the close event
           submitButton.textContent = 'Sent!';
-          contactModal?.parentElement?.classList.add('hide');
-          contactModal.close();
+
+          handleFormCancel();
+
           submitButton.textContent = 'Send';
 
           setName('');
@@ -90,19 +104,9 @@ export const ContactForm: FC = (): JSX.Element => {
       disableFormInput,
       enableFormInput,
       submitButton,
-      contactModal,
+      handleFormCancel,
     ]
   );
-
-  const handleFormCancel = useCallback(() => {
-    // In case Chrome Android does not support the close event
-    contactModal?.parentElement?.classList.add('hide');
-    contactModal.close();
-  }, [contactModal]);
-
-  const handleModalClose = useCallback((event: React.SyntheticEvent) => {
-    event.currentTarget.parentElement?.classList.add('hide');
-  }, []);
 
   return (
     <div className="Contact hide">
