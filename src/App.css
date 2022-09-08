@@ -437,6 +437,10 @@ button ion-icon {
   resize: none;
 }
 
+.modal-field-disable:disabled {
+  cursor: not-allowed;
+}
+
 .modal-button-container {
   gap: clamp(15px, 5vw, 20px);
 }
