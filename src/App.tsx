@@ -17,10 +17,11 @@ interface AppProps {
 
 const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
   // Hacky workaround because something with React probably interferes with the default browser behavior
+  // Also, reactivates the highlight on the course element
   useEffect(() => {
-    document
-      .getElementById(window.location.hash.replace('#', ''))
-      ?.scrollIntoView();
+    const jumpId = window.location.hash.replace('#', '')
+    window.location.hash = ''
+    window.location.hash = jumpId;
   }, []);
 
   const handleContactModalOpen = useCallback(() => {
