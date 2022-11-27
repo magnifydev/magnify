@@ -1,5 +1,5 @@
 import App from './App';
-import { Course } from './components';
+import { Course, Loader } from './components';
 import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
@@ -10,6 +10,17 @@ import 'firebase/compat/auth';
 import 'firebase/compat/database';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+const renderLoader = (): void => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <Loader />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+};
+
+renderLoader();
 
 let courseData: CourseDataType;
 let user: firebase.User | null;
