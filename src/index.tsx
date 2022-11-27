@@ -265,8 +265,10 @@ const signInWithRedirect = (): void => {
       .then(() => {
         user = null;
         authLevel = 0;
+        document.cookie =
+          'user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
         filterCourses(); // Reload the DOM to update sign-in status
-        // Sign-out successful.
+        // Sign-out successful
       });
   }
 };
