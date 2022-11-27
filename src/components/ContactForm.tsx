@@ -94,6 +94,7 @@ export const ContactForm: FC = (): JSX.Element => {
           setTimeout(() => {
             alert('An error occurred while sending the form!');
           }, 20);
+
           throw error;
         });
     },
