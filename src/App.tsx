@@ -32,7 +32,7 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
     contactModal?.showModal();
   }, []);
 
-  let userElement: JSX.Element =
+  const userElement: JSX.Element =
     user && user.photoURL ? (
       <div className="user">
         <img id="user-img" src={user.photoURL} alt="User profile" />
