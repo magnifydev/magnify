@@ -211,9 +211,7 @@ const filterCourses = (): void => {
       });
 
     renderDOM(renderedElements);
-    const jumpId = window.location.hash;
     window.location.hash = '';
-    window.location.hash = jumpId;
   }, 20);
 };
 
