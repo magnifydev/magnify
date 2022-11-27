@@ -24,18 +24,25 @@ const dbRef = firebase.database().ref();
 dbRef
   .get()
   .then((snapshot) => {
-    if (snapshot.exists()) {
-      courseData = snapshot.val().courses;
-      initializeCourseViewer();
-    } else {
-      courseData = localCourseData;
-      initializeCourseViewer();
-    }
+    courseData = snapshot.exists() ? snapshot.val().courses : localCourseData;
+    initializeCourseViewer();
   })
   .catch(() => {
     courseData = localCourseData;
     initializeCourseViewer();
   });
+
+const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App
+        user={userData}
+        classItems={<div className="parent">{courseItems}</div>}
+      />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+};
 
 const initializeCourseViewer = (): void => {
   // Read the cookie and check whether the given user is authorized
@@ -58,6 +65,7 @@ const initializeCourseViewer = (): void => {
             authLevel = authData[key].level;
           }
         });
+
         filterCourses();
       }
     });
@@ -185,18 +193,13 @@ const filterCourses = (): void => {
           }
         }
 
-        if (isPresent) {
-          return true;
-        } else {
-          return false;
-        }
+        return isPresent ? true : false;
       });
     } else {
       tagAll?.classList.add('tag-all');
     }
 
-    let key = search?.value.toLowerCase();
-    key = key.replaceAll(' ', '-');
+    const key = search?.value.toLowerCase().replaceAll(' ', '-');
     const renderedElements = renderedItems
       .filter((name) => name.search(key) !== -1)
       .map((name) => {
@@ -213,18 +216,6 @@ const filterCourses = (): void => {
     renderDOM(renderedElements);
     window.location.hash = '';
   }, 20);
-};
-
-const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App
-        user={userData}
-        classItems={<div className="parent">{courseItems}</div>}
-      />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
 };
 
 firebase
