@@ -237,7 +237,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "General Biology and Algebra",
-    "tags": ["Advanced Placement", "Science"]
+    "tags": ["Advanced Placement", "Science", "Venture"]
   },
   "advanced-placement-french": {
     "considerations": "See prerequisite. Class is conducted in French.",
@@ -1134,7 +1134,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": ["Art", "Venture"]
   },
   "drawing-in-style": {
     "considerations": "This course will require drawing on a daily basis and researching a variety of topics to provide inspiration for artwork. This course is recommended to be taken after ART215.",
@@ -1170,7 +1170,7 @@
     "gradelevels": "9-10",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Science"]
+    "tags": ["Science", "Venture"]
   },
   "economics": {
     "considerations": "Students should be comfortable working with charts and tables.",
@@ -1278,7 +1278,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "English II or English Department approval",
-    "tags": ["English"]
+    "tags": ["English", "Venture"]
   },
   "english-language-learners-civics-and-culture-i": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1383,7 +1383,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": ["Business", "Venture"]
   },
   "environmental-science-issues": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -1564,7 +1564,7 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Social Studies", "Venture"]
   },
   "graphics-one": {
     "considerations": "The coursework relies heavily on the use of the Adobe Creative Suite as well as emerging technologies. The class requires students to be creative, independent, focused, and project driven.",
@@ -1576,7 +1576,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Design Art Basics",
-    "tags": ["Art"]
+    "tags": ["Art", "Venture"]
   },
   "graphics-two": {
     "considerations": "The coursework relies heavily on the use of the Adobe Creative Suite, specifically Adobe Illustrator. The class requires students to be creative, independent, focused, and project driven. Student/ course work will be cloud based utilizing the school shared drive as well as Power School Learning.",
@@ -1588,7 +1588,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "\"C\" or better in Graphics One & Design Art Basics",
-    "tags": ["Art"]
+    "tags": ["Art", "Venture"]
   },
   "health-careers": {
     "considerations": "This course is a part of the Career Edge Academy and is taught at Linn Regional Center by Kirkwood staff.",
@@ -1780,7 +1780,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Social Studies", "Venture"]
   },
   "journalism": {
     "considerations": "None",
@@ -1936,7 +1936,7 @@
     "gradelevels": "11-12",
     "length": "1 or 2 Semester(s)",
     "prerequisites": "Spanish III",
-    "tags": ["Foreign Language"]
+    "tags": ["Foreign Language", "Venture"]
   },
   "level-v-spanish": {
     "considerations": "Second term grade of 60% or higher in Level IV is required.",
@@ -2097,7 +2097,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": ["Business", "Venture"]
   },
   "math-for-the-building-trades": {
     "considerations": "None",
@@ -2447,7 +2447,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Social Studies", "Venture"]
   },
   "spanish-iv-culture": {
     "courseid": "FOR435",
