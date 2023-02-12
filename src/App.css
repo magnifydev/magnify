@@ -317,6 +317,40 @@ ion-icon {
   }
 }
 
+.ClearFilter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.ClearFilter h1 {
+  text-align: center;
+}
+
+.clear-results {
+  align-items: center;
+  background: var(--blue);
+  border: none;
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  padding: 15px;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  vertical-align: middle;
+}
+
+.clear-results:hover {
+  background-color: var(--bluer) !important;
+  color: var(--white) !important;
+  transition: all 0.5s ease 0s;
+}
+
 .tag-container {
   display: flex;
   gap: clamp(15px, 5vw, 20px);

@@ -152,7 +152,7 @@
     "gradelevels": "11-12 or approval",
     "length": "2 Quarters during second semester",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-biology-1-&-2": {
     "considerations": "Advanced Placement Biology 1 & 2 is a NGSS course based on the completion of NGSS Life Science Standards and successful completion will meet the life science requirement for graduation. Students MUST sign up for both sections listed above. General Biology is recommended but not required for enrollment in AP Biology. Students taking this course must have completed Chemistry I. Students may take the AP Biology exam in May.",
@@ -164,7 +164,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "Chemistry I",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-calculus-(ab)": {
     "considerations": "Students may take the AP Calculus exam in May. Graphing calculator is required. TI84 is recommended.",
@@ -176,7 +176,7 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Pre-Calculus",
-    "tags": ["Math"]
+    "tags": ["Advanced Placement", "Math"]
   },
   "advanced-placement-calculus-(bc)-1-&-2": {
     "considerations": "Students MUST sign up for both sections listed above. Students may take the AP Calculus exam in May. Graphing calculator is required.",
@@ -188,7 +188,7 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Pre-Calculus",
-    "tags": ["Math"]
+    "tags": ["Advanced Placement", "Math"]
   },
   "advanced-placement-chemistry-1-&-2": {
     "considerations": "Students MUST sign up for both sections listed above. Students taking this course must have completed Chemistry I and Advance Algebra IIA. Students may take the Chemistry AP exam in May.",
@@ -200,7 +200,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "Chemistry I and Advanced Algebra IIA",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-comparative-government": {
     "considerations": "Could be linked with AP US Government for a year-long AP Government course. AP exam would be optional.",
@@ -212,7 +212,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "US Govt. or AP US Govt.",
-    "tags": ["History"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-computer-science-a-(csa)": {
     "considerations": "Students need prior programming experience outside of school. Computer Science A is a very challenging course. This is a Project Lead The Way (PLTW) course. This course prepares students for the AP Computer Science A exam.",
@@ -225,31 +225,31 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
-    "tags": ["Engineering"]
+    "tags": ["Advanced Placement", "Engineering"]
   },
   "advanced-placement-environmental-science-1-&-2": {
     "considerations": "Advanced Placement Environmental Science 1 & 2 is a NGSS course based on the completion of NGSS Earth Science Standards and successful completion will meet the earth science requirement for graduation. Students MUST sign up for both sections listed above. Students taking this course must have completed General Biology and Algebra. Students MUST sign up for both sections listed above. Students may take the AP exam in May.",
     "courseid": "SCI541 & SCI542",
     "coursename": "Advanced Placement Environmental Science 1 & 2",
     "credits": "15",
-    "description": "The goal of AP Environmental Science is to provide students with the scientific principles, concepts, and methodologies required to understand the interrelationships of the natural world, to identify and analyze environmental problems both natural and human-made, to evaluate the relative risks associated with these problems, and to examine alternative solutions for resolving or preventing them. Elective Science credit can also be found in the Agricultural Science and PLTW sections.",
+    "description": "The goal of AP Environmental Science is to provide students with the scientific principles, concepts, and methodologies required to understand the interrelationships of the natural world, to identify and analyze environmental problems both natural and human-made, to evaluate the relative risks associated with these problems, and to examine alternative solutions for resolving or preventing them.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "General Biology and Algebra",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-french": {
     "considerations": "See prerequisite. Class is conducted in French.",
     "courseid": "FOR570",
     "coursename": "Advanced Placement French",
     "credits": "10",
-    "description": "This course continues to (communication, cultures, connections, comparisons, and communities) by providing intensive practice in the fundamental communicative skills of listening, speaking, reading and writing, with a methodic study of different cultural contexts. This class offers the opportunity for language use beyond the sphere of the elementary language courses. Discussion of the cultural practices and products of Francophone countries presented in the readings and viewing materials constitute an important part of the course. Comparisons and connections between Francophone and Anglophone cultures and language are also studied as it is a major portion of the AP exam. This course offers university credit in the form of an AP Exam and therefore is considered a college level class.",
-    "format": "Block or Skinny",
+    "description": "This course continues to develop the \"5 Cs\" of second language acquisition (communication, cultures, connections, comparisons, and communities) by providing intensive practice in the fundamental communicative skills of listening, speaking, reading, and writing, with a methodic study of different cultural contexts. This class offers the opportunity for language use beyond the sphere of the elementary language courses. Discussion of the cultural practices and products of Francophone countries presented in the readings and viewing materials constitute an important part of the course. Comparisons and connections between Francophone and Anglophone cultures and language are also studied as it is a major portion of the AP exam. This course offers university credit in the form of an AP Exam and therefore is considered a college level class.",
+    "format": "Block",
     "gradelevels": "12",
-    "length": "1 or 2 Semester(s)",
+    "length": "1 Semester",
     "prerequisites": "French IV",
-    "tags": ["Foreign Language"]
+    "tags": ["Advanced Placement", "Foreign Language"]
   },
   "advanced-placement-music-theory": {
     "considerations": "Students may take the Music Theory AP exam in May. This course is strongly recommended for students considering studying music at the college/university level.",
@@ -261,19 +261,19 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Music Fundamentals or Instructor approval",
-    "tags": ["Music"]
+    "tags": ["Advanced Placement", "Music"]
   },
   "advanced-placement-physics-1": {
     "considerations": "Advanced Placement Physics I is based on the completion of NGSS Physical Science Standards and successful completion will meet the physics portion of the physical science graduation requirement. It is recommended that students sign up for both AP Physics I and AP Physics II. Physics I is NOT a prerequisite for this class. See prerequisites. Students may take the AP Physics 1 exam in May.",
     "courseid": "SCI531",
     "coursename": "Advanced Placement Physics 1",
     "credits": "10",
-    "description": "This course covers College Physics I. Students taking this class should have a strong interest in the practical applications of mathematics to real-life scenarios. Areas of emphasis include; experimental design, kinematics, ectricity, and waves.",
+    "description": "This course covers College Physics I. Students taking this class should have a strong interest in the practical applications of mathematics to real-life scenarios. Areas of emphasis include experimental design, kinematics, newton's laws, gravitation, electricity, and waves.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Chemistry I AND Algebra 2A",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-physics-2": {
     "considerations": "Physics I or AP Physics 1 is a prerequisite for this class. Students may take the AP Physics 2 exam in May.",
@@ -285,7 +285,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "AP Physics I or Physics I",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-psychology-1-&-2": {
     "considerations": "Textbooks are available for purchase online but one will be provided in class. Class is geared to prep students to take the national AP Psychology exam in May.",
@@ -297,7 +297,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Introductory Psychology OR approval",
-    "tags": ["History"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-statistics": {
     "considerations": "Students may take the AP Statistics exam in May. Graphing calculator is required.",
@@ -310,7 +310,7 @@
     "length": "2 Semesters",
     "prerequisites": "Algebra 2A or Algebra 2",
     "subsequent": "Mathematics & Society or AP Calculus",
-    "tags": ["Math"]
+    "tags": ["Advanced Placement", "Math"]
   },
   "advanced-placement-us-history-1-&-2": {
     "considerations": "Instructor approval for 9th graders. Students MUST sign up for both sections listed above. Fulfills the US history graduation requirement. This course begins in 2nd quarter. Students may take the US History AP exam in May.",
@@ -322,7 +322,7 @@
     "gradelevels": "9-12",
     "length": "3 Quarters",
     "prerequisites": "US History 9 OR Advanced US History 9 is recommended",
-    "tags": ["History"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-world-history-1-&-2": {
     "considerations": "Students MUST sign up for both sections listed above. Fulfills the required world history requirement. Duration is three quarters beginning in 2nd quarter. Students may take the World History AP exam in May.",
@@ -334,7 +334,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-sewing": {
     "considerations": "This is an advanced level, project-based class for independent sewers.",
@@ -358,7 +358,7 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "aerospace-engineering-(ae)": {
     "considerations": "It is recommended that students have prior experience with Autodesk Inventor.",
@@ -385,7 +385,7 @@
     "tags": ["Agriculture"]
   },
   "agricultural-business-foundations": {
-    "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities in a Blended format.",
+    "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
     "courseid": "AGR325",
     "coursename": "Agricultural Business Foundations",
     "credits": "10",
@@ -413,7 +413,7 @@
     "courseid": "AGR500",
     "coursename": "Agricultural Research and Development",
     "credits": "10",
-    "description": "Agricultural Research and Development is the experiences in agriculture, based on the pathway of study they pursued. Woven throughout the course are projects and problems based in practical applications and designed to develop and improve employability skills of students. Students will further enhance research, critical thinking, and teamwork skills as they expand on content knowledge from previous CASE courses. Students completing coursework for all four courses within a specific CASE Pathway are eligible to receive CASE program certification.",
+    "description": "Agricultural Research and Development is the capstone course designed to culminate students' experiences in agriculture, based on the pathway of study they pursued. Woven throughout the course are projects and problems based in practical applications and designed to develop and improve employability skills of students. Students will further enhance research, critical thinking, and teamwork skills as they expand on content knowledge from previous CASE courses. Students completing coursework for all four courses within a specific CASE Pathway are eligible to receive CASE program certification.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
@@ -429,12 +429,12 @@
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
-    "prerequisites": "Pre-Algebra, Pre- Algebra B, or Algebra Foundations",
+    "prerequisites": "Pre-Algebra, Math 8, or Algebra Foundations",
     "subsequent": "Geometry",
     "tags": ["Math"]
   },
   "algebra-1a": {
-    "considerations": "Students are placed in this course per approval of the math department based on Pre-Algebra performance. A scientific calculator or equivalent is required. Graphing calculators are not allowed in this course. Algebra 1A and Algebra 1B together meet the Algebra graduation requirement.",
+    "considerations": "Students are placed in this course per approval of the math department based on Math 8 or Algebra Foundations performance. A scientific calculator or equivalent is required. Algebra 1A and Algebra 1B together meet the Algebra graduation requirement.",
     "courseid": "MAT150",
     "coursename": "Algebra 1A",
     "credits": "10",
@@ -442,7 +442,7 @@
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
-    "prerequisites": "Algebra Foundations, Pre-Algebra or Pre-Algebra B",
+    "prerequisites": "Algebra Foundations, Pre-Algebra, or Math 8",
     "subsequent": "Algebra 1B",
     "tags": ["Math"]
   },
@@ -464,7 +464,7 @@
     "courseid": "MAT315",
     "coursename": "Algebra 2",
     "credits": "10",
-    "description": "This course includes a variety of topics, including equations, inequalities, linear functions and relations, systems of equations and inequalities, quadratic functions and relations, polynomials and functions, inverse functions and relations, radical functions and relations, exponential functions and relations, logarithmic functions and relations, and rational functions and relations; and also included in this course is an extension of the above topics, as well as the new additional topics. These include factoring, solving equations, logarithmic functions and relations, conics (including rotations and transformations), sequences and series, trigonometry functions, trigonometry identities, and trigonometry equations.",
+    "description": "This course includes a variety of topics, including equations, inequalities, linear functions and relations, systems of equations and inequalities, quadratic functions and relations, polynomials, inverse functions and relations, radical functions and relations, exponential functions and relations, logarithmic functions and relations, and rational functions and relations, sequences and series, trigonometry functions, trigonometry identities, and trigonometry equations. This course fulfills minimum requirement for entry into most regent universities.",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
@@ -472,17 +472,16 @@
     "subsequent": "Pre-Calculus (recommended) or Mathematics & Society or AP Statistics",
     "tags": ["Math"]
   },
-  "algebra-2a": {
-    "considerations": "A graphing calculator is required. TI89 or TI-Nspire calculators are NOT allowed. Earns 0.5 units of NCAA mathematics credit.",
-    "courseid": "MAT295",
-    "coursename": "Algebra 2A",
-    "credits": "10",
-    "description": "This course includes a variety of topics, including equations, inequalities, linear functions and relations, systems of equations and inequalities, quadratic functions and relations, polynomials and functions, inverse functions and relations, radical functions and relations, exponential functions and relations, logarithmic functions and relations, and rational functions and relations. This course fulfills minimum requirement for entry into most regent universities.",
+  "algebra-2-priority-standards": {
+    "considerations": "Students are placed into this course by recommendation of a mathematics teacher or school counselor. This course is designed for students who struggle with the core concepts of Algebra 2.",
+    "courseid": "MAT290PS",
+    "coursename": "Algebra 2B",
+    "credits": "2.5",
+    "description": "This course develops mathematical skills focused on the priority standards of Algebra 2. These topics include equations, inequalities, linear functions and relations, systems of equations and inequalities, quadratic functions and relations, polynomials, inverse functions and relations, radical functions and relations, exponential functions and relations, logarithmic functions and relations, and rational functions and relations, sequences and series, trigonometry functions, trigonometry identities, and trigonometry equations. \"Credit earned for Priority Standards classes does not count toward the 30-credit math graduation requirement.\"",
     "format": "Skinny",
     "gradelevels": "9-12",
-    "length": "2 Semesters",
-    "prerequisites": "Geometry",
-    "subsequent": "Algebra 2B (recommended) or Mathematics Society or AP Statistics",
+    "length": "1 Quarter",
+    "prerequisites": "Teacher and/or Counselor recommendation, concurrent enrollment in Algebra 2",
     "tags": ["Math"]
   },
   "algebra-2b": {
@@ -535,18 +534,6 @@
     "prerequisites": "Algebra Fundamentals I or approval",
     "tags": ["Math"]
   },
-  "algebra-priority-standards": {
-    "considerations": "Students are placed into this course by recommendation of a mathematics teacher or school counselor. This course is designed for students who struggle with the core concepts of Algebra 1.",
-    "courseid": "MAT170PS",
-    "coursename": "Algebra Priority Standards",
-    "credits": "2.5",
-    "description": "This course develops mathematical skills focused on the priority standards of Algebra 1. These topics include algebraic operations and reasoning, one-variable equations and inequalities, linear equations, exponents, factoring, and quadratics. not count toward the 30 credit math graduation",
-    "format": "Skinny",
-    "gradelevels": "9-12",
-    "length": "1 Quarter",
-    "prerequisites": "Teacher and/or Counselor Recommendation; `Concurrent enrollment in Algebra 1",
-    "tags": ["Math"]
-  },
   "american-literature-i": {
     "considerations": "None",
     "courseid": "ENG210e",
@@ -588,12 +575,12 @@
     "courseid": "ART511 & ART512",
     "coursename": "AP Art History 1 & 2",
     "credits": "15",
-    "description": "This course will engage students at the same level as an introductory college art history survey. Students will develop an understanding and knowledge of diverse historical, religious, political, and sociological contexts of architecture, sculpture and painting. The students will examine and critically analyze works from the past and present from all corners of the World. The mean to be Huma",
+    "description": "This course will engage students at the same level as an introductory college art history survey. Students will develop an understanding and knowledge of diverse historical, religious, political, and sociological contexts of architecture, sculpture, and painting. The students will examine and critically analyze works from the past and present from all corners of the World. The essential question for this class is, \"What does it mean to be Human?\"",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "None, Design highly Recommended",
-    "tags": ["Art"]
+    "tags": ["Advanced Placement", "Art"]
   },
   "ap-english-literature-and-composition": {
     "considerations": "See prerequisite. This two-quarter class will be offered during the first semester of the year and will prepare students to take the AP English Literature and Composition exam in May. Review sessions during semester 2 will be provided.",
@@ -605,7 +592,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Advanced English III is strongly recommended",
-    "tags": ["English"]
+    "tags": ["Advanced Placement", "English"]
   },
   "ap-independent-study": {
     "considerations": "This course is for students identified by established district guidelines.",
@@ -616,7 +603,7 @@
     "gradelevels": "10-12",
     "length": "1-2 Semesters",
     "prerequisites": "Instructor Approval",
-    "tags": ["Talented and Gifted"]
+    "tags": ["Advanced Placement", "Talented and Gifted"]
   },
   "ap-microeconomics": {
     "considerations": "Students should be comfortable working with charts, tables, numbers, and equations. Students may take the AP Microeconomics exam in May.",
@@ -628,7 +615,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Economics is recommended",
-    "tags": ["Business"]
+    "tags": ["Advanced Placement", "Business"]
   },
   "applied-physics-and-chemistry": {
     "considerations": "Applied Chemistry and Physics is based on the completion of NGSS Physical Science Standards and successful completion will meet the physical science graduation requirement. Students taking this course must have completed Algebra.",
@@ -647,7 +634,7 @@
     "courseid": "AGR225",
     "coursename": "Aquaculture Science",
     "credits": "5",
-    "description": "Aquaculture Science introduces students to the world of animal and plant aquaculture. Students will acquire the skills needed to produce and harvest finfish, freshwater prawn and food plants while",
+    "description": "Aquaculture Science introduces students to the world of animal and plant aquaculture. Students will acquire the skills needed to produce and harvest finfish, freshwater prawn and food plants while working in the department's aquaculture laboratory.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "1 Quarter",
@@ -671,7 +658,7 @@
     "courseid": "ART125",
     "coursename": "Beginning Ceramics",
     "credits": "5",
-    "description": "Like getting dirty? Working with your hands? Then Beginning Ceramics is right for you. Beginning Ceramics allows students to dig into clay and learn the basic hand building methods; pinch, coil, slab and sculpting. Students create simple forms. Students will learn the scientific principle of clay and glazes. Class will be spent learning these skills and applying these skills to specific projects over the course of the quarter. Creativity is a must as well as using fundamentally sound techniques.",
+    "description": "Like getting dirty? Working with your hands? Then Beginning Ceramics is right for you. Beginning Ceramics allows students to dig into clay and learn the basic hand building methods: pinch, coil, slab, and sculpting. Students will also learn how to use the potter's wheel to create simple forms. Students will learn the scientific principle of clay and glazes. Class will be spent learning these skills and applying these skills to specific projects over the course of the quarter. Creativity is a must as well as using fundamentally sound techniques.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "1 Quarter",
@@ -730,7 +717,7 @@
     "courseid": "AGR230",
     "coursename": "Botany",
     "credits": "5",
-    "description": "Students will have experiences with a number of plant science -and problems. Student experiences will involve the study of plant anatomy and physiology, classification, and the planning, planting and caring for a school garden.",
+    "description": "Students will have experiences with a number of plant science concepts with many \"hands-on\" activities, projects, and problems. Student experiences will involve the study of plant anatomy and physiology, classification, and the planning, planting, and caring for a school garden.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "1 Quarter",
@@ -742,7 +729,7 @@
     "courseid": "ENG340",
     "coursename": "British Literature",
     "credits": "5",
-    "description": "This course is designed to experiences. Students will read approximately five novels, excerpts from classic British works, historical overviews of the literary periods and articles related to Britain. Students will do individual and group presentations. Among these are; serve on a discussion group for a novel, present their research project, and design and discuss their coat-of-arms.",
+    "description": "This course is designed to broaden a student's reading and writing experiences. Students will read approximately five novels, excerpts from classic British works, historical overviews of the literary periods and articles related to Britain. Students will do individual and group presentations. Among these are; serve on a discussion group for a novel, present their research project, and design and discuss their coat-of-arms.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "1 Quarter",
@@ -895,23 +882,23 @@
     "prerequisites": "English I or Advanced English I",
     "tags": ["English"]
   },
-  "compass-electives": {
+  "teacher's-assistant": {
     "considerations": "Instructor must approve",
     "courseid": "ELT100",
-    "coursename": "Compass Electives",
+    "coursename": "Teacher's Assistant",
     "credits": "5",
-    "description": "Students will help the teacher with day to day activities.",
+    "description": "Students will help the teacher with day-to-day activities.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "1 Quarter",
-    "prerequisites": "Student must have passed the course for which they Assistant."
+    "prerequisites": "Student must have passed the course for which they are the Teacher's Assistant."
   },
   "composition-i": {
     "considerations": "See prerequisite. Basic writing and research skills are expected and needed. This is a dual-credit course, and the expectations reflect those of college courses.",
     "courseid": "ENG460 or ENG460E",
     "coursename": "Composition I",
     "credits": "5 (LM), 3 (KW)",
-    "description": "This course strengthens skills developed in previous English courses. Particular emphasis is on furthering skills in argument writing. The course critically. Students will complete several formal papers, impromptu essays in response to current events, and two papers involving research. Additionally, students will make presentations and frequently conduct peer review. This class is combination of seminar and lab time.",
+    "description": "This course strengthens students' writing skills that have been developed in previous English courses. Particular emphasis is on furthering skills in argument writing. The course also seeks to develop a student's ability to think critically. Students will complete several formal papers, impromptu essays in response to current events, and two papers involving research. Additionally, students will make presentations and frequently conduct peer review. This class is combination of seminar and lab time.",
     "format": "Block",
     "gradelevels": "11-12",
     "length": "1 Quarter",
@@ -923,7 +910,7 @@
     "courseid": "ENG465 or ENG465E",
     "coursename": "Composition II",
     "credits": "5 (LM), 3 (KW)",
-    "description": "This course continues to develop writing skills and critical thinking skills introduced in Composition I, with a particular emphasis on argument analysis. The course requires critical analysis of reading materials, audience and self, and further emphasizes precise and effective use of research tools while honing a arguments. This class is a combination of seminar and lab time.",
+    "description": "This course continues to develop writing skills and critical thinking skills introduced in Composition I, with a particular emphasis on argument analysis. The course requires critical analysis of reading materials, audience, and self, and further emphasizes precise and effective use of research tools while honing a student's ability to analyze and construct logical arguments. This class is a combination of seminar and lab time.",
     "format": "Block",
     "gradelevels": "11-12",
     "length": "1 Quarter",
@@ -1089,6 +1076,18 @@
     "prerequisites": "None",
     "tags": ["Family Consumer Sciences"]
   },
+  "current-events": {
+    "considerations": "Students will be reading articles, analyzing sources, and using web-based applications.",
+    "courseid": "SOC150",
+    "coursename": "Current Events",
+    "credits": "5",
+    "description": "Current Events promotes critical thinking skills to empower students to make independent judgments and informed decisions in response to information conveyed through the channels of mass communication.",
+    "format": "Block",
+    "gradelevels": "9-12",
+    "length": "1 Quarter",
+    "prerequisites": "None",
+    "tags": ["Social Studies"]
+  },
   "design-art-basics": {
     "considerations": "This course is a basic design course which is highly recommended before taking any art course.",
     "courseid": "ART110",
@@ -1112,6 +1111,18 @@
     "length": "2 Quarters",
     "prerequisites": "Algebra",
     "tags": ["Engineering"]
+  },
+  "digital-marketing": {
+    "considerations": "Not offered as a standalone class; this class is available only as part of the Venture Advanced Business strand.",
+    "courseid": "BUS360",
+    "coursename": "Digital Marketing",
+    "credits": "5",
+    "description": "This course is designed exclusively for Venture Academics. Digital Marketing provides a broad overview of the techniques used by businesses to market to consumers of the 21st century, in a digital economy. Students will gain a fundamental understanding of web page design, content marketing, analytics, search engine optimization (SEO), pay per click, email marketing, and social media marketing.",
+    "format": "SuperBlock",
+    "gradelevels": "10-12",
+    "length": "1 Semester",
+    "prerequisites": "None",
+    "tags": ["Business", "Venture"]
   },
   "digital-photography": {
     "considerations": "Design Art Basics is strongly recommended before taking this class.",
@@ -1142,7 +1153,7 @@
     "courseid": "SCI340",
     "coursename": "Earth and Space Science",
     "credits": "10",
-    "description": "This course is designed to help students develop an understanding of the big ideas of the Physics Standards and will be applied through the Earth Science Standards. Physics content includes force, motion, momentum, collisions, energy transformations, electromagnetism, waves and light. Earth Science content includes materials of Earth, its internal and exterior processes, geological history, and how role in the universe.",
+    "description": "This course is designed to help students develop an understanding of the big ideas of the Physics Standards and will be applied through the Earth Science Standards. Physics content includes force, motion, momentum, collisions, energy transformations, electromagnetism, waves, and light. Earth Science content includes materials of Earth, its internal and exterior processes, geological history, and how Earth's systems interact, change over time and its role in the universe.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
@@ -1154,7 +1165,7 @@
     "courseid": "SCI125",
     "coursename": "Earth Science",
     "credits": "10",
-    "description": "This course is designed to allow students to develop an understanding of universe, and Earth and human activity.",
+    "description": "This course is designed to allow students to develop an understanding of Earth's origin and interactions. Students will examine Earth's systems, Earth's place in the universe, and Earth and human activity.",
     "format": "Block",
     "gradelevels": "9-10",
     "length": "2 Quarters",
@@ -1171,7 +1182,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "economics-i": {
     "considerations": "Students should be comfortable working with graphs.",
@@ -1183,19 +1194,19 @@
     "gradelevels": "9 -12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "economics-ii": {
     "considerations": "Students should be comfortable working with graphs.",
     "courseid": "SOC311",
     "coursename": "Economics II",
     "credits": "5",
-    "description": "This course will continue to focus on economic concepts; GDP, productivity, the labor force, competition, tthe economy, the money supply, international trade and globalization.",
+    "description": "This course will continue to focus on economic concepts: GDP, productivity, the labor force, competition, the government's role in the economy, the money supply, international trade and globalization.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "engineering-design-and-development-(edd)": {
     "considerations": "EDD is a culminating capstone course. In order to have a solid foundation for this course, students need successful completion of the prerequisites of any two PLTW engineering courses which include; Introduction to Engineering Design, Principles of Engineering, Digital Electronics, Aerospace Engineering, Civil Engineering and Architecture, Computer Integrated Manufacturing, Environmental Sustainability, or Computer Science Principles.",
@@ -1259,10 +1270,10 @@
   },
   "english-iii": {
     "considerations": "See prerequisite.",
-    "courseid": "ENG315 or ENG315B",
+    "courseid": "ENG315 or ENG315J",
     "coursename": "English III",
     "credits": "10",
-    "description": "Students will analyze and interpret a variety of American literature, including selections from our earliest writers to our foremost contemporaries. Students will also write informative, argumentative, research and personal essays. This is a process-oriented class where students will revise and edit their own work. The following text will be covered in class; Short pieces of fiction and nonfiction from American authors Selections of poetry from Walt Whitman, Emily Dickinson and other American poets The Great Gatsby The Crucible I Know Why the Caged Bird Sings A Raisin in the Sun",
+    "description": "Students will analyze and interpret a variety of American literature, including selections from our earliest writers to our foremost contemporaries. Students will also write informative, argumentative, research and personal essays. This is a process-oriented class where students will revise and edit their own work. The following text will be covered in class: • Short pieces of fiction and nonfiction from American authors • Selections of poetry from Walt Whitman, Emily Dickinson, and other American poets • The Great Gatsby • The Crucible • I Know Why the Caged Bird Sings • A Raisin in the Sun",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
@@ -1285,7 +1296,7 @@
     "courseid": "ELL001CP",
     "coursename": "English Language Learners College Prep",
     "credits": "10",
-    "description": "This course is designed to the English language. This course will focus on preparing for the ACT and SAT exams through extensive vocabulary, grammar, reading and composition practice. Focus will also be given to the college admissions process, financial aid concerns, scholarship opportunities, personal finance, and career skills.",
+    "description": "This course is designed to continue to develop students' composition skills in the English language. This course will focus on preparing for the ACT and SAT exams through extensive vocabulary, grammar, reading and composition practice. Focus will also be given to the college admissions process, financial aid concerns, scholarship opportunities, personal finance, and career skills.",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
@@ -1307,7 +1318,7 @@
     "courseid": "ENG140",
     "coursename": "English Language Learners Fundamentals",
     "credits": "10",
-    "description": "This course is designed to writing skills in the English language and develop the skills that students need to be successful at L-M and beyond.",
+    "description": "This course is designed to develop students' speaking, listening, reading, and writing skills in the English language and develop the skills that students need to be successful at L-M and beyond.",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
@@ -1319,7 +1330,7 @@
     "courseid": "ENG145",
     "coursename": "English Language Learners I",
     "credits": "10",
-    "description": "This course is designed to reading, and writing skills in the English Language. This course focuses on academic reading and writing, analyzing and interpreting different genres which build academic vocabulary and grammar skills.",
+    "description": "This course is designed to continue to develop students' speaking, listening, reading, and writing skills in the English Language. This course focuses on academic reading and writing, analyzing, and interpreting different genres which build academic vocabulary and grammar skills.",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
@@ -1331,7 +1342,7 @@
     "courseid": "ENG245",
     "coursename": "English Language Learners II",
     "credits": "10",
-    "description": "This course is designed to reading, and writing skills in the English language. This course focuses on academic reading and writing, analyzing and interpreting different genres which build academic vocabulary and grammar skills. This course will also focus on the writing process, a variety of essay styles, and writing research papers.",
+    "description": "This course is designed to continue to develop students' speaking, listening, reading, and writing skills in the English language. This course focuses on academic reading and writing, analyzing, and interpreting different genres which build academic vocabulary and grammar skills. This course will also focus on the writing process, a variety of essay styles, and writing research papers.",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
@@ -1343,7 +1354,7 @@
     "courseid": "ENG335",
     "coursename": "English Language Learners III",
     "credits": "10",
-    "description": "This course is designed to reading, and writing skills in the English language. This course focuses on academic reading and writing, analyzing and interpreting different genres which build academic vocabulary and grammar skills. In this course, students will read texts that relate to American history and culture in order to while honing their reading skills. This course will also focus on the writing process, a variety of essay styles, and writing research papers.",
+    "description": "This course is designed to continue to develop students' speaking, listening, reading, and writing skills in the English language. This course focuses on academic reading and writing, analyzing, and interpreting different genres which build academic vocabulary and grammar skills. In this course, students will read texts that relate to American history and culture in order to increase students' background on these subjects while honing their reading skills. This course will also focus on the writing process, a variety of essay styles, and writing research papers.",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "2 Semesters",
@@ -1367,9 +1378,9 @@
     "courseid": "BUS460",
     "coursename": "Entrepreneurship",
     "credits": "5",
-    "description": "Students will learn about starting and running their own business. A custom business plan will be developed after exploring topics such as innovation & creativity, business opportunities, marketing & marketing research, finance business operations, and monitoring success. BizInnovator Curriculum, developed by the University of Iowa, will be used and is tied into the National Entrepreneurship Standards, the Iowa Core Curriculum, and 21st Century Skills.",
+    "description": "This class will teach students about entrepreneurship by exploring strategies used in the early stages of business development. This class takes a hands-on approach to solving problems and encourages students to be innovative, test assumptions, and develop a (business) startup. Students will use tools & strategies like the Lean Startup Methodology, Design Thinking, and the Business Model Canvas to validate their ideas. *Students also have the opportunity to earn college credit.",
     "format": "Block",
-    "gradelevels": "11-12",
+    "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
     "tags": ["Business"]
@@ -1500,7 +1511,7 @@
     "courseid": "SCI210",
     "coursename": "General Biology I & II",
     "credits": "10",
-    "description": "This course is a survey class in life science. The areas investigated include; continuity and change; diversity of life.",
+    "description": "This course is a survey class in life science. The areas investigated include biological structure and function, heredity, life's continuity and change, and diversity of life.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
@@ -1536,7 +1547,7 @@
     "courseid": "MAT220PS",
     "coursename": "Geometry Priority Standards",
     "credits": "2.5",
-    "description": "This course develops mathematical skills focused on the priority standards of Geometry. These topics include points, lines, planes, polygons, circles, solid figures, and their associated relationships as a mathematical system. Emphasis is placed on the application of knowledge in algebraic and proof contexts. not count toward the 30 credit math graduation",
+    "description": "This course develops mathematical skills focused on the priority standards of Geometry. These topics include points, lines, planes, polygons, circles, solid figures, and their associated relationships as a mathematical system. Emphasis is placed on the application of knowledge in algebraic and proof contexts. \"Credit earned for Priority Standards classes does not count toward the 30-credit math graduation requirement.\"",
     "format": "Skinny",
     "gradelevels": "9-12",
     "length": "1 Quarter",
@@ -1553,16 +1564,16 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "graphics-one": {
     "considerations": "The coursework relies heavily on the use of the Adobe Creative Suite as well as emerging technologies. The class requires students to be creative, independent, focused, and project driven.",
     "courseid": "ART410",
     "coursename": "Graphics One",
     "credits": "5",
-    "description": "Graphics One will explore several areas of the current graphics industry. The class will provide rigorous, real world situations where students utilize professional programs from the Adobe Creative Suite along with their knowledge of the fine arts to create high end, visually stunning art and presentations. Projects will stem from the graphically visual world we live in today and pull from such topics as Brand Identity, Marketing, and Web Presence. We will also discuss the benefits of digital portfolios as well as the importance of the creative mind itechnology driven society.",
+    "description": "Graphics One will explore several areas of the current graphics industry. The class will provide rigorous, real-world situations where students utilize professional programs from the Adobe Creative Suite along with their knowledge of the fine arts to create high-end, visually stunning art and presentations. Projects will stem from the graphically visual world we live in today and pull from such topics as Brand Identity, Marketing, and Web Presence. We will also discuss the benefits of digital portfolios as well as the importance of the creative mind in today's technology driven society.",
     "format": "Block",
-    "gradelevels": "10 -12",
+    "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Design Art Basics",
     "tags": ["Art"]
@@ -1572,11 +1583,11 @@
     "courseid": "ART420",
     "coursename": "Graphics Two",
     "credits": "5",
-    "description": "Graphics Two continues to push the boundaries of design with in-depth rigorous approaches utilizing the skills learned in Graphics One. Projects will continue to challenge and polish a studegrid, composition, & layout. Students will have the opportunity to further develop their skills using the Adobe Creative Suite, as well as having access to all coursework will benefit students interested in developing a design portfolio.",
+    "description": "Graphics Two continues to push the boundaries of design with in-depth rigorous approaches utilizing the skills learned in Graphics One. Projects will continue to challenge and polish a student's understanding of typography, grid, composition, & layout. Students will have the opportunity to further develop their skills using the Adobe Creative Suite, as well as having access to iPad Pro's and Digital SLR Camera's. Additionally, all coursework will benefit students interested in developing a design portfolio.",
     "format": "Block",
     "gradelevels": "11-12",
     "length": "1 Quarter",
-    "prerequisites": "One & Design Art Basics",
+    "prerequisites": "\"C\" or better in Graphics One & Design Art Basics",
     "tags": ["Art"]
   },
   "health-careers": {
@@ -1688,26 +1699,26 @@
     "tags": ["Family Consumer Sciences"]
   },
   "intermediate-spanish-i-kcc": {
-    "considerations": "see prerequisite. Class is conducted in Spanish.",
+    "considerations": "See prerequisite. Class is conducted in Spanish.",
     "courseid": "FOR560",
     "coursename": "Intermediate Spanish I KCC",
     "credits": "5 (LM), 4 (KW)",
     "description": "In this class, students will continue to develop their ability to communicate in Spanish in everyday, practical situations that they might encounter both in the U.S. and abroad. Along with the development of oral skills, students will also work on the other 3 vital components of language; reading, writing and listening comprehension. Students will actively engage themselves in pair/group activities to express themselves in basic situations. Classroom time will be used for intensive language practice in meaningful contexts (i.e. applying important grammatical concepts, essential vocabulary, and cultural norms needed to maintain basic communication.) Class time will consist of communication activities following grammatical explanations. Students are expected to study and complete assigned workbook, video, lab and textbook activities outside of class.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "12",
-    "length": "1 Quarter or 1 Semester",
+    "length": "1 Quarter",
     "prerequisites": "Spanish IV",
     "tags": ["Foreign Language"]
   },
   "intermediate-spanish-ii-kcc": {
-    "considerations": "see prerequisite. Class is conducted in Spanish.",
+    "considerations": "See prerequisite. Class is conducted in Spanish.",
     "courseid": "FOR565",
     "coursename": "Intermediate Spanish II KCC",
     "credits": "5 (LM), 4 (KW)",
     "description": "In this class, students will continue to develop their ability to communicate in Spanish in everyday, practical situations that they might encounter both in the U.S. and abroad. Along with the developments of oral skills, students will also work on the other 3 vital components of language; reading, writing and listening comprehension. Students will actively engage themselves in pair/group activities to express themselves in basic situations. Classroom time will be used for intensive language practice in meaningful contexts. (i.e. applying important grammatical concepts, essential vocabulary, and cultural norms needed to maintain basic communication.) Class time will consist of communication activities following grammatical explanations. Students are expected to study and complete assigned workbook, video, lab and textbook activities outside of class.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "12",
-    "length": "1 Quarter or 1 Semester",
+    "length": "1 Quarter",
     "prerequisites": "Intermediate Spanish I",
     "tags": ["Foreign Language"]
   },
@@ -1769,7 +1780,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "journalism": {
     "considerations": "None",
@@ -1802,7 +1813,7 @@
     "credits": "5",
     "description": "Students will earn credit from Kirkwood Community College upon successful completion of this course. This course will study the development of children thru adolescence age. Areas of study will examine interactions between child, family, school and society. Theories and evidence-based practices associated with understanding and supporting children will be covered. This course provides opportunities to observe in an elementary classroom.",
     "format": "Block",
-    "gradelevels": "11-12",
+    "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "KCC qualifying placement score",
     "tags": ["Family Consumer Sciences"]
@@ -1826,10 +1837,10 @@
     "credits": "5",
     "description": "This course focuses on the origins of legal rights in the United States. With a particular focus on Constitutional structure and the Bill of Rights, students will examine the development, structure and operation of the American legal system including citizen rights and responsibilities, the role of the US Supreme Court and the Iowa court system, the Iowa Code and the functions of the courts by experiencing a mock trial.",
     "format": "Block",
-    "gradelevels": "11-12",
+    "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "level-i-french": {
     "considerations": "None",
@@ -1837,9 +1848,9 @@
     "coursename": "Level I French",
     "credits": "10",
     "description": "This course develops the communicative skills of reading, writing, speaking, and listening. Basic grammar concepts and vocabulary are introduced. The target language is used during class time. Topics include school schedules and subjects, pastimes and activities, likes and dislikes, places, weather, time, family and Paris. Grammar concepts include adjectives and agreement, present tense of er verbs, and irregular verbs avoir, etre, faire, aller, venir as well as stem changing verbs acheter and preferer and the re group of verbs. Students also learn possessive adjectives and the near future.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "8-12",
-    "length": "1 or 2 Semester(s)",
+    "length": "1 Semester",
     "prerequisites": "None",
     "tags": ["Foreign Language"]
   },
@@ -1861,9 +1872,9 @@
     "coursename": "Level II French",
     "credits": "10",
     "description": "This course continues to emphasize the communicative skills of reading, writing, speaking, and listening. Grammar concepts, vocabulary, and use of target language are expanded. Topics include eating in a café, clothing and shopping, household chores and parts of the house, shops and stores and travel. Additional units include provinces of France and a cinematographic unit on Marcel Pagnol. Grammar concepts include passe compose, demonstrative adjectives, interrogative adjectives, the partitive and prepositions with places. New verbs are mettre, boire, voir, prendre, savoir, connaitre, appeler,dormer, partir, sortir, vouloir, pouvoir as well as ir verbs. Student also learn command forms.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "9-12",
-    "length": "1 or 2 Semester(s)",
+    "length": "1 Semester",
     "prerequisites": "French I",
     "tags": ["Foreign Language"]
   },
@@ -1885,9 +1896,9 @@
     "coursename": "Level III French",
     "credits": "10",
     "description": "This course continues to develop and refine the communicative skills of reading, writing, speaking, and listening. Complex grammar concepts are introduced. The target language will be widely utilized. Topics include expansion on prior topics and prior preparation and francophone holidays and cuisine, school places and events, morning routine, childhood memories and activities, animal vocabulary. Grammar topics addressed are direct and indirect object pronouns as well as y and en, extension of passe compose and learning of the imperfect tense, negative expressions, reflexive verbs, comparative and superlative adjectives and nouns. Students should be able to use the near future, present tense and both past tenses. There is also a cinematographic unit with two additional Pagnol films. Students begin to write more extensive and styles of communication in French.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "10-12",
-    "length": "1 or 2 Semester(s)",
+    "length": "1 Semester",
     "prerequisites": "French II",
     "tags": ["Foreign Language"]
   },
@@ -1909,9 +1920,9 @@
     "coursename": "Level IV French",
     "credits": "10",
     "description": "Level IV expands the communicative skills of reading, writing, speaking, and listening. Complex grammar concepts are introduced. Class will be conducted extensively in the target language. Topics include outdoor activities, fitness and health, professions, travel plans, movies and reading, the Renaissance. Informal speech register, slang and texting language is also taught. Grammar concepts include the future, the conditional and subjunctive verb tenses, demonstrative, interrogative and possessive pronouns. Present participles and relative pronouns are also learned. There is also a Victor Hugo poetry unit. Students will study current events of the francophone world on a weekly basis.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "11-12",
-    "length": "1 or 2 Semester(s)",
+    "length": "1 Semester",
     "prerequisites": "French III",
     "tags": ["Foreign Language"]
   },
@@ -1933,9 +1944,9 @@
     "coursename": "Level V Spanish",
     "credits": "10",
     "description": "Level V will focus on the communicative skills of reading, writing, speaking, and listening. Complex grammar concepts are introduced. Class will be conducted extensively in the target language. Topics include visiting an airport, planning a trip and traveling to a foreign country, staying in a hotel, professions and making plans for the future, and discussing environmental problems and possible solutions. Grammar concepts includes the review of present, preterite, imperfect, and perfect tenses and the introduction of nosotros commands, future, conditional, and subjunctive tenses. Spanish V will offer students an opportunity to explore the Hispanic culture.",
-    "format": "Block or Skinny",
+    "format": "Block",
     "gradelevels": "12",
-    "length": "1 or 2 Semester(s)",
+    "length": "1 Semester",
     "prerequisites": "Spanish IV",
     "tags": ["Foreign Language"]
   },
@@ -1963,19 +1974,6 @@
     "grading": "Credit/No credit",
     "length": "1 Quarter",
     "prerequisites": "Lifetime Fitness Aqua Fit I or Permission",
-    "tags": ["Health/PE"]
-  },
-  "lifetime-fitness---crossfit": {
-    "considerations": "A different Lifetime Fitness course is required for the Junior and Senior years.",
-    "courseid": "HPE341",
-    "coursename": "Lifetime Fitness - CrossFit",
-    "credits": "2.5",
-    "description": "This section will utilize Group Activity Labs to support fitness improvement. The Student will explore ways to design and adjust a CrossFit Fitness Plan tailored to meet their goals. The class emphasis includes; enhancing personal fitness through Activity Labs designed to improve Aerobic Capacity, Core Endurance, Muscular Fitness and overall Flexibility. The Student will demonstrate the ability to use Goal-Setting Skills to aid in enhancing personal fitness and complete a Life Skills Unit. The Student will be challenged to achieve an improved level of fitness while demonstrating an advanced knowledge of fitness concepts and principles. The Student will complete and reflect on district-approved fitness assessments for completion of the class. CPR training is included in this course.",
-    "format": "Skinny",
-    "gradelevels": "11-12",
-    "grading": "Credit/No credit",
-    "length": "1 Quarter",
-    "prerequisites": "Fundamentals of Lifetime Fitness or Permission",
     "tags": ["Health/PE"]
   },
   "lifetime-fitness---flex-and-fit-i": {
@@ -2047,7 +2045,7 @@
     "courseid": "ENG380",
     "coursename": "Literature of a Selected Author",
     "credits": "5",
-    "description": "Students will read, discuss, and analyze a variety of texts surrounding a selected author. Students will relate historical events and their impact on the literature, will relate d/regional events of the time, and social conditions of the works of the author. Students will respond to common elements and",
+    "description": "Students will read, discuss, and analyze a variety of texts surrounding a selected author. Students will relate historical events and their impact on the literature, will relate the author's life, world/regional events of the time, and social conditions of the works of the author. Students will respond to common elements and themes in the author's major body of work.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "1 Quarter",
@@ -2094,7 +2092,7 @@
     "courseid": "BUS355",
     "coursename": "Marketing",
     "credits": "5",
-    "description": "Marketing is an all-focuses on areas of study including, but not limited to; market planning, selling, promotion, distribution, pricing, marketing research and brand development.",
+    "description": "This class will focus on exploring one of the most critical functions a business often spends time and money on. Students will learn about tools and strategies that businesses of all types and sizes use to create an image, influence targeted customers, and eventually sell a product or service (or idea). Content is grouped into the categories of product, place, price, and promotion and includes branding, social media marketing, marketing research, selling, and distribution.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "1 Quarter",
@@ -2114,11 +2112,11 @@
     "tags": ["Math"]
   },
   "mathematics-and-society-kcc": {
-    "considerations": "See prerequisite. This is a dual-credit course and the expectations reflect those of a college course. In order to take this class, the student needs to register as a Kirkwood student earning college credit in high school by going to the website. An additional requirement is an ACT score of 19 or higher OR a score of 30 or higher on the ALEKS math placement test. Students can register for this course through Linn-registration procedures, but will need to meet the necessary test requirement by the first day of class at LMHS. The following link provides information regarding taking placement tests in Kirkwood.",
+    "considerations": "See prerequisite. This is a dual- credit course, and the expectations reflect those of a college course. In order to take this class, the student needs to register as a Kirkwood student earning college credit in high school by using this link: https://www.kirkwood.edu/site/index.php?d=725. An additional requirement is an ACT score of 19 or higher OR a score of 30 or higher on the ALEKS math placement test (https://www.kirkwood.edu/placement). Students can register for this course through Linn-Mar's registration procedures but will need to meet the necessary test requirement by the first day of class at LMHS. The following link provides information regarding taking placement tests in Kirkwood: https://www.kirkwood.edu/testcenter.",
     "courseid": "MAT415",
     "coursename": "Mathematics and Society KCC",
     "credits": "5 (L-M) 3 (KCC)",
-    "description": "This course introduces selected areas of mathematics in familiar settings -solving skills. The course includes a study of mathematical concepts selected from finance, statistics, probability, growth patterns and voting techniques.",
+    "description": "This course introduces selected areas of mathematics in familiar settings and develops students' conceptual and problem- solving skills. The course includes a study of mathematical concepts selected from finance, statistics, probability, growth patterns and voting techniques.",
     "format": "Skinny",
     "gradelevels": "12th gradelevels Only",
     "length": "1 Semester",
@@ -2178,7 +2176,7 @@
     "courseid": "ENG255",
     "coursename": "Multicultural Literature",
     "credits": "5",
-    "description": "Students will read selections that deal with across a variety of cultures. Students will complete multiple projects to promote lifelong literacy and will discover how technology and the internet can enhance reading selections. Some selections in this course have a more mature theme.",
+    "description": "As a course, Multicultural Literature seeks to explore, investigate, and reflect on how writers from underrepresented cultural identities and backgrounds express their experiences through narrative, short story, poetry, film, and more. Students will be presented opportunities to ask (and answer) the questions: how is a person's interaction with and experience in the world impacted by their identities? how are these experiences and interactions reflected in and shared through literature?",
     "format": "Block",
     "gradelevels": "11-12",
     "length": "1 Quarter",
@@ -2275,12 +2273,12 @@
     "courseid": "HPE600",
     "coursename": "PLTW Principles of Biomedical Science",
     "credits": "10",
-    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also in-demand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, to tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems.",
+    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also in- demand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems. See page 111 for more information about the Venture Academics Program.",
     "format": "SuperBlock",
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "Health I, General Biology",
-    "tags": ["Health/PE"]
+    "tags": ["Health/PE", "Venture"]
   },
   "pre-algebra": {
     "considerations": "A scientific calculator or its equivalent required. Graphing calculators are not allowed in this course.",
@@ -2437,7 +2435,7 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": ["English", "Venture"]
   },
   "sociology": {
     "considerations": "Meets the Behavioral Sciences graduation requirement.",
@@ -2449,7 +2447,18 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
+  },
+  "spanish-iv-culture": {
+    "courseid": "FOR435",
+    "coursename": "Spanish IV Culture",
+    "credits": "5",
+    "description": "Spanish IV Culture is a companion course to Venture Spanish IV Culture and Community. Students will learn about various aspects of the Spanish culture in authentic settings. Different Spanish cultures around the world will be studied including Western European and Latin American cultures.",
+    "format": "SuperBlock",
+    "gradelevels": "11-12",
+    "length": "1 Semester",
+    "prerequisites": "Spanish III",
+    "tags": ["Foreign Language", "Venture"]
   },
   "speech": {
     "considerations": "Speech or Acting is required for graduation.",
@@ -2462,6 +2471,30 @@
     "length": "1 Quarter",
     "prerequisites": "None",
     "tags": ["English"]
+  },
+  "sports-and-entertainment-marketing": {
+    "considerations": "Not offered as a standalone class; this class is available only as part of the Venture Marketing Essentials strand.",
+    "courseid": "BUS345",
+    "coursename": "Sports and Entertainment Marketing",
+    "credits": "5",
+    "description": "This course is designed exclusively for Venture Academics. Sports and Entertainment Marketing focuses on marketing tasks that can be applied in amateur or professional sports or sporting events, entertainment or entertainment events, products and services related to hobbies or cultural events, or businesses primarily engaged in satisfying the desire for enjoyable use of leisure time.",
+    "format": "SuperBlock",
+    "gradelevels": "10-12",
+    "length": "1 Semester",
+    "prerequisites": "None",
+    "tags": ["Business", "Venture"]
+  },
+  "state-&-local-government": {
+    "considerations": "This course is for elective credit in Social Studies. Not offered as a standalone class.",
+    "courseid": "SOC390",
+    "coursename": "State & Local Government",
+    "credits": "5",
+    "description": "This course is designed for Venture Academics. Students will discover the structures and actions of both state and local (school boards, city councils and county supervisors) governments through hands-on opportunities with local government representatives.",
+    "format": "SuperBlock",
+    "gradelevels": "11-12",
+    "length": "1 Semester",
+    "prerequisites": "None",
+    "tags": ["Social Studies", "Venture"]
   },
   "stream-&-field-biology": {
     "considerations": "See prerequisites. Strong comprehensive vocabulary, reading and study skills. This course meets the L-M science elective requirement.",
@@ -2476,7 +2509,7 @@
     "tags": ["Science"]
   },
   "super-sport": {
-    "considerations": "Specific skills taught and individualized education plan. Must have administrative approval to enroll.",
+    "considerations": "Specific skills taught and assessed are determined by a student's individualized education plan. Must have administrative approval to enroll.",
     "courseid": "ALT400",
     "coursename": "Super Sport",
     "credits": "5",
@@ -2537,15 +2570,15 @@
     "prerequisites": "None",
     "tags": ["Health/PE"]
   },
-  "theroarstore": {
+  "lm-roar-store": {
     "considerations": "This class has a work component built-in and may require students to work outside of normal instructional time.",
     "courseid": "BUS550",
-    "coursename": "TheROARstore",
+    "coursename": "LM ROAR Store",
     "credits": "5",
-    "description": "Students will be involved in the continued development and on-going operations of theROARstore. theROARstore is a student-run business, specializing in selling branded Linn-Mar merchandise. Students will learn customer service and selling skills in the classroom and develop & hone them while working in the store. In addition, students will spend time on developroducts accordingly, and promote them using social media, email marketing, and website design. Activities may include (but are not limited to); research and development, market & product planning, promotion, pricing, merchandising, selling, management, distribution, and financial analysis. Skills needed to be successful include; creative and logical thinking, timeliness, dependability, willingness to work as a team, effective communication, attention to detail, ethical behavior, and professional and mature demeanor when working with customers, advisors, and individuals in positions of authority.",
-    "format": "Block",
+    "description": "Students will be involved in the continued development and on-going operations of theROARstore. theROARstore is a student-run business, specializing in selling branded Linn-Mar merchandise. Students will learn customer service and selling skills in the classroom and develop & hone them while working in the store. In addition, students will spend time on developing theROARstore’s product mix, price the products accordingly, and promote them using social media, email marketing, and website design. Activities may include (but are not limited to): research and development, market & product planning, promotion, pricing, merchandising, selling, management, distribution, and financial analysis. Skills needed to be successful include creative and logical thinking, timeliness, dependability, willingness to work as a team, effective communication, attention to detail, ethical behavior, and professional and mature demeanor when working with customers, advisors, and individuals in positions of authority.",
+    "format": "Skinny",
     "gradelevels": "11-12",
-    "length": "1 Quarter",
+    "length": "1 Semester",
     "prerequisites": "Any of 2 or more Business courses",
     "tags": ["Business"]
   },
@@ -2559,7 +2592,129 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
+  },
+  "venture-advanced-business-strand": {
+    "considerations": "It is recommended that students enroll in one or more of the following courses prior to enrolling in this strand; Accounting, Marketing, Business/Consumer Law, Personal Finance.",
+    "courseid": "BUS702",
+    "coursename": "Venture Advanced Business Strand",
+    "courses": "BUS360, BUS460, and ENG120.",
+    "credits": "20",
+    "description": "This course covers the same content as BUS360 and BUS460 in a project- based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "10-12",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Business", "Venture"]
+  },
+  "venture-advanced-placement-environmental-science-1-&-2-strand": {
+    "courseid": "SCI703",
+    "coursename": "Venture Advanced Placement Environmental Science 1 & 2 Strand",
+    "courses": "SCI540 (AP Environmental Science 1 & 2), and ENG120. Students that successfully complete both courses will meet earth science and speech graduation requirements.",
+    "credits": "20 (15 AP Enviro, 5 Elective)",
+    "description": "This course covers the same content as SCI541 & SCI542 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "10-12",
+    "length": "Semester",
+    "prerequisites": "General Biology and Algebra",
+    "tags": ["Advanced Placement", "Science", "Venture"]
+  },
+  "venture-behavioral-science-strand": {
+    "courseid": "SOC702",
+    "coursename": "Venture Behavioral Science Strand",
+    "courses": "SOC330, SOC340, and ENG120. Students that successful complete all courses will meet behavioral science and speech graduation requirements.",
+    "credits": "20",
+    "description": "This course covers the same content as SOC330 & SOC340 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "11-12",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Social Studies", "Venture"]
+  },
+  "venture-civics-strand": {
+    "courseid": "SOC701",
+    "coursename": "Venture Civics Strand",
+    "courses": "SOC390, SOC400, and ENG120. Students that successful complete all courses will meet government and speech graduation requirements.",
+    "credits": "20",
+    "description": "This course covers the same content as SOC390 & SOC400 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "11-12",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Social Studies", "Venture"]
+  },
+  "venture-digital-design-strand": {
+    "considerations": "Design Art Basics is strongly recommended before taking this course.",
+    "courseid": "ART701",
+    "coursename": "Venture Digital Design Strand",
+    "courses": "ART400, ART410, and ART420.",
+    "credits": "20",
+    "description": "This course covers the same content as ART400, ART410, and ART420 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "11-12",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Art", "Venture"]
+  },
+  "venture-earth-science-strand": {
+    "courseid": "SCI701",
+    "coursename": "Venture Earth Science Strand",
+    "courses": "SCI125 and ENG120. Students that successful complete both courses will meet earth science and speech graduation requirements.",
+    "credits": "20 (10 Earth, 5 English, 5 Elective)",
+    "description": "This course covers the same content as SCI125 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "9-10",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Science", "Venture"]
+  },
+  "venture-english-strand-(english-iii)": {
+    "courseid": "ENG702",
+    "coursename": "Venture English Strand (English III)",
+    "courses": "ENG315 and ENG120. Students that successful complete both courses will meet English III and speech graduation requirements.",
+    "credits": "20",
+    "description": "This course covers the same content as ENG315 in a project-based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "10-12",
+    "length": "Semester",
+    "prerequisites": "English II or English Department approval",
+    "tags": ["English", "Venture"]
+  },
+  "venture-life-science-strand-(biology)": {
+    "courseid": "SCI702",
+    "coursename": "Venture Life Science Strand (Biology)",
+    "courses": "SCI210 and ENG120. Students that successful complete both courses will meet life science and speech graduation requirements.",
+    "credits": "20 (10 Bio, 5 English, 5 Elective.)",
+    "description": "This course covers the same content as SCI210 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "9-12",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Science", "Venture"]
+  },
+  "venture-marketing-essentials-strand": {
+    "courseid": "BUS701",
+    "coursename": "Venture Marketing Essentials Strand",
+    "courses": "BUS345, BUS355, and ENG120.",
+    "credits": "20",
+    "description": "This course covers the same content as BUS355, and ENG120 in a projectbased, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "10-12",
+    "length": "Semester",
+    "prerequisites": "None",
+    "tags": ["Business", "Venture"]
+  },
+  "venture-spanish-iv-culture-and-community": {
+    "courseid": "FOR701",
+    "coursename": "Venture Spanish IV Culture and Community",
+    "courses": "FOR430 Spanish IV (10 credits) and FOR435 Spanish IV Culture (5 credits), and Venture Spanish IV Culture and Community (5 credits) are included.",
+    "credits": "20",
+    "description": "This course covers the same content as FOR430 in a project-based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community, and learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "11-12",
+    "length": "Semester",
+    "prerequisites": "Spanish III",
+    "tags": ["Foreign Language", "Venture"]
   },
   "wind-ensemble": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -2615,12 +2770,12 @@
     "courseid": "SOC270",
     "coursename": "World History",
     "credits": "10",
-    "description": "This course investigates the foundations of our modern world. This will be done by researching various civilizations from ancient civilizations through modern times. Students will political, economic and social systems.",
+    "description": "This course investigates the foundations of our modern world. This will be done by researching various civilizations from ancient civilizations through modern times. Students will evaluate the changing nature of the world's political, economic, and social systems.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["History"]
+    "tags": ["Social Studies"]
   },
   "writing": {
     "considerations": "Students should take this class if they need to improve their writing skills, and do not yet feel comfortable taking a college-level writing class.",

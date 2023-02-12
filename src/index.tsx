@@ -1,5 +1,5 @@
 import App from './App';
-import { Course, Loader } from './components';
+import { ClearFilter, Course, Loader } from './components';
 import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
@@ -153,12 +153,13 @@ const initializeCourseViewer = (): void => {
   // });
 };
 
-const filterCourses = (): void => {
+export const filterCourses = (): void => {
   setTimeout(() => {
     const tagCodes = {
+      ADP: 'Advanced Placement',
       MAT: 'Math',
       BUS: 'Business',
-      SOC: 'History',
+      SOC: 'Social Studies',
       ENG: 'English',
       IND: 'Engineering',
       FAM: 'Family Consumer Sciences',
@@ -169,6 +170,7 @@ const filterCourses = (): void => {
       FOR: 'Foreign Language',
       MUS: 'Music',
       TAG: 'Talented and Gifted',
+      VEN: 'Venture',
     };
 
     const search = document.getElementById('searchbar') as HTMLInputElement;
@@ -199,12 +201,12 @@ const filterCourses = (): void => {
             throw new Error(`${tag} is an invalid index for tagCodes`);
           }
 
-          if (courseData[name].tags?.[0] === tagCodes[tag]) {
+          if (courseData[name].tags?.includes(tagCodes[tag])) {
             isPresent = true;
           }
         }
 
-        return isPresent ? true : false;
+        return isPresent;
       });
     } else {
       tagAll?.classList.add('tag-all');
@@ -224,6 +226,9 @@ const filterCourses = (): void => {
         );
       });
 
+    if (!renderedElements.length) {
+      renderedElements.push(<ClearFilter />);
+    }
     renderDOM(renderedElements);
     window.location.hash = '';
   }, 20);

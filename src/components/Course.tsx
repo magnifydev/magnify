@@ -32,6 +32,7 @@ export const Course: FC<CourseProps> = ({
   const subsequent = useRef<HTMLParagraphElement>(null);
   const considerations = useRef<HTMLParagraphElement>(null);
   const description = useRef<HTMLParagraphElement>(null);
+  const courses = useRef<HTMLParagraphElement>(null);
 
   const refs = useMemo(
     () => ({
@@ -46,6 +47,7 @@ export const Course: FC<CourseProps> = ({
       subsequent,
       considerations,
       description,
+      courses,
     }),
     [
       credits,
@@ -59,6 +61,7 @@ export const Course: FC<CourseProps> = ({
       subsequent,
       considerations,
       description,
+      courses,
     ]
   );
 
@@ -175,16 +178,21 @@ export const Course: FC<CourseProps> = ({
         {course.gradelevels}
       </p>
       <br />
-      <p
-        suppressContentEditableWarning
-        contentEditable={isEditing}
-        ref={refs.prerequisites}
-        className="course-description"
-      >
-        <b contentEditable={false}>Prerequisites: </b>
-        {course.prerequisites}
-      </p>
-      <br />
+      {course.prerequisites && (
+        <>
+          <p
+            suppressContentEditableWarning
+            contentEditable={isEditing}
+            ref={refs.prerequisites}
+            className="course-description"
+          >
+            <b contentEditable={false}>Prerequisites: </b>
+            {course.prerequisites}
+          </p>
+
+          <br />
+        </>
+      )}
       {course.fees && (
         <p
           suppressContentEditableWarning
@@ -224,16 +232,34 @@ export const Course: FC<CourseProps> = ({
           <br />
         </>
       )}
-      <p
-        suppressContentEditableWarning
-        contentEditable={isEditing}
-        ref={refs.considerations}
-        className="course-description"
-      >
-        <b contentEditable={false}>Considerations: </b>
-        {course.considerations}
-      </p>
-      <br />
+      {course.considerations && (
+        <>
+          <p
+            suppressContentEditableWarning
+            contentEditable={isEditing}
+            ref={refs.considerations}
+            className="course-description"
+          >
+            <b contentEditable={false}>Considerations: </b>
+            {course.considerations}
+          </p>
+          <br />
+        </>
+      )}
+      {course.courses && (
+        <>
+          <p
+            suppressContentEditableWarning
+            contentEditable={isEditing}
+            ref={refs.courses}
+            className="course-description"
+          >
+            <b contentEditable={false}>Courses: </b>
+            {course.courses}
+          </p>
+          <br />
+        </>
+      )}
       <button
         type="button"
         className="collapsible"
