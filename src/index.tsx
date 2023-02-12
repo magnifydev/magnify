@@ -159,7 +159,7 @@ const filterCourses = (): void => {
       ADP: 'Advanced Placement',
       MAT: 'Math',
       BUS: 'Business',
-      SOC: 'History',
+      SOC: 'Social Studies',
       ENG: 'English',
       IND: 'Engineering',
       FAM: 'Family Consumer Sciences',

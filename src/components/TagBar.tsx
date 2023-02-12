@@ -146,7 +146,7 @@ export const TagBar: FC = (): JSX.Element => {
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        History
+        Social Studies
       </button>
       <button
         type="button"
