@@ -175,16 +175,21 @@ export const Course: FC<CourseProps> = ({
         {course.gradelevels}
       </p>
       <br />
-      <p
-        suppressContentEditableWarning
-        contentEditable={isEditing}
-        ref={refs.prerequisites}
-        className="course-description"
-      >
-        <b contentEditable={false}>Prerequisites: </b>
-        {course.prerequisites}
-      </p>
-      <br />
+      {course.prerequisites && (
+        <>
+          <p
+            suppressContentEditableWarning
+            contentEditable={isEditing}
+            ref={refs.prerequisites}
+            className="course-description"
+          >
+            <b contentEditable={false}>Prerequisites: </b>
+            {course.prerequisites}
+          </p>
+
+          <br />
+        </>
+      )}
       {course.fees && (
         <p
           suppressContentEditableWarning
@@ -224,16 +229,20 @@ export const Course: FC<CourseProps> = ({
           <br />
         </>
       )}
-      <p
-        suppressContentEditableWarning
-        contentEditable={isEditing}
-        ref={refs.considerations}
-        className="course-description"
-      >
-        <b contentEditable={false}>Considerations: </b>
-        {course.considerations}
-      </p>
-      <br />
+      {course.considerations && (
+        <>
+          <p
+            suppressContentEditableWarning
+            contentEditable={isEditing}
+            ref={refs.considerations}
+            className="course-description"
+          >
+            <b contentEditable={false}>Considerations: </b>
+            {course.considerations}
+          </p>
+          <br />
+        </>
+      )}
       <button
         type="button"
         className="collapsible"
