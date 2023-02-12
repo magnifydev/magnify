@@ -152,7 +152,7 @@
     "gradelevels": "11-12 or approval",
     "length": "2 Quarters during second semester",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-biology-1-&-2": {
     "considerations": "Advanced Placement Biology 1 & 2 is a NGSS course based on the completion of NGSS Life Science Standards and successful completion will meet the life science requirement for graduation. Students MUST sign up for both sections listed above. General Biology is recommended but not required for enrollment in AP Biology. Students taking this course must have completed Chemistry I. Students may take the AP Biology exam in May.",
@@ -164,7 +164,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "Chemistry I",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-calculus-(ab)": {
     "considerations": "Students may take the AP Calculus exam in May. Graphing calculator is required. TI84 is recommended.",
@@ -176,7 +176,7 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Pre-Calculus",
-    "tags": ["Math"]
+    "tags": ["Advanced Placement", "Math"]
   },
   "advanced-placement-calculus-(bc)-1-&-2": {
     "considerations": "Students MUST sign up for both sections listed above. Students may take the AP Calculus exam in May. Graphing calculator is required.",
@@ -188,7 +188,7 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Pre-Calculus",
-    "tags": ["Math"]
+    "tags": ["Advanced Placement", "Math"]
   },
   "advanced-placement-chemistry-1-&-2": {
     "considerations": "Students MUST sign up for both sections listed above. Students taking this course must have completed Chemistry I and Advance Algebra IIA. Students may take the Chemistry AP exam in May.",
@@ -200,7 +200,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "Chemistry I and Advanced Algebra IIA",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-comparative-government": {
     "considerations": "Could be linked with AP US Government for a year-long AP Government course. AP exam would be optional.",
@@ -212,7 +212,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "US Govt. or AP US Govt.",
-    "tags": ["Social Studies"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-computer-science-a-(csa)": {
     "considerations": "Students need prior programming experience outside of school. Computer Science A is a very challenging course. This is a Project Lead The Way (PLTW) course. This course prepares students for the AP Computer Science A exam.",
@@ -225,7 +225,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
-    "tags": ["Engineering"]
+    "tags": ["Advanced Placement", "Engineering"]
   },
   "advanced-placement-environmental-science-1-&-2": {
     "considerations": "Advanced Placement Environmental Science 1 & 2 is a NGSS course based on the completion of NGSS Earth Science Standards and successful completion will meet the earth science requirement for graduation. Students MUST sign up for both sections listed above. Students taking this course must have completed General Biology and Algebra. Students MUST sign up for both sections listed above. Students may take the AP exam in May.",
@@ -237,7 +237,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "General Biology and Algebra",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-french": {
     "considerations": "See prerequisite. Class is conducted in French.",
@@ -249,7 +249,7 @@
     "gradelevels": "12",
     "length": "1 Semester",
     "prerequisites": "French IV",
-    "tags": ["Foreign Language"]
+    "tags": ["Advanced Placement", "Foreign Language"]
   },
   "advanced-placement-music-theory": {
     "considerations": "Students may take the Music Theory AP exam in May. This course is strongly recommended for students considering studying music at the college/university level.",
@@ -261,7 +261,7 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Music Fundamentals or Instructor approval",
-    "tags": ["Music"]
+    "tags": ["Advanced Placement", "Music"]
   },
   "advanced-placement-physics-1": {
     "considerations": "Advanced Placement Physics I is based on the completion of NGSS Physical Science Standards and successful completion will meet the physics portion of the physical science graduation requirement. It is recommended that students sign up for both AP Physics I and AP Physics II. Physics I is NOT a prerequisite for this class. See prerequisites. Students may take the AP Physics 1 exam in May.",
@@ -273,7 +273,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Chemistry I AND Algebra 2A",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-physics-2": {
     "considerations": "Physics I or AP Physics 1 is a prerequisite for this class. Students may take the AP Physics 2 exam in May.",
@@ -285,7 +285,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "AP Physics I or Physics I",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-psychology-1-&-2": {
     "considerations": "Textbooks are available for purchase online but one will be provided in class. Class is geared to prep students to take the national AP Psychology exam in May.",
@@ -297,7 +297,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Introductory Psychology OR approval",
-    "tags": ["Social Studies"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-statistics": {
     "considerations": "Students may take the AP Statistics exam in May. Graphing calculator is required.",
@@ -310,7 +310,7 @@
     "length": "2 Semesters",
     "prerequisites": "Algebra 2A or Algebra 2",
     "subsequent": "Mathematics & Society or AP Calculus",
-    "tags": ["Math"]
+    "tags": ["Advanced Placement", "Math"]
   },
   "advanced-placement-us-history-1-&-2": {
     "considerations": "Instructor approval for 9th graders. Students MUST sign up for both sections listed above. Fulfills the US history graduation requirement. This course begins in 2nd quarter. Students may take the US History AP exam in May.",
@@ -322,7 +322,7 @@
     "gradelevels": "9-12",
     "length": "3 Quarters",
     "prerequisites": "US History 9 OR Advanced US History 9 is recommended",
-    "tags": ["Social Studies"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-placement-world-history-1-&-2": {
     "considerations": "Students MUST sign up for both sections listed above. Fulfills the required world history requirement. Duration is three quarters beginning in 2nd quarter. Students may take the World History AP exam in May.",
@@ -334,7 +334,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Advanced Placement", "Social Studies"]
   },
   "advanced-sewing": {
     "considerations": "This is an advanced level, project-based class for independent sewers.",
@@ -580,7 +580,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "None, Design highly Recommended",
-    "tags": ["Art"]
+    "tags": ["Advanced Placement", "Art"]
   },
   "ap-english-literature-and-composition": {
     "considerations": "See prerequisite. This two-quarter class will be offered during the first semester of the year and will prepare students to take the AP English Literature and Composition exam in May. Review sessions during semester 2 will be provided.",
@@ -592,7 +592,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Advanced English III is strongly recommended",
-    "tags": ["English"]
+    "tags": ["Advanced Placement", "English"]
   },
   "ap-independent-study": {
     "considerations": "This course is for students identified by established district guidelines.",
@@ -603,7 +603,7 @@
     "gradelevels": "10-12",
     "length": "1-2 Semesters",
     "prerequisites": "Instructor Approval",
-    "tags": ["Talented and Gifted"]
+    "tags": ["Advanced Placement", "Talented and Gifted"]
   },
   "ap-microeconomics": {
     "considerations": "Students should be comfortable working with charts, tables, numbers, and equations. Students may take the AP Microeconomics exam in May.",
@@ -615,7 +615,7 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Economics is recommended",
-    "tags": ["Business"]
+    "tags": ["Advanced Placement", "Business"]
   },
   "applied-physics-and-chemistry": {
     "considerations": "Applied Chemistry and Physics is based on the completion of NGSS Physical Science Standards and successful completion will meet the physical science graduation requirement. Students taking this course must have completed Algebra.",
@@ -2606,7 +2606,7 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "General Biology and Algebra",
-    "tags": ["Science"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "venture-behavioral-science-strand": {
     "courseid": "SOC702",

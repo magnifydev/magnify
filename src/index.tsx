@@ -156,6 +156,7 @@ const initializeCourseViewer = (): void => {
 const filterCourses = (): void => {
   setTimeout(() => {
     const tagCodes = {
+      ADP: 'Advanced Placement',
       MAT: 'Math',
       BUS: 'Business',
       SOC: 'History',
@@ -199,12 +200,12 @@ const filterCourses = (): void => {
             throw new Error(`${tag} is an invalid index for tagCodes`);
           }
 
-          if (courseData[name].tags?.[0] === tagCodes[tag]) {
+          if (courseData[name].tags?.includes(tagCodes[tag])) {
             isPresent = true;
           }
         }
 
-        return isPresent ? true : false;
+        return isPresent;
       });
     } else {
       tagAll?.classList.add('tag-all');

@@ -30,63 +30,33 @@ export const TagBar: FC = (): JSX.Element => {
       </button>
       <button
         type="button"
-        id="ENG"
+        id="ADP"
         className="tag"
-        onClick={useCallback(() => handleTagToggle('ENG'), [])}
+        onClick={useCallback(() => handleTagToggle('ADP'), [])}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        English
+        AP
       </button>
       <button
         type="button"
-        id="FOR"
+        id="AGR"
         className="tag"
-        onClick={useCallback(() => handleTagToggle('FOR'), [])}
+        onClick={useCallback(() => handleTagToggle('AGR'), [])}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        Foreign Language
+        Agriculture
       </button>
       <button
         type="button"
-        id="MAT"
+        id="ART"
         className="tag"
-        onClick={useCallback(() => handleTagToggle('MAT'), [])}
+        onClick={useCallback(() => handleTagToggle('ART'), [])}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        Math
-      </button>
-      <button
-        type="button"
-        id="SCI"
-        className="tag"
-        onClick={useCallback(() => handleTagToggle('SCI'), [])}
-      >
-        {/* @ts-expect-error ts(2339) */}
-        <ion-icon class="hide" name="checkmark-outline" />
-        Science
-      </button>
-      <button
-        type="button"
-        id="SOC"
-        className="tag"
-        onClick={useCallback(() => handleTagToggle('SOC'), [])}
-      >
-        {/* @ts-expect-error ts(2339) */}
-        <ion-icon class="hide" name="checkmark-outline" />
-        History
-      </button>
-      <button
-        type="button"
-        id="HPE"
-        className="tag"
-        onClick={useCallback(() => handleTagToggle('HPE'), [])}
-      >
-        {/* @ts-expect-error ts(2339) */}
-        <ion-icon class="hide" name="checkmark-outline" />
-        Health/PE
+        Art
       </button>
       <button
         type="button"
@@ -110,13 +80,43 @@ export const TagBar: FC = (): JSX.Element => {
       </button>
       <button
         type="button"
-        id="ART"
+        id="ENG"
         className="tag"
-        onClick={useCallback(() => handleTagToggle('ART'), [])}
+        onClick={useCallback(() => handleTagToggle('ENG'), [])}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        Art
+        English
+      </button>
+      <button
+        type="button"
+        id="FOR"
+        className="tag"
+        onClick={useCallback(() => handleTagToggle('FOR'), [])}
+      >
+        {/* @ts-expect-error ts(2339) */}
+        <ion-icon class="hide" name="checkmark-outline" />
+        Foreign Language
+      </button>
+      <button
+        type="button"
+        id="HPE"
+        className="tag"
+        onClick={useCallback(() => handleTagToggle('HPE'), [])}
+      >
+        {/* @ts-expect-error ts(2339) */}
+        <ion-icon class="hide" name="checkmark-outline" />
+        Health/PE
+      </button>
+      <button
+        type="button"
+        id="MAT"
+        className="tag"
+        onClick={useCallback(() => handleTagToggle('MAT'), [])}
+      >
+        {/* @ts-expect-error ts(2339) */}
+        <ion-icon class="hide" name="checkmark-outline" />
+        Math
       </button>
       <button
         type="button"
@@ -130,23 +130,23 @@ export const TagBar: FC = (): JSX.Element => {
       </button>
       <button
         type="button"
-        id="AGR"
+        id="SCI"
         className="tag"
-        onClick={useCallback(() => handleTagToggle('AGR'), [])}
+        onClick={useCallback(() => handleTagToggle('SCI'), [])}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        Agriculture
+        Science
       </button>
       <button
         type="button"
-        id="FAM"
+        id="SOC"
         className="tag"
-        onClick={useCallback(() => handleTagToggle('FAM'), [])}
+        onClick={useCallback(() => handleTagToggle('SOC'), [])}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
-        FCS
+        History
       </button>
       <button
         type="button"
