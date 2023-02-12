@@ -90,6 +90,16 @@ export const TagBar: FC = (): JSX.Element => {
       </button>
       <button
         type="button"
+        id="FAM"
+        className="tag"
+        onClick={useCallback(() => handleTagToggle('FAM'), [])}
+      >
+        {/* @ts-expect-error ts(2339) */}
+        <ion-icon class="hide" name="checkmark-outline" />
+        FCS
+      </button>
+      <button
+        type="button"
         id="FOR"
         className="tag"
         onClick={useCallback(() => handleTagToggle('FOR'), [])}
