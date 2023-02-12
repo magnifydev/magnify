@@ -1,3 +1,4 @@
+export { ClearFilter } from './ClearFilter';
 export { Course } from './Course';
 export { ContactForm } from './ContactForm';
 export { FloatingActionable } from './FloatingActionable';

@@ -1,5 +1,5 @@
 import App from './App';
-import { Course, Loader } from './components';
+import { ClearFilter, Course, Loader } from './components';
 import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
@@ -153,7 +153,7 @@ const initializeCourseViewer = (): void => {
   // });
 };
 
-const filterCourses = (): void => {
+export const filterCourses = (): void => {
   setTimeout(() => {
     const tagCodes = {
       ADP: 'Advanced Placement',
@@ -225,6 +225,9 @@ const filterCourses = (): void => {
         );
       });
 
+    if (!renderedElements.length) {
+      renderedElements.push(<ClearFilter />);
+    }
     renderDOM(renderedElements);
     window.location.hash = '';
   }, 20);
