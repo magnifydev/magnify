@@ -1122,7 +1122,7 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": ["Business", "Venture"]
   },
   "digital-photography": {
     "considerations": "Design Art Basics is strongly recommended before taking this class.",
@@ -1573,7 +1573,7 @@
     "credits": "5",
     "description": "Graphics One will explore several areas of the current graphics industry. The class will provide rigorous, real-world situations where students utilize professional programs from the Adobe Creative Suite along with their knowledge of the fine arts to create high-end, visually stunning art and presentations. Projects will stem from the graphically visual world we live in today and pull from such topics as Brand Identity, Marketing, and Web Presence. We will also discuss the benefits of digital portfolios as well as the importance of the creative mind in today's technology driven society.",
     "format": "Block",
-    "gradelevels": "10 -12",
+    "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Design Art Basics",
     "tags": ["Art"]
@@ -2278,7 +2278,7 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "Health I, General Biology",
-    "tags": ["Health/PE"]
+    "tags": ["Health/PE", "Venture"]
   },
   "pre-algebra": {
     "considerations": "A scientific calculator or its equivalent required. Graphing calculators are not allowed in this course.",
@@ -2435,7 +2435,7 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": ["English", "Venture"]
   },
   "sociology": {
     "considerations": "Meets the Behavioral Sciences graduation requirement.",
@@ -2448,6 +2448,17 @@
     "length": "1 Quarter",
     "prerequisites": "None",
     "tags": ["Social Studies"]
+  },
+  "spanish-iv-culture": {
+    "courseid": "FOR435",
+    "coursename": "Spanish IV Culture",
+    "credits": "5",
+    "description": "Spanish IV Culture is a companion course to Venture Spanish IV Culture and Community. Students will learn about various aspects of the Spanish culture in authentic settings. Different Spanish cultures around the world will be studied including Western European and Latin American cultures.",
+    "format": "SuperBlock",
+    "gradelevels": "11-12",
+    "length": "1 Semester",
+    "prerequisites": "Spanish III",
+    "tags": ["Foreign Language", "Venture"]
   },
   "speech": {
     "considerations": "Speech or Acting is required for graduation.",
@@ -2471,7 +2482,7 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": ["Business", "Venture"]
   },
   "state-&-local-government": {
     "considerations": "This course is for elective credit in Social Studies. Not offered as a standalone class.",
@@ -2483,7 +2494,7 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Social Studies", "Venture"]
   },
   "stream-&-field-biology": {
     "considerations": "See prerequisites. Strong comprehensive vocabulary, reading and study skills. This course meets the L-M science elective requirement.",
@@ -2594,7 +2605,7 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": ["Business", "Venture"]
   },
   "venture-advanced-placement-environmental-science-1-&-2-strand": {
     "courseid": "SCI703",
@@ -2606,7 +2617,7 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "General Biology and Algebra",
-    "tags": ["Advanced Placement", "Science"]
+    "tags": ["Advanced Placement", "Science", "Venture"]
   },
   "venture-behavioral-science-strand": {
     "courseid": "SOC702",
@@ -2618,7 +2629,7 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Social Studies", "Venture"]
   },
   "venture-civics-strand": {
     "courseid": "SOC701",
@@ -2630,7 +2641,7 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": ["Social Studies", "Venture"]
   },
   "venture-digital-design-strand": {
     "considerations": "Design Art Basics is strongly recommended before taking this course.",
@@ -2643,7 +2654,7 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": ["Art", "Venture"]
   },
   "venture-earth-science-strand": {
     "courseid": "SCI701",
@@ -2655,7 +2666,7 @@
     "gradelevels": "9-10",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Science"]
+    "tags": ["Science", "Venture"]
   },
   "venture-english-strand-(english-iii)": {
     "courseid": "ENG702",
@@ -2667,7 +2678,7 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "English II or English Department approval",
-    "tags": ["English"]
+    "tags": ["English", "Venture"]
   },
   "venture-life-science-strand-(biology)": {
     "courseid": "SCI702",
@@ -2679,7 +2690,7 @@
     "gradelevels": "9-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Science"]
+    "tags": ["Science", "Venture"]
   },
   "venture-marketing-essentials-strand": {
     "courseid": "BUS701",
@@ -2691,7 +2702,7 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": ["Business", "Venture"]
   },
   "venture-spanish-iv-culture-and-community": {
     "courseid": "FOR701",
@@ -2703,7 +2714,7 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "Spanish III",
-    "tags": ["Foreign Language"]
+    "tags": ["Foreign Language", "Venture"]
   },
   "wind-ensemble": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",

@@ -32,6 +32,7 @@ export const Course: FC<CourseProps> = ({
   const subsequent = useRef<HTMLParagraphElement>(null);
   const considerations = useRef<HTMLParagraphElement>(null);
   const description = useRef<HTMLParagraphElement>(null);
+  const courses = useRef<HTMLParagraphElement>(null);
 
   const refs = useMemo(
     () => ({
@@ -46,6 +47,7 @@ export const Course: FC<CourseProps> = ({
       subsequent,
       considerations,
       description,
+      courses,
     }),
     [
       credits,
@@ -59,6 +61,7 @@ export const Course: FC<CourseProps> = ({
       subsequent,
       considerations,
       description,
+      courses,
     ]
   );
 
@@ -239,6 +242,20 @@ export const Course: FC<CourseProps> = ({
           >
             <b contentEditable={false}>Considerations: </b>
             {course.considerations}
+          </p>
+          <br />
+        </>
+      )}
+      {course.courses && (
+        <>
+          <p
+            suppressContentEditableWarning
+            contentEditable={isEditing}
+            ref={refs.courses}
+            className="course-description"
+          >
+            <b contentEditable={false}>Courses: </b>
+            {course.courses}
           </p>
           <br />
         </>
