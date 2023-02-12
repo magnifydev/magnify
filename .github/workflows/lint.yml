@@ -10,12 +10,12 @@ on:
     branches: ['main']
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [19.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
