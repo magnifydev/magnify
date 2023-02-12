@@ -170,7 +170,7 @@ export const filterCourses = (): void => {
       FOR: 'Foreign Language',
       MUS: 'Music',
       TAG: 'Talented and Gifted',
-      VEN: 'Venture'
+      VEN: 'Venture',
     };
 
     const search = document.getElementById('searchbar') as HTMLInputElement;
