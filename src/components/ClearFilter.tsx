@@ -1,5 +1,6 @@
 import '../App.css';
 import { filterCourses } from '../index';
+import { getWidth } from '../utils';
 import { FC } from 'react';
 
 export const ClearFilter: FC = (): JSX.Element => {
@@ -8,6 +9,18 @@ export const ClearFilter: FC = (): JSX.Element => {
   ) as HTMLDivElement;
   courseContainer.style.display = 'flex';
   courseContainer.style.justifyContent = 'center';
+
+  const adjustCourseContainerHeight = () => {
+    if (getWidth() >= 525) {
+      courseContainer.style.height = 'calc(100vh - 180px)';
+    } else {
+      courseContainer.style.height =
+        'calc(100vh - (45.5px + 65.5px + (clamp(15px, 5vw, 20px) * 2)))';
+    }
+  };
+
+  adjustCourseContainerHeight();
+  window.addEventListener('resize', adjustCourseContainerHeight);
 
   const clearResults = () => {
     const search = document.getElementById('searchbar') as HTMLInputElement;
@@ -19,9 +32,6 @@ export const ClearFilter: FC = (): JSX.Element => {
         tags[i].classList.remove('tag-true');
       }
     }
-
-    courseContainer.style.display = '';
-    courseContainer.style.justifyContent = '';
 
     filterCourses();
   };
