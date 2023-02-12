@@ -6,8 +6,8 @@ Security is very important to Magnify. This file informs you about our policy.
 
 | Version    | Supported          |
 | ---------- | ------------------ |
-| 2023.x.x   | :white_check_mark: |
-| < 2023.x.x | :x:                |
+| 2024.x.x   | :white_check_mark: |
+| < 2024.x.x | :x:                |
 
 ## Reporting a Vulnerability
 
