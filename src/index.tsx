@@ -228,6 +228,13 @@ export const filterCourses = (): void => {
 
     if (!renderedElements.length) {
       renderedElements.push(<ClearFilter />);
+    } else {
+      const courseContainer = document.getElementById(
+        'course-container'
+      ) as HTMLDivElement;
+      courseContainer.style.display = '';
+      courseContainer.style.justifyContent = '';
+      courseContainer.style.height = '';
     }
     renderDOM(renderedElements);
     window.location.hash = '';
