@@ -9,6 +9,7 @@ import {
 } from './components';
 import firebase from 'firebase/compat/app';
 import { FC, useCallback, useEffect } from 'react';
+import AIParsing from './components/AIParsing';
 
 interface AppProps {
   user: firebase.User | null;
@@ -50,7 +51,8 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
       <div className="main">
         <TopBar user={user} userElement={userElement} />
         <TagBar />
-        <div id="course-container">{classItems}</div>
+        {/* {classItems} */}
+        <AIParsing />
       </div>
       <FloatingActionable handleContactModalOpen={handleContactModalOpen} />
       <MobileNavigation handleContactModalOpen={handleContactModalOpen} />
