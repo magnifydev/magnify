@@ -124,7 +124,7 @@ ion-icon {
   color: var(--blue);
 }
 
-.navigation ul li a .icon {
+.navigation ul li a .icon, .navigation ul li button .icon {
   align-items: center;
   display: flex;
   height: 65.5px;
@@ -135,8 +135,19 @@ ion-icon {
   text-align: center;
 }
 
-.navigation ul li a .icon ion-icon {
+.navigation ul li a .icon ion-icon, .navigation ul li button .icon ion-icon {
   font-size: 1.75rem;
+}
+
+.navigation ul li button {
+  color: var(--white);
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .navigation ul li.hovered a:before {

@@ -1,8 +1,20 @@
 import '../App.css';
 import { links } from '../data';
-import { FC } from 'react';
+import { FC, useCallback } from 'react';
 
-export const Navigation: FC = (): JSX.Element => {
+interface NavigationProps {
+  authLevel: number;
+}
+
+export const Navigation: FC<NavigationProps> = ({ authLevel }): JSX.Element => {
+  const handleParseModalOpen = useCallback(() => {
+    const parseModal = document.getElementById(
+      'parse-modal'
+    ) as HTMLDialogElement;
+    parseModal?.parentElement?.classList.remove('hide');
+    parseModal?.showModal();
+  }, []);
+
   return (
     <div className="navigation">
       <ul>
@@ -56,6 +68,21 @@ export const Navigation: FC = (): JSX.Element => {
             <span className="title">GitHub</span>
           </a>
         </li>
+        {authLevel === 5 && (
+          <li>
+            <button
+              aria-label="Parse PDF"
+              title="Parse PDF"
+              onClick={handleParseModalOpen}
+            >
+              <span className="icon">
+                {/* @ts-expect-error ts(2339) */}
+                <ion-icon name="cloud-upload-outline" />
+              </span>
+              <span className="title">Parse PDF</span>
+            </button>
+          </li>
+        )}
       </ul>
     </div>
   );

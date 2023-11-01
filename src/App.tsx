@@ -7,15 +7,17 @@ import {
   TagBar,
   TopBar,
 } from './components';
+import { ParsePDF } from './components/ParsePDF';
 import firebase from 'firebase/compat/app';
 import { FC, useCallback, useEffect } from 'react';
 
 interface AppProps {
   user: firebase.User | null;
   classItems: JSX.Element;
+  authLevel: number;
 }
 
-const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
+const App: FC<AppProps> = ({ user, classItems, authLevel }): JSX.Element => {
   // Hacky workaround because something with React probably interferes with the default browser behavior
   // Also, reactivates the highlight on the course element
   useEffect(() => {
@@ -44,8 +46,9 @@ const App: FC<AppProps> = ({ user, classItems }): JSX.Element => {
   return (
     <div className="App">
       <ContactForm />
+      <ParsePDF />
       <div className="container">
-        <Navigation />
+        <Navigation authLevel={authLevel} />
       </div>
       <div className="main">
         <TopBar user={user} userElement={userElement} />

@@ -49,6 +49,7 @@ const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
       <App
         user={userData}
         classItems={<div className="parent">{courseItems}</div>}
+        authLevel={authLevel}
       />
     </React.StrictMode>,
     document.getElementById('root')
