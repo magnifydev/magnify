@@ -89,7 +89,7 @@ const initializeCourseViewer = (): void => {
       key={name}
       authLevel={authLevel}
       course={courseData[name]}
-      jumpId={name}
+      jumpId={courseData[name].courseid}
     />
   ));
 
@@ -222,7 +222,7 @@ export const filterCourses = (): void => {
             key={name}
             authLevel={authLevel}
             course={courseData[name]}
-            jumpId={name}
+            jumpId={courseData[name].courseid}
           />
         );
       });
