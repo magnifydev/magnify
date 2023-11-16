@@ -130,7 +130,7 @@ export const Course: FC<CourseProps> = ({
     navigator.clipboard.writeText(window.location.href);
   }, [jumpId]);
 
-  const isVenture = course.coursename.includes('Venture');
+  const isVenture = course.tags?.filter((tag) => tag === 'Venture').length;
 
   const Style = {
     gridRow: `span ${course.courses?.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/gm)?.length ?? 1}`,
