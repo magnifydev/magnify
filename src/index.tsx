@@ -3,7 +3,7 @@ import { ClearFilter, Course, Loader } from './components';
 import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
-import { CourseDataType } from './types';
+import { CourseDataType, CourseType } from './types';
 import { getWidth } from './utils';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
@@ -83,13 +83,22 @@ const initializeCourseViewer = (): void => {
     });
   }
 
+  const courseIDtoNameMap = new Map<string, string>();
+  for (const courseName in courseData) {
+    courseIDtoNameMap.set(courseData[courseName].courseid, courseName);
+  }
+
+  const courseIDtoCourse = (courseID: string): CourseType => courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
+
   const courseArray = Object.keys(courseData);
+
   const courseItems = courseArray.map((name) => (
     <Course
       key={name}
       authLevel={authLevel}
       course={courseData[name]}
       jumpId={courseData[name].courseid}
+      courseIDtoCourse={courseIDtoCourse}
     />
   ));
 
@@ -213,6 +222,13 @@ export const filterCourses = (): void => {
       tagAll?.classList.add('tag-all');
     }
 
+    const courseIDtoNameMap = new Map<string, string>();
+    for (const courseName in courseData) {
+      courseIDtoNameMap.set(courseData[courseName].courseid, courseName);
+    }
+
+    const courseIDtoCourse = (courseID: string): CourseType => courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
+
     const key = search?.value.toLowerCase().replaceAll(' ', '-');
     const renderedElements = renderedItems
       .filter((name) => name.search(key) !== -1)
@@ -223,6 +239,7 @@ export const filterCourses = (): void => {
             authLevel={authLevel}
             course={courseData[name]}
             jumpId={courseData[name].courseid}
+            courseIDtoCourse={courseIDtoCourse}
           />
         );
       });

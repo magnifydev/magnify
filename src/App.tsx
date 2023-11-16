@@ -17,7 +17,8 @@ interface AppProps {
   authLevel: number;
 }
 
-const App: FC<AppProps> = ({ user, classItems, authLevel }): JSX.Element => {
+const App: FC<AppProps> = ({user, classItems, authLevel }): JSX.Element => {
+
   // Hacky workaround because something with React probably interferes with the default browser behavior
   // Also, reactivates the highlight on the course element
   useEffect(() => {
@@ -25,7 +26,7 @@ const App: FC<AppProps> = ({ user, classItems, authLevel }): JSX.Element => {
     window.location.hash = '';
     window.location.hash = jumpId;
   }, []);
-
+  
   const handleContactModalOpen = useCallback(() => {
     const contactModal = document.getElementById(
       'contact-modal'
