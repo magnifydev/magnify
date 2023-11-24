@@ -6,15 +6,7 @@ const socket = io('ws://129.146.123.55:3000');
 
 export const ParsePDF: FC = (): JSX.Element => {
   const [parseInput, setParseInput] = useState('');
-  const [parseProgress, setParseProgress] = useState('');
-
-  useEffect(() => {
-    // socket.connect();
-    // socket.on("connect", () => { console.log('Connected!') });
-    // socket.on('test', (data: string) => {
-    //   console.log(data);
-    // });
-  });
+  // const [parseProgress, setParseProgress] = useState('');
 
   const submitButton = document.getElementById(
     'parse-submit'
@@ -145,9 +137,6 @@ export const ParsePDF: FC = (): JSX.Element => {
             </button>
             <button type="submit" className="modal-send" id="parse-submit">
               Parse
-              <progress className="parse-progress" value="70" max="100">
-                70 %
-              </progress>
             </button>
           </div>
         </form>
