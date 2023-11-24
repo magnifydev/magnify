@@ -134,7 +134,7 @@ export const Course: FC<CourseProps> = ({
 
   const Style = {
     gridRow: `span ${course.courses?.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/gm)?.length ?? 1}`,
-    backgroundColor: isVenture ? 'var(--blueish)' : '',
+    backgroundColor: isVenture ? 'var(--reddish)' : '',
   };
 
   return (
