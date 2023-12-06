@@ -44,7 +44,20 @@ dbRef
   });
 
 const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
-  const numColumns = 3;
+  let numColumns = 1;
+
+  let width = getWidth();
+
+  if (width > 1500) {
+    numColumns = 4;
+  } else if (width > 1100) {
+    numColumns = 3;
+  } else if (width > 600) {
+    numColumns = 2;
+  } else {
+    numColumns = 1;
+  }
+
   let flexParents = Array(numColumns).fill(0).map((_, i) => <div key={i} className="flex-parent">{courseItems.filter((_, j) => j % numColumns === i)}</div>);
 
   ReactDOM.render(
@@ -88,7 +101,7 @@ const initializeCourseViewer = (): void => {
 
   const courseIDtoNameMap = new Map<string, string>();
   for (const courseName in courseData) {
-    courseData[courseName].courseid.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/g)?.forEach((id) => {
+    courseData[courseName].courseid.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/)?.forEach((id) => {
       courseIDtoNameMap.set(id, courseName);
     });
   }
