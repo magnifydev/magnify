@@ -316,10 +316,17 @@ ion-icon {
 }
 
 .parent {
-  display: grid;
+  display: flex;
   gap: clamp(15px, 5vw, 20px);
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); */
   padding: 0 clamp(15px, 5vw, 20px) clamp(15px, 5vw, 20px);
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(15px, 5vw, 20px);
+  width: 100%;
 }
 
 @media only screen and (max-width: 400px) {

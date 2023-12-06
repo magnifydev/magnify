@@ -44,11 +44,14 @@ dbRef
   });
 
 const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
+
+  let flexParents = Array(4).fill(0).map((_, i) => <div key={i} className="flex-parent">{courseItems.filter((_, j) => j % 4 === i)}</div>);
+
   ReactDOM.render(
     <React.StrictMode>
       <App
         user={userData}
-        classItems={<div className="parent">{courseItems}</div>}
+        classItems={<div className="parent">{flexParents}</div>}
         authLevel={authLevel}
       />
     </React.StrictMode>,
