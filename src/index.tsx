@@ -58,7 +58,13 @@ const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
     numColumns = 1;
   }
 
-  let flexParents = Array(numColumns).fill(0).map((_, i) => <div key={i} className="flex-parent">{courseItems.filter((_, j) => j % numColumns === i)}</div>);
+  let flexParents = Array(numColumns)
+    .fill(0)
+    .map((_, i) => (
+      <div key={i} className="flex-parent">
+        {courseItems.filter((_, j) => j % numColumns === i)}
+      </div>
+    ));
 
   ReactDOM.render(
     <React.StrictMode>
@@ -101,9 +107,11 @@ const initializeCourseViewer = (): void => {
 
   const courseIDtoNameMap = new Map<string, string>();
   for (const courseName in courseData) {
-    courseData[courseName].courseid.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/)?.forEach((id) => {
-      courseIDtoNameMap.set(id, courseName);
-    });
+    courseData[courseName].courseid
+      .match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/)
+      ?.forEach((id) => {
+        courseIDtoNameMap.set(id, courseName);
+      });
   }
 
   console.log(courseIDtoNameMap);
@@ -250,7 +258,8 @@ export const filterCourses = (): void => {
       courseIDtoNameMap.set(courseData[courseName].courseid, courseName);
     }
 
-    const courseIDtoCourse = (courseID: string): CourseType => courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
+    const courseIDtoCourse = (courseID: string): CourseType =>
+      courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
 
     const key = search?.value.toLowerCase().replaceAll(' ', '-');
     const renderedElements = renderedItems
