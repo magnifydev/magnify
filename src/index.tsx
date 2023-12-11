@@ -48,7 +48,7 @@ const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
 
   let width = getWidth();
 
-  if (width > 1500) {
+  if (width > 1400) {
     numColumns = 4;
   } else if (width > 1100) {
     numColumns = 3;
@@ -106,7 +106,12 @@ const initializeCourseViewer = (): void => {
     });
   }
 
-  const courseIDtoCourse = (courseID: string): CourseType => courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
+  console.log(courseIDtoNameMap);
+
+  const courseIDtoCourse = (courseID: string): CourseType => {
+    let courseid = courseID.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/)?.[0] ?? '';
+    return courseData[courseIDtoNameMap.get(courseid) ?? ''] ?? '';
+  };
 
   const courseArray = Object.keys(courseData);
 

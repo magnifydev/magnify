@@ -7,7 +7,7 @@ import {
   TagBar,
   TopBar,
 } from './components';
-import { ParsePDF } from './components/ParsePDF';
+// import { ParsePDF } from './components/ParsePDF';
 import firebase from 'firebase/compat/app';
 import { FC, useCallback, useEffect } from 'react';
 
@@ -47,7 +47,7 @@ const App: FC<AppProps> = ({user, classItems, authLevel }): JSX.Element => {
   return (
     <div className="App">
       <ContactForm />
-      <ParsePDF />
+      {/* <ParsePDF /> */}
       <div className="container">
         <Navigation authLevel={authLevel} />
       </div>
