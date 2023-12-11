@@ -3,7 +3,7 @@ import { ClearFilter, Course, Loader } from './components';
 import { firebaseConfig } from './config';
 import localCourseData from './data/coursedata.json';
 import './index.css';
-import { CourseDataType } from './types';
+import { CourseDataType, CourseType } from './types';
 import { getWidth } from './utils';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
@@ -44,11 +44,34 @@ dbRef
   });
 
 const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
+  let numColumns = 1;
+
+  let width = getWidth();
+
+  if (width > 1400) {
+    numColumns = 4;
+  } else if (width > 1100) {
+    numColumns = 3;
+  } else if (width > 600) {
+    numColumns = 2;
+  } else {
+    numColumns = 1;
+  }
+
+  let flexParents = Array(numColumns)
+    .fill(0)
+    .map((_, i) => (
+      <div key={i} className="flex-parent">
+        {courseItems.filter((_, j) => j % numColumns === i)}
+      </div>
+    ));
+
   ReactDOM.render(
     <React.StrictMode>
       <App
         user={userData}
-        classItems={<div className="parent">{courseItems}</div>}
+        classItems={<div className="parent">{flexParents}</div>}
+        authLevel={authLevel}
       />
     </React.StrictMode>,
     document.getElementById('root')
@@ -82,13 +105,31 @@ const initializeCourseViewer = (): void => {
     });
   }
 
+  const courseIDtoNameMap = new Map<string, string>();
+  for (const courseName in courseData) {
+    courseData[courseName].courseid
+      .match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/)
+      ?.forEach((id) => {
+        courseIDtoNameMap.set(id, courseName);
+      });
+  }
+
+  console.log(courseIDtoNameMap);
+
+  const courseIDtoCourse = (courseID: string): CourseType => {
+    let courseid = courseID.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/)?.[0] ?? '';
+    return courseData[courseIDtoNameMap.get(courseid) ?? ''] ?? '';
+  };
+
   const courseArray = Object.keys(courseData);
+
   const courseItems = courseArray.map((name) => (
     <Course
       key={name}
       authLevel={authLevel}
       course={courseData[name]}
-      jumpId={name}
+      jumpId={courseData[name].courseid}
+      courseIDtoCourse={courseIDtoCourse}
     />
   ));
 
@@ -212,6 +253,14 @@ export const filterCourses = (): void => {
       tagAll?.classList.add('tag-all');
     }
 
+    const courseIDtoNameMap = new Map<string, string>();
+    for (const courseName in courseData) {
+      courseIDtoNameMap.set(courseData[courseName].courseid, courseName);
+    }
+
+    const courseIDtoCourse = (courseID: string): CourseType =>
+      courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
+
     const key = search?.value.toLowerCase().replaceAll(' ', '-');
     const renderedElements = renderedItems
       .filter((name) => name.search(key) !== -1)
@@ -221,7 +270,8 @@ export const filterCourses = (): void => {
             key={name}
             authLevel={authLevel}
             course={courseData[name]}
-            jumpId={name}
+            jumpId={courseData[name].courseid}
+            courseIDtoCourse={courseIDtoCourse}
           />
         );
       });

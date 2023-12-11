@@ -12,12 +12,14 @@ interface CourseProps {
   course: CourseType;
   authLevel: number;
   jumpId: string;
+  courseIDtoCourse: (id: string) => CourseType;
 }
 
 export const Course: FC<CourseProps> = ({
   course,
   authLevel,
   jumpId,
+  courseIDtoCourse,
 }): JSX.Element => {
   const [isEditing, setIsEditing] = useState(false);
 
@@ -128,8 +130,22 @@ export const Course: FC<CourseProps> = ({
     navigator.clipboard.writeText(window.location.href);
   }, [jumpId]);
 
+  const isVenture = course.tags?.filter((tag) => tag === 'Venture').length;
+
+  const Style = {
+    gridRow: `span ${
+      course.courses?.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/gm)?.length ?? 1
+    }`,
+    backgroundColor: isVenture ? 'var(--primary-light)' : '',
+  };
+
   return (
-    <div suppressContentEditableWarning className="Course" id={jumpId}>
+    <div
+      suppressContentEditableWarning
+      className="Course"
+      id={jumpId}
+      style={Style}
+    >
       <h1 className="course-title">{course.coursename}</h1>
       <br />
       <p
@@ -257,6 +273,23 @@ export const Course: FC<CourseProps> = ({
             <b contentEditable={false}>Courses: </b>
             {course.courses}
           </p>
+          {course.courses
+            .match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/gm)
+            ?.filter((id) => courseIDtoCourse(id))
+            .map((id) => {
+              return (
+                <>
+                  <br />
+                  <Course
+                    key={id}
+                    authLevel={authLevel}
+                    course={courseIDtoCourse(id)}
+                    jumpId={id}
+                    courseIDtoCourse={courseIDtoCourse}
+                  />
+                </>
+              );
+            })}
           <br />
         </>
       )}
