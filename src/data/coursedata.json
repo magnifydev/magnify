@@ -229,7 +229,7 @@
   },
   "advanced-placement-environmental-science-1-&-2": {
     "considerations": "Advanced Placement Environmental Science 1 & 2 is a NGSS course based on the completion of NGSS Earth Science Standards and successful completion will meet the earth science requirement for graduation. Students MUST sign up for both sections listed above. Students taking this course must have completed General Biology and Algebra. Students MUST sign up for both sections listed above. Students may take the AP exam in May.",
-    "courseid": "SCI541 & SCI542",
+    "courseid": "SCI541",
     "coursename": "Advanced Placement Environmental Science 1 & 2",
     "credits": "15",
     "description": "The goal of AP Environmental Science is to provide students with the scientific principles, concepts, and methodologies required to understand the interrelationships of the natural world, to identify and analyze environmental problems both natural and human-made, to evaluate the relative risks associated with these problems, and to examine alternative solutions for resolving or preventing them.",
@@ -237,7 +237,7 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "General Biology and Algebra",
-    "tags": ["Advanced Placement", "Science", "Venture"]
+    "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-french": {
     "considerations": "See prerequisite. Class is conducted in French.",
@@ -370,7 +370,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Introduction to Engineering Design or Principles of Engineering",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "PLTW"]
   },
   "afnr-workplace-experience": {
     "considerations": "Instructor approval required. SAE (supervised agricultural experience) and FFA opportunities will be provided in a Blended format.",
@@ -399,7 +399,7 @@
   "agricultural-power-and-technolgy": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
     "courseid": "AGR300",
-    "coursename": "Agricultural Power and Technolgy",
+    "coursename": "Agricultural Power and Technology",
     "credits": "10",
     "description": "Agricultural Power and Technology is a course to expose students to mechanics, power, technology, and career options in the world of agriculture. Student experiences involve the study of sustainable energy, geographic information & global position systems, drone technology, machines, and structures as it relates to multiple areas of agriculture, including animals, plants, food science, biotechnology, and natural resource management.",
     "format": "Block",
@@ -820,7 +820,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "Kirkwood", "PLTW"]
   },
   "classics": {
     "considerations": "See prerequisites.",
@@ -882,17 +882,6 @@
     "prerequisites": "English I or Advanced English I",
     "tags": ["English"]
   },
-  "teacher's-assistant": {
-    "considerations": "Instructor must approve",
-    "courseid": "ELT100",
-    "coursename": "Teacher's Assistant",
-    "credits": "5",
-    "description": "Students will help the teacher with day-to-day activities.",
-    "format": "Block",
-    "gradelevels": "9-12",
-    "length": "1 Quarter",
-    "prerequisites": "Student must have passed the course for which they are the Teacher's Assistant."
-  },
   "composition-i": {
     "considerations": "See prerequisite. Basic writing and research skills are expected and needed. This is a dual-credit course, and the expectations reflect those of college courses.",
     "courseid": "ENG460 or ENG460E",
@@ -903,7 +892,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "English III or Adv. English III AND qualifying placement score",
-    "tags": ["English"]
+    "tags": ["English", "Kirkwood"]
   },
   "composition-ii": {
     "considerations": "See prerequisite. This is a dual-credit course, and the expectations reflect those of college courses.",
@@ -915,7 +904,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Composition I",
-    "tags": ["English"]
+    "tags": ["English", "Kirkwood"]
   },
   "computer-aided-design": {
     "considerations": "None",
@@ -939,7 +928,7 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "Kirkwood", "PLTW"]
   },
   "computer-science-essentials-(cse)": {
     "considerations": "Students with no prior computer science experience can take this as a first computer science course. Academically confident/motivated students or students with a bit of prior programming experience may skip CSE and sign up for Computer Science Principles (CSP).",
@@ -1110,7 +1099,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "Kirkwood", "PLTW"]
   },
   "digital-marketing": {
     "considerations": "Not offered as a standalone class; this class is available only as part of the Venture Advanced Business strand.",
@@ -1122,7 +1111,7 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Business", "Venture"]
+    "tags": ["Business"]
   },
   "digital-photography": {
     "considerations": "Design Art Basics is strongly recommended before taking this class.",
@@ -1134,7 +1123,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Art", "Venture"]
+    "tags": ["Art"]
   },
   "drawing-in-style": {
     "considerations": "This course will require drawing on a daily basis and researching a variety of topics to provide inspiration for artwork. This course is recommended to be taken after ART215.",
@@ -1170,7 +1159,7 @@
     "gradelevels": "9-10",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Science", "Venture"]
+    "tags": ["Science"]
   },
   "economics": {
     "considerations": "Students should be comfortable working with charts and tables.",
@@ -1218,7 +1207,7 @@
     "gradelevels": "12",
     "length": "2 Quarters",
     "prerequisites": "Any two PLTW Engineering courses.",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "PLTW"]
   },
   "english-10": {
     "considerations": "English 10 or English II is required for graduation",
@@ -1270,7 +1259,7 @@
   },
   "english-iii": {
     "considerations": "See prerequisite.",
-    "courseid": "ENG315 or ENG315J",
+    "courseid": "ENG315",
     "coursename": "English III",
     "credits": "10",
     "description": "Students will analyze and interpret a variety of American literature, including selections from our earliest writers to our foremost contemporaries. Students will also write informative, argumentative, research and personal essays. This is a process-oriented class where students will revise and edit their own work. The following text will be covered in class: • Short pieces of fiction and nonfiction from American authors • Selections of poetry from Walt Whitman, Emily Dickinson, and other American poets • The Great Gatsby • The Crucible • I Know Why the Caged Bird Sings • A Raisin in the Sun",
@@ -1278,7 +1267,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "English II or English Department approval",
-    "tags": ["English", "Venture"]
+    "tags": ["English"]
   },
   "english-language-learners-civics-and-culture-i": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1383,7 +1372,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business", "Venture"]
+    "tags": ["Business"]
   },
   "environmental-science-issues": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -1407,7 +1396,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra AND General Biology",
-    "tags": ["Science"]
+    "tags": ["Science", "Kirkwood", "PLTW"]
   },
   "exploration-in-ceramic-technique": {
     "considerations": "Construction in Clay is highly recommended before this course. This class is for the serious, dedicated ceramic student looking to develop a portfolio, considering art as a career or highly interested in ceramic arts.",
@@ -1556,7 +1545,7 @@
   },
   "government": {
     "considerations": "Government or AP American Government is required for graduation.",
-    "courseid": "SOC400 or SOC401E",
+    "courseid": "SOC400",
     "coursename": "Government",
     "credits": "5",
     "description": "Course highlights will include a study of the three branches of government, political voting behavior, political party membership, interest groups and elected officials. Students will study the underlying principles upon which the US government is based: limited government, rules of law, federalism, and protection of individual rights.",
@@ -1564,7 +1553,7 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies", "Venture"]
+    "tags": ["Social Studies"]
   },
   "graphics-one": {
     "considerations": "The coursework relies heavily on the use of the Adobe Creative Suite as well as emerging technologies. The class requires students to be creative, independent, focused, and project driven.",
@@ -1576,7 +1565,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Design Art Basics",
-    "tags": ["Art", "Venture"]
+    "tags": ["Art"]
   },
   "graphics-two": {
     "considerations": "The coursework relies heavily on the use of the Adobe Creative Suite, specifically Adobe Illustrator. The class requires students to be creative, independent, focused, and project driven. Student/ course work will be cloud based utilizing the school shared drive as well as Power School Learning.",
@@ -1588,7 +1577,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "\"C\" or better in Graphics One & Design Art Basics",
-    "tags": ["Art", "Venture"]
+    "tags": ["Art"]
   },
   "health-careers": {
     "considerations": "This course is a part of the Career Edge Academy and is taught at Linn Regional Center by Kirkwood staff.",
@@ -1601,7 +1590,7 @@
     "gradelevels": "12",
     "length": "2 Semesters",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": ["Health/PE", "Kirkwood"]
   },
   "health-i": {
     "considerations": "This course is required for graduation.",
@@ -1708,7 +1697,7 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "Spanish IV",
-    "tags": ["Foreign Language"]
+    "tags": ["Foreign Language", "Kirkwood"]
   },
   "intermediate-spanish-ii-kcc": {
     "considerations": "See prerequisite. Class is conducted in Spanish.",
@@ -1720,7 +1709,7 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "Intermediate Spanish I",
-    "tags": ["Foreign Language"]
+    "tags": ["Foreign Language", "Kirkwood"]
   },
   "intro-to-engineering-design": {
     "considerations": "This course articulates credit with Kirkwood Community College.",
@@ -1732,7 +1721,7 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "Kirkwood", "PLTW"]
   },
   "introduction-to-agriculture,-food,-and-natural-resources": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -1780,7 +1769,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies", "Venture"]
+    "tags": ["Social Studies"]
   },
   "journalism": {
     "considerations": "None",
@@ -1804,7 +1793,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Human Growth and Development or KCC Child Growth and Development",
-    "tags": ["Family Consumer Sciences"]
+    "tags": ["Family Consumer Sciences", "Kirkwood"]
   },
   "kcc-child-growth-and-development": {
     "considerations": "This is a concurrent course with Kirkwood Community College and is encouraged for those considering careers in education, social work, nursing, therapy, psychology, coaching etc. It is recommended to have taken Human Growth and Development as a foundation but is not required. This is the first course necessary to obtain the Para-Educator Generalist Certification. The second course is Exploring Teaching and the third course is Behavior Management-online.",
@@ -1816,7 +1805,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "KCC qualifying placement score",
-    "tags": ["Family Consumer Sciences"]
+    "tags": ["Family Consumer Sciences", "Kirkwood"]
   },
   "kcc-exploring-teaching": {
     "considerations": "This is a concurrent course with Kirkwood Community College and is recommended for those considering careers in education. This is the second course necessary to obtain the Para-Educator Generalist Certification. The third course is Behavior Management.",
@@ -1828,7 +1817,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Human Growth and Development or KCC Child Growth and Development",
-    "tags": ["Family Consumer Sciences"]
+    "tags": ["Family Consumer Sciences", "Kirkwood"]
   },
   "law-and-the-constitution": {
     "considerations": "Meets the social studies elective graduation requirement.",
@@ -1936,7 +1925,7 @@
     "gradelevels": "11-12",
     "length": "1 or 2 Semester(s)",
     "prerequisites": "Spanish III",
-    "tags": ["Foreign Language", "Venture"]
+    "tags": ["Foreign Language"]
   },
   "level-v-spanish": {
     "considerations": "Second term grade of 60% or higher in Level IV is required.",
@@ -2052,6 +2041,18 @@
     "prerequisites": "English II, English III, or English Department approval",
     "tags": ["English"]
   },
+  "lm-roar-store": {
+    "considerations": "This class has a work component built-in and may require students to work outside of normal instructional time.",
+    "courseid": "BUS550",
+    "coursename": "LM ROAR Store",
+    "credits": "5",
+    "description": "Students will be involved in the continued development and on-going operations of theROARstore. theROARstore is a student-run business, specializing in selling branded Linn-Mar merchandise. Students will learn customer service and selling skills in the classroom and develop & hone them while working in the store. In addition, students will spend time on developing theROARstore’s product mix, price the products accordingly, and promote them using social media, email marketing, and website design. Activities may include (but are not limited to): research and development, market & product planning, promotion, pricing, merchandising, selling, management, distribution, and financial analysis. Skills needed to be successful include creative and logical thinking, timeliness, dependability, willingness to work as a team, effective communication, attention to detail, ethical behavior, and professional and mature demeanor when working with customers, advisors, and individuals in positions of authority.",
+    "format": "Skinny",
+    "gradelevels": "11-12",
+    "length": "1 Semester",
+    "prerequisites": "Any of 2 or more Business courses",
+    "tags": ["Business"]
+  },
   "lmhs-talented-and-gifted-freshman-seminar-tag-1": {
     "considerations": "This course is for students identified by established district guidelines.",
     "courseid": "TAG410",
@@ -2097,7 +2098,7 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business", "Venture"]
+    "tags": ["Business"]
   },
   "math-for-the-building-trades": {
     "considerations": "None",
@@ -2121,7 +2122,7 @@
     "gradelevels": "12th gradelevels Only",
     "length": "1 Semester",
     "prerequisites": "Three years of High School math",
-    "tags": ["Math"]
+    "tags": ["Math", "Kirkwood"]
   },
   "metals,-materials-and-processes": {
     "considerations": "Fees the same as Cabinet Making",
@@ -2278,7 +2279,19 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "Health I, General Biology",
-    "tags": ["Health/PE", "Venture"]
+    "tags": ["Health/PE", "PLTW"]
+  },
+  "pltw-venture-principles-of-biomedical-science": {
+    "considerations": "This is a Project Lead the Way course provided only through Venture Academics. There is no standalone section.",
+    "courseid": "HPE702",
+    "coursename": "PLTW/Venture Principles of Biomedical Science",
+    "credits": "20 (15 Biomedical, 5 elective)",
+    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also indemand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems. Students will learn from and be mentored by professionals in the community during the course and have opportunities for field experiences and job shadows in areas of interest. See page 111 to learn more about the Venture program",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "10-12",
+    "length": "1 Semester",
+    "prerequisites": "Health I, General Biology",
+    "tags": ["Health/PE", "Venture", "PLTW"]
   },
   "pre-algebra": {
     "considerations": "A scientific calculator or its equivalent required. Graphing calculators are not allowed in this course.",
@@ -2339,7 +2352,7 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering"]
+    "tags": ["Engineering", "Kirkwood", "PLTW"]
   },
   "prostart-internship": {
     "considerations": "Kirkwood credits earned upon completion of ProStart program",
@@ -2351,7 +2364,7 @@
     "gradelevels": "10 - 12",
     "length": "1 Semester",
     "prerequisites": "Culinary Basics and ProStart One",
-    "tags": ["Business"]
+    "tags": ["Business", "Kirkwood"]
   },
   "prostart-one": {
     "considerations": "Kirkwood credits upon completion of ProStart program",
@@ -2363,7 +2376,7 @@
     "gradelevels": "9 - 12",
     "length": "1 Semester",
     "prerequisites": "Culinary Basics",
-    "tags": ["Family Consumer Sciences"]
+    "tags": ["Family Consumer Sciences", "Kirkwood"]
   },
   "prostart-two": {
     "considerations": "Kirkwood credits earned upon completion of ProStart program",
@@ -2375,7 +2388,7 @@
     "gradelevels": "10 - 12",
     "length": "1 Semester",
     "prerequisites": "Culinary Basics, ProStart One, ProStart Internship (ongoing)",
-    "tags": ["Family Consumer Sciences"]
+    "tags": ["Family Consumer Sciences", "Kirkwood"]
   },
   "reading-i": {
     "considerations": "None",
@@ -2435,7 +2448,7 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["English", "Venture"]
+    "tags": ["English"]
   },
   "sociology": {
     "considerations": "Meets the Behavioral Sciences graduation requirement.",
@@ -2447,7 +2460,7 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies", "Venture"]
+    "tags": ["Social Studies"]
   },
   "spanish-iv-culture": {
     "courseid": "FOR435",
@@ -2458,7 +2471,7 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "Spanish III",
-    "tags": ["Foreign Language", "Venture"]
+    "tags": ["Foreign Language"]
   },
   "speech": {
     "considerations": "Speech or Acting is required for graduation.",
@@ -2482,7 +2495,7 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Business", "Venture"]
+    "tags": ["Business"]
   },
   "state-&-local-government": {
     "considerations": "This course is for elective credit in Social Studies. Not offered as a standalone class.",
@@ -2494,7 +2507,7 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Social Studies", "Venture"]
+    "tags": ["Social Studies"]
   },
   "stream-&-field-biology": {
     "considerations": "See prerequisites. Strong comprehensive vocabulary, reading and study skills. This course meets the L-M science elective requirement.",
@@ -2558,6 +2571,17 @@
     "prerequisites": "approval",
     "tags": ["Music"]
   },
+  "teacher's-assistant": {
+    "considerations": "Instructor must approve",
+    "courseid": "ELT100",
+    "coursename": "Teacher's Assistant",
+    "credits": "5",
+    "description": "Students will help the teacher with day-to-day activities.",
+    "format": "Block",
+    "gradelevels": "9-12",
+    "length": "1 Quarter",
+    "prerequisites": "Student must have passed the course for which they are the Teacher's Assistant."
+  },
   "teen-insights": {
     "considerations": "None",
     "courseid": "HPE350",
@@ -2569,18 +2593,6 @@
     "length": "1 Quarter",
     "prerequisites": "None",
     "tags": ["Health/PE"]
-  },
-  "lm-roar-store": {
-    "considerations": "This class has a work component built-in and may require students to work outside of normal instructional time.",
-    "courseid": "BUS550",
-    "coursename": "LM ROAR Store",
-    "credits": "5",
-    "description": "Students will be involved in the continued development and on-going operations of theROARstore. theROARstore is a student-run business, specializing in selling branded Linn-Mar merchandise. Students will learn customer service and selling skills in the classroom and develop & hone them while working in the store. In addition, students will spend time on developing theROARstore’s product mix, price the products accordingly, and promote them using social media, email marketing, and website design. Activities may include (but are not limited to): research and development, market & product planning, promotion, pricing, merchandising, selling, management, distribution, and financial analysis. Skills needed to be successful include creative and logical thinking, timeliness, dependability, willingness to work as a team, effective communication, attention to detail, ethical behavior, and professional and mature demeanor when working with customers, advisors, and individuals in positions of authority.",
-    "format": "Skinny",
-    "gradelevels": "11-12",
-    "length": "1 Semester",
-    "prerequisites": "Any of 2 or more Business courses",
-    "tags": ["Business"]
   },
   "us-history-9": {
     "considerations": "Required for graduation.",
@@ -2610,7 +2622,7 @@
   "venture-advanced-placement-environmental-science-1-&-2-strand": {
     "courseid": "SCI703",
     "coursename": "Venture Advanced Placement Environmental Science 1 & 2 Strand",
-    "courses": "SCI540 (AP Environmental Science 1 & 2), and ENG120. Students that successfully complete both courses will meet earth science and speech graduation requirements.",
+    "courses": "SCI541 (AP Environmental Science 1 & 2), and ENG120. Students that successfully complete both courses will meet earth science and speech graduation requirements.",
     "credits": "20 (15 AP Enviro, 5 Elective)",
     "description": "This course covers the same content as SCI541 & SCI542 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program.",
     "format": "SuperBlock (2 Blocks)",
