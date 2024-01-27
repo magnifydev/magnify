@@ -262,7 +262,9 @@ export const filterCourses = (): void => {
       courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
 
     // Used to convert normal text to the encoded database keys in the firebase db
-    const key = encodeURIComponent(search?.value.toLowerCase().replaceAll(' ', '-')).replace(/\./g, '%2E');
+    const key = encodeURIComponent(
+      search?.value.toLowerCase().replaceAll(' ', '-')
+    ).replace(/\./g, '%2E');
     const renderedElements = renderedItems
       .filter((name) => name.search(key) !== -1)
       .map((name) => {
