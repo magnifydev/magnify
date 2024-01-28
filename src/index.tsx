@@ -261,7 +261,10 @@ export const filterCourses = (): void => {
     const courseIDtoCourse = (courseID: string): CourseType =>
       courseData[courseIDtoNameMap.get(courseID) ?? ''] ?? '';
 
-    const key = search?.value.toLowerCase().replaceAll(' ', '-');
+    // Used to convert normal text to the encoded database keys in the firebase db
+    const key = encodeURIComponent(
+      search?.value.toLowerCase().replaceAll(' ', '-')
+    ).replace(/\./g, '%2E');
     const renderedElements = renderedItems
       .filter((name) => name.search(key) !== -1)
       .map((name) => {
