@@ -52,9 +52,9 @@ const renderDOM = (courseItems: JSX.Element[], userData = user): void => {
     numColumns = 4;
   } else if (width > 1100) {
     numColumns = 3;
-  } else if (width > 600) {
+  } else if (width > 800) {
     numColumns = 2;
-  } else {
+  } else if (width > 600) {
     numColumns = 1;
   }
 
@@ -148,6 +148,10 @@ const initializeCourseViewer = (): void => {
     handleDesktopScrollToTopDisplay();
     handleMobileNavigationOnScroll();
   };
+
+  window.addEventListener('resize', () => {
+    renderDOM(courseItems);
+  });
 
   const handleDesktopScrollToTopDisplay = (): void => {
     if (!topButton) {
