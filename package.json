@@ -1,6 +1,6 @@
 {
   "name": "magnify",
-  "version": "2024.0.0",
+  "version": "-2025.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
