@@ -4,10 +4,10 @@ Security is very important to Magnify. This file informs you about our policy.
 
 ## Supported Versions
 
-| Version            | Supported          |
-| ------------------ | ------------------ |
-| 2024-2025.x.x      | :white_check_mark: |
-| < 2024-2025.x.x    | :x:                |
+| Version         | Supported          |
+| --------------- | ------------------ |
+| 2024-2025.x.x   | :white_check_mark: |
+| < 2024-2025.x.x | :x:                |
 
 ## Reporting a Vulnerability
 
