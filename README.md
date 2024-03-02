@@ -1,4 +1,4 @@
-# Magnify
+# Linn-Mar Magnify
 
 > A Single Platform for All the Courses
 

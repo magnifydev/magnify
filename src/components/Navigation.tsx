@@ -19,9 +19,9 @@ export const Navigation: FC<NavigationProps> = ({ authLevel }): JSX.Element => {
     <div className="navigation">
       <ul>
         <li>
-          <a href="/" aria-label="Magnify" title="Magnify">
+          <a href="/" aria-label="Linn-Mar Magnify" title="Linn-Mar Magnify">
             <span className="icon logo">M</span>
-            <span className="title">Magnify</span>
+            <span className="title">Linn-Mar Magnify</span>
           </a>
         </li>
         <li className="hovered">

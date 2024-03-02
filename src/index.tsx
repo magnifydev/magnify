@@ -151,6 +151,9 @@ const initializeCourseViewer = (): void => {
 
   window.addEventListener('resize', () => {
     renderDOM(courseItems);
+    filterCourses();
+    // This is REALLY bad for performance...
+    // Need to implement subgrid at some point
   });
 
   const handleDesktopScrollToTopDisplay = (): void => {
