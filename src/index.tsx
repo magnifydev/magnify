@@ -141,7 +141,7 @@ const initializeCourseViewer = (): void => {
   const topButton = document.getElementById('to-top');
 
   search?.addEventListener('input', filterCourses);
-  signInButton?.addEventListener('click', signInWithRedirect);
+  signInButton?.addEventListener('click', signInWithPopup);
 
   let prevScrollpos = window.scrollY;
   window.onscroll = () => {
@@ -301,37 +301,35 @@ export const filterCourses = (): void => {
   }, 20);
 };
 
-firebase
-  .auth()
-  .getRedirectResult()
-  .then((result) => {
-    // The signed-in user info.
-    user = result.user;
-
-    if (user) {
-      document.cookie = `user=${JSON.stringify(user)}`;
-    }
-
-    dbRef.get().then((snapshot) => {
-      if (!snapshot.exists()) return;
-      authData = snapshot.val().users;
-
-      // Authorize the user if the user has been logged-in
-      if (user !== null) {
-        Object.keys(authData).forEach((key) => {
-          if (user?.email === authData[key].email) {
-            authLevel = authData[key].level;
-          }
-        });
-        filterCourses();
-      }
-    });
-  });
-
-const signInWithRedirect = (): void => {
+const signInWithPopup = (): void => {
   const button = document.getElementById('signer');
   if (button?.textContent === 'Login') {
-    firebase.auth().signInWithRedirect(provider);
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then((result) => {
+        // The signed-in user info.
+        user = result.user;
+
+        if (user) {
+          document.cookie = `user=${JSON.stringify(user)}`;
+        }
+
+        dbRef.get().then((snapshot) => {
+          if (!snapshot.exists()) return;
+          authData = snapshot.val().users;
+
+          // Authorize the user if the user has been logged-in
+          if (user !== null) {
+            Object.keys(authData).forEach((key) => {
+              if (user?.email === authData[key].email) {
+                authLevel = authData[key].level;
+              }
+            });
+            filterCourses();
+          }
+        });
+      });
   } else {
     firebase
       .auth()
