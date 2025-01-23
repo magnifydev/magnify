@@ -205,6 +205,7 @@ export const filterCourses = (): void => {
   setTimeout(() => {
     const tagCodes = {
       ADP: 'Advanced Placement',
+      CSC: 'Computer Science',
       MAT: 'Math',
       BUS: 'Business',
       SOC: 'Social Studies',
