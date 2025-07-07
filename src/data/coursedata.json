@@ -78,7 +78,7 @@
     "credits": "10",
     "description": "This course uses an integrated approach to teach accounting, by learning how businesses plan for and evaluate their operating, financing, and investing decisions and then how accounting systems gather and provide data to decision makers. The course covers all the objectives of a traditional college level financial accounting course, plus those from a managerial accounting course. Topics include accounting information systems, time value of money, and accounting for merchandising firms, sales and receivables, fixed assets, debt, equity, statement of cash flows, financial ratios, cost-volume profit analysis and variance analysis.",
     "format": "Block",
-    "gradelevels": "11/12",
+    "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Accounting",
     "tags": ["Business"]
@@ -164,7 +164,7 @@
     "format": "Block",
     "gradelevels": "10-12",
     "length": "3 Quarters",
-    "prerequisites": "Chemistry I",
+    "prerequisites": "Chemistry I and General Biology (or instructor approval)",
     "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-calculus-(ab)": {
@@ -203,29 +203,17 @@
     "prerequisites": "Chemistry I and Advanced Algebra IIA",
     "tags": ["Advanced Placement", "Science"]
   },
-  "advanced-placement-comparative-government": {
-    "considerations": "Could be linked with AP US Government for a year-long AP Government course. AP exam would be optional.",
-    "courseid": "SOC550",
-    "coursename": "Advanced Placement Comparative Government",
-    "credits": "5",
-    "description": "AP Comparative Government is a semester-long (block) course comparing governmental systems of Great Britain, Russia, China, Mexico, Nigeria, and Iran. It is intended to follow US Government in greater depth and introduce students to more global international relations concepts and a broader, current understanding of the world we live in.",
-    "format": "Block",
-    "gradelevels": "11-12",
-    "length": "2 Quarters",
-    "prerequisites": "US Govt. or AP US Govt.",
-    "tags": ["Advanced Placement", "Social Studies"]
-  },
   "advanced-placement-computer-science-a-(csa)": {
     "considerations": "Students need a prior programming class (CSE or CSP) before taking CSA. Or, students with other previous programming experience can seek teacher approval to take CSA without a prior class. This course prepares students for the AP Computer Science A exam.",
-    "corequisite": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
-    "courseid": "IND660",
+    "courseid": "CSC500",
     "coursename": "Advanced Placement Computer Science A (CSA)",
     "credits": "10",
     "description": "CSA students will learn fundamentals of the Java programming language and continue to object-oriented programming. Students develop skills in solving computational problems, writing algorithms, testing code, and processing data.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
-    "tags": ["Advanced Placement", "Engineering"]
+    "prerequisites": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
+    "tags": ["Advanced Placement", "Computer Science"]
   },
   "advanced-placement-environmental-science-1-%26-2": {
     "considerations": "Advanced Placement Environmental Science 1 & 2 is a NGSS course based on the completion of NGSS Earth Science Standards and successful completion will meet the earth science requirement for graduation. Students taking this course should have completed General Biology and Algebra. Students MUST sign up for both sections listed above. Students may take the AP exam in May.",
@@ -285,6 +273,30 @@
     "gradelevels": "10-12",
     "length": "4 Quarters",
     "prerequisites": "Chemistry I AND Algebra 2",
+    "tags": ["Advanced Placement", "Science"]
+  },
+  "advanced-placement-physics-c:-e-&-m": {
+    "considerations": "See prerequisite. Students taking this course should have a strong interest in the practical applications of mathematics. Students may take the AP Physics C: E & M exam in May. AP Physics C: E & M is suggested for students pursuing a physics or engineering degree. This course will be offered when the start of the school year ends in an even calendar number. AP Physics C: E & M alternates years with AP Physics C: Mechanics.",
+    "courseid": "SCI535",
+    "coursename": "Advanced Placement Physics C: E & M",
+    "credits": "10",
+    "description": "AP Physics C: E & M is a calculus-based introductory college-level physics course. Students cultivate their understanding of physics through classroom study, in-class activity, and hands-on, inquiry-based laboratory work. Students build their understanding of electric charge, field, potential, and circuits as well as magnetic fields, and electromagnetic induction.",
+    "format": "Block",
+    "gradelevels": "10-12",
+    "length": "2 Quarters",
+    "prerequisites": "AP Calculus AB or BC, Taken or Concurrent",
+    "tags": ["Advanced Placement", "Science"]
+  },
+  "advanced-placement-physics-c:-mechanics": {
+    "considerations": "See prerequisite. Students taking this course should have a strong interest in the practical applications of mathematics. Students may take the AP Physics C: Mechanics exam in May. AP Physics C: Mechanics is suggested for student pursuing a physics or engineering degree. This course will be offered when the start of the school year ends in an odd calendar number. AP Physics C: Mechanics alternates years with AP Physics C: E & M.",
+    "courseid": "SCI534",
+    "coursename": "Advanced Placement Physics C: Mechanics",
+    "credits": "10",
+    "description": "AP Physics C: Mechanics is a calculus-based introductory college-level physics course. Students cultivate their understanding of physics through classroom study, in-class activity, and hands-on, inquiry-based laboratory work. Students build their understanding of kinematics, dynamics, work, energy, momentum, oscillations, and rotational motion.",
+    "format": "Block",
+    "gradelevels": "10-12",
+    "length": "2 Quarters",
+    "prerequisites": "AP Calculus AB or BC, Taken or Concurrent",
     "tags": ["Advanced Placement", "Science"]
   },
   "advanced-placement-psychology": {
@@ -440,7 +452,7 @@
     "credits": "10",
     "description": "This course is designed to include material covered in the first semester of Algebra 1. Topics include negative numbers, absolute values, opposites, linear equations, and inequalities in word problems.",
     "format": "Skinny",
-    "gradelevels": "9-12",
+    "gradelevels": "9-11",
     "length": "2 Semesters",
     "prerequisites": "Algebra Foundations, Pre-Algebra, or Math 8",
     "subsequent": "Algebra 1B",
@@ -482,19 +494,6 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "Teacher and/or Counselor recommendation, concurrent enrollment in Algebra 2",
-    "tags": ["Math"]
-  },
-  "algebra-foundations": {
-    "considerations": "A scientific calculator is required.",
-    "courseid": "MAT114 and MAT116",
-    "coursename": "Algebra Foundations",
-    "credits": "10",
-    "description": "This course is an introductory class for Algebra 1A or Algebra 1. It is designed to review basic skills and math concepts. Elementary algebra skills with variables and problem-solving techniques will be imperative to the curriculum.",
-    "format": "Skinny, 2 times per day",
-    "gradelevels": "9",
-    "length": "2 Semesters",
-    "prerequisites": "Teacher recommendation and administrative approval",
-    "subsequent": "Algebra 1A or Algebra 1",
     "tags": ["Math"]
   },
   "algebra-fundamentals-i": {
@@ -908,7 +907,7 @@
     "tags": ["Engineering"]
   },
   "computer-integrated-manufacturing-(cim)": {
-    "considerations": "This course articulates credit with Kirkwood Community College.",
+    "considerations": "This course involves college level work.",
     "corequisite": "Algebra",
     "courseid": "IND640",
     "coursename": "Computer Integrated Manufacturing (CIM)",
@@ -920,8 +919,8 @@
     "tags": ["Engineering", "Kirkwood", "PLTW"]
   },
   "computer-science-essentials-(cse)": {
-    "considerations": "Students with no prior computer science experience can take this as a first computer science course. Academically confident/motivated students or students with a bit of prior programming experience may skip CSE and sign up for Computer Science Principles (CSP).",
-    "courseid": "IND645",
+    "considerations": "Students with no prior computer science experience can take this as a first computer science course.Academically confident/motivated students or students with a bit of prior programming experience may skip CSE and sign up for Computer Science Principles (CSP).",
+    "courseid": "CSC100",
     "coursename": "Computer Science Essentials (CSE)",
     "credits": "10",
     "description": "In this entry level computer science course, students will learn to program apps using a graphical, block-based programming language. After learning fundamentals of programming, students transition to text-based programming using the Python language. Students will use a variety of tools and computational thinking concepts as they build confidence and gain experience in the field of computer science.",
@@ -929,19 +928,19 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Engineering"]
+    "tags": ["Computer Science"]
   },
   "computer-science-principles-(csp)": {
     "considerations": "Students who want a beginner level computer science experience should take Computer Science Essentials (CSE) as their first course. Academically motivated / confident students or students with a bit of prior programming experience may choose to skip CSE and register for CSP.",
-    "corequisite": "Algebra or concurrent enrollment in Algebra",
-    "courseid": "IND650",
+    "courseid": "CSC300",
     "coursename": "Computer Science Principles (CSP)",
     "credits": "10",
     "description": "Explore a variety of fields within computer science: Python programming, data visualization, image data manipulation, internet and cybersecurity, and simulation. The course aims to develop computational thinking, generate interest in career paths that utilize computing, and foster creativity. CSP helps students develop programming experience and confidence.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Engineering"]
+    "prerequisites": "Algebra or concurrent enrollment in Algebra",
+    "tags": ["Computer Science"]
   },
   "concert-band": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -1052,6 +1051,18 @@
     "length": "1 Quarter",
     "prerequisites": "None",
     "tags": ["Social Studies"]
+  },
+  "cybersecurity": {
+    "considerations": "Cybersecurity is not a programming course, so no programming experience is required. However, students will do much of their work by entering text commands in a Linux command line terminal. The curriculum covers the material needed to test for the CompTIA Security+ certification.",
+    "courseid": "CSC350",
+    "coursename": "Cybersecurity",
+    "credits": "10",
+    "description": "Students will study a variety of cybersecurity topics including types of threats, attacks, and actors; risk analysis and management; cryptographic solutions; vulnerability analysis and remediation; network security; data management; law and policy; and incident response. Students will study a variety of case studies and do labs using a safe virtual machine network environment. Course content will also include some aspects of computer networks and the Linux operating system.",
+    "format": "Block",
+    "gradelevels": "10-12",
+    "length": "2 Quarters",
+    "prerequisites": "None",
+    "tags": ["Computer Science"]
   },
   "digital-electronics-(de)": {
     "considerations": "This course articulates credit with Kirkwood Community College",
@@ -1353,18 +1364,6 @@
     "prerequisites": "None",
     "tags": ["Agriculture"]
   },
-  "environmental-sustainability": {
-    "considerations": "See prerequisites. This is course in the Project Lead the Way engineering sequence. Students will earn credit for this course from Kirkwood Community College upon successful completion.",
-    "courseid": "SCI620",
-    "coursename": "Environmental Sustainability",
-    "credits": "10",
-    "description": "Students will investigate and design solutions in response to real-world challenges related to clean and abundant drinking water, food supply issues, and renewable energy. Applying their knowledge through hands-on activities and simulations, students research and design potential solutions to these true-to-life challenges.",
-    "format": "Block",
-    "gradelevels": "10-12",
-    "length": "2 Quarters",
-    "prerequisites": "Algebra AND General Biology",
-    "tags": ["Science", "Kirkwood", "PLTW"]
-  },
   "exploration-in-ceramic-techniques": {
     "considerations": "Construction in Clay is highly recommended before taking this course. This class is for the serious, dedicated ceramic student looking to develop a portfolio, considering art as a career, or highly interested in ceramic arts.",
     "courseid": "ART325",
@@ -1396,7 +1395,7 @@
     "credits": "5",
     "description": "Students will learn to sew or increase sewing skills in this hands-on project-based course. Various tools and equipment will be used to produce a variety of projects. Students will also examine their personal style, apply design principles to clothing and learn about careers in the fashion industry.",
     "format": "Block",
-    "gradelevels": "10-12",
+    "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
     "tags": ["Family Consumer Sciences"]
@@ -1459,18 +1458,6 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Science"]
-  },
-  "geology": {
-    "considerations": "Geology is a science elective course. Students taking this course must have completed Geometry and Applied Chemistry and Physics or Chemistry I.",
-    "courseid": "SCI380",
-    "coursename": "Geology",
-    "credits": "5",
-    "description": "This course is designed to allow students to receive an intense, in-depth look into the core subjects of geology including physical, structural, and environmental geology, crystallography, mineralogy, stratigraphy, and geomorphology.",
-    "format": "Block",
-    "gradelevels": "11-12",
-    "length": "1 Quarter",
-    "prerequisites": "Geometry and Chemistry 1 or Applied Chemistry and Physics",
     "tags": ["Science"]
   },
   "geometry": {
@@ -1872,14 +1859,14 @@
     "tags": ["Foreign Language"]
   },
   "lifetime-fitness---advanced": {
-    "considerations": "A Lifetime Fitness course is required for the Junior and Senior years.",
-    "courseid": "HPE415",
+    "considerations": "A Lifetime Fitness course is required for each year of enrollment.",
+    "courseid": "HPE412 or HPE414 or HPE416 or HPE418",
     "coursename": "Lifetime Fitness - Advanced",
     "credits": "2.5 (Each Quarter)",
-    "description": "This section is an advanced-level course designed for students interested in a curriculum that will enhance their physical preparedness for athletic competition. The focus is on elevating the students' athletic performance through targeted off-season strength and speed development workouts, designed to increase muscle mass while refining both linear and lateral speed. Additionally, students will complete a CPR Skills Unit. Successful completion of this section will fulfill the state graduation requirement for physical activity and the state CPR Skills review requirement. Students will select the desired block (B1 or B4) and term (Q1, Q2, Q3, and/orQ4) for participation. Students may participate in this course up to 2 times per year.",
-    "format": "1 st and 4 th Blocks Only",
+    "description": "This section is an advanced-level course designed for students interested in a curriculum that will enhance their physical preparedness for athletic competition. The focus is on elevating the students' athletic performance through targeted off-season strength and speed development workouts, designed to increase muscle mass while refining both linear and lateral speed. Additionally, students will complete a CPR Skills Unit. Successful completion of this section will fulfill the state graduation requirement for physical activity and the state CPR Skills review requirement. Students will select the desired term (Q1, Q2, Q3, and/or Q4) for participation. Students may participate in this course up to 2 times per year.",
+    "format": "1st and 4th Blocks Only",
     "gradelevels": "Advanced (Year 2, 3, or 4)",
-    "grading": "",
+    "grading": "Credit/No Credit",
     "length": "1 Quarter",
     "prerequisites": "LF-Fundamentals or Permission",
     "tags": ["Health/PE"]
@@ -1935,6 +1922,17 @@
     "prerequisites": "LF-Fundamentals or Permission",
     "tags": ["Health/PE"]
   },
+  "lifetime-fitness-lifeguard-certification": {
+    "considerations": "A Lifetime Fitness course is required for each year of enrollment.",
+    "courseid": "HPE323E",
+    "coursename": "Lifetime Fitness - Lifeguard Certification",
+    "credits": "2.5",
+    "description": "This is a Red Cross Certified Lifeguard training course. The primary purpose of the courses in the American Red Cross Lifeguarding program is to provide participants with the knowledge and skills needed to:\n■ Prevent, recognize, and respond to aquatic emergencies.\n■ Provide professional-level care for breathing and cardiac emergencies, injuries, and sudden illnesses until emergency medical services (EMS) professionals take over.\nThe intended audience for the courses in this program includes those seeking certification to work as lifeguards at pools and non-surf waterfronts.\nThroughout the course, participants will learn and be evaluated on knowledge and skills related to lifeguarding, water rescues, extrications, CPR and AED and First Aid.\nRed Cross Lifeguard Requirements for certification:\n• Participants must score a minimum of 80% on a 50-question final knowledge exam.\n• Participants must successfully complete 3 final skills assessments:\no Rotate in, conduct surveillance, rotate out\no Timed Single-rescuer CPR Scenario\no Multiple Rescuer Response Scenario\nStudents electing certification will be required to pay an American Red Cross fee of approximately $50.  Financial assistance is available for free or reduced lunch students through the counseling office.\nUpon successful completion of the Lifeguarding course, the participant will receive an American Red Cross Universal Certificate indicating certification in Lifeguarding/First Aid/CPR/AED, valid for two years.\nNOTE: Student may pass the course for school credit, but not pass the Red Cross test for Lifeguard certification.\n***\nCourse Prerequisite:\n• Students must be 15 years of age before the last scheduled class session.\n• Must demonstrate the following skills by the end of the first week of class:\nLifeguarding Swim-Tread-Swim Sequence\n■ Swim 150 yards using the front crawl, breaststroke, or a combination of both.\n- Swimming on the back or side is not permitted.\n- Swim goggles are allowed.\n■ Maintain position at the surface of the water for 2 minutes by treading water using only the\nlegs.\nTimed Event\nComplete a timed event within 1 minute, 40 seconds.\n■ Starting in the water, swim 20 yards.\n- The face may be in or out of the water.\n- Swim goggles are not allowed.\n■ Surface dive (feet-first or head-first) to a depth of 7 to 10 feet to retrieve a 10-pound\nobject.\n■ Return to the surface and swim 20 yards on the back to return to the starting point, holding the object at the surface with both\nhands and keeping the face at or near the surface.\n■ Exit the water without using a ladder or steps",
+    "format": "Skinny, 3rd Quarter, 7:50 – 8:30 am",
+    "gradelevels": "10-12",
+    "length": "1 Quarter",
+    "prerequisites": "See below for prerequisite info. Grading:             Credit/No credit"
+  },
   "linn-mar-singers": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
     "courseid": "MUS210AA",
@@ -1961,7 +1959,7 @@
   },
   "lm-roar-store": {
     "considerations": "This class has a work component built-in and may require students to work outside of normal instructional time.",
-    "courseid": "BUS550",
+    "courseid": "BUS701",
     "coursename": "LM ROAR Store",
     "credits": "5",
     "description": "Students will be involved in the continued development and on-going operations of theROARstore. theROARstore is a student-run business, specializing in selling branded Linn-Mar merchandise. Students will learn customer service and selling skills in the classroom and develop & hone them while working in the store. In addition, students will spend time on developing theROARstore's product mix, price the products accordingly, and promote them using social media, email marketing, and website design. Activities may include (but are not limited to): research and development, market & product planning, promotion, pricing, merchandising, selling, management, distribution, and financial analysis. Skills needed to be successful include creative and logical thinking, timeliness, dependability, willingness to work as a team, effective communication, attention to detail, ethical behavior, and professional and mature demeanor when working with customers, advisors, and individuals in positions of authority.",
@@ -2055,18 +2053,6 @@
     "prerequisites": "none",
     "tags": ["Engineering"]
   },
-  "meteorology": {
-    "considerations": "Meteorology is a science elective course. Students taking this course must have completed Geometry and ACP (Applied Chemistry and Physics) or Chemistry I.",
-    "courseid": "SCI395",
-    "coursename": "Meteorology",
-    "credits": "5",
-    "description": "This course is designed to allow students to receive an intense, in-depth look at topics relating to the atmosphere. Students will focus on forecasting weather, using severe weather as its guideline.",
-    "format": "Block",
-    "gradelevels": "11-12",
-    "length": "1 Quarter",
-    "prerequisites": "Geometry and Applied Chemistry and Physics or Chemistry I",
-    "tags": ["Science"]
-  },
   "multicultural-literature": {
     "courseid": "ENG255",
     "coursename": "Multicultural Literature",
@@ -2100,18 +2086,6 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Science"]
-  },
-  "organic-chemistry": {
-    "considerations": "See prerequisite.",
-    "courseid": "SCI330",
-    "coursename": "Organic Chemistry",
-    "credits": "5",
-    "description": "This quarter-long course is designed to provide a limited exploration of the concepts essential to college-level Organic Chemistry: Bonding, Isomers, Properties, Naming, Functional Groups and Types of Reactions/ Reaction Mechanisms associated with each – substitution, elimination & addition, as well as an introduction to the limitless applications of organic chemistry throughout agriculture, life sciences, medicine, and issues related to consumers, the environment and society.",
-    "format": "Block",
-    "gradelevels": "10-12",
-    "length": "1 Quarter (offered in odd years; Fall of 2025 next)",
-    "prerequisites": "Chemistry I",
     "tags": ["Science"]
   },
   "pe": {
@@ -2163,15 +2137,15 @@
     "prerequisites": "Algebra 1",
     "tags": ["Science"]
   },
-  "pltw%2Fventure-principles-of-biomedical-science-strand": {
+  "pltw%2Fventure-principles-of-biomedical-science": {
     "considerations": "This is a Project Lead the Way course provided only through Venture Academics. There is no standalone section.",
     "courseid": "HPE702",
-    "coursename": "PLTW/Venture Principles of Biomedical Science Strand",
-    "credits": "20 credits (15 Biomedical, 5 elective)",
-    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also in-demand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems. Students will learn from and be mentored by professionals in the community during the course and have opportunities for field experiences and job shadows in areas of interest. See page 109 to learn more about the Venture program.",
-    "format": "SuperBlock (2 Blocks)",
+    "coursename": "PLTW/Venture Principles of Biomedical Science",
+    "credits": "20 credits (10 Biomedical, 5 Rhetoric, 5 Elective Venture credits)",
+    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also in- demand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems. Students will learn from and be mentored by professionals in the community during the course and have opportunities for field experiences and job shadows in areas of interest. See page 110 to learn more about the Venture program.",
+    "format": "Block",
     "gradelevels": "10-12",
-    "length": "1 Semester",
+    "length": "2 Semesters",
     "prerequisites": "Health I, General Biology",
     "tags": ["Health/PE", "Venture"]
   },
@@ -2247,6 +2221,18 @@
     "length": "2 Quarters",
     "prerequisites": "Algebra",
     "tags": ["Engineering"]
+  },
+  "probability-and-statistics": {
+    "considerations": "Graphing calculators are required.",
+    "courseid": "MAT330",
+    "coursename": "Probability and Statistics",
+    "credits": "5",
+    "description": "This course is intended to develop statistical literacy and thinking by developing skills to interpret results, write explanations, find patterns, and make decisions.  Included are units on data classification, frequency distribution and their graphs, and measures of central tendency.",
+    "format": "Skinny",
+    "gradelevels": "10-12",
+    "length": "1 Semester",
+    "prerequisites": "Algebra 2",
+    "tags": ["Math"]
   },
   "prostart-internship": {
     "considerations": "Kirkwood credits earned upon completion of ProStart program.",
@@ -2393,6 +2379,17 @@
     "prerequisites": "None",
     "tags": ["Business"]
   },
+  "sports-officiating": {
+    "considerations": "Individual learning schedules will be determined based on the officiating licenses being pursued. Some of the course will be online learning and students will not meet every day.\nFee: Initial IHSAA or IGHSAU license fees ($20 for one sport and $12 for each additional sport) are waived for students completing this course.",
+    "courseid": "HPE500, HPE501",
+    "coursename": "Sports Officiating",
+    "credits": "1 credit per license",
+    "description": "Sports Officiating prepares students to serve as a referee, umpire, judge, or other official for sports contests. The course emphasizes knowledge and interpretation of the rules, mechanics, and effective decision-making.  Licensing is available for basketball, wrestling, and soccer in the fall semester, and baseball, softball, volleyball, and football in the spring semester.",
+    "format": "RTI",
+    "gradelevels": "9-12",
+    "length": "1 Semester",
+    "prerequisites": "None"
+  },
   "state-%26-local-government": {
     "considerations": "This course is for elective credit in Social Studies. Not offered as a standalone class.",
     "courseid": "SOC390",
@@ -2418,11 +2415,11 @@
     "tags": ["Science"]
   },
   "super-sport": {
-    "considerations": "Specific skills taught and assessed are determined by a student's individualized education plan. Must have administrative approval to enroll.",
-    "courseid": "ALT400",
+    "considerations": "Required for students with adaptive physical education IEP goals. Students without adaptive physical education IEP goals may also enroll in this course (with PE Department approval) to earn Lifetime Fitness credit.",
+    "courseid": "ALT400, HPE120",
     "coursename": "Super Sport",
-    "credits": "5",
-    "description": "This adaptive physical education course focuses on individual and team activities to promote an active and healthy lifestyle. This course will adapt the activities to meet the physical needs of all students.",
+    "credits": "2.5",
+    "description": "This adaptive physical education course focuses on individual and team activities to promote an active and healthy lifestyle. This course will adapt activities to meet the physical needs of all students. Students will work together to meet physical education goals and standards. Specific skills taught and assessed will be determined by each student’s adaptive physical education IEP goals or established by Linn-Mar’s Lifetime Fitness standards.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "1 Quarter",
@@ -2503,30 +2500,17 @@
     "prerequisites": "None",
     "tags": ["Social Studies"]
   },
-  "venture-advanced-business-strand": {
-    "considerations": "It is recommended that students enroll in one or more of the following courses prior to enrolling in this strand; Accounting, Marketing, Business/Consumer Law, Personal Finance.",
-    "courseid": "BUS702",
-    "coursename": "Venture Advanced Business Strand",
-    "courses": "BUS360, BUS460, and ENG120.",
+  "venture-applied-marketing": {
+    "courseid": "BUS701",
+    "coursename": "Venture Applied Marketing",
+    "courses": "BUS360, BUS355, and ENG120.",
     "credits": "20",
-    "description": "This course covers the same content as BUS360 and BUS460 in a project-based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
+    "description": "Formerly Venture Marketing Essentials. In this project-based course, students will be introduced to the core concepts of marketing, both traditional and digital strategies. Students will engage in hands-on projects that simulate real-world marketing campaigns, providing opportunities to apply principles such as (but not limited to) market research, branding, advertising, product development, and sales strategies. They will learn how to craft compelling marketing messages, analyze consumer behavior, and create multi-channel campaigns that reach diverse audiences. By the end of the course, students will have a strong foundation in marketing theory, practical skills in digital platforms, and the ability to present their ideas professionally.",
     "format": "SuperBlock (2 Blocks)",
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "None",
     "tags": ["Business", "Venture"]
-  },
-  "venture-advanced-placement-environmental-science-1-%26-2-strand": {
-    "courseid": "SCI703",
-    "coursename": "Venture Advanced Placement Environmental Science 1 & 2 Strand",
-    "courses": "SCI540 (AP Environmental Science 1 & 2), and ENG120. Students that successfully complete both courses will meet earth science and speech graduation requirements.",
-    "credits": "20 (15 AP Enviro, 5 Elective)",
-    "description": "This course covers the same content as SCI541 & SCI542 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program. Elective Science credit can also be found in the Agricultural Education and PLTW sections.",
-    "format": "SuperBlock (2 Blocks)",
-    "gradelevels": "10-12",
-    "length": "Semester",
-    "prerequisites": "General Biology and Algebra",
-    "tags": ["Science", "Venture"]
   },
   "venture-behavioral-science-strand": {
     "courseid": "SOC702",
@@ -2539,6 +2523,18 @@
     "length": "Semester",
     "prerequisites": "none",
     "tags": ["Social Studies", "Venture"]
+  },
+  "venture-biology": {
+    "courseid": "SCI702",
+    "coursename": "Venture Biology",
+    "courses": "SCI210 and ENG120. Students that successful complete both courses will meet life science and speech graduation requirements.",
+    "credits": "20 (10 Bio, 5 English, 5 Elective.)",
+    "description": "This course covers the same standards as SCI210 in a project-based, community-focused way. Students will learn from and be mentored by professionals in the community. Students will learn and use important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "9-12",
+    "length": "Semester",
+    "prerequisites": "none",
+    "tags": ["Science", "Venture"]
   },
   "venture-civics-strand": {
     "courseid": "SOC701",
@@ -2582,7 +2578,7 @@
     "coursename": "Venture Earth Science Strand",
     "courses": "SCI125 and ENG120. Students that successful complete both courses will meet earth science and speech graduation requirements.",
     "credits": "20 (10 Earth, 5 English, 5 Elective)",
-    "description": "This course covers the same content as SCI125 in a project-based, hands-on, community-engaged way. Students will complete the requirements for three college credits through the University of Iowa STEM Innovator program. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
+    "description": "This course covers the same standards as SCI125 in a project-based and community-focused way. Students will learn and use important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects.",
     "format": "SuperBlock (2 Blocks)",
     "gradelevels": "9-10",
     "length": "Semester",
@@ -2601,24 +2597,13 @@
     "prerequisites": "Application, and Teacher and Counselor Approval Required",
     "tags": ["Family Consumer Sciences", "Venture"]
   },
-  "venture-life-science-strand-(biology)": {
-    "courseid": "SCI702",
-    "coursename": "Venture Life Science Strand (Biology)",
-    "courses": "SCI210 and ENG120. Students that successful complete both courses will meet life science and speech graduation requirements.",
-    "credits": "20 (10 Bio, 5 English, 5 Elective.)",
-    "description": "This course covers the same content as SCI210 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will complete the requirements for three college credits through the University of Iowa STEM Innovator program. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
-    "format": "SuperBlock (2 Blocks)",
-    "gradelevels": "9-12",
-    "length": "Semester",
-    "prerequisites": "none",
-    "tags": ["Science", "Venture"]
-  },
-  "venture-marketing-essentials-strand": {
-    "courseid": "BUS701",
-    "coursename": "Venture Marketing Essentials Strand",
-    "courses": "BUS345, BUS355, and ENG120.",
+  "venture-inventrepreneurship": {
+    "considerations": "This strand was formerly named Venture-Advanced Business. It is recommended that students enroll in one or more of the following courses prior to enrolling in this strand; Accounting, Marketing, Business/Consumer Law, Personal Finance.",
+    "courseid": "BUS702",
+    "coursename": "Venture Inventrepreneurship",
+    "courses": "BUS360, BUS460, and ENG120.",
     "credits": "20",
-    "description": "This course covers the same content as BUS355, and ENG120 in a project-based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
+    "description": "In this project-based course, students will learn about and participate in the process of turning ideas into reality. From brainstorming inventions, to creating prototypes, to creating a business model, students will explore the steps of building a startup. Throughout the class, students will develop and evolve multiple pitches, showing the progress of their inventions and startups. By the end of the course, students will have hands-on experience in bringing their concept to life, while gaining practical knowledge of what it takes to start a successful business. *Students also have the opportunity to earn college credit.",
     "format": "SuperBlock (2 Blocks)",
     "gradelevels": "10-12",
     "length": "Semester",
