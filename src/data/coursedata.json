@@ -9,7 +9,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Art Exploration",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "3-d-mixed-media": {
     "considerations": "Art Exploration is required before taking this class. This course will involve written work as well as artwork projects. Presentations and class discussions are regular occurrences in this course.",
@@ -21,7 +23,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Art Exploration",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "academic-literacy-i": {
     "considerations": "Students are placed in this course per recommendation of the 8th grade language arts teachers, Iowa Assessment scores and other indicators. This course is designed for students reading significantly below grade level. * May be required for individual students.",
@@ -33,7 +37,9 @@
     "gradelevels": "9-10",
     "length": "1 Semester",
     "prerequisites": "approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "academic-literacy-ii": {
     "considerations": "Students are placed in this course per recommendation of 9th grade English teachers, Iowa Assessment scores, and other indicators. This course is designed for students reading significantly below grade level. *May be required for individual students.",
@@ -45,7 +51,9 @@
     "gradelevels": "9-10",
     "length": "1 Quarter",
     "prerequisites": "Academic Literacy I or Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "accounting": {
     "considerations": "None",
@@ -57,7 +65,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "acting": {
     "considerations": "See prerequisites. Acting, Rhetoric, or Speech is required for graduation. Acting DOES NOT meet the Board of Regents criteria for the RAI. Admission to the class is subject to availability.",
@@ -69,7 +79,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "English II, English III, or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "advanced-accounting": {
     "considerations": "See prerequisite. HP 10b11. Financial calculator is required.",
@@ -78,10 +90,12 @@
     "credits": "10",
     "description": "This course uses an integrated approach to teach accounting, by learning how businesses plan for and evaluate their operating, financing, and investing decisions and then how accounting systems gather and provide data to decision makers. The course covers all the objectives of a traditional college level financial accounting course, plus those from a managerial accounting course. Topics include accounting information systems, time value of money, and accounting for merchandising firms, sales and receivables, fixed assets, debt, equity, statement of cash flows, financial ratios, cost-volume profit analysis and variance analysis.",
     "format": "Block",
-    "gradelevels": "11/12",
+    "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Accounting",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "advanced-art": {
     "considerations": "11th and 12th grade students only",
@@ -93,7 +107,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "3 or more Art Classes",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "advanced-biology": {
     "considerations": "Compass Only. See prerequisites. Strong comprehensive vocabulary, reading and study skills. This course meets the L-M science elective requirement. .",
@@ -105,7 +121,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "General Biology",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "advanced-english-i": {
     "considerations": "English I or Advanced English I required for graduation. Students earning a 90 or higher in this course may opt to bypass English II. Students need to be highly motivated in reading and writing. Expectations are high regarding motivation and achievement, reflected in the pace and rigor of the curriculum. Additionally, good basic writing and research skills are expected.",
@@ -117,7 +135,9 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "advanced-english-ii": {
     "considerations": "See prerequisite. Fulfills the 10th grade English requirement for graduation.",
@@ -129,7 +149,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "English I or Advanced English I",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "advanced-english-iii": {
     "considerations": "Fulfills the literature and writing requirement for graduation and is encouraged for students planning to take AP English.",
@@ -141,7 +163,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "English II or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "advanced-placement-american-government": {
     "considerations": "Instructor approval for 10th graders. Fulfills the government graduation requirement. Students may take the American Government AP exam in May.",
@@ -153,7 +177,10 @@
     "gradelevels": "11-12 or approval",
     "length": "2 Quarters during second semester",
     "prerequisites": "none",
-    "tags": ["Advanced Placement", "Social Studies"]
+    "tags": [
+      "Advanced Placement",
+      "Social Studies"
+    ]
   },
   "advanced-placement-biology-1-%26-2": {
     "considerations": "Advanced Placement Biology 1 & 2 is a NGSS course based on the completion of NGSS Life Science Standards and successful completion will meet the life science requirement for graduation. Students MUST sign up for both sections listed above. General Biology is recommended but not required for enrollment in AP Biology. Students taking this course must have completed Chemistry I. Students may take the AP Biology exam in May.",
@@ -164,8 +191,11 @@
     "format": "Block",
     "gradelevels": "10-12",
     "length": "3 Quarters",
-    "prerequisites": "Chemistry I",
-    "tags": ["Advanced Placement", "Science"]
+    "prerequisites": "Chemistry I and General Biology (or instructor approval)",
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
   },
   "advanced-placement-calculus-(ab)": {
     "considerations": "Students may take the AP Calculus exam in May. Graphing calculator is required. TI84 is recommended.",
@@ -177,7 +207,10 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Pre-Calculus",
-    "tags": ["Advanced Placement", "Math"]
+    "tags": [
+      "Advanced Placement",
+      "Math"
+    ]
   },
   "advanced-placement-calculus-(bc)-1-%26-2": {
     "considerations": "Students MUST sign up for both sections listed above. Students may take the AP Calculus exam in May. Graphing calculator is required.",
@@ -189,7 +222,10 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Pre-Calculus",
-    "tags": ["Advanced Placement", "Math"]
+    "tags": [
+      "Advanced Placement",
+      "Math"
+    ]
   },
   "advanced-placement-chemistry-1-%26-2": {
     "considerations": "Students MUST sign up for both sections listed above. Students taking this course should have completed Chemistry I and Advanced Algebra IIA. Students may take the Chemistry AP exam in May.",
@@ -201,31 +237,25 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "Chemistry I and Advanced Algebra IIA",
-    "tags": ["Advanced Placement", "Science"]
-  },
-  "advanced-placement-comparative-government": {
-    "considerations": "Could be linked with AP US Government for a year-long AP Government course. AP exam would be optional.",
-    "courseid": "SOC550",
-    "coursename": "Advanced Placement Comparative Government",
-    "credits": "5",
-    "description": "AP Comparative Government is a semester-long (block) course comparing governmental systems of Great Britain, Russia, China, Mexico, Nigeria, and Iran. It is intended to follow US Government in greater depth and introduce students to more global international relations concepts and a broader, current understanding of the world we live in.",
-    "format": "Block",
-    "gradelevels": "11-12",
-    "length": "2 Quarters",
-    "prerequisites": "US Govt. or AP US Govt.",
-    "tags": ["Advanced Placement", "Social Studies"]
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
   },
   "advanced-placement-computer-science-a-(csa)": {
     "considerations": "Students need a prior programming class (CSE or CSP) before taking CSA. Or, students with other previous programming experience can seek teacher approval to take CSA without a prior class. This course prepares students for the AP Computer Science A exam.",
-    "corequisite": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
-    "courseid": "IND660",
+    "courseid": "CSC500",
     "coursename": "Advanced Placement Computer Science A (CSA)",
     "credits": "10",
     "description": "CSA students will learn fundamentals of the Java programming language and continue to object-oriented programming. Students develop skills in solving computational problems, writing algorithms, testing code, and processing data.",
     "format": "Block",
     "gradelevels": "10-12",
     "length": "2 Quarters",
-    "tags": ["Advanced Placement", "Engineering"]
+    "prerequisites": "Computer Science Essentials (CSE) or Computer Science Principles (CSP)",
+    "tags": [
+      "Advanced Placement",
+      "Computer Science"
+    ]
   },
   "advanced-placement-environmental-science-1-%26-2": {
     "considerations": "Advanced Placement Environmental Science 1 & 2 is a NGSS course based on the completion of NGSS Earth Science Standards and successful completion will meet the earth science requirement for graduation. Students taking this course should have completed General Biology and Algebra. Students MUST sign up for both sections listed above. Students may take the AP exam in May.",
@@ -237,7 +267,10 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "General Biology, Algebra, and Chemistry",
-    "tags": ["Advanced Placement", "Science"]
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
   },
   "advanced-placement-french": {
     "considerations": "See prerequisite. Class is conducted in French.",
@@ -249,7 +282,10 @@
     "gradelevels": "12",
     "length": "1 Semester",
     "prerequisites": "French IV",
-    "tags": ["Advanced Placement", "Foreign Language"]
+    "tags": [
+      "Advanced Placement",
+      "Foreign Language"
+    ]
   },
   "advanced-placement-music-theory": {
     "considerations": "Students may take the Music Theory AP exam in May. This course is strongly recommended for students considering studying music at the college/university level.",
@@ -261,7 +297,10 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor Recommendation",
-    "tags": ["Advanced Placement", "Music"]
+    "tags": [
+      "Advanced Placement",
+      "Music"
+    ]
   },
   "advanced-placement-physics-1": {
     "considerations": "Advanced Placement Physics I is based on the completion of NGSS Physical Science Standards and successful completion will meet the physics portion of the physical science graduation requirement. Physics I is NOT a prerequisite for this class. See prerequisites. Students may take the AP Physics 1 exam in May.",
@@ -273,7 +312,10 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Chemistry I AND Algebra 2",
-    "tags": ["Advanced Placement", "Science"]
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
   },
   "advanced-placement-physics-1-%26-2": {
     "considerations": "Students may take the AP Physics 1 and 2 exams in May.",
@@ -285,7 +327,40 @@
     "gradelevels": "10-12",
     "length": "4 Quarters",
     "prerequisites": "Chemistry I AND Algebra 2",
-    "tags": ["Advanced Placement", "Science"]
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
+  },
+  "advanced-placement-physics-c:-e-&-m": {
+    "considerations": "See prerequisite. Students taking this course should have a strong interest in the practical applications of mathematics. Students may take the AP Physics C: E & M exam in May. AP Physics C: E & M is suggested for students pursuing a physics or engineering degree. This course will be offered when the start of the school year ends in an even calendar number. AP Physics C: E & M alternates years with AP Physics C: Mechanics.",
+    "courseid": "SCI535",
+    "coursename": "Advanced Placement Physics C: E & M",
+    "credits": "10",
+    "description": "AP Physics C: E & M is a calculus-based introductory college-level physics course. Students cultivate their understanding of physics through classroom study, in-class activity, and hands-on, inquiry-based laboratory work. Students build their understanding of electric charge, field, potential, and circuits as well as magnetic fields, and electromagnetic induction.",
+    "format": "Block",
+    "gradelevels": "10-12",
+    "length": "2 Quarters",
+    "prerequisites": "AP Calculus AB or BC, Taken or Concurrent",
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
+  },
+  "advanced-placement-physics-c:-mechanics": {
+    "considerations": "See prerequisite. Students taking this course should have a strong interest in the practical applications of mathematics. Students may take the AP Physics C: Mechanics exam in May. AP Physics C: Mechanics is suggested for student pursuing a physics or engineering degree. This course will be offered when the start of the school year ends in an odd calendar number. AP Physics C: Mechanics alternates years with AP Physics C: E & M.",
+    "courseid": "SCI534",
+    "coursename": "Advanced Placement Physics C: Mechanics",
+    "credits": "10",
+    "description": "AP Physics C: Mechanics is a calculus-based introductory college-level physics course. Students cultivate their understanding of physics through classroom study, in-class activity, and hands-on, inquiry-based laboratory work. Students build their understanding of kinematics, dynamics, work, energy, momentum, oscillations, and rotational motion.",
+    "format": "Block",
+    "gradelevels": "10-12",
+    "length": "2 Quarters",
+    "prerequisites": "AP Calculus AB or BC, Taken or Concurrent",
+    "tags": [
+      "Advanced Placement",
+      "Science"
+    ]
   },
   "advanced-placement-psychology": {
     "considerations": "Textbooks are available for purchase online, but one will be provided in class. Class is geared to prep students to take the national AP Psychology exam in May.",
@@ -297,7 +372,10 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Introductory Psychology OR approval",
-    "tags": ["Advanced Placement", "Social Studies"]
+    "tags": [
+      "Advanced Placement",
+      "Social Studies"
+    ]
   },
   "advanced-placement-statistics": {
     "considerations": "Students may take the AP Statistics exam in May. Graphing calculator is required.",
@@ -310,7 +388,10 @@
     "length": "2 Semesters",
     "prerequisites": "Algebra 2",
     "subsequent": "Mathematics & Society or AP Calculus",
-    "tags": ["Advanced Placement", "Math"]
+    "tags": [
+      "Advanced Placement",
+      "Math"
+    ]
   },
   "advanced-placement-us-history-1-%26-2": {
     "considerations": "Instructor approval for 9th graders. Students MUST sign up for both sections listed above. Fulfills the US history graduation requirement. This course begins in 2nd quarter. Students may take the US History AP exam in May.",
@@ -322,7 +403,10 @@
     "gradelevels": "9-12",
     "length": "3 Quarters",
     "prerequisites": "US History 9 OR Advanced US History 9 is recommended",
-    "tags": ["Advanced Placement", "Social Studies"]
+    "tags": [
+      "Advanced Placement",
+      "Social Studies"
+    ]
   },
   "advanced-placement-world-history-1-%26-2": {
     "considerations": "Students MUST sign up for both sections listed above. Fulfills the required world history requirement. Duration is three quarters beginning in 2nd quarter. Students may take the World History AP exam in May.",
@@ -334,7 +418,10 @@
     "gradelevels": "10-12",
     "length": "3 Quarters",
     "prerequisites": "none",
-    "tags": ["Advanced Placement", "Social Studies"]
+    "tags": [
+      "Advanced Placement",
+      "Social Studies"
+    ]
   },
   "advanced-sewing": {
     "considerations": "This is an advanced level, project-based class for independent sewers.",
@@ -346,7 +433,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Fashion & Sewing/ Creative Sewing with grade of B or better",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "advanced-us-history-9": {
     "considerations": "Recommended for students with a strong interest in reading and writing in history. Students successful in this course may move into the AP World History elective to satisfy their world history requirement. US History 9, Advanced US History 9, or AP US History is required for graduation.",
@@ -358,7 +447,9 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "aerospace-engineering-(ae)": {
     "considerations": "It is recommended that students have prior experience with a 3D CAD program.",
@@ -370,7 +461,10 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering", "PLTW"]
+    "tags": [
+      "Engineering",
+      "PLTW"
+    ]
   },
   "afnr-%E2%80%93-workplace-experience": {
     "considerations": "Instructor approval required. SAE (supervised agricultural experience) and FFA opportunities.",
@@ -382,7 +476,9 @@
     "gradelevels": "9-12",
     "length": "Varies",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "agricultural-business-foundations": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -394,7 +490,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "agricultural-power-and-technology": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -406,7 +504,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "agricultural-research-and-development": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -418,7 +518,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "algebra-1": {
     "considerations": "A scientific or graphing calculator is required.",
@@ -431,7 +533,9 @@
     "length": "2 Semesters",
     "prerequisites": "Pre-Algebra, Math 8, or Algebra Foundations",
     "subsequent": "Geometry",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "algebra-1a": {
     "considerations": "Students are placed in this course per approval of the math department based on Math 8 or Algebra Foundations performance. A scientific calculator or equivalent is required. Algebra 1A and Algebra 1B together meet the Algebra graduation requirement.",
@@ -440,11 +544,13 @@
     "credits": "10",
     "description": "This course is designed to include material covered in the first semester of Algebra 1. Topics include negative numbers, absolute values, opposites, linear equations, and inequalities in word problems.",
     "format": "Skinny",
-    "gradelevels": "9-12",
+    "gradelevels": "9-11",
     "length": "2 Semesters",
     "prerequisites": "Algebra Foundations, Pre-Algebra, or Math 8",
     "subsequent": "Algebra 1B",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "algebra-1b": {
     "considerations": "Students are placed in this course per approval of the math department based on Pre-Algebra and Iowa Assessment scores. A scientific calculator or equivalent is required. Algebra 1A and Algebra 1B together meet the Algebra graduation requirement.",
@@ -457,7 +563,9 @@
     "length": "2 Semesters",
     "prerequisites": "Algebra 1A",
     "subsequent": "Geometry (recommended) Mathematics and Society",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "algebra-2": {
     "considerations": "A graphing calculator IS required. TI89 or TI-Nspire calculators are NOT allowed.",
@@ -470,7 +578,9 @@
     "length": "2 Semesters",
     "prerequisites": "Geometry",
     "subsequent": "Pre-Calculus (recommended) or Mathematics & Society or AP Statistics",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "algebra-2-priority-standards": {
     "considerations": "Students are placed into this course by recommendation of a mathematics teacher or school counselor. This course is designed for students who need extra support with the core concepts of Algebra 2.",
@@ -482,20 +592,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "Teacher and/or Counselor recommendation, concurrent enrollment in Algebra 2",
-    "tags": ["Math"]
-  },
-  "algebra-foundations": {
-    "considerations": "A scientific calculator is required.",
-    "courseid": "MAT114 and MAT116",
-    "coursename": "Algebra Foundations",
-    "credits": "10",
-    "description": "This course is an introductory class for Algebra 1A or Algebra 1. It is designed to review basic skills and math concepts. Elementary algebra skills with variables and problem-solving techniques will be imperative to the curriculum.",
-    "format": "Skinny, 2 times per day",
-    "gradelevels": "9",
-    "length": "2 Semesters",
-    "prerequisites": "Teacher recommendation and administrative approval",
-    "subsequent": "Algebra 1A or Algebra 1",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "algebra-fundamentals-i": {
     "considerations": "Compass Only. Students are placed in this course per approval of the math department based on Pre-Algebra performance. A scientific calculator or equivalent is required. Graphing calculators are not allowed in this course. Algebra Fundamentals I and Algebra Fundamentals II together meet the algebra graduation requirement.",
@@ -507,7 +606,9 @@
     "gradelevels": "10-11",
     "length": "1 Semester",
     "prerequisites": "Pre-Algebra and instructor approval",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "algebra-fundamentals-ii": {
     "considerations": "Compass Only. Students are placed in this course per approval of the math department based on Algebra, and Iowa Assessment scores. A scientific calculator or equivalent is required. Graphing calculators are not allowed in this course. Algebra Fundamentals I and Algebra Fundamentals II together meet the algebra graduation requirement.",
@@ -519,7 +620,9 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "Algebra Fundamentals I or instructor approval",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "american-literature-i": {
     "considerations": "Compass Only.",
@@ -531,7 +634,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "anatomy-%26-physiology": {
     "considerations": "Anatomy & Physiology is a science elective course. Students taking this course must have completed General Biology.",
@@ -543,7 +648,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "General Biology",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "animal-and-plant-biotechnology": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -555,7 +662,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "ap-english-literature-and-composition": {
     "considerations": "See prerequisite. This two-quarter class will be offered during the first semester of the year and will prepare students to take the AP English Literature and Composition exam in May. Review sessions during semester 2 will be provided.",
@@ -567,7 +676,10 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Advanced English III is strongly recommended",
-    "tags": ["Advanced Placement", "English"]
+    "tags": [
+      "Advanced Placement",
+      "English"
+    ]
   },
   "ap-microeconomics": {
     "considerations": "Students should be comfortable working with charts, tables, numbers, and equations. Students may take the AP Microeconomics exam in May.",
@@ -579,7 +691,10 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "Economics is recommended",
-    "tags": ["Advanced Placement", "Business"]
+    "tags": [
+      "Advanced Placement",
+      "Business"
+    ]
   },
   "ap-online-independent-study": {
     "considerations": "This course is for students identified by established district guidelines.",
@@ -591,7 +706,10 @@
     "gradelevels": "10-12",
     "length": "1-2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Advanced Placement", "Talented and Gifted"]
+    "tags": [
+      "Advanced Placement",
+      "Talented and Gifted"
+    ]
   },
   "applied-physics-and-chemistry": {
     "considerations": "Applied Chemistry and Physics is based on the completion of NGSS Physical Science Standards and successful completion will meet the physical science graduation requirement. Students taking this course must have completed Algebra.",
@@ -603,7 +721,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "aquaculture-science": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -615,7 +735,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "art-exploration": {
     "considerations": "This course is an introductory art course which is highly recommended before taking any art course.",
@@ -627,7 +749,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "astronomy": {
     "considerations": "Astronomy is a science elective course. Students taking this course must have completed Geometry and Applied Chemistry and Physics or Chemistry I.",
@@ -639,7 +763,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Geometry and Applied Chemistry and Physics or Chemistry I",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "beginning-ceramics": {
     "considerations": "Art Exploration is strongly recommended before taking this course. Students may need to spend extra time in the studio to complete all the required course work. This class is for motivated students who like to be hands-on in class.",
@@ -651,7 +777,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "beginning-drawing": {
     "considerations": "This course is for the student that wants to improve their drawing skills.",
@@ -663,7 +791,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None, Art Exploration Highly Recommended but not required.",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "beginning-graphics": {
     "considerations": "This course is heavily dependent on students learning and applying their knowledge of Adobe Illustrator. This course will strengthen students' digital skill sets empowering them to creatively navigate the visual world they live in.",
@@ -675,7 +805,9 @@
     "gradelevels": "9-12",
     "length": "Quarter",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "beginning-painting": {
     "considerations": "Taking Art Exploration is Highly Recommended",
@@ -687,7 +819,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "bella-voce": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
@@ -699,7 +833,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Fortis, Lux, OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "bioethics": {
     "considerations": "Bioethics is a science elective course. Students taking this course must have completed General Biology.",
@@ -711,7 +847,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "General Biology",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "botany": {
     "considerations": "Compass Only. See prerequisite. Strong comprehensive vocabulary, reading and study skills. This course meets L-M science elective credit requirement.",
@@ -723,7 +861,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Biology I",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "british-literature": {
     "considerations": "See prerequisites.",
@@ -735,7 +875,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "English II, English III, or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "building-trades-capstone-course": {
     "considerations": "Limit of seven Linn-Mar students. Students are selected by recommendation of Linn-Mar staff. Student must provide transportation to off-campus site.",
@@ -748,7 +890,9 @@
     "gradelevels": "12",
     "length": "2 Semesters",
     "prerequisites": "None",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "business%2Fconsumer-law": {
     "considerations": "None",
@@ -760,7 +904,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "cabinet-making": {
     "considerations": "Grade of 80 or higher for second quarter of Woods: Materials and Processes is required.",
@@ -773,7 +919,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Woods: Materials and Processes",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "cantemus": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
@@ -785,7 +933,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Fortis, Lux, OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "chamber-singers": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
@@ -797,7 +947,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Fortis, Lux, OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "chemistry-i": {
     "considerations": "Chemistry I is a NGSS course based on the completion of NGSS Physical Science Standards and successful completion will meet the chemistry portion of the physical science requirement. Students taking this course must have completed Algebra. This course is also expected for students wishing to take AP Chemistry, AP Biology or AP Environmental Science.",
@@ -809,7 +961,9 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "civil-engineering-and-architectural-design-(cea)": {
     "considerations": "This course articulates credit with Kirkwood Community College.",
@@ -821,7 +975,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "classics": {
     "considerations": "See prerequisites.",
@@ -833,7 +989,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "college-grammar": {
     "considerations": "See prerequisites.",
@@ -845,7 +1003,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "English II or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "college-reading": {
     "considerations": "See prerequisite.",
@@ -857,7 +1017,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "English II",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "communications": {
     "considerations": "May be used to fulfill the graduation requirement for Speech/Rhetoric/Acting through Venture Academics.",
@@ -869,7 +1031,9 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "English I or Advanced English I",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "composition-i": {
     "considerations": "See prerequisites. Basic writing and research skills are expected and needed. This is a dual-credit course, and the expectations reflect those of college courses.",
@@ -881,7 +1045,10 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "English III or Adv. English III, 2.8 GPA or higher, and ACT score of 18 or higher.",
-    "tags": ["English", "Kirkwood"]
+    "tags": [
+      "English",
+      "Kirkwood"
+    ]
   },
   "composition-ii": {
     "considerations": "See prerequisite. This is a dual-credit course, and the expectations reflect those of college courses.",
@@ -893,7 +1060,10 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Composition I",
-    "tags": ["English", "Kirkwood"]
+    "tags": [
+      "English",
+      "Kirkwood"
+    ]
   },
   "computer-aided-design": {
     "considerations": "None",
@@ -905,10 +1075,12 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "computer-integrated-manufacturing-(cim)": {
-    "considerations": "This course articulates credit with Kirkwood Community College.",
+    "considerations": "This course involves college level work.",
     "corequisite": "Algebra",
     "courseid": "IND640",
     "coursename": "Computer Integrated Manufacturing (CIM)",
@@ -917,11 +1089,15 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Engineering", "Kirkwood", "PLTW"]
+    "tags": [
+      "Engineering",
+      "Kirkwood",
+      "PLTW"
+    ]
   },
   "computer-science-essentials-(cse)": {
-    "considerations": "Students with no prior computer science experience can take this as a first computer science course. Academically confident/motivated students or students with a bit of prior programming experience may skip CSE and sign up for Computer Science Principles (CSP).",
-    "courseid": "IND645",
+    "considerations": "Students with no prior computer science experience can take this as a first computer science course.Academically confident/motivated students or students with a bit of prior programming experience may skip CSE and sign up for Computer Science Principles (CSP).",
+    "courseid": "CSC100",
     "coursename": "Computer Science Essentials (CSE)",
     "credits": "10",
     "description": "In this entry level computer science course, students will learn to program apps using a graphical, block-based programming language. After learning fundamentals of programming, students transition to text-based programming using the Python language. Students will use a variety of tools and computational thinking concepts as they build confidence and gain experience in the field of computer science.",
@@ -929,19 +1105,23 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Engineering"]
+    "tags": [
+      "Computer Science"
+    ]
   },
   "computer-science-principles-(csp)": {
     "considerations": "Students who want a beginner level computer science experience should take Computer Science Essentials (CSE) as their first course. Academically motivated / confident students or students with a bit of prior programming experience may choose to skip CSE and register for CSP.",
-    "corequisite": "Algebra or concurrent enrollment in Algebra",
-    "courseid": "IND650",
+    "courseid": "CSC300",
     "coursename": "Computer Science Principles (CSP)",
     "credits": "10",
     "description": "Explore a variety of fields within computer science: Python programming, data visualization, image data manipulation, internet and cybersecurity, and simulation. The course aims to develop computational thinking, generate interest in career paths that utilize computing, and foster creativity. CSP helps students develop programming experience and confidence.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Engineering"]
+    "prerequisites": "Algebra or concurrent enrollment in Algebra",
+    "tags": [
+      "Computer Science"
+    ]
   },
   "concert-band": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -954,7 +1134,9 @@
     "gradelevels": "9",
     "length": "2 Semesters",
     "prerequisites": "8th grade band OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "concert-chorale": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
@@ -966,7 +1148,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Fortis, Lux, OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "concert-orchestra": {
     "considerations": "Entry-level ensemble no audition required. Cellos and Basses are provided for daily rehearsal only. Students must provide their own instrument for home use.",
@@ -979,7 +1163,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "construction-in-clay": {
     "considerations": "This class is for the more serious ceramic student. More in-depth work on the wheel is required as well as continuing work on hand building skills.",
@@ -991,7 +1177,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Beginning Ceramics",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "contemporary-literature": {
     "considerations": "None",
@@ -1003,7 +1191,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "contemporary-literature-ii": {
     "considerations": "Compass Only. This course is designed for students who are motivated to read and complete projects independently.",
@@ -1015,7 +1205,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Contemporary Literature",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "creative-writing": {
     "considerations": "None",
@@ -1027,7 +1219,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "culinary-basics": {
     "considerations": "None",
@@ -1039,7 +1233,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "current-events": {
     "considerations": "Students will be reading articles, analyzing sources, and using web-based applications.",
@@ -1051,7 +1247,23 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
+  },
+  "cybersecurity": {
+    "considerations": "Cybersecurity is not a programming course, so no programming experience is required. However, students will do much of their work by entering text commands in a Linux command line terminal. The curriculum covers the material needed to test for the CompTIA Security+ certification.",
+    "courseid": "CSC350",
+    "coursename": "Cybersecurity",
+    "credits": "10",
+    "description": "Students will study a variety of cybersecurity topics including types of threats, attacks, and actors; risk analysis and management; cryptographic solutions; vulnerability analysis and remediation; network security; data management; law and policy; and incident response. Students will study a variety of case studies and do labs using a safe virtual machine network environment. Course content will also include some aspects of computer networks and the Linux operating system.",
+    "format": "Block",
+    "gradelevels": "10-12",
+    "length": "2 Quarters",
+    "prerequisites": "None",
+    "tags": [
+      "Computer Science"
+    ]
   },
   "digital-electronics-(de)": {
     "considerations": "This course articulates credit with Kirkwood Community College",
@@ -1063,7 +1275,11 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering", "Kirkwood", "PLTW"]
+    "tags": [
+      "Engineering",
+      "Kirkwood",
+      "PLTW"
+    ]
   },
   "digital-marketing": {
     "considerations": "Not offered as a standalone class; this class is available only as part of the Venture Advanced Business strand.",
@@ -1075,7 +1291,9 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "digital-photography": {
     "considerations": "Digital Photography is designed to help students improve image composition, camera know-how, and overall use of Adobe Photoshop.",
@@ -1087,7 +1305,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "drawing-in-style": {
     "considerations": "This course will require drawing on a daily basis and researching a variety of topics to provide inspiration for two-dimensional artwork. This course is recommended to be taken after Expressive Drawing.",
@@ -1099,7 +1319,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Beginning Drawing, Expressive Drawing Highly Recommended but not required",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "earth-and-space-science": {
     "considerations": "Earth and Space Science is based on the completion of NGSS Physical Science Standards, and Earth and Space Standards and successful completion will meet the physics portion of the physical science graduation requirement and the earth science graduation requirement. Students taking this course must have completed Algebra.",
@@ -1111,7 +1333,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "earth-science": {
     "considerations": "Earth Science (SCI125, B) is a NGSS course based on the completion of NGSS Earth and Space Standards, and successful completion will meet the earth science graduation requirement.",
@@ -1123,7 +1347,9 @@
     "gradelevels": "9-10",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "economics": {
     "considerations": "Students should be comfortable working with charts and tables.",
@@ -1135,7 +1361,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "economics-i": {
     "considerations": "Compass Only. Students should be comfortable working with graphs.",
@@ -1147,7 +1375,9 @@
     "gradelevels": "9 -12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "economics-ii": {
     "considerations": "Compass Only. Students should be comfortable working with graphs.",
@@ -1159,7 +1389,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "engineering-design-and-development-(edd)": {
     "considerations": "EDD is a culminating capstone course. In order to have a solid foundation for this course, students need successful completion of the prerequisites of any two PLTW or Computer Science courses which include: Introduction to Engineering Design, Principles of Engineering, Digital Electronics, Aerospace Engineering, Civil Engineering and Architecture, Computer Integrated Manufacturing, Environmental Sustainability, Computer Science Essentials, Computer Science Principles, Computer Science A, or Principles of Biomedical Science.",
@@ -1171,7 +1403,10 @@
     "gradelevels": "12",
     "length": "2 Quarters",
     "prerequisites": "Any two PLTW or Computer Science courses.",
-    "tags": ["Engineering", "PLTW"]
+    "tags": [
+      "Engineering",
+      "PLTW"
+    ]
   },
   "english-10": {
     "considerations": "Compass Only. English 10 or English II is required for graduation",
@@ -1183,7 +1418,9 @@
     "gradelevels": "10",
     "length": "2 Quarters",
     "prerequisites": "English 9",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-9": {
     "considerations": "Compass Only. English 9 or English I required for graduation.",
@@ -1195,7 +1432,9 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-i": {
     "considerations": "English I or Advanced English I required for graduation. This course does not meet criteria to allow students to qualify to bypass English II.",
@@ -1207,7 +1446,9 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-ii": {
     "considerations": "See prerequisite. Fulfills the 10th grade English requirement for graduation.",
@@ -1219,7 +1460,9 @@
     "gradelevels": "10",
     "length": "2 Quarters",
     "prerequisites": "English I or Advanced English I",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-iii": {
     "considerations": "See prerequisite.",
@@ -1231,7 +1474,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "English II or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-civics-and-culture-i": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1243,7 +1488,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-college-prep": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1255,7 +1502,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-directed-studies": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1267,7 +1516,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-fundamentals": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1279,7 +1530,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-i": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1291,7 +1544,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-ii": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1303,7 +1558,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-language-learners-iii": {
     "considerations": "Students are placed in the course based on the Home Language Survey and their scores on the English Language Proficiency Assessments.",
@@ -1315,7 +1572,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "english-skills": {
     "considerations": "Compass Only. Meets on Fridays only",
@@ -1327,7 +1586,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "entrepreneurship": {
     "considerations": "It is recommended that students enroll in one or more of the following courses prior to Entrepreneurship; Accounting, Marketing, Business/Consumer Law, Personal Finance.",
@@ -1339,7 +1600,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "environmental-science-issues": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -1351,19 +1614,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
-  },
-  "environmental-sustainability": {
-    "considerations": "See prerequisites. This is course in the Project Lead the Way engineering sequence. Students will earn credit for this course from Kirkwood Community College upon successful completion.",
-    "courseid": "SCI620",
-    "coursename": "Environmental Sustainability",
-    "credits": "10",
-    "description": "Students will investigate and design solutions in response to real-world challenges related to clean and abundant drinking water, food supply issues, and renewable energy. Applying their knowledge through hands-on activities and simulations, students research and design potential solutions to these true-to-life challenges.",
-    "format": "Block",
-    "gradelevels": "10-12",
-    "length": "2 Quarters",
-    "prerequisites": "Algebra AND General Biology",
-    "tags": ["Science", "Kirkwood", "PLTW"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "exploration-in-ceramic-techniques": {
     "considerations": "Construction in Clay is highly recommended before taking this course. This class is for the serious, dedicated ceramic student looking to develop a portfolio, considering art as a career, or highly interested in ceramic arts.",
@@ -1375,7 +1628,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Beginning Ceramics Construction in Clay Highly Recommended",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "expressive-drawing": {
     "considerations": "Students will draw everyday developing ideas, revising compositions, and creating projects. Students will participate in discussions regarding their own artwork as well as other artists work.",
@@ -1387,7 +1642,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Beginning Drawing",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "fashion-and-sewing-%2F-creative-sewing": {
     "considerations": "None",
@@ -1396,10 +1653,12 @@
     "credits": "5",
     "description": "Students will learn to sew or increase sewing skills in this hands-on project-based course. Various tools and equipment will be used to produce a variety of projects. Students will also examine their personal style, apply design principles to clothing and learn about careers in the fashion industry.",
     "format": "Block",
-    "gradelevels": "10-12",
+    "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "food-science-and-safety": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -1411,7 +1670,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "fortis": {
     "considerations": "10-12 grade Tenor and Bass voices must audition to be placed in this choir. 9th grade Tenor and Bass voices are automatically placed in this choir.",
@@ -1423,7 +1684,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "foundations-of-living": {
     "considerations": "None",
@@ -1435,7 +1698,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "general-biology": {
     "considerations": "General Biology is a NGSS course based on the completion of NGSS Life Science Standards, and successful completion will meet the life science requirement. Students taking this course should have a strong comprehensive vocabulary, reading and study skills.",
@@ -1447,7 +1712,9 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "none",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "general-biology-i-%26-ii": {
     "considerations": "Compass Only. Strong comprehensive vocabulary, reading and study skills.",
@@ -1459,19 +1726,9 @@
     "gradelevels": "9-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Science"]
-  },
-  "geology": {
-    "considerations": "Geology is a science elective course. Students taking this course must have completed Geometry and Applied Chemistry and Physics or Chemistry I.",
-    "courseid": "SCI380",
-    "coursename": "Geology",
-    "credits": "5",
-    "description": "This course is designed to allow students to receive an intense, in-depth look into the core subjects of geology including physical, structural, and environmental geology, crystallography, mineralogy, stratigraphy, and geomorphology.",
-    "format": "Block",
-    "gradelevels": "11-12",
-    "length": "1 Quarter",
-    "prerequisites": "Geometry and Chemistry 1 or Applied Chemistry and Physics",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "geometry": {
     "considerations": "A scientific calculator is required.",
@@ -1484,7 +1741,9 @@
     "length": "2 Semesters",
     "prerequisites": "Algebra 1 or Algebra 1B",
     "subsequent": "Algebra 2 or Mathematics & Society",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "geometry-priority-standards": {
     "considerations": "Students are placed into this course by recommendation of a mathematics teacher or school counselor. This course is designed for students who need extra support with the core concepts of Geometry.",
@@ -1496,7 +1755,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "Teacher and/or Counselor recommendation, concurrent enrollment in Geometry",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "government": {
     "considerations": "Government or AP American Government is required for graduation.",
@@ -1508,7 +1769,9 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "graphics-two": {
     "considerations": "Coursework relies heavily on the use of the Adobe Creative Suite as well as emerging technologies. The class requires students to be creative, independent, focused, and project driven.",
@@ -1520,7 +1783,9 @@
     "gradelevels": "10-12",
     "length": "Quarter",
     "prerequisites": "Beginning Graphics",
-    "tags": ["Art"]
+    "tags": [
+      "Art"
+    ]
   },
   "health-careers": {
     "considerations": "This course is a part of the Career Edge Academy and is taught at Linn Regional Center by Kirkwood staff.",
@@ -1533,7 +1798,9 @@
     "gradelevels": "12",
     "length": "2 Semesters",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "health-i": {
     "considerations": "This course is required for graduation.",
@@ -1545,7 +1812,9 @@
     "gradelevels": "10",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "health-ii": {
     "considerations": "None",
@@ -1557,7 +1826,9 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "General Biology, Anatomy & Physiology, and Health 1",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "human-anatomy": {
     "considerations": "Compass Only. See prerequisite. Strong comprehensive vocabulary, reading and study skills. This course meets the L-M science elective requirement.",
@@ -1569,7 +1840,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "General Biology",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "human-growth-and-development": {
     "considerations": "This is a general comprehensive course of human development. This course combines the two previously taught courses of Child Development and Parenting. Relevant career paths include education, childcare, nursing, counseling, therapy, social work, public health, and other service-related fields.",
@@ -1581,7 +1854,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "independent-foods": {
     "considerations": "Compass Only. Meets on Fridays only",
@@ -1593,7 +1868,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "independent-novel-writing": {
     "considerations": "Compass Only. This course is designed for the student who is considering writing as a profession.",
@@ -1605,7 +1882,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "Writing and Creative Writing",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "interior-design": {
     "considerations": "None",
@@ -1617,7 +1896,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "intermediate-spanish-i-kcc": {
     "considerations": "See prerequisite. Class is conducted in Spanish.",
@@ -1629,7 +1910,9 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "Spanish IV",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "intermediate-spanish-ii-kcc": {
     "considerations": "See prerequisite. Class is conducted in Spanish.",
@@ -1641,7 +1924,9 @@
     "gradelevels": "12",
     "length": "1 Quarter",
     "prerequisites": "Intermediate Spanish I",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "intro-to-engineering-design": {
     "considerations": "This course articulates credit with Kirkwood Community College.",
@@ -1653,7 +1938,9 @@
     "format": "Block",
     "gradelevels": "9-12",
     "length": "2 Quarters",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "introduction-to-agriculture%2C-food%2C-and-natural-resources": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -1665,7 +1952,9 @@
     "gradelevels": "9-10",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "introduction-to-business": {
     "considerations": "None",
@@ -1677,7 +1966,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "introduction-to-business-ii": {
     "considerations": "Compass Only.",
@@ -1689,7 +1980,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "introductory-psychology": {
     "considerations": "Meets the Behavioral Sciences graduation requirement. This course is taught at the college-prep level and requires higher order thinking skills and work outside of the classroom to be successful.",
@@ -1701,7 +1994,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "journalism": {
     "considerations": "None",
@@ -1713,7 +2008,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "English II, English III, or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "kcc-behavior-management": {
     "considerations": "This course is offered through the Venture Exploring Education strand only. KCC Behavior Management is a concurrent course with Kirkwood Community College and is recommended for those considering careers in the education field or working with individuals with specific behavior needs. This course is necessary to obtain the Para-Educator Generalist Certification.",
@@ -1725,7 +2022,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Human Growth and Development or KCC Child Growth and Development",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "kcc-child-growth-and-development": {
     "considerations": "This is a concurrent course with Kirkwood Community College and is encouraged for those considering careers in education, social work, nursing, therapy, psychology, coaching, etc. It is recommended to have taken Human Growth and Development as a foundation but is not required. This is the first course necessary to obtain the Para-Educator Generalist Certification. The second course is Exploring Teaching, and the third course is Behavior Management-online.",
@@ -1737,7 +2036,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "kcc-exploring-teaching": {
     "considerations": "This course is offered through the Venture Exploring Education strand only. KCC Exploring Teaching is a concurrent course with Kirkwood Community College and is recommended for those considering careers in education. This is the second course necessary to obtain the Para-Educator Generalist Certification. The third course is Behavior Management.",
@@ -1749,7 +2050,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "Human Growth and Development or KCC Child Growth and Development",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "law-and-the-constitution": {
     "considerations": "Meets the social studies elective graduation requirement.",
@@ -1761,7 +2064,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "level-i-french": {
     "considerations": "None",
@@ -1773,7 +2078,9 @@
     "gradelevels": "8-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-i-spanish": {
     "considerations": "None",
@@ -1785,7 +2092,9 @@
     "gradelevels": "8-12",
     "length": "1 or 2 Semester(s)",
     "prerequisites": "None",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-ii-french": {
     "considerations": "Second term grade of 75 or higher in Level I is required.",
@@ -1797,7 +2106,9 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "French I",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-ii-spanish": {
     "considerations": "Second term grade of 75 or higher in Level I is required.",
@@ -1809,7 +2120,9 @@
     "gradelevels": "9-12",
     "length": "1 or 2 Semester(s)",
     "prerequisites": "Spanish I",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-iii-french": {
     "considerations": "Second term grade of 75 or higher in level II is required.",
@@ -1821,7 +2134,9 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "French II",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-iii-spanish": {
     "considerations": "Second term grade of 75 or higher in Level II is required.",
@@ -1833,7 +2148,9 @@
     "gradelevels": "10-12",
     "length": "1 or 2 Semester(s)",
     "prerequisites": "Spanish II",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-iv-french": {
     "considerations": "Second term grade of 75 or higher in Level III is required.",
@@ -1845,7 +2162,9 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "French III",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-iv-spanish": {
     "considerations": "Grade of 75 or higher for second term in Level III is required.",
@@ -1857,7 +2176,9 @@
     "gradelevels": "11-12",
     "length": "1 or 2 Semester(s)",
     "prerequisites": "Spanish III",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "level-v-spanish": {
     "considerations": "Second term grade of 75 or higher in Level IV is required.",
@@ -1869,20 +2190,24 @@
     "gradelevels": "12",
     "length": "1 Semester",
     "prerequisites": "Spanish IV",
-    "tags": ["Foreign Language"]
+    "tags": [
+      "Foreign Language"
+    ]
   },
   "lifetime-fitness---advanced": {
-    "considerations": "A Lifetime Fitness course is required for the Junior and Senior years.",
-    "courseid": "HPE415",
+    "considerations": "A Lifetime Fitness course is required for each year of enrollment.",
+    "courseid": "HPE412 or HPE414 or HPE416 or HPE418",
     "coursename": "Lifetime Fitness - Advanced",
     "credits": "2.5 (Each Quarter)",
-    "description": "This section is an advanced-level course designed for students interested in a curriculum that will enhance their physical preparedness for athletic competition. The focus is on elevating the students' athletic performance through targeted off-season strength and speed development workouts, designed to increase muscle mass while refining both linear and lateral speed. Additionally, students will complete a CPR Skills Unit. Successful completion of this section will fulfill the state graduation requirement for physical activity and the state CPR Skills review requirement. Students will select the desired block (B1 or B4) and term (Q1, Q2, Q3, and/orQ4) for participation. Students may participate in this course up to 2 times per year.",
-    "format": "1 st and 4 th Blocks Only",
+    "description": "This section is an advanced-level course designed for students interested in a curriculum that will enhance their physical preparedness for athletic competition. The focus is on elevating the students' athletic performance through targeted off-season strength and speed development workouts, designed to increase muscle mass while refining both linear and lateral speed. Additionally, students will complete a CPR Skills Unit. Successful completion of this section will fulfill the state graduation requirement for physical activity and the state CPR Skills review requirement. Students will select the desired term (Q1, Q2, Q3, and/or Q4) for participation. Students may participate in this course up to 2 times per year.",
+    "format": "1st and 4th Blocks Only",
     "gradelevels": "Advanced (Year 2, 3, or 4)",
-    "grading": "",
+    "grading": "Credit/No Credit",
     "length": "1 Quarter",
     "prerequisites": "LF-Fundamentals or Permission",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "lifetime-fitness---aqua-fit-i": {
     "considerations": "A Lifetime Fitness course is required for the Junior and Senior years.",
@@ -1895,7 +2220,9 @@
     "grading": "",
     "length": "1 Quarter",
     "prerequisites": "LF-Fundamentals or Permission",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "lifetime-fitness---aqua-fit-ii": {
     "considerations": "A Lifetime Fitness course is required for the Junior and Senior years.",
@@ -1908,7 +2235,9 @@
     "grading": "",
     "length": "1 Quarter",
     "prerequisites": "LF–Fundamentals, Aqua Fit I, or permission",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "lifetime-fitness---fundamentals": {
     "considerations": "This course is required for both freshmen and sophomores. This course is required for graduation.",
@@ -1921,7 +2250,9 @@
     "grading": "",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "lifetime-fitness---intermediate": {
     "considerations": "One (1) Lifetime Fitness (Intermediate or Advanced) course is required for each of the Junior and Senior years.",
@@ -1933,7 +2264,20 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "LF-Fundamentals or Permission",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
+  },
+  "lifetime-fitness-lifeguard-certification": {
+    "considerations": "A Lifetime Fitness course is required for each year of enrollment.",
+    "courseid": "HPE323E",
+    "coursename": "Lifetime Fitness - Lifeguard Certification",
+    "credits": "2.5",
+    "description": "This is a Red Cross Certified Lifeguard training course. The primary purpose of the courses in the American Red Cross Lifeguarding program is to provide participants with the knowledge and skills needed to:\n■ Prevent, recognize, and respond to aquatic emergencies.\n■ Provide professional-level care for breathing and cardiac emergencies, injuries, and sudden illnesses until emergency medical services (EMS) professionals take over.\nThe intended audience for the courses in this program includes those seeking certification to work as lifeguards at pools and non-surf waterfronts.\nThroughout the course, participants will learn and be evaluated on knowledge and skills related to lifeguarding, water rescues, extrications, CPR and AED and First Aid.\nRed Cross Lifeguard Requirements for certification:\n• Participants must score a minimum of 80% on a 50-question final knowledge exam.\n• Participants must successfully complete 3 final skills assessments:\no Rotate in, conduct surveillance, rotate out\no Timed Single-rescuer CPR Scenario\no Multiple Rescuer Response Scenario\nStudents electing certification will be required to pay an American Red Cross fee of approximately $50.  Financial assistance is available for free or reduced lunch students through the counseling office.\nUpon successful completion of the Lifeguarding course, the participant will receive an American Red Cross Universal Certificate indicating certification in Lifeguarding/First Aid/CPR/AED, valid for two years.\nNOTE: Student may pass the course for school credit, but not pass the Red Cross test for Lifeguard certification.\n***\nCourse Prerequisite:\n• Students must be 15 years of age before the last scheduled class session.\n• Must demonstrate the following skills by the end of the first week of class:\nLifeguarding Swim-Tread-Swim Sequence\n■ Swim 150 yards using the front crawl, breaststroke, or a combination of both.\n- Swimming on the back or side is not permitted.\n- Swim goggles are allowed.\n■ Maintain position at the surface of the water for 2 minutes by treading water using only the\nlegs.\nTimed Event\nComplete a timed event within 1 minute, 40 seconds.\n■ Starting in the water, swim 20 yards.\n- The face may be in or out of the water.\n- Swim goggles are not allowed.\n■ Surface dive (feet-first or head-first) to a depth of 7 to 10 feet to retrieve a 10-pound\nobject.\n■ Return to the surface and swim 20 yards on the back to return to the starting point, holding the object at the surface with both\nhands and keeping the face at or near the surface.\n■ Exit the water without using a ladder or steps",
+    "format": "Skinny, 3rd Quarter, 7:50 – 8:30 am",
+    "gradelevels": "10-12",
+    "length": "1 Quarter",
+    "prerequisites": "See below for prerequisite info. Grading:             Credit/No credit"
   },
   "linn-mar-singers": {
     "considerations": "All registrants will complete a vocal audition and be placed in the appropriate ensemble by the instructors.",
@@ -1945,7 +2289,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Fortis, Lux, OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "literature-of-a-selected-author": {
     "considerations": "See prerequisites. This is an advanced, college preparatory literature course.",
@@ -1957,11 +2303,13 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "English II, English III, or English Department approval",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "lm-roar-store": {
     "considerations": "This class has a work component built-in and may require students to work outside of normal instructional time.",
-    "courseid": "BUS550",
+    "courseid": "BUS701",
     "coursename": "LM ROAR Store",
     "credits": "5",
     "description": "Students will be involved in the continued development and on-going operations of theROARstore. theROARstore is a student-run business, specializing in selling branded Linn-Mar merchandise. Students will learn customer service and selling skills in the classroom and develop & hone them while working in the store. In addition, students will spend time on developing theROARstore's product mix, price the products accordingly, and promote them using social media, email marketing, and website design. Activities may include (but are not limited to): research and development, market & product planning, promotion, pricing, merchandising, selling, management, distribution, and financial analysis. Skills needed to be successful include creative and logical thinking, timeliness, dependability, willingness to work as a team, effective communication, attention to detail, ethical behavior, and professional and mature demeanor when working with customers, advisors, and individuals in positions of authority.",
@@ -1969,7 +2317,9 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "Any of 2 or more Business courses",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "lmhs-talented-and-gifted-freshman-seminar-tag-1": {
     "considerations": "This course is for students identified by established district guidelines.",
@@ -1981,7 +2331,9 @@
     "gradelevels": "9",
     "length": "1 Quarter",
     "prerequisites": "Instructor approval",
-    "tags": ["Talented and Gifted"]
+    "tags": [
+      "Talented and Gifted"
+    ]
   },
   "lux": {
     "considerations": "10-12 grades Sopranos and Altos must audition to be placed in this choir. 9th grade Soprano and Alto voices are automatically placed in this choir.",
@@ -1993,7 +2345,9 @@
     "gradelevels": "9-12",
     "length": "2 semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "marching-band": {
     "courseid": "MUS280",
@@ -2005,7 +2359,9 @@
     "gradelevels": "10-12 (9th by audition)",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "marketing": {
     "considerations": "None",
@@ -2017,7 +2373,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "math-for-the-building-trades": {
     "considerations": "Compass Only.",
@@ -2029,7 +2387,9 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "mathematics-and-society-kcc": {
     "considerations": "See prerequisite. This is a dual-credit course, and the expectations reflect those of a college course. In order to take this class, the student needs to register as a Kirkwood student earning college credit in high school by using this link: https://www.kirkwood.edu/site/index.php?d=725. An additional requirement is an ACT score of 19 or higher OR a score of 30 or higher on the ALEKS math placement test (https://www.kirkwood.edu/placement). Students can register for this course through Linn-Mar's registration procedures but will need to meet the necessary test requirement by the first day of class at LMHS. The following link provides information regarding taking placement tests in Kirkwood: https://www.kirkwood.edu/testcenter.",
@@ -2041,7 +2401,9 @@
     "gradelevels": "12th Grade Only",
     "length": "1 Semester",
     "prerequisites": "Three years of High School math",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "metals%3A-materials-and-processes": {
     "courseid": "IND310",
@@ -2053,19 +2415,9 @@
     "gradelevels": "11-12",
     "length": "2 Quarters",
     "prerequisites": "none",
-    "tags": ["Engineering"]
-  },
-  "meteorology": {
-    "considerations": "Meteorology is a science elective course. Students taking this course must have completed Geometry and ACP (Applied Chemistry and Physics) or Chemistry I.",
-    "courseid": "SCI395",
-    "coursename": "Meteorology",
-    "credits": "5",
-    "description": "This course is designed to allow students to receive an intense, in-depth look at topics relating to the atmosphere. Students will focus on forecasting weather, using severe weather as its guideline.",
-    "format": "Block",
-    "gradelevels": "11-12",
-    "length": "1 Quarter",
-    "prerequisites": "Geometry and Applied Chemistry and Physics or Chemistry I",
-    "tags": ["Science"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "multicultural-literature": {
     "courseid": "ENG255",
@@ -2076,7 +2428,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "natural-resources-and-ecology": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -2088,7 +2442,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "nature-of-science": {
     "considerations": "Compass Only. Strong comprehensive vocabulary, reading and study skills. This course meets the physical science requirement for graduation.",
@@ -2100,19 +2456,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Science"]
-  },
-  "organic-chemistry": {
-    "considerations": "See prerequisite.",
-    "courseid": "SCI330",
-    "coursename": "Organic Chemistry",
-    "credits": "5",
-    "description": "This quarter-long course is designed to provide a limited exploration of the concepts essential to college-level Organic Chemistry: Bonding, Isomers, Properties, Naming, Functional Groups and Types of Reactions/ Reaction Mechanisms associated with each – substitution, elimination & addition, as well as an introduction to the limitless applications of organic chemistry throughout agriculture, life sciences, medicine, and issues related to consumers, the environment and society.",
-    "format": "Block",
-    "gradelevels": "10-12",
-    "length": "1 Quarter (offered in odd years; Fall of 2025 next)",
-    "prerequisites": "Chemistry I",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "pe": {
     "considerations": "Compass Only. Meets on Fridays only.",
@@ -2124,7 +2470,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "personal-finance": {
     "considerations": "This course meets all financial literary standards of the Iowa Core.",
@@ -2136,7 +2484,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "philharmonic-orchestra": {
     "considerations": "All students must audition for the director to be enrolled in this ensemble. Specific audition materials are required for the audition and can be acquired from the director.",
@@ -2149,7 +2499,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "physics-i": {
     "considerations": "Physics I is based on the completion of NGSS Physical Science Standards, and successful completion will meet the physics portion of the physical science graduation requirement. Physics 1 is NOT a prerequisite for AP Physics 1.",
@@ -2161,19 +2513,24 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra 1",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
-  "pltw%2Fventure-principles-of-biomedical-science-strand": {
+  "pltw%2Fventure-principles-of-biomedical-science": {
     "considerations": "This is a Project Lead the Way course provided only through Venture Academics. There is no standalone section.",
     "courseid": "HPE702",
-    "coursename": "PLTW/Venture Principles of Biomedical Science Strand",
-    "credits": "20 credits (15 Biomedical, 5 elective)",
-    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also in-demand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems. Students will learn from and be mentored by professionals in the community during the course and have opportunities for field experiences and job shadows in areas of interest. See page 109 to learn more about the Venture program.",
-    "format": "SuperBlock (2 Blocks)",
+    "coursename": "PLTW/Venture Principles of Biomedical Science",
+    "credits": "20 credits (10 Biomedical, 5 Rhetoric, 5 Elective Venture credits)",
+    "description": "From design and data analysis to outbreaks, clinical empathy, health promotion, and more, students explore the vast range of careers in biomedical sciences. They develop not just technical skills, but also in- demand, transportable skills that they need to thrive in life and career. In this course, students explore concepts of biology and medicine as they take on roles of different medical professionals to solve real-world problems. Over the course of the year, students are challenged in various scenarios including investigating a crime scene to solve a mystery, diagnosing and proposing treatment to patients in a family medical practice, tracking down and containing a medical outbreak at a local hospital, stabilizing a patient during an emergency, and collaborating with others to design solutions to local and global medical problems. Students will learn from and be mentored by professionals in the community during the course and have opportunities for field experiences and job shadows in areas of interest. See page 110 to learn more about the Venture program.",
+    "format": "Block",
     "gradelevels": "10-12",
-    "length": "1 Semester",
+    "length": "2 Semesters",
     "prerequisites": "Health I, General Biology",
-    "tags": ["Health/PE", "Venture"]
+    "tags": [
+      "Health/PE",
+      "Venture"
+    ]
   },
   "pltw-principles-of-biomedical-science": {
     "considerations": "This is a Project Lead the Way course provided only through Venture Academics. There is no standalone section.",
@@ -2185,7 +2542,9 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "Health I, General Biology",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "pre-algebra": {
     "considerations": "A scientific calculator or its equivalent required. Graphing calculators are not allowed in this course.",
@@ -2197,7 +2556,9 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "pre-calculus": {
     "considerations": "Graphing calculator is required. TI89 and TI-Nspire calculators are not allowed.",
@@ -2210,7 +2571,9 @@
     "length": "2 Semesters",
     "prerequisites": "Algebra 2B or Algebra 2",
     "subsequent": "AP Calculus (recommended) or Mathematics & Society or AP Statistics",
-    "tags": ["Math"]
+    "tags": [
+      "Math"
+    ]
   },
   "principles-of-agricultural-science--animal": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -2222,7 +2585,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "principles-of-agricultural-science--plant": {
     "considerations": "Students will be introduced to SAE (supervised agricultural experience) and FFA opportunities.",
@@ -2234,7 +2599,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Agriculture"]
+    "tags": [
+      "Agriculture"
+    ]
   },
   "principles-of-engineering": {
     "considerations": "See prerequisites. Students will earn credit for this course from Kirkwood Community College upon successful completion.",
@@ -2246,7 +2613,23 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "Algebra",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
+  },
+  "probability-and-statistics": {
+    "considerations": "Graphing calculators are required.",
+    "courseid": "MAT330",
+    "coursename": "Probability and Statistics",
+    "credits": "5",
+    "description": "This course is intended to develop statistical literacy and thinking by developing skills to interpret results, write explanations, find patterns, and make decisions.  Included are units on data classification, frequency distribution and their graphs, and measures of central tendency.",
+    "format": "Skinny",
+    "gradelevels": "10-12",
+    "length": "1 Semester",
+    "prerequisites": "Algebra 2",
+    "tags": [
+      "Math"
+    ]
   },
   "prostart-internship": {
     "considerations": "Kirkwood credits earned upon completion of ProStart program.",
@@ -2258,7 +2641,9 @@
     "gradelevels": "10 - 12",
     "length": "1 Semester",
     "prerequisites": "Culinary Basics and ProStart One",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "prostart-one": {
     "considerations": "Kirkwood",
@@ -2270,7 +2655,9 @@
     "gradelevels": "9 - 12",
     "length": "1 Semester",
     "prerequisites": "Culinary Basics",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "prostart-two": {
     "considerations": "Kirkwood credits earned upon completion of ProStart program",
@@ -2282,7 +2669,9 @@
     "gradelevels": "10 - 12",
     "length": "1 Semester",
     "prerequisites": "Culinary Basics, ProStart One, ProStart Internship (ongoing)",
-    "tags": ["Family Consumer Sciences"]
+    "tags": [
+      "Family Consumer Sciences"
+    ]
   },
   "reading-i": {
     "considerations": "Compass Only.",
@@ -2294,7 +2683,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "reading-ii": {
     "considerations": "Compass Only.",
@@ -2306,7 +2697,9 @@
     "gradelevels": "10-12",
     "length": "1 Quarter",
     "prerequisites": "Reading I",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "residential-construction-i": {
     "considerations": "None",
@@ -2318,7 +2711,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "residential-construction-ii": {
     "considerations": "None",
@@ -2330,7 +2725,9 @@
     "gradelevels": "11-12 or approval",
     "length": "1 Quarter",
     "prerequisites": "Residential Const I",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "rhetoric": {
     "considerations": "May be used to fulfill the graduation requirement for Speech/Rhetoric/Acting through Venture Academics. Not offered as a standalone class.",
@@ -2342,7 +2739,9 @@
     "gradelevels": "9-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "sinfonietta": {
     "considerations": "All students must audition for the director to be enrolled in this ensemble. Specific audition materials are required for the audition and can be acquired from the director.",
@@ -2355,7 +2754,9 @@
     "gradelevels": "9-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "sociology": {
     "considerations": "Meets the Behavioral Sciences graduation requirement.",
@@ -2367,7 +2768,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "none",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "speech": {
     "considerations": "Speech or Acting is required for graduation.",
@@ -2379,7 +2782,9 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   },
   "sports-and-entertainment-marketing": {
     "considerations": "Not offered as a standalone class; this class is available only as part of the Venture Marketing Essentials strand.",
@@ -2391,7 +2796,20 @@
     "gradelevels": "10-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
+  },
+  "sports-officiating": {
+    "considerations": "Individual learning schedules will be determined based on the officiating licenses being pursued. Some of the course will be online learning and students will not meet every day.\nFee: Initial IHSAA or IGHSAU license fees ($20 for one sport and $12 for each additional sport) are waived for students completing this course.",
+    "courseid": "HPE500, HPE501",
+    "coursename": "Sports Officiating",
+    "credits": "1 credit per license",
+    "description": "Sports Officiating prepares students to serve as a referee, umpire, judge, or other official for sports contests. The course emphasizes knowledge and interpretation of the rules, mechanics, and effective decision-making.  Licensing is available for basketball, wrestling, and soccer in the fall semester, and baseball, softball, volleyball, and football in the spring semester.",
+    "format": "RTI",
+    "gradelevels": "9-12",
+    "length": "1 Semester",
+    "prerequisites": "None"
   },
   "state-%26-local-government": {
     "considerations": "This course is for elective credit in Social Studies. Not offered as a standalone class.",
@@ -2403,7 +2821,9 @@
     "gradelevels": "11-12",
     "length": "1 Semester",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "stream-%26-field-biology": {
     "considerations": "Compass Only. See prerequisites. Strong comprehensive vocabulary, reading and study skills. This course meets the L-M science elective requirement.",
@@ -2415,19 +2835,23 @@
     "gradelevels": "10-12",
     "length": "1 Quarters",
     "prerequisites": "General Biology",
-    "tags": ["Science"]
+    "tags": [
+      "Science"
+    ]
   },
   "super-sport": {
-    "considerations": "Specific skills taught and assessed are determined by a student's individualized education plan. Must have administrative approval to enroll.",
-    "courseid": "ALT400",
+    "considerations": "Required for students with adaptive physical education IEP goals. Students without adaptive physical education IEP goals may also enroll in this course (with PE Department approval) to earn Lifetime Fitness credit.",
+    "courseid": "ALT400, HPE120",
     "coursename": "Super Sport",
-    "credits": "5",
-    "description": "This adaptive physical education course focuses on individual and team activities to promote an active and healthy lifestyle. This course will adapt the activities to meet the physical needs of all students.",
+    "credits": "2.5",
+    "description": "This adaptive physical education course focuses on individual and team activities to promote an active and healthy lifestyle. This course will adapt activities to meet the physical needs of all students. Students will work together to meet physical education goals and standards. Specific skills taught and assessed will be determined by each student’s adaptive physical education IEP goals or established by Linn-Mar’s Lifetime Fitness standards.",
     "format": "Block",
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "Approval",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "symphonic-winds": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -2440,7 +2864,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Participation in a school band the prior year OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "symphony-band": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -2453,7 +2879,9 @@
     "gradelevels": "9-11",
     "length": "2 Semesters",
     "prerequisites": "Participation in a school band the prior year OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "symphony-strings": {
     "considerations": "All students must audition for the director to be enrolled in this ensemble. Specific audition materials are required for the audition and can be acquired from the director.",
@@ -2466,7 +2894,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "teacher's-assistant": {
     "considerations": "Compass Only. Instructor must approve",
@@ -2489,7 +2919,9 @@
     "gradelevels": "9-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["Health/PE"]
+    "tags": [
+      "Health/PE"
+    ]
   },
   "us-history-9": {
     "considerations": "Required for graduation.",
@@ -2501,32 +2933,24 @@
     "gradelevels": "9",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
-  "venture-advanced-business-strand": {
-    "considerations": "It is recommended that students enroll in one or more of the following courses prior to enrolling in this strand; Accounting, Marketing, Business/Consumer Law, Personal Finance.",
-    "courseid": "BUS702",
-    "coursename": "Venture Advanced Business Strand",
-    "courses": "BUS360, BUS460, and ENG120.",
+  "venture-applied-marketing": {
+    "courseid": "BUS701",
+    "coursename": "Venture Applied Marketing",
+    "courses": "BUS360, BUS355, and ENG120.",
     "credits": "20",
-    "description": "This course covers the same content as BUS360 and BUS460 in a project-based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
+    "description": "Formerly Venture Marketing Essentials. In this project-based course, students will be introduced to the core concepts of marketing, both traditional and digital strategies. Students will engage in hands-on projects that simulate real-world marketing campaigns, providing opportunities to apply principles such as (but not limited to) market research, branding, advertising, product development, and sales strategies. They will learn how to craft compelling marketing messages, analyze consumer behavior, and create multi-channel campaigns that reach diverse audiences. By the end of the course, students will have a strong foundation in marketing theory, practical skills in digital platforms, and the ability to present their ideas professionally.",
     "format": "SuperBlock (2 Blocks)",
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Business", "Venture"]
-  },
-  "venture-advanced-placement-environmental-science-1-%26-2-strand": {
-    "courseid": "SCI703",
-    "coursename": "Venture Advanced Placement Environmental Science 1 & 2 Strand",
-    "courses": "SCI540 (AP Environmental Science 1 & 2), and ENG120. Students that successfully complete both courses will meet earth science and speech graduation requirements.",
-    "credits": "20 (15 AP Enviro, 5 Elective)",
-    "description": "This course covers the same content as SCI541 & SCI542 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 111 to learn more about the Venture program. Elective Science credit can also be found in the Agricultural Education and PLTW sections.",
-    "format": "SuperBlock (2 Blocks)",
-    "gradelevels": "10-12",
-    "length": "Semester",
-    "prerequisites": "General Biology and Algebra",
-    "tags": ["Science", "Venture"]
+    "tags": [
+      "Business",
+      "Venture"
+    ]
   },
   "venture-behavioral-science-strand": {
     "courseid": "SOC702",
@@ -2538,7 +2962,25 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "none",
-    "tags": ["Social Studies", "Venture"]
+    "tags": [
+      "Social Studies",
+      "Venture"
+    ]
+  },
+  "venture-biology": {
+    "courseid": "SCI702",
+    "coursename": "Venture Biology",
+    "courses": "SCI210 and ENG120. Students that successful complete both courses will meet life science and speech graduation requirements.",
+    "credits": "20 (10 Bio, 5 English, 5 Elective.)",
+    "description": "This course covers the same standards as SCI210 in a project-based, community-focused way. Students will learn from and be mentored by professionals in the community. Students will learn and use important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects.",
+    "format": "SuperBlock (2 Blocks)",
+    "gradelevels": "9-12",
+    "length": "Semester",
+    "prerequisites": "none",
+    "tags": [
+      "Science",
+      "Venture"
+    ]
   },
   "venture-civics-strand": {
     "courseid": "SOC701",
@@ -2550,7 +2992,10 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "none",
-    "tags": ["Social Studies", "Venture"]
+    "tags": [
+      "Social Studies",
+      "Venture"
+    ]
   },
   "venture-creative-writing-strand": {
     "courseid": "ENG702",
@@ -2562,7 +3007,10 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "English II or English Department approval",
-    "tags": ["Venture", "English"]
+    "tags": [
+      "Venture",
+      "English"
+    ]
   },
   "venture-digital-design-and-communication-strand": {
     "considerations": "Beginning Graphics is required before taking this course.",
@@ -2575,19 +3023,25 @@
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "Beginning Graphics",
-    "tags": ["Art", "Venture"]
+    "tags": [
+      "Art",
+      "Venture"
+    ]
   },
   "venture-earth-science-strand": {
     "courseid": "SCI701",
     "coursename": "Venture Earth Science Strand",
     "courses": "SCI125 and ENG120. Students that successful complete both courses will meet earth science and speech graduation requirements.",
     "credits": "20 (10 Earth, 5 English, 5 Elective)",
-    "description": "This course covers the same content as SCI125 in a project-based, hands-on, community-engaged way. Students will complete the requirements for three college credits through the University of Iowa STEM Innovator program. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
+    "description": "This course covers the same standards as SCI125 in a project-based and community-focused way. Students will learn and use important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects.",
     "format": "SuperBlock (2 Blocks)",
     "gradelevels": "9-10",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Science", "Venture"]
+    "tags": [
+      "Science",
+      "Venture"
+    ]
   },
   "venture-exploring-education-strand": {
     "courseid": "FAM701",
@@ -2599,31 +3053,26 @@
     "gradelevels": "11-12",
     "length": "Semester",
     "prerequisites": "Application, and Teacher and Counselor Approval Required",
-    "tags": ["Family Consumer Sciences", "Venture"]
+    "tags": [
+      "Family Consumer Sciences",
+      "Venture"
+    ]
   },
-  "venture-life-science-strand-(biology)": {
-    "courseid": "SCI702",
-    "coursename": "Venture Life Science Strand (Biology)",
-    "courses": "SCI210 and ENG120. Students that successful complete both courses will meet life science and speech graduation requirements.",
-    "credits": "20 (10 Bio, 5 English, 5 Elective.)",
-    "description": "This course covers the same content as SCI210 in a project-based, hands-on, community-engaged way. Students will learn from and be mentored by professionals in the community. Students will complete the requirements for three college credits through the University of Iowa STEM Innovator program. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
-    "format": "SuperBlock (2 Blocks)",
-    "gradelevels": "9-12",
-    "length": "Semester",
-    "prerequisites": "none",
-    "tags": ["Science", "Venture"]
-  },
-  "venture-marketing-essentials-strand": {
-    "courseid": "BUS701",
-    "coursename": "Venture Marketing Essentials Strand",
-    "courses": "BUS345, BUS355, and ENG120.",
+  "venture-inventrepreneurship": {
+    "considerations": "This strand was formerly named Venture-Advanced Business. It is recommended that students enroll in one or more of the following courses prior to enrolling in this strand; Accounting, Marketing, Business/Consumer Law, Personal Finance.",
+    "courseid": "BUS702",
+    "coursename": "Venture Inventrepreneurship",
+    "courses": "BUS360, BUS460, and ENG120.",
     "credits": "20",
-    "description": "This course covers the same content as BUS355, and ENG120 in a project-based, hands-on, and community-engaged way. Students will learn from and be mentored by professionals in the community. Students will learn important skills such as collaboration, communication, creativity, critical thinking, and time management as they complete projects. See page 109 to learn more about the Venture program.",
+    "description": "In this project-based course, students will learn about and participate in the process of turning ideas into reality. From brainstorming inventions, to creating prototypes, to creating a business model, students will explore the steps of building a startup. Throughout the class, students will develop and evolve multiple pitches, showing the progress of their inventions and startups. By the end of the course, students will have hands-on experience in bringing their concept to life, while gaining practical knowledge of what it takes to start a successful business. *Students also have the opportunity to earn college credit.",
     "format": "SuperBlock (2 Blocks)",
     "gradelevels": "10-12",
     "length": "Semester",
     "prerequisites": "None",
-    "tags": ["Business", "Venture"]
+    "tags": [
+      "Business",
+      "Venture"
+    ]
   },
   "wind-ensemble": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -2636,7 +3085,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Participation in a school band the prior year OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "wind-symphony": {
     "considerations": "Some instruments are provided. Most students own their own instrument.",
@@ -2649,7 +3100,9 @@
     "gradelevels": "10-12",
     "length": "2 Semesters",
     "prerequisites": "Participation in a school band the prior year OR instructor approval",
-    "tags": ["Music"]
+    "tags": [
+      "Music"
+    ]
   },
   "woods%3A-materials-and-processes": {
     "considerations": "Grade of 80 or higher for second quarter of Woods: Materials and Processes is required.",
@@ -2661,7 +3114,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "none",
-    "tags": ["Engineering"]
+    "tags": [
+      "Engineering"
+    ]
   },
   "work-based-internship-career-immersion": {
     "considerations": "Must also enroll in Work-Based Learning; admitted when hired by an MOC teacher approved employer; receive pay in addition to credit; must commit to one year.",
@@ -2673,7 +3128,9 @@
     "gradelevels": "12",
     "length": "2 Semesters",
     "prerequisites": "See Considerations",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "work-based-learning": {
     "considerations": "Must also enroll in Work-Based Internship; must commit to one year. Active and full participation of students in Future Business Leaders of America (FBLA) career and technical student organization at the local, state, and national levels including leadership and competitive skill events.",
@@ -2685,7 +3142,9 @@
     "gradelevels": "12",
     "length": "2 Semesters",
     "prerequisites": "See Considerations",
-    "tags": ["Business"]
+    "tags": [
+      "Business"
+    ]
   },
   "work-experience---yearbook": {
     "considerations": "The class is a blended class meeting 2 days a week before school. During blended days students will be covering school events or working on yearbook work assignments on their own time. Though taught through the English Department, credits earned through yearbook are elective only and do not count toward English graduation requirements.",
@@ -2708,7 +3167,9 @@
     "gradelevels": "10-12",
     "length": "2 Quarters",
     "prerequisites": "None",
-    "tags": ["Social Studies"]
+    "tags": [
+      "Social Studies"
+    ]
   },
   "writing": {
     "considerations": "Compass Only. Students should take this class if they need to improve their writing skills, and do not yet feel comfortable taking a college-level writing class.",
@@ -2720,6 +3181,8 @@
     "gradelevels": "11-12",
     "length": "1 Quarter",
     "prerequisites": "None",
-    "tags": ["English"]
+    "tags": [
+      "English"
+    ]
   }
 }
