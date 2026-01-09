@@ -14,7 +14,7 @@
     "firebase": "^11.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.30.3",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.6",
     "socket.io-client": "^4.7.2",
