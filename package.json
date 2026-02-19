@@ -1,6 +1,6 @@
 {
   "name": "magnify",
-  "version": "2024-2025.0.1",
+  "version": "2025-2026.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,7 +11,7 @@
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@types/react-router-dom": "^5.3.3",
-    "firebase": "^10.14.1",
+    "firebase": "^11.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
