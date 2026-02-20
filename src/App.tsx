@@ -67,7 +67,9 @@ const App: FC = (): JSX.Element => {
     db.ref()
       .get()
       .then((snapshot) => {
-        setCourseData(snapshot.exists() ? snapshot.val().courses : localCourseData);
+        setCourseData(
+          snapshot.exists() ? snapshot.val().courses : localCourseData
+        );
       })
       .catch(() => setCourseData(localCourseData));
   }, []);
@@ -138,7 +140,10 @@ const App: FC = (): JSX.Element => {
   const courseIDtoCourse = useCallback(
     (courseID: string): CourseType => {
       const id = courseID.match(COURSE_ID_REGEX_SINGLE)?.[0] ?? '';
-      return courseData?.[courseIDtoNameMap.get(id) ?? ''] ?? ('' as unknown as CourseType);
+      return (
+        courseData?.[courseIDtoNameMap.get(id) ?? ''] ??
+        ('' as unknown as CourseType)
+      );
     },
     [courseData, courseIDtoNameMap]
   );
@@ -153,7 +158,9 @@ const App: FC = (): JSX.Element => {
         const matchesSearch = name.search(key) !== -1;
         const matchesTags =
           activeTags.length === 0 ||
-          activeTags.some((tag) => courseData[name].tags?.includes(TAG_CODES[tag]));
+          activeTags.some((tag) =>
+            courseData[name].tags?.includes(TAG_CODES[tag])
+          );
         return matchesSearch && matchesTags;
       })
       .map((name) => (
@@ -183,7 +190,8 @@ const App: FC = (): JSX.Element => {
       auth.signOut().then(() => {
         setUser(null);
         setAuthLevel(0);
-        document.cookie = 'user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.cookie =
+          'user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
       });
     } else {
       auth.signInWithPopup(provider).then((result) => {
@@ -218,14 +226,13 @@ const App: FC = (): JSX.Element => {
     return <div className="parent">{flexParents}</div>;
   }, [filteredCourseItems, numColumns, handleClearFilters]);
 
-  const userElement: JSX.Element =
-    user?.photoURL ? (
-      <div className="user">
-        <img id="user-img" src={user.photoURL} alt="User profile" />
-      </div>
-    ) : (
-      <div className="hide" />
-    );
+  const userElement: JSX.Element = user?.photoURL ? (
+    <div className="user">
+      <img id="user-img" src={user.photoURL} alt="User profile" />
+    </div>
+  ) : (
+    <div className="hide" />
+  );
 
   if (!courseData) {
     return <Loader />;

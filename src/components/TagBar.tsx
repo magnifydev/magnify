@@ -26,7 +26,11 @@ interface TagBarProps {
   onClearTags: () => void;
 }
 
-export const TagBar: FC<TagBarProps> = ({ activeTags, onTagToggle, onClearTags }): JSX.Element => {
+export const TagBar: FC<TagBarProps> = ({
+  activeTags,
+  onTagToggle,
+  onClearTags,
+}): JSX.Element => {
   return (
     <div className="tag-container">
       <button
