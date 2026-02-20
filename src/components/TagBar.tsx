@@ -1,5 +1,5 @@
 import '../App.css';
-import { FC, useCallback } from 'react';
+import { FC } from 'react';
 
 const TAGS = [
   { id: 'ADP', label: 'AP' },
@@ -20,25 +20,20 @@ const TAGS = [
   { id: 'VEN', label: 'Venture' },
 ] as const;
 
-export const TagBar: FC = (): JSX.Element => {
-  const handleTagToggle = useCallback((id: string): void => {
-    document.getElementById(id)?.classList.toggle('tag-true');
-  }, []);
+interface TagBarProps {
+  activeTags: string[];
+  onTagToggle: (id: string) => void;
+  onClearTags: () => void;
+}
 
-  const handleTagTrueRemove = useCallback(() => {
-    const tags = document.getElementsByClassName('tag');
-    for (let i = 0; i < tags.length; i++) {
-      tags[i].classList.remove('tag-true');
-    }
-  }, []);
-
+export const TagBar: FC<TagBarProps> = ({ activeTags, onTagToggle, onClearTags }): JSX.Element => {
   return (
     <div className="tag-container">
       <button
         type="button"
         id="ALL"
-        className="tag tag-all"
-        onClick={handleTagTrueRemove}
+        className={`tag ${activeTags.length === 0 ? 'tag-all' : ''}`}
+        onClick={onClearTags}
       >
         {/* @ts-expect-error ts(2339) */}
         <ion-icon class="hide" name="checkmark-outline" />
@@ -50,8 +45,8 @@ export const TagBar: FC = (): JSX.Element => {
           key={id}
           type="button"
           id={id}
-          className="tag"
-          onClick={() => handleTagToggle(id)}
+          className={`tag ${activeTags.includes(id) ? 'tag-true' : ''}`}
+          onClick={() => onTagToggle(id)}
         >
           {/* @ts-expect-error ts(2339) */}
           <ion-icon class="hide" name="checkmark-outline" />
