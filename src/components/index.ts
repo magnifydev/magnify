@@ -1,6 +1,7 @@
 export { ClearFilter } from './ClearFilter';
-export { Course } from './Course';
 export { ContactForm } from './ContactForm';
+export { Course } from './Course';
+export { CourseEditModal } from './CourseEditModal';
 export { FloatingActionable } from './FloatingActionable';
 export { Loader } from './Loader';
 export { MobileNavigation } from './MobileNavigation';

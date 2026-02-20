@@ -148,6 +148,13 @@ const App: FC = (): JSX.Element => {
     [courseData, courseIDtoNameMap]
   );
 
+  const handleCourseUpdate = useCallback(
+    (key: string, updated: CourseType) => {
+      setCourseData((prev) => (prev ? { ...prev, [key]: updated } : prev));
+    },
+    []
+  );
+
   const filteredCourseItems = useMemo(() => {
     if (!courseData) return [];
     const key = encodeURIComponent(
@@ -170,9 +177,10 @@ const App: FC = (): JSX.Element => {
           course={courseData[name]}
           jumpId={courseData[name].courseid}
           courseIDtoCourse={courseIDtoCourse}
+          onCourseUpdate={handleCourseUpdate}
         />
       ));
-  }, [courseData, searchQuery, activeTags, authLevel, courseIDtoCourse]);
+  }, [courseData, searchQuery, activeTags, authLevel, courseIDtoCourse, handleCourseUpdate]);
 
   const handleTagToggle = useCallback((id: string) => {
     setActiveTags((prev) =>

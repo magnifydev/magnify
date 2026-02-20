@@ -68,6 +68,7 @@ body {
 ::-webkit-scrollbar-thumb:active {
   background-color: #a1a1a1;
 }
+
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
@@ -593,6 +594,99 @@ button ion-icon {
 
 .hide {
   display: none;
+}
+
+.edit-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: min(800px, 95vh);
+  max-width: 640px;
+  overflow: hidden;
+}
+
+.edit-modal-header {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.edit-modal-close {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 999px;
+  color: var(--gray);
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.edit-modal-close:hover {
+  color: var(--primary);
+}
+
+.edit-modal-form {
+  display: grid;
+  flex: 1;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: auto;
+  padding: 3px;
+}
+
+.edit-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edit-modal-field--full {
+  grid-column: 1 / -1;
+}
+
+.edit-modal-label {
+  color: var(--gray);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.edit-modal-input {
+  background-color: var(--whiteish);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  padding: 8px 12px;
+  transition: box-shadow 0.2s;
+}
+
+.edit-modal-input:focus {
+  box-shadow: 0 0 0 2px var(--gray);
+}
+
+.edit-modal-textarea {
+  background-color: var(--whiteish);
+  border: none;
+  border-radius: 8px;
+  field-sizing: content;
+  font-size: 13px;
+  min-height: 30px;
+  outline: none;
+  overflow: hidden;
+  padding: 8px 12px;
+  resize: none;
+  transition: box-shadow 0.2s;
+}
+
+.edit-modal-textarea:focus {
+  box-shadow: 0 0 0 2px var(--gray);
 }
 
 .jump-to-top {
