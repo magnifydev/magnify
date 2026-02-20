@@ -6,7 +6,9 @@ interface ClearFilterProps {
   onClearFilters: () => void;
 }
 
-export const ClearFilter: FC<ClearFilterProps> = ({ onClearFilters }): JSX.Element => {
+export const ClearFilter: FC<ClearFilterProps> = ({
+  onClearFilters,
+}): JSX.Element => {
   useEffect(() => {
     const courseContainer = document.getElementById(
       'course-container'

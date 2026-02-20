@@ -125,8 +125,9 @@ export const Course: FC<CourseProps> = ({
   const isVenture = course.coursename.includes('Venture');
 
   const Style = {
-    gridRow: `span ${course.courses?.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/gm)?.length ?? 1
-      }`,
+    gridRow: `span ${
+      course.courses?.match(/[A-Z][A-Z][A-Z][0-9][0-9][0-9]/gm)?.length ?? 1
+    }`,
     backgroundColor: isVenture ? 'var(--primary-light)' : '',
   };
 
