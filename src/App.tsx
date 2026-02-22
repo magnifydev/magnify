@@ -11,6 +11,7 @@ import {
   TopBar,
 } from './components';
 import { auth, db, provider } from './config';
+import { TAGS } from './data';
 import localCourseData from './data/coursedata.json';
 import { CourseDataType, CourseType } from './types';
 import { getCookieValue, getWidth } from './utils';
@@ -19,25 +20,6 @@ import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 
 const COURSE_ID_REGEX = /[A-Z]{3}[0-9]{3}/g;
 const COURSE_ID_REGEX_SINGLE = /[A-Z]{3}[0-9]{3}/;
-
-const TAG_CODES: Record<string, string> = {
-  ADP: 'Advanced Placement',
-  CSC: 'Computer Science',
-  MAT: 'Math',
-  BUS: 'Business',
-  SOC: 'Social Studies',
-  ENG: 'English',
-  IND: 'Engineering',
-  FAM: 'Family Consumer Sciences',
-  AGR: 'Agriculture',
-  SCI: 'Science',
-  HPE: 'Health/PE',
-  ART: 'Art',
-  FOR: 'Foreign Language',
-  MUS: 'Music',
-  TAG: 'Talented and Gifted',
-  VEN: 'Venture',
-};
 
 const getNumColumns = (width: number): number => {
   if (width > 1400) return 4;
@@ -159,7 +141,9 @@ const App: FC = (): JSX.Element => {
         const matchesTags =
           activeTags.length === 0 ||
           activeTags.some((tag) =>
-            courseData[name].tags?.includes(TAG_CODES[tag])
+            courseData[name].tags?.includes(
+              TAGS[TAGS.findIndex((t) => t.id === tag)].label
+            )
           );
         return matchesSearch && matchesTags;
       })
