@@ -194,12 +194,33 @@ const App: FC = (): JSX.Element => {
           'user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
       });
     } else {
-      auth.signInWithPopup(provider).then((result) => {
-        const signedInUser = result.user;
-        if (!signedInUser) return;
-        setUser(signedInUser);
-        document.cookie = `user=${JSON.stringify(signedInUser)}`;
-      });
+      auth
+        .signInWithPopup(provider)
+        .then(async (result) => {
+          const signedInUser = result.user;
+          if (!signedInUser) {
+            return;
+          }
+          setUser(signedInUser);
+          document.cookie = `user=${JSON.stringify(signedInUser)}`;
+
+          // Eagerly fetch and set auth level after successful sign-in
+          try {
+            const userDoc = await db
+              .collection('users')
+              .doc(signedInUser.uid)
+              .get();
+            const data = userDoc.exists ? userDoc.data() : undefined;
+            const level = data && (data as { authLevel?: unknown }).authLevel;
+            if (typeof level === 'number') {
+              setAuthLevel(level);
+            }
+          } catch (error) {
+            // If this fails, authLevel will still be updated by the existing effect
+            // eslint-disable-next-line no-console
+            console.error('Failed to fetch auth level after sign-in', error);
+          }
+        });
     }
   }, [user]);
 
