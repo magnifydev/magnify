@@ -208,7 +208,7 @@ const App: FC = (): JSX.Element => {
       </div>
     ));
     return <div className="parent">{flexParents}</div>;
-  }, [filteredCourseItems, numColumns]);
+  }, [filteredCourseItems, numColumns, handleClearFilters]);
 
   const userElement: JSX.Element = user?.photoURL ? (
     <div className="user">
