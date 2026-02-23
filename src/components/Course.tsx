@@ -1,12 +1,7 @@
 import '../App.css';
-import { firebaseConfig } from '../config';
+import { db } from '../config';
 import { CourseType } from '../types';
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/database';
 import { FC, useCallback, useRef, useState, useMemo } from 'react';
-
-firebase.initializeApp(firebaseConfig);
-firebase.database().ref();
 
 interface CourseProps {
   course: CourseType;
@@ -114,12 +109,9 @@ export const Course: FC<CourseProps> = ({
         })
     );
 
-    firebase
-      .database()
-      .ref('courses')
-      .update({
-        [loopName]: { ...course, ...overwriteCourse },
-      });
+    db.ref('courses').update({
+      [loopName]: { ...course, ...overwriteCourse },
+    });
 
     // Exit the edit menu
     setIsEditing(false);

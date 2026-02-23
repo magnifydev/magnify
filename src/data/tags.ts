@@ -1,0 +1,18 @@
+export const TAGS = [
+  { id: 'ADP', label: 'AP' },
+  { id: 'ENG', label: 'English' },
+  { id: 'FOR', label: 'Foreign Language' },
+  { id: 'MAT', label: 'Math' },
+  { id: 'SCI', label: 'Science' },
+  { id: 'SOC', label: 'Social Studies' },
+  { id: 'ART', label: 'Art' },
+  { id: 'MUS', label: 'Music' },
+  { id: 'HPE', label: 'Health/PE' },
+  { id: 'AGR', label: 'Agriculture' },
+  { id: 'BUS', label: 'Business' },
+  { id: 'CSC', label: 'Computer Science' },
+  { id: 'IND', label: 'Engineering' },
+  { id: 'FAM', label: 'FCS' },
+  { id: 'TAG', label: 'TAG' },
+  { id: 'VEN', label: 'Venture' },
+] as const;
